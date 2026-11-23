@@ -293,7 +293,7 @@
    "items": [
     [
      "CORE Econ — The Economy 2.0",
-     "https://www.core-econ.org/",
+     "https://books.core-econ.org/the-economy/",
      "book",
      "Microeconomics and Macroeconomics volumes",
      "미시·거시 권",
@@ -416,7 +416,7 @@
     ],
     [
      "Yale ECON 252 Financial Markets (Robert Shiller)",
-     "https://oyc.yale.edu/economics/econ-252",
+     "https://oyc.yale.edu/economics/econ-252-11",
      "course",
      "All lectures",
      "전체 강의",
@@ -527,14 +527,14 @@
        "최신 연구에 쓰이는 재귀적 방법과 모형."
       ],
       [
-       "NBER Working Papers — Monetary Economics",
+       "NBER Working Papers",
        "https://www.nber.org/papers",
        "practice",
        "Skim new papers weekly",
        "매주 새 논문 훑기",
        3,
-       "Where most new macro research first appears.",
-       "새 거시 연구 대부분이 처음 나오는 곳."
+       "Where most new macro research first appears; filter by the Monetary Economics and Economic Fluctuations programmes.",
+       "새 거시 연구 대부분이 처음 나오는 곳. 통화경제·경기변동 프로그램으로 걸러 보세요."
       ]
      ],
      "proj": [
@@ -692,7 +692,7 @@
       ],
       [
        "AEA Data and Code Repository",
-       "https://www.aeaweb.org/journals/data",
+       "https://archive.icpsr.umich.edu/aea/home",
        "practice",
        "Download one replication package",
        "재현 패키지 하나 내려받기",
@@ -811,8 +811,8 @@
      ],
      "items": [
       [
-       "MIT 14.73 The Challenges of Global Poverty",
-       "https://ocw.mit.edu/courses/14-73-the-challenges-of-global-poverty-spring-2011/",
+       "MIT 14.73 The Challenge of World Poverty",
+       "https://ocw.mit.edu/courses/14-73-the-challenge-of-world-poverty-spring-2011/",
        "course",
        "All lectures",
        "전체 강의",
@@ -963,7 +963,7 @@
     ],
     [
      "Reproduce one recent result",
-     "https://www.aeaweb.org/journals/data",
+     "https://archive.icpsr.umich.edu/aea/home",
      "practice",
      "Pick a recent paper with a replication package",
      "재현 패키지가 있는 최근 논문 하나 선택",

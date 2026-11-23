@@ -66,7 +66,7 @@
    "items": [
     [
      "Book of Proof (Richard Hammack)",
-     "https://richardhammack.github.io/BookOfProof/",
+     "https://people.vcu.edu/~rhammack/BookOfProof/",
      "book",
      "Parts I–III",
      "1~3부",
@@ -511,8 +511,8 @@
        "Lecture notes + problem sets",
        "강의노트 + 문제풀이",
        40,
-       "Elementary and analytic number theory.",
-       "초등·해석적 정수론."
+       "Elementary number theory: congruences, quadratic reciprocity and Diophantine equations.",
+       "초등 정수론: 합동식, 이차 상호 법칙, 디오판토스 방정식."
       ],
       [
        "J.S. Milne — Course Notes",

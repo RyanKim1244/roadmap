@@ -413,15 +413,15 @@
        "MIT 10.626 Electrochemical Energy Systems",
        "https://ocw.mit.edu/courses/10-626-electrochemical-energy-systems-spring-2014/",
        "course",
-       "Lecture notes + videos",
-       "강의노트 + 영상",
+       "Lecture notes",
+       "강의노트",
        45,
        "Thermodynamics and kinetics of batteries and fuel cells.",
        "배터리와 연료전지의 열역학과 반응 속도."
       ],
       [
        "The Materials Project",
-       "https://next-gen.materialsproject.org/",
+       "https://materialsproject.org/",
        "practice",
        "Look up three battery cathode materials",
        "배터리 양극 소재 3개 찾아보기",
