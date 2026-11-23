@@ -103,9 +103,9 @@
      "course",
      "Lectures, labs and projects",
      "강의·실습·프로젝트",
-     90,
-     "Abstraction, recursion, interpreters and the ideas behind SICP.",
-     "추상화, 재귀, 인터프리터 등 SICP의 핵심 개념."
+     150,
+     "Abstraction, recursion, interpreters and the ideas behind SICP, taught in Python and SQL.",
+     "Python과 SQL로 배우는 추상화, 재귀, 인터프리터 등 SICP의 핵심 개념."
     ],
     [
      "Structure and Interpretation of Computer Programs (2nd ed.)",
@@ -406,8 +406,8 @@
      "CMU 15-213 Introduction to Computer Systems (CS:APP)",
      "https://www.cs.cmu.edu/~213/",
      "course",
-     "Lectures + labs (data, bomb, attack, cache, malloc, shell, proxy)",
-     "강의 + 실습 (data, bomb, attack, cache, malloc, shell, proxy)",
+     "Lectures + labs L0–L8 (C primer, data, bomb, attack, cache, malloc, shell, proxy, SFS)",
+     "강의 + 실습 L0~L8 (C 입문, data, bomb, attack, cache, malloc, shell, proxy, SFS)",
      120,
      "The programmer's view of the machine: representation, assembly, memory and concurrency.",
      "프로그래머 관점의 기계: 표현, 어셈블리, 메모리, 동시성."
@@ -681,8 +681,8 @@
        "A Graduate Course in Applied Cryptography (Boneh & Shoup)",
        "https://toc.cryptobook.us/",
        "book",
-       "Part I (Ch. 2–9)",
-       "1부 (2~9장)",
+       "Part I (Ch. 1–9)",
+       "1부 (1~9장)",
        60,
        "Rigorous modern cryptography; free online.",
        "엄밀한 현대 암호학. 무료 온라인."
@@ -691,8 +691,8 @@
        "pwn.college",
        "https://pwn.college/",
        "practice",
-       "Fundamentals dojos",
-       "기초 도장(dojo)",
+       "Getting Started dojos (Linux Luminarium, Computing 101, Playing With Programs)",
+       "Getting Started 도장 (Linux Luminarium, Computing 101, Playing With Programs)",
        40,
        "Free, hands-on exploitation and systems-security exercises.",
        "무료 실습형 익스플로잇·시스템 보안 연습."
@@ -719,8 +719,8 @@
       ]
      ],
      "proj": [
-      "Complete the 6.858 labs and a pwn.college fundamentals module, then write up one exploit and the mitigation that stops it.",
-      "6.858 실습과 pwn.college 기초 과정을 마치고, 익스플로잇 하나와 그것을 막는 완화 기법을 정리합니다."
+      "Complete the 6.858 labs and the pwn.college Getting Started dojos, then write up one exploit and the mitigation that stops it.",
+      "6.858 실습과 pwn.college Getting Started 도장을 마치고, 익스플로잇 하나와 그것을 막는 완화 기법을 정리합니다."
      ],
      "exit": [
       "Define a security game for a cipher, and explain how a real-world vulnerability broke an assumption in its threat model.",
@@ -776,7 +776,7 @@
        "book",
        "Volumes 1–2",
        "1~2권",
-       60,
+       150,
        "Logic, semantics and type systems mechanized in the Coq/Rocq proof assistant.",
        "Coq/Rocq 증명 보조기로 다루는 논리, 의미론, 타입 시스템."
       ],
@@ -854,8 +854,8 @@
        "Lectures + readings",
        "강의 + 읽기 자료",
        60,
-       "Modern analytical database internals, paper by paper.",
-       "최신 분석용 데이터베이스 내부 구조를 논문 단위로."
+       "Advanced database internals (query optimization, execution, transactions and modern cloud data platforms), paper by paper.",
+       "고급 데이터베이스 내부 구조(질의 최적화, 실행, 트랜잭션, 최신 클라우드 데이터 플랫폼)를 논문 단위로."
       ],
       [
        "Architecture of a Database System (Hellerstein, Stonebraker, Hamilton)",
@@ -940,8 +940,8 @@
        "Computational Complexity: A Modern Approach (Arora & Barak, draft)",
        "https://theory.cs.princeton.edu/complexity/book.pdf",
        "book",
-       "Part I (Ch. 1–11)",
-       "1부 (1~11장)",
+       "Part I (Ch. 1–10)",
+       "1부 (1~10장)",
        60,
        "The standard graduate complexity text; free draft.",
        "대학원 복잡도 이론 표준 교재. 무료 초안."
@@ -1131,17 +1131,7 @@
        "물리 기반 광선 추적기를 단계별로 만듭니다. 무료."
       ],
       [
-       "Scratchapixel",
-       "https://www.scratchapixel.com/",
-       "article",
-       "Rendering foundations lessons",
-       "렌더링 기초 강의",
-       20,
-       "Free, detailed lessons on the mathematics of rendering.",
-       "렌더링의 수학을 자세히 다룬 무료 강의."
-      ],
-      [
-       "NeRF: Representing Scenes as Neural Radiance Fields (2020)",
+       "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis (2020)",
        "https://arxiv.org/abs/2003.08934",
        "paper",
        "Full paper",
@@ -1209,7 +1199,7 @@
      "items": [
       [
        "IBM Quantum Learning",
-       "https://learning.quantum.ibm.com/",
+       "https://quantum.cloud.ibm.com/learning/en",
        "course",
        "Basics of Quantum Information + Fundamentals of Quantum Algorithms",
        "Basics of Quantum Information·Fundamentals of Quantum Algorithms",
@@ -1219,11 +1209,11 @@
       ],
       [
        "John Preskill — Quantum Computation lecture notes (Ph219)",
-       "http://theory.caltech.edu/~preskill/ph229/",
+       "https://preskill.caltech.edu/ph219/",
        "article",
-       "Ch. 1–4, 7",
-       "1~4장, 7장",
-       40,
+       "Ch. 1–7",
+       "1~7장",
+       55,
        "Classic notes covering quantum information, algorithms and error correction.",
        "양자 정보, 알고리즘, 오류 정정을 다룬 고전 강의노트."
       ],
@@ -1288,11 +1278,11 @@
        "Software Engineering at Google",
        "https://abseil.io/resources/swe-book",
        "book",
-       "Parts II–III",
-       "2~3부",
+       "Parts III–IV",
+       "3~4부",
        30,
-       "How a large organization handles code review, testing and dependencies; free online.",
-       "대규모 조직의 코드 리뷰, 테스트, 의존성 관리 방식. 무료 온라인."
+       "How a large organization handles code review, testing, dependencies, builds and CI; free online.",
+       "대규모 조직의 코드 리뷰, 테스트, 의존성, 빌드, CI 운영 방식. 무료 온라인."
       ],
       [
        "Site Reliability Engineering (Google)",

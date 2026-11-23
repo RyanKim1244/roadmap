@@ -30,8 +30,8 @@
      "stage": 4,
      "title": "A quantum computing feat brings the 'megaquops' era a step closer (Science News)",
      "url": "https://sciencenews.org/article/quantum-computer-megaquops-error-correction",
-     "why_en": "Reports Quantinuum's error-corrected logical qubits with about five errors per million operations, and explains the scaling factor that measures progress (Track H).",
-     "why_ko": "100만 번 연산에 오류가 약 5번인 Quantinuum의 오류 정정 논리 큐비트 결과를 전하고, 진척을 재는 척도를 설명합니다(트랙 H)."
+     "why_en": "Reports Quantinuum's error-corrected logical qubit (37 physical qubits on the Helios machine) with about five errors per million operations, and explains lambda, the scaling factor that measures progress (Track H).",
+     "why_ko": "Helios 장비의 물리 큐비트 37개로 만든 Quantinuum의 오류 정정 논리 큐비트가 100만 번 연산에 오류 약 5번을 기록한 결과를 전하고, 진척을 재는 척도인 람다를 설명합니다(트랙 H)."
     }
    ]
   }
