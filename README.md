@@ -9,7 +9,7 @@ A self-study syllabus that takes a university student from zero to doing AI rese
 | Stage | Content |
 |---|---|
 | 0–4 (core) | Tools → Math → Machine learning → Deep learning → Transformers & foundation models |
-| 5 (tracks) | A Post-training & reasoning · B Vision & multimodal · C Generative models · D RL, agents & robotics · E Interpretability & safety · F ML systems & efficiency |
+| 5 (tracks) | A Post-training & reasoning · B Vision, audio & multimodal · C Generative models · D RL, agents & robotics · E Interpretability & safety · F ML systems & efficiency · G AI for science & graph learning |
 | 6 | Entering research |
 | Frontier | 6–8 new papers, talks and reports across AI, updated every Monday (KST) |
 
@@ -20,6 +20,8 @@ Each stage and track lists key concepts, the exact scope of each resource with e
 - `index.html` — the page (no build step)
 - `data/curriculum.json` — stages, tracks and resources
 - `data/frontier.json` — weekly frontier items (`weeks[0]` is the current week; the last 8 weeks are kept)
+
+The page also includes a reality check: listed study hours, and what the roadmap does and does not give you.
 
 Checkmarks are stored in your browser only (`localStorage`).
 

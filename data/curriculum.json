@@ -150,7 +150,9 @@
      "MLE & MAP",
      "Entropy, cross-entropy, KL",
      "Gradient descent",
-     "Convexity"
+     "Convexity",
+     "Mutual information",
+     "Multivariable chain rule"
     ],
     [
      "합성으로서의 행렬곱",
@@ -164,7 +166,9 @@
      "MLE·MAP",
      "엔트로피·교차엔트로피·KL",
      "경사하강법",
-     "볼록성"
+     "볼록성",
+     "상호정보량",
+     "다변수 연쇄법칙"
     ]
    ],
    "items": [
@@ -199,6 +203,16 @@
      "미분, 연쇄법칙, 적분을 시각적으로."
     ],
     [
+     "MIT 18.02SC Multivariable Calculus",
+     "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+     "course",
+     "Units 1–3 (vectors, partial derivatives, multiple integrals)",
+     "1~3단원 (벡터, 편미분, 다중적분)",
+     30,
+     "Gradients in many dimensions: what backprop actually computes.",
+     "다차원 기울기. 역전파가 실제로 계산하는 대상."
+    ],
+    [
      "Harvard Stat 110 Probability",
      "https://projects.iq.harvard.edu/stat110",
      "course",
@@ -207,6 +221,16 @@
      40,
      "Free book and lecture videos are linked from the page.",
      "페이지에서 무료 교재와 강의 영상으로 연결됩니다."
+    ],
+    [
+     "Visual Information Theory (colah)",
+     "https://colah.github.io/posts/2015-09-Visual-Information/",
+     "article",
+     "Whole post",
+     "전체",
+     2,
+     "Entropy, cross-entropy, KL and mutual information, visually.",
+     "엔트로피, 교차엔트로피, KL, 상호정보량을 시각적으로."
     ],
     [
      "Mathematics for Machine Learning",
@@ -287,7 +311,9 @@
      "Evaluation metrics",
      "Data leakage",
      "k-means & PCA",
-     "Decision trees & ensembles"
+     "Decision trees & ensembles",
+     "Probabilistic graphical view",
+     "Bayesian inference basics"
     ],
     [
      "학습/검증/테스트 분할",
@@ -301,7 +327,9 @@
      "평가 지표",
      "데이터 누수",
      "k-평균·PCA",
-     "결정트리·앙상블"
+     "결정트리·앙상블",
+     "확률적 모델 관점",
+     "베이지안 추론 기초"
     ]
    ],
    "items": [
@@ -324,6 +352,16 @@
      35,
      "Gentle and practical; free PDF on the site.",
      "친절하고 실용적. 사이트에서 무료 PDF 제공."
+    ],
+    [
+     "Probabilistic Machine Learning: An Introduction (Murphy)",
+     "https://probml.github.io/pml-book/book1.html",
+     "book",
+     "Ch. 2–6, 10–11 (reference)",
+     "2~6장, 10~11장 (참고)",
+     30,
+     "The probabilistic view of ML that generative-model and Bayesian papers assume; free draft PDF.",
+     "생성모델·베이지안 논문이 전제하는 확률적 관점. 무료 초안 PDF."
     ],
     [
      "Dive into Deep Learning",
@@ -538,7 +576,11 @@
      "Data filtering & dedup",
      "Mixed precision",
      "Mixture of experts",
-     "Fine-tuning vs. in-context learning"
+     "Fine-tuning vs. in-context learning",
+     "State-space models",
+     "Pretraining data curation",
+     "Test-time compute",
+     "Evaluation harnesses"
     ],
     [
      "BPE 토크나이저",
@@ -555,7 +597,11 @@
      "데이터 필터링·중복 제거",
      "혼합 정밀도",
      "MoE",
-     "미세조정 vs 맥락 내 학습"
+     "미세조정 vs 맥락 내 학습",
+     "상태공간 모델",
+     "사전학습 데이터 정제",
+     "추론 시점 연산",
+     "평가 도구"
     ]
    ],
    "items": [
@@ -660,6 +706,16 @@
      "현재 많은 최신 모델이 쓰는 희소 전문가 층."
     ],
     [
+     "Mamba: Linear-Time Sequence Modeling with Selective State Spaces (2023)",
+     "https://arxiv.org/abs/2312.00752",
+     "paper",
+     "Sections 1–3",
+     "1~3절",
+     4,
+     "The main non-attention architecture family; needed to follow architecture debates.",
+     "어텐션이 아닌 대표 아키텍처 계열. 아키텍처 논쟁을 따라가려면 필요."
+    ],
+    [
      "LLaMA (2023)",
      "https://arxiv.org/abs/2302.13971",
      "paper",
@@ -668,6 +724,26 @@
      3,
      "A clean recipe for an open foundation model.",
      "공개 기반 모델의 깔끔한 레시피."
+    ],
+    [
+     "The FineWeb Datasets (2024)",
+     "https://arxiv.org/abs/2406.17557",
+     "paper",
+     "Full paper",
+     "전문",
+     3,
+     "How pretraining data is filtered and deduplicated at scale; data is half the story.",
+     "대규모 사전학습 데이터의 필터링·중복 제거. 데이터가 성능의 절반을 좌우합니다."
+    ],
+    [
+     "Scaling LLM Test-Time Compute Optimally (2024)",
+     "https://arxiv.org/abs/2408.03314",
+     "paper",
+     "Full paper",
+     "전문",
+     3,
+     "Spending compute at inference instead of training; central to reasoning models.",
+     "학습 대신 추론 시점에 연산을 쓰는 전략. 추론 모델의 핵심."
     ],
     [
      "karpathy/nanoGPT",
@@ -708,6 +784,16 @@
      12,
      "The tooling you will actually use for experiments.",
      "실제 실험에서 쓰게 될 도구 사용법."
+    ],
+    [
+     "EleutherAI lm-evaluation-harness",
+     "https://github.com/EleutherAI/lm-evaluation-harness",
+     "code",
+     "Run 3 benchmarks on your own model",
+     "직접 만든 모델로 벤치마크 3개 실행",
+     6,
+     "The standard way papers evaluate language models; learn how numbers are produced.",
+     "논문들이 언어모델을 평가하는 표준 도구. 숫자가 어떻게 나오는지 익히기."
     ]
    ],
    "proj": [
@@ -920,12 +1006,12 @@
     {
      "id": "B",
      "name": [
-      "Vision & multimodal",
-      "비전·멀티모달"
+      "Vision, audio & multimodal",
+      "비전·음성·멀티모달"
      ],
      "goal": [
-      "How models see: from convolutions to vision Transformers, self-supervised learning and vision-language models.",
-      "모델이 보는 방법: 합성곱에서 비전 트랜스포머, 자기지도학습, 시각-언어 모델까지."
+      "How models see and hear: vision Transformers, self-supervised learning, speech models and vision-language models.",
+      "모델이 보고 듣는 방법: 비전 트랜스포머, 자기지도학습, 음성 모델, 시각-언어 모델."
      ],
      "concepts": [
       [
@@ -938,7 +1024,9 @@
        "Detection & segmentation",
        "Vision-language models",
        "Visual instruction tuning",
-       "Dataset curation & duplicates"
+       "Dataset curation & duplicates",
+       "Spectrograms & audio tokens",
+       "Speech recognition"
       ],
       [
        "합성곱·수용 영역",
@@ -950,7 +1038,9 @@
        "검출·분할",
        "시각-언어 모델",
        "시각 지시 튜닝",
-       "데이터셋 정제·중복"
+       "데이터셋 정제·중복",
+       "스펙트로그램·오디오 토큰",
+       "음성 인식"
       ]
      ],
      "items": [
@@ -1013,6 +1103,26 @@
        3,
        "Connecting a vision encoder to a language model.",
        "비전 인코더를 언어모델에 연결하는 방법."
+      ],
+      [
+       "wav2vec 2.0 (2020)",
+       "https://arxiv.org/abs/2006.11477",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Self-supervised learning for speech.",
+       "음성의 자기지도학습."
+      ],
+      [
+       "Whisper: Robust Speech Recognition via Large-Scale Weak Supervision (2022)",
+       "https://arxiv.org/abs/2212.04356",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Scaling weakly supervised speech recognition.",
+       "약지도 음성 인식의 대규모화."
       ]
      ],
      "proj": [
@@ -1605,6 +1715,109 @@
        "워밍업이나 GPU 동기화 없이 벤치마크하기."
       ]
      ]
+    },
+    {
+     "id": "G",
+     "name": [
+      "AI for science & graph learning",
+      "과학을 위한 AI·그래프 학습"
+     ],
+     "goal": [
+      "Models for molecules, materials, weather and other structured scientific data.",
+      "분자, 소재, 날씨 등 구조화된 과학 데이터를 위한 모델."
+     ],
+     "concepts": [
+      [
+       "Graphs & message passing",
+       "Permutation invariance & equivariance",
+       "Graph convolution",
+       "Geometric deep learning",
+       "Molecular representations",
+       "Physical symmetries",
+       "Scientific benchmarks & baselines",
+       "Domain-expert collaboration"
+      ],
+      [
+       "그래프·메시지 전달",
+       "순열 불변성·등변성",
+       "그래프 합성곱",
+       "기하학적 딥러닝",
+       "분자 표현",
+       "물리적 대칭",
+       "과학 벤치마크·기준선",
+       "분야 전문가와의 협업"
+      ]
+     ],
+     "items": [
+      [
+       "Stanford CS224W Machine Learning with Graphs",
+       "https://web.stanford.edu/class/cs224w/",
+       "course",
+       "Lectures + Colabs",
+       "강의 + Colab 실습",
+       40,
+       "The standard course on graph neural networks.",
+       "그래프 신경망의 표준 강의."
+      ],
+      [
+       "Semi-Supervised Classification with Graph Convolutional Networks (2016)",
+       "https://arxiv.org/abs/1609.02907",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "The GCN layer.",
+       "GCN 층."
+      ],
+      [
+       "Neural Message Passing for Quantum Chemistry (2017)",
+       "https://arxiv.org/abs/1704.01212",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Message passing as a unifying framework, applied to molecules.",
+       "분자에 적용한 메시지 전달 통합 프레임워크."
+      ],
+      [
+       "Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges (2021)",
+       "https://arxiv.org/abs/2104.13478",
+       "paper",
+       "Ch. 1–5",
+       "1~5장",
+       10,
+       "Symmetry as the organizing principle behind CNNs, GNNs and Transformers.",
+       "CNN·GNN·Transformer를 대칭으로 묶어 보는 관점."
+      ],
+      [
+       "GraphCast: Medium-Range Global Weather Forecasting (2022)",
+       "https://arxiv.org/abs/2212.12794",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "A graph model that forecasts weather; a landmark of AI for science.",
+       "날씨를 예측하는 그래프 모델. 과학을 위한 AI의 대표 사례."
+      ]
+     ],
+     "proj": [
+      "Implement a GCN and a message-passing network from scratch, train both on a public molecular property dataset, and compare against a simple fingerprint-based baseline.",
+      "GCN과 메시지 전달 신경망을 처음부터 구현해 공개 분자 물성 데이터셋으로 학습시키고, 단순한 지문(fingerprint) 기반 기준선과 비교합니다."
+     ],
+     "exit": [
+      "Explain why message passing is permutation-equivariant and show your model beats (or honestly fails to beat) the baseline.",
+      "메시지 전달이 순열 등변인 이유를 설명하고, 모델이 기준선을 이기는지(또는 못 이기는지) 정직하게 보일 수 있다."
+     ],
+     "pit": [
+      [
+       "Skipping strong domain baselines.",
+       "분야의 강한 기준선을 건너뛰기."
+      ],
+      [
+       "Random splits that leak near-duplicate molecules.",
+       "유사 분자가 새어 나가는 무작위 분할."
+      ]
+     ]
     }
    ]
   },
@@ -1643,7 +1856,9 @@
      "Related-work search",
      "Writing: abstract, figures",
      "Open-sourcing code",
-     "Finding collaborators"
+     "Finding collaborators",
+     "Reading trees (references & citations)",
+     "Statistical comparison of models"
     ],
     [
      "연구 질문 설정",
@@ -1653,7 +1868,9 @@
      "관련 연구 조사",
      "글쓰기: 초록·그림",
      "코드 공개",
-     "협업자 찾기"
+     "협업자 찾기",
+     "읽기 계통도(참고문헌·인용)",
+     "모델의 통계적 비교"
     ]
    ],
    "items": [
@@ -1676,6 +1893,26 @@
      2,
      "On choosing important problems.",
      "중요한 문제를 고르는 법."
+    ],
+    [
+     "Adding Error Bars to Evals (2024)",
+     "https://arxiv.org/abs/2411.00640",
+     "paper",
+     "Full paper",
+     "전문",
+     2,
+     "Statistics for comparing models honestly.",
+     "모델을 정직하게 비교하기 위한 통계."
+    ],
+    [
+     "Semantic Scholar",
+     "https://www.semanticscholar.org/",
+     "practice",
+     "Build a reading tree for each frontier paper",
+     "최전선 논문마다 읽기 계통도 만들기",
+     4,
+     "Follow references backward and citations forward until the prerequisites are covered.",
+     "참고문헌은 거꾸로, 인용은 앞으로 따라가며 선수 지식을 채웁니다."
     ],
     [
      "Hugging Face Daily Papers",
