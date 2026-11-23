@@ -391,8 +391,8 @@
      "MIT 8.03SC Physics III: Vibrations and Waves",
      "https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/",
      "course",
-     "Units 1–4",
-     "1~4단원",
+     "Lectures 1–24 (Parts I–III) + problem sets",
+     "1~24강 (1~3부) + 문제풀이",
      30,
      "Waves and optics, needed for lithography and photonics.",
      "리소그래피와 광소자에 필요한 파동과 광학."
@@ -411,8 +411,8 @@
      "MIT 8.044 Statistical Physics I",
      "https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/",
      "course",
-     "All lectures",
-     "전체 강의",
+     "Lecture notes + problem sets",
+     "강의노트 + 문제풀이",
      40,
      "Distributions and thermodynamics behind carrier statistics.",
      "운반자 통계 뒤의 분포와 열역학."
@@ -431,8 +431,8 @@
      "MIT 3.024 Electronic, Optical and Magnetic Properties of Materials",
      "https://ocw.mit.edu/courses/3-024-electronic-optical-and-magnetic-properties-of-materials-spring-2013/",
      "course",
-     "All lectures",
-     "전체 강의",
+     "Lecture notes + recitations",
+     "강의노트 + 리시테이션",
      40,
      "Band theory and how it explains semiconductors.",
      "띠 이론과 그것이 반도체를 설명하는 방식."
@@ -441,11 +441,11 @@
      "MIT 8.231 Physics of Solids I",
      "https://ocw.mit.edu/courses/8-231-physics-of-solids-i-fall-2006/",
      "course",
-     "Lecture notes (optional)",
-     "강의노트 (선택)",
+     "Problem sets + Kittel readings (optional)",
+     "문제풀이 + Kittel 읽기 (선택)",
      30,
-     "Graduate-level solid-state physics for device researchers.",
-     "소자 연구자를 위한 대학원 수준 고체물리."
+     "Undergraduate quantum theory of solids (Kittel-based), for extra depth before device research.",
+     "Kittel 기반 학부 수준 고체 양자론. 소자 연구 전에 깊이를 더할 때."
     ]
    ],
    "proj": [
@@ -770,8 +770,8 @@
        "유일한 공급사가 설명하는 EUV 노광기의 광원과 광학."
       ],
       [
-       "MIT 6.780J Semiconductor Manufacturing",
-       "https://ocw.mit.edu/courses/6-780j-semiconductor-manufacturing-spring-2003/",
+       "MIT 6.780 Semiconductor Manufacturing",
+       "https://ocw.mit.edu/courses/6-780-semiconductor-manufacturing-spring-2003/",
        "course",
        "Lecture notes",
        "강의노트",
@@ -893,8 +893,8 @@
        "Read the documentation",
        "문서 읽기",
        4,
-       "An open process design kit for a real 130 nm process.",
-       "실제 130 nm 공정의 공개 공정 설계 키트."
+       "An open process design kit for a real 180–130 nm hybrid process.",
+       "실제 180~130 nm 혼합 공정의 공개 공정 설계 키트."
       ],
       [
        "Chip Placement with Deep Reinforcement Learning (2020)",
@@ -1004,7 +1004,7 @@
        "작고 희소한 신경망을 위한 유연한 데이터플로 가속기."
       ],
       [
-       "Gemmini: An Agile Systolic Array Generator (2019)",
+       "Gemmini: Enabling Systematic Deep-Learning Architecture Evaluation via Full-Stack Integration (2019)",
        "https://arxiv.org/abs/1911.09925",
        "paper",
        "Full paper",

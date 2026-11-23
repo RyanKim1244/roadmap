@@ -163,10 +163,10 @@
     ],
     [
      "Biopython Tutorial and Cookbook",
-     "https://biopython.org/DIST/docs/tutorial/Tutorial.html",
+     "https://biopython.org/docs/latest/Tutorial/index.html",
      "book",
-     "Ch. 1–5",
-     "1~5장",
+     "Ch. 1–5 + the BLAST chapter",
+     "1~5장 + BLAST 장",
      8,
      "Reading sequences, FASTA/GenBank files and running BLAST from Python.",
      "Python으로 서열과 FASTA·GenBank 파일을 읽고 BLAST 실행하기."
@@ -268,9 +268,9 @@
      "MIT 18.03SC Differential Equations",
      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
      "course",
-     "Units 1–2",
-     "1~2단원",
-     25,
+     "Units 1, 2 and 4",
+     "1·2·4단원",
+     35,
      "ODEs for kinetics, population and gene-circuit models.",
      "반응 속도, 개체군, 유전자 회로 모델을 위한 상미분방정식."
     ],
@@ -497,11 +497,11 @@
      "막, 수송, 신호 전달, 세포 주기."
     ],
     [
-     "MIT 7.28 Molecular Biology",
-     "https://ocw.mit.edu/courses/7-28-molecular-biology-spring-2005/",
+     "MIT 7.28 Molecular Biology (archived OCW, Spring 2005)",
+     "https://dspace.mit.edu/handle/1721.1/151754",
      "course",
-     "Lecture notes",
-     "강의노트",
+     "Archived course site: lecture notes",
+     "보관된 강의 사이트: 강의노트",
      30,
      "DNA replication, repair, transcription and translation at research depth.",
      "연구 수준의 DNA 복제, 수선, 전사, 번역."
@@ -843,8 +843,8 @@
        "국제 합성생물학 대회. 과거 프로젝트에서 학생이 만들 수 있는 것을 볼 수 있습니다."
       ],
       [
-       "MIT 7.32 Systems Biology",
-       "https://ocw.mit.edu/courses/7-32-systems-biology-fall-2014/",
+       "MIT 8.591J Systems Biology (also 7.32)",
+       "https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/",
        "course",
        "All lectures",
        "전체 강의",
@@ -971,7 +971,7 @@
       ],
       [
        "DeepChem tutorials",
-       "https://deepchem.io/",
+       "https://deepchem.io/tutorials/",
        "code",
        "First 5 tutorials",
        "처음 5개 튜토리얼",
@@ -1040,8 +1040,8 @@
        "MIT 9.01 Introduction to Neuroscience",
        "https://ocw.mit.edu/courses/9-01-introduction-to-neuroscience-fall-2007/",
        "course",
-       "All lectures",
-       "전체 강의",
+       "Lecture notes + readings",
+       "강의노트 + 읽기 자료",
        35,
        "Cellular, systems and behavioural neuroscience.",
        "세포·시스템·행동 신경과학."
@@ -1238,8 +1238,8 @@
    3,
    "Online summer courses in computational neuroscience and related fields, with mentored group projects.",
    "계산신경과학 등의 온라인 여름 과정으로, 멘토가 있는 그룹 프로젝트를 진행합니다.",
-   "Applications usually open in spring.",
-   "지원은 보통 봄에 시작합니다."
+   "Applications usually open in February and close in mid-March; courses run in July.",
+   "지원은 보통 2월에 시작해 3월 중순에 마감하며, 과정은 7월에 진행됩니다."
   ],
   [
    [
