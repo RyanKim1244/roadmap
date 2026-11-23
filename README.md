@@ -15,7 +15,7 @@ Self-study syllabi that take a university student from zero to following frontie
 
 Each stage and track lists key concepts, the exact scope of each resource with estimated hours, a hands-on project, an exit criterion and common mistakes.
 
-The semiconductor route (math & physics → devices & circuits → 5 tracks → research) and the bio route (foundations → molecular & cell biology → 4 tracks → research) are first versions and are being expanded.
+The semiconductor route runs tools → math → physics & materials → devices, circuits & digital systems → 5 tracks (devices & materials, fabrication & lithography, chip design & EDA, architecture & AI hardware, packaging & industry) → research. The bio route runs tools → math & statistics → chemistry → molecular & cell biology → 5 tracks (genomics, protein structure & design, gene editing & synthetic biology, drug discovery, neuroscience) → research.
 
 ## Files
 

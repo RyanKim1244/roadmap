@@ -1,5 +1,5 @@
 {
- "version": 1,
+ "version": 2,
  "name": [
   "Semiconductors",
   "반도체"
@@ -12,56 +12,244 @@
   "A path from first-year university level to following frontier semiconductor research: devices and materials, fabrication, chip design, computer architecture and AI hardware, and packaging. The frontier section collects recent conference results and industry reports.",
   "대학 1학년 수준에서 출발해 반도체 최전선 연구를 따라갈 수 있는 수준까지 가는 길입니다. 소자와 소재, 공정, 칩 설계, 컴퓨터 구조와 AI 하드웨어, 패키징을 다루며, 최전선 구간에는 최근 학회 결과와 업계 리포트를 모읍니다."
  ],
+ "coverage": {
+  "yes": [
+   [
+    "Enough device physics, circuits and architecture to follow most frontier conference papers in one track.",
+    "한 트랙에서 최전선 학회 논문 대부분을 따라갈 만큼의 소자 물리, 회로, 구조 지식."
+   ],
+   [
+    "A map of which community and venue each kind of result belongs to.",
+    "어떤 결과가 어느 공동체·학회에 속하는지에 대한 지도."
+   ]
+  ],
+  "no": [
+   [
+    "Hands-on fab experience; that requires cleanroom access through a university lab or company.",
+    "실제 공정 경험. 대학 연구실이나 기업을 통한 클린룸 접근이 필요합니다."
+   ],
+   [
+    "Full access to papers; many IEEE conference papers are paywalled, so a university library account matters.",
+    "논문 전체 열람. IEEE 학회 논문 상당수가 유료라 대학 도서관 계정이 중요합니다."
+   ],
+   [
+    "Proprietary process know-how, which stays inside foundries.",
+    "파운드리 내부에 머무는 독점 공정 노하우."
+   ]
+  ]
+ },
+ "sources": [
+  [
+   "IEEE Spectrum — Semiconductors",
+   "https://spectrum.ieee.org/semiconductors",
+   "Accessible news on devices and manufacturing",
+   "소자·제조 분야의 이해하기 쉬운 뉴스"
+  ],
+  [
+   "arXiv cs.AR — recent",
+   "https://arxiv.org/list/cs.AR/recent",
+   "Architecture and accelerator preprints",
+   "구조·가속기 프리프린트"
+  ],
+  [
+   "IEDM",
+   "https://www.ieee-iedm.org/",
+   "The main device conference, every December",
+   "매년 12월 열리는 대표 소자 학회"
+  ],
+  [
+   "IRDS",
+   "https://irds.ieee.org/",
+   "Industry roadmap for devices and systems",
+   "소자·시스템 업계 로드맵"
+  ],
+  [
+   "Hot Chips",
+   "https://hotchips.org/",
+   "Industry talks on processors and accelerators",
+   "프로세서·가속기에 대한 업계 발표"
+  ]
+ ],
  "stages": [
   {
    "n": 0,
    "name": [
-    "Math & physics",
-    "수학·물리"
+    "Tools",
+    "도구"
    ],
    "short": [
-    "Math & physics",
-    "수학·물리"
+    "Tools",
+    "도구"
    ],
    "goal": [
-    "The mathematics and physics that device papers assume.",
-    "소자 논문이 전제하는 수학과 물리."
+    "Programming, numerical computing and circuit/layout tools.",
+    "프로그래밍, 수치 계산, 회로·레이아웃 도구."
    ],
    "dur": [
-    "10–14 weeks",
-    "10~14주"
+    "3–4 weeks",
+    "3~4주"
    ],
    "pre": [
-    "High-school physics and calculus",
-    "고교 물리·미적분"
+    "None",
+    "없음"
    ],
    "why": [
-    "Transistors are quantum-mechanical devices governed by electromagnetism and statistical physics. Without this layer, device papers read as a list of numbers rather than an argument.",
-    "트랜지스터는 전자기학과 통계물리가 지배하는 양자역학적 소자입니다. 이 층이 없으면 소자 논문은 논증이 아니라 숫자의 나열로 읽힙니다."
+    "Device modelling, data analysis and chip design are all done in code. These tools carry through every later stage.",
+    "소자 모델링, 데이터 분석, 칩 설계는 모두 코드로 합니다. 이 도구들은 이후 모든 단계에서 쓰입니다."
    ],
    "concepts": [
     [
-     "Linear algebra",
-     "Vector calculus",
-     "Maxwell's equations",
-     "Wave functions & Schrödinger equation",
-     "Band structure basics",
-     "Fermi–Dirac statistics",
-     "Crystal structure",
-     "Chemical bonding"
+     "Python & NumPy",
+     "Git & shell",
+     "Numerical methods",
+     "Plotting",
+     "SPICE simulation",
+     "Layout viewing"
     ],
     [
-     "선형대수",
-     "벡터 미적분",
-     "맥스웰 방정식",
-     "파동함수·슈뢰딩거 방정식",
-     "띠 구조 기초",
-     "페르미-디랙 통계",
-     "결정 구조",
-     "화학 결합"
+     "Python·NumPy",
+     "Git·셸",
+     "수치 해석",
+     "그래프 그리기",
+     "SPICE 시뮬레이션",
+     "레이아웃 보기"
     ]
    ],
    "items": [
+    [
+     "Python Tutorial (official)",
+     "https://docs.python.org/3/tutorial/",
+     "book",
+     "Ch. 1–9",
+     "1~9장",
+     15,
+     "Up to classes, iterators and generators.",
+     "클래스, 이터레이터, 제너레이터까지.",
+     "https://docs.python.org/ko/3/tutorial/"
+    ],
+    [
+     "MIT — The Missing Semester",
+     "https://missing.csail.mit.edu/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     12,
+     "Shell, Git, editors, debugging: the research workbench.",
+     "셸, Git, 에디터, 디버깅 등 연구용 작업 환경."
+    ],
+    [
+     "NumPy quickstart",
+     "https://numpy.org/doc/stable/user/quickstart.html",
+     "article",
+     "Whole page",
+     "전체",
+     4,
+     "Array operations and broadcasting rules.",
+     "배열 연산과 브로드캐스팅 규칙."
+    ],
+    [
+     "Scientific Python Lectures",
+     "https://lectures.scientific-python.org/",
+     "course",
+     "Getting started + NumPy, SciPy, Matplotlib chapters",
+     "시작하기 + NumPy·SciPy·Matplotlib 장",
+     15,
+     "Numerical computing and plotting for scientists.",
+     "과학자를 위한 수치 계산과 그래프."
+    ],
+    [
+     "ngspice",
+     "https://ngspice.sourceforge.io/",
+     "code",
+     "Tutorial + run a transistor-level circuit",
+     "튜토리얼 + 트랜지스터 수준 회로 실행",
+     6,
+     "Open-source SPICE circuit simulator.",
+     "오픈소스 SPICE 회로 시뮬레이터."
+    ],
+    [
+     "KLayout",
+     "https://www.klayout.de/",
+     "code",
+     "Open and inspect an example layout",
+     "예제 레이아웃 열어 살펴보기",
+     3,
+     "Open-source viewer and editor for chip layouts (GDS).",
+     "칩 레이아웃(GDS)을 보고 편집하는 오픈소스 도구."
+    ]
+   ],
+   "proj": [
+    "Write a Python script that solves Poisson's equation in 1D numerically for a pn junction and plots the band diagram.",
+    "pn 접합의 1차원 푸아송 방정식을 수치로 푸는 Python 스크립트를 작성해 띠 다이어그램을 그립니다."
+   ],
+   "exit": [
+    "You can simulate a simple circuit in ngspice and analyse the results in Python.",
+    "ngspice로 간단한 회로를 시뮬레이션하고 결과를 Python으로 분석할 수 있다."
+   ],
+   "pit": [
+    [
+     "Doing numerical work in spreadsheets instead of code.",
+     "수치 작업을 코드 대신 스프레드시트로 하기."
+    ]
+   ]
+  },
+  {
+   "n": 1,
+   "name": [
+    "Mathematics",
+    "수학"
+   ],
+   "short": [
+    "Math",
+    "수학"
+   ],
+   "goal": [
+    "Linear algebra, calculus, differential equations, Fourier analysis and probability.",
+    "선형대수, 미적분, 미분방정식, 푸리에 해석, 확률."
+   ],
+   "dur": [
+    "8–12 weeks",
+    "8~12주"
+   ],
+   "pre": [
+    "High-school calculus",
+    "고교 미적분"
+   ],
+   "why": [
+    "Device physics is written in differential equations and linear algebra; circuits in Fourier and Laplace transforms; manufacturing in statistics.",
+    "소자 물리는 미분방정식과 선형대수로, 회로는 푸리에·라플라스 변환으로, 제조는 통계로 쓰여 있습니다."
+   ],
+   "concepts": [
+    [
+     "Eigenvalues",
+     "Vector calculus",
+     "Linear ODEs",
+     "Fourier series & transforms",
+     "Laplace transforms",
+     "Probability distributions",
+     "Statistics of variation"
+    ],
+    [
+     "고유값",
+     "벡터 미적분",
+     "선형 상미분방정식",
+     "푸리에 급수·변환",
+     "라플라스 변환",
+     "확률분포",
+     "편차의 통계"
+    ]
+   ],
+   "items": [
+    [
+     "3Blue1Brown — Linear algebra series",
+     "https://www.3blue1brown.com/lessons/vectors",
+     "video",
+     "All chapters",
+     "전 챕터",
+     4,
+     "Geometric intuition first.",
+     "직관 먼저."
+    ],
     [
      "MIT 18.06 Linear Algebra (Gilbert Strang)",
      "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
@@ -69,8 +257,8 @@
      "Lectures 1–25 + problem sets",
      "1~25강 + 문제풀이",
      40,
-     "Matrices and eigenvalues for quantum mechanics and circuit analysis.",
-     "양자역학과 회로 해석에 쓰는 행렬과 고유값."
+     "Matrices and eigenvalues, used throughout physics and data analysis.",
+     "물리와 데이터 분석 전반에 쓰이는 행렬과 고유값."
     ],
     [
      "MIT 18.02SC Multivariable Calculus",
@@ -79,8 +267,115 @@
      "Units 1–4",
      "1~4단원",
      35,
-     "Vector calculus for electromagnetism and transport equations.",
-     "전자기학과 수송 방정식에 쓰는 벡터 미적분."
+     "Vector calculus for fields and transport.",
+     "장(field)과 수송을 다루는 벡터 미적분."
+    ],
+    [
+     "MIT 18.03SC Differential Equations",
+     "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+     "course",
+     "Units 1–3",
+     "1~3단원",
+     35,
+     "ODEs, linear systems and Fourier series.",
+     "상미분방정식, 선형 시스템, 푸리에 급수."
+    ],
+    [
+     "3Blue1Brown — But what is the Fourier Transform?",
+     "https://www.3blue1brown.com/lessons/fourier-transforms",
+     "video",
+     "Whole lesson",
+     "전체",
+     1,
+     "A visual introduction to Fourier transforms.",
+     "푸리에 변환의 시각적 입문."
+    ],
+    [
+     "Harvard Stat 110 Probability",
+     "https://projects.iq.harvard.edu/stat110",
+     "course",
+     "Lectures + book Ch. 1–9",
+     "강의 + 교재 1~9장",
+     40,
+     "Free book and lecture videos are linked from the page.",
+     "페이지에서 무료 교재와 강의 영상으로 연결됩니다."
+    ]
+   ],
+   "proj": [
+    "Solve an RC and an RLC circuit analytically with ODEs and with Laplace transforms, then check against an ngspice simulation.",
+    "RC·RLC 회로를 미분방정식과 라플라스 변환으로 풀고, ngspice 시뮬레이션과 비교합니다."
+   ],
+   "exit": [
+    "Explain how a Fourier transform turns a circuit's time response into its frequency response.",
+    "푸리에 변환이 회로의 시간 응답을 주파수 응답으로 바꾸는 방식을 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Skipping probability; process variation and yield are statistical problems.",
+     "확률을 건너뛰기. 공정 편차와 수율은 통계 문제입니다."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "name": [
+    "Physics & materials",
+    "물리·소재"
+   ],
+   "short": [
+    "Physics",
+    "물리·소재"
+   ],
+   "goal": [
+    "Mechanics, electromagnetism, waves, quantum and statistical physics, and solid-state materials.",
+    "역학, 전자기학, 파동, 양자·통계물리, 고체 소재."
+   ],
+   "dur": [
+    "14–20 weeks",
+    "14~20주"
+   ],
+   "pre": [
+    "Stage 1",
+    "1단계"
+   ],
+   "why": [
+    "Transistors are quantum-mechanical devices governed by electromagnetism and statistical physics. Without this layer, device papers read as a list of numbers rather than an argument.",
+    "트랜지스터는 전자기학과 통계물리가 지배하는 양자역학적 소자입니다. 이 층이 없으면 소자 논문은 논증이 아니라 숫자의 나열로 읽힙니다."
+   ],
+   "concepts": [
+    [
+     "Maxwell's equations",
+     "Waves & optics",
+     "Schrödinger equation & tunnelling",
+     "Fermi–Dirac statistics",
+     "Crystal structure & reciprocal lattice",
+     "Band structure",
+     "Effective mass",
+     "Doping & carrier statistics",
+     "Phonons"
+    ],
+    [
+     "맥스웰 방정식",
+     "파동·광학",
+     "슈뢰딩거 방정식·터널링",
+     "페르미-디랙 통계",
+     "결정 구조·역격자",
+     "띠 구조",
+     "유효 질량",
+     "도핑·운반자 통계",
+     "포논"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 8.01SC Classical Mechanics",
+     "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
+     "course",
+     "Weeks 1–8",
+     "1~8주차",
+     30,
+     "Mechanics and energy, the base of all physics courses.",
+     "모든 물리 과목의 바탕이 되는 역학과 에너지."
     ],
     [
      "MIT 8.02 Physics II: Electricity and Magnetism",
@@ -93,14 +388,34 @@
      "전기장, 전위, 정전용량, 맥스웰 방정식."
     ],
     [
+     "MIT 8.03SC Physics III: Vibrations and Waves",
+     "https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/",
+     "course",
+     "Units 1–4",
+     "1~4단원",
+     30,
+     "Waves and optics, needed for lithography and photonics.",
+     "리소그래피와 광소자에 필요한 파동과 광학."
+    ],
+    [
      "MIT 8.04 Quantum Physics I",
      "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/",
      "course",
      "Lectures + problem sets",
      "강의 + 문제풀이",
      50,
-     "Wave functions, tunnelling and bound states — the basis of band theory.",
-     "파동함수, 터널링, 속박 상태. 띠 이론의 기초."
+     "Wave functions, tunnelling and bound states.",
+     "파동함수, 터널링, 속박 상태."
+    ],
+    [
+     "MIT 8.044 Statistical Physics I",
+     "https://ocw.mit.edu/courses/8-044-statistical-physics-i-spring-2013/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "Distributions and thermodynamics behind carrier statistics.",
+     "운반자 통계 뒤의 분포와 열역학."
     ],
     [
      "MIT 3.091 Introduction to Solid-State Chemistry",
@@ -111,11 +426,31 @@
      40,
      "Bonding, crystals, defects and doping from the materials side.",
      "소재 관점의 결합, 결정, 결함, 도핑."
+    ],
+    [
+     "MIT 3.024 Electronic, Optical and Magnetic Properties of Materials",
+     "https://ocw.mit.edu/courses/3-024-electronic-optical-and-magnetic-properties-of-materials-spring-2013/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "Band theory and how it explains semiconductors.",
+     "띠 이론과 그것이 반도체를 설명하는 방식."
+    ],
+    [
+     "MIT 8.231 Physics of Solids I",
+     "https://ocw.mit.edu/courses/8-231-physics-of-solids-i-fall-2006/",
+     "course",
+     "Lecture notes (optional)",
+     "강의노트 (선택)",
+     30,
+     "Graduate-level solid-state physics for device researchers.",
+     "소자 연구자를 위한 대학원 수준 고체물리."
     ]
    ],
    "proj": [
-    "Compute the energy levels of a finite quantum well numerically in Python and compare to the analytic infinite-well result; extend to a 1D periodic potential to see bands appear.",
-    "유한 양자우물의 에너지 준위를 Python으로 수치 계산해 무한 우물 해와 비교하고, 1차원 주기 퍼텐셜로 확장해 띠가 생기는 모습을 확인합니다."
+    "Compute band structures numerically: a 1D Kronig–Penney model, then a 2D tight-binding model of graphene, and relate the results to effective mass.",
+    "띠 구조를 수치로 계산합니다. 1차원 크로니히-페니 모형, 2차원 그래핀 강결합 모형을 계산하고 유효 질량과 연결합니다."
    ],
    "exit": [
     "Explain, from quantum mechanics, why a crystal has energy bands and why doping changes conductivity.",
@@ -129,26 +464,26 @@
    ]
   },
   {
-   "n": 1,
+   "n": 3,
    "name": [
-    "Devices & circuits",
-    "소자·회로"
+    "Devices, circuits & digital systems",
+    "소자·회로·디지털 시스템"
    ],
    "short": [
     "Devices",
     "소자·회로"
    ],
    "goal": [
-    "How transistors work and how they combine into circuits and digital systems.",
-    "트랜지스터가 어떻게 동작하고, 회로와 디지털 시스템으로 어떻게 결합되는지."
+    "How transistors work and how they combine into analog circuits, digital logic and processors.",
+    "트랜지스터가 어떻게 동작하고, 아날로그 회로·디지털 논리·프로세서로 어떻게 결합되는지."
    ],
    "dur": [
-    "10–14 weeks",
-    "10~14주"
+    "12–16 weeks",
+    "12~16주"
    ],
    "pre": [
-    "Stage 0",
-    "0단계"
+    "Stage 2",
+    "2단계"
    ],
    "why": [
     "Every frontier topic — new transistor architectures, memory, AI accelerators — is judged by its effect on device characteristics and circuit-level performance, power and area.",
@@ -160,8 +495,9 @@
      "MOSFET operation",
      "Threshold voltage & subthreshold swing",
      "Short-channel effects",
-     "CMOS logic",
      "Small-signal models",
+     "CMOS logic & inverters",
+     "Interconnect delay",
      "Digital abstraction",
      "Pipelining",
      "Memory hierarchy",
@@ -172,8 +508,9 @@
      "MOSFET 동작",
      "문턱전압·문턱 이하 기울기",
      "단채널 효과",
-     "CMOS 논리",
      "소신호 모델",
+     "CMOS 논리·인버터",
+     "배선 지연",
      "디지털 추상화",
      "파이프라이닝",
      "메모리 계층",
@@ -220,11 +557,31 @@
      45,
      "From gates to a working processor: the digital abstraction.",
      "게이트에서 동작하는 프로세서까지. 디지털 추상화."
+    ],
+    [
+     "MIT 6.374 Analysis and Design of Digital Integrated Circuits",
+     "https://ocw.mit.edu/courses/6-374-analysis-and-design-of-digital-integrated-circuits-fall-2003/",
+     "course",
+     "Lecture notes",
+     "강의노트",
+     30,
+     "CMOS gates, interconnect, timing and power at the transistor level.",
+     "트랜지스터 수준의 CMOS 게이트, 배선, 타이밍, 전력."
+    ],
+    [
+     "A New Golden Age for Computer Architecture (Hennessy & Patterson)",
+     "https://cacm.acm.org/research/a-new-golden-age-for-computer-architecture/",
+     "article",
+     "Whole article",
+     "전체",
+     2,
+     "Why the end of Dennard scaling pushed the field toward domain-specific hardware.",
+     "데나드 스케일링의 종말이 왜 분야를 특정 용도 하드웨어로 이끌었는지."
     ]
    ],
    "proj": [
-    "Simulate a CMOS inverter and a ring oscillator in an open-source SPICE (ngspice) and measure delay and power as you change supply voltage and device sizing.",
-    "오픈소스 SPICE(ngspice)로 CMOS 인버터와 링 발진기를 시뮬레이션하고, 전원 전압과 소자 크기를 바꾸며 지연과 전력을 측정합니다."
+    "Simulate a CMOS inverter and ring oscillator in ngspice, measure delay and power versus supply voltage and sizing, and write up the PPA trade-off.",
+    "ngspice로 CMOS 인버터와 링 발진기를 시뮬레이션하고, 전원 전압과 크기에 따른 지연과 전력을 측정해 PPA 상충 관계를 정리합니다."
    ],
    "exit": [
     "Derive the MOSFET drain current in saturation and explain why subthreshold swing cannot beat 60 mV/decade at room temperature in a conventional transistor.",
@@ -238,7 +595,7 @@
    ]
   },
   {
-   "n": 2,
+   "n": 4,
    "name": [
     "Specialization tracks",
     "전문 트랙"
@@ -256,8 +613,8 @@
     "트랙당 10~16주"
    ],
    "pre": [
-    "Stage 1",
-    "1단계"
+    "Stage 3",
+    "3단계"
    ],
    "why": [
     "The field splits into communities with different conferences: devices (IEDM, VLSI), circuits (ISSCC), architecture (ISCA, MICRO) and manufacturing. Pick one, and learn enough of its neighbours to follow co-design work.",
@@ -314,6 +671,36 @@
        15,
        "The industry consensus roadmap for device scaling and emerging devices.",
        "소자 미세화와 차세대 소자에 대한 업계 합의 로드맵."
+      ],
+      [
+       "MIT 6.720J Integrated Microelectronic Devices",
+       "https://ocw.mit.edu/courses/6-720j-integrated-microelectronic-devices-spring-2007/",
+       "course",
+       "Lecture notes",
+       "강의노트",
+       40,
+       "Graduate device physics: MOSFETs, bipolar devices and scaling.",
+       "대학원 소자 물리: MOSFET, 바이폴라 소자, 미세화."
+      ],
+      [
+       "MIT 3.15 Electrical, Optical, and Magnetic Materials and Devices",
+       "https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/",
+       "course",
+       "Lecture notes",
+       "강의노트",
+       30,
+       "Materials behind memories, displays and photonics.",
+       "메모리, 디스플레이, 광소자 뒤의 소재."
+      ],
+      [
+       "arXiv cond-mat.mes-hall — recent",
+       "https://arxiv.org/list/cond-mat.mes-hall/recent",
+       "practice",
+       "First-pass 2 papers a week",
+       "주 2편 1단계 읽기",
+       3,
+       "Preprints on nanoscale and 2D-material devices.",
+       "나노 규모·2차원 소재 소자에 관한 프리프린트."
       ]
      ],
      "proj": [
@@ -381,6 +768,26 @@
        3,
        "How the light source and optics of EUV scanners work, from the sole supplier.",
        "유일한 공급사가 설명하는 EUV 노광기의 광원과 광학."
+      ],
+      [
+       "MIT 6.780J Semiconductor Manufacturing",
+       "https://ocw.mit.edu/courses/6-780j-semiconductor-manufacturing-spring-2003/",
+       "course",
+       "Lecture notes",
+       "강의노트",
+       25,
+       "Statistical process control, yield modelling and fab operations.",
+       "통계적 공정 관리, 수율 모델링, 팹 운영."
+      ],
+      [
+       "SEMI (semiconductor equipment and materials association)",
+       "https://www.semi.org/",
+       "article",
+       "Market data and standards pages",
+       "시장 데이터·표준 페이지",
+       3,
+       "The industry body for fab equipment and materials; publishes standards and fab outlooks.",
+       "팹 장비·소재 업계 단체. 표준과 팹 전망을 발표합니다."
       ]
      ],
      "proj": [
@@ -448,6 +855,66 @@
        15,
        "An open-source RTL-to-GDS flow used in research and education.",
        "연구와 교육에 쓰이는 오픈소스 RTL-to-GDS 흐름."
+      ],
+      [
+       "HDLBits",
+       "https://hdlbits.01xz.net/",
+       "practice",
+       "Complete the Verilog problem set",
+       "Verilog 문제 전체 풀기",
+       20,
+       "Short Verilog exercises with instant checking.",
+       "즉시 채점되는 짧은 Verilog 연습 문제."
+      ],
+      [
+       "Yosys Open SYnthesis Suite",
+       "https://yosyshq.net/yosys/",
+       "code",
+       "Synthesize your own design",
+       "직접 만든 설계 합성",
+       6,
+       "The open-source logic synthesis tool used inside most open flows.",
+       "대부분의 오픈소스 흐름에 쓰이는 논리 합성 도구."
+      ],
+      [
+       "Verilator",
+       "https://www.veripool.org/verilator/",
+       "code",
+       "Simulate a testbench",
+       "테스트벤치 시뮬레이션",
+       5,
+       "Fast open-source Verilog simulator.",
+       "빠른 오픈소스 Verilog 시뮬레이터."
+      ],
+      [
+       "SkyWater SKY130 open PDK",
+       "https://github.com/google/skywater-pdk",
+       "code",
+       "Read the documentation",
+       "문서 읽기",
+       4,
+       "An open process design kit for a real 130 nm process.",
+       "실제 130 nm 공정의 공개 공정 설계 키트."
+      ],
+      [
+       "Chip Placement with Deep Reinforcement Learning (2020)",
+       "https://arxiv.org/abs/2004.10746",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Reinforcement learning for macro placement; a starting point for ML in EDA and its debates.",
+       "매크로 배치를 위한 강화학습. EDA 머신러닝과 그 논쟁의 출발점."
+      ],
+      [
+       "ChipNeMo: Domain-Adapted LLMs for Chip Design (2023)",
+       "https://arxiv.org/abs/2311.00176",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Adapting language models to internal chip-design tasks.",
+       "언어모델을 칩 설계 업무에 맞게 적응시키기."
       ]
      ],
      "proj": [
@@ -535,6 +1002,26 @@
        3,
        "A flexible dataflow accelerator for compact and sparse networks.",
        "작고 희소한 신경망을 위한 유연한 데이터플로 가속기."
+      ],
+      [
+       "Gemmini: An Agile Systolic Array Generator (2019)",
+       "https://arxiv.org/abs/1911.09925",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "An open-source accelerator generator for full-system evaluation.",
+       "전체 시스템 평가를 위한 오픈소스 가속기 생성기."
+      ],
+      [
+       "MLPerf Inference Benchmark (2019)",
+       "https://arxiv.org/abs/1911.02549",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "How AI hardware is compared fairly.",
+       "AI 하드웨어를 공정하게 비교하는 방법."
       ]
      ],
      "proj": [
@@ -583,7 +1070,7 @@
      "items": [
       [
        "UCIe (Universal Chiplet Interconnect Express)",
-       "https://www.uciexpress.org/",
+       "https://www.uciexpress.org/specifications",
        "article",
        "Specification overview pages",
        "사양 개요 페이지",
@@ -600,6 +1087,46 @@
        4,
        "Free annual data on market size, R&D spending and supply chains.",
        "시장 규모, 연구개발 투자, 공급망에 대한 무료 연례 데이터."
+      ],
+      [
+       "AI Chips: What They Are and Why They Matter (CSET)",
+       "https://cset.georgetown.edu/publication/ai-chips-what-they-are-and-why-they-matter/",
+       "article",
+       "Whole report",
+       "전체",
+       4,
+       "A policy-oriented overview of AI chips, costs and supply chains.",
+       "AI 칩, 비용, 공급망을 정책 관점에서 정리한 보고서."
+      ],
+      [
+       "JEDEC (memory standards)",
+       "https://www.jedec.org/",
+       "article",
+       "HBM and DDR standard pages",
+       "HBM·DDR 표준 페이지",
+       3,
+       "The body that standardizes DRAM and high-bandwidth memory.",
+       "DRAM과 고대역폭 메모리를 표준화하는 기구."
+      ],
+      [
+       "Heterogeneous Integration Roadmap (IEEE EPS)",
+       "https://eps.ieee.org/technology/heterogeneous-integration-roadmap.html",
+       "article",
+       "Chapters on chiplets, 2.5D/3D and thermal",
+       "칩렛·2.5D/3D·열 관련 장",
+       15,
+       "The free industry roadmap for packaging and integration, successor to the ITRS packaging work.",
+       "ITRS 패키징 작업을 이은 무료 패키징·집적 업계 로드맵."
+      ],
+      [
+       "Chiplet Actuary: A Quantitative Cost Model and Multi-Chiplet Architecture Exploration (2022)",
+       "https://arxiv.org/abs/2203.12268",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "When splitting a chip into chiplets actually saves money.",
+       "칩을 칩렛으로 나누는 것이 실제로 비용을 줄이는 조건."
       ]
      ],
      "proj": [
@@ -620,7 +1147,7 @@
    ]
   },
   {
-   "n": 3,
+   "n": 5,
    "name": [
     "Entering research",
     "연구 진입"
@@ -638,8 +1165,8 @@
     "계속"
    ],
    "pre": [
-    "Stage 2 (one track)",
-    "2단계 (트랙 하나)"
+    "Stage 4 (one track)",
+    "4단계 (트랙 하나)"
    ],
    "why": [
     "Semiconductor research is published mainly at conferences, many behind paywalls. Learn which venue covers what, and use preprints, digests and open course material to keep up.",
@@ -663,6 +1190,36 @@
    ],
    "items": [
     [
+     "How to Read a Paper (S. Keshav)",
+     "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf",
+     "article",
+     "Whole paper",
+     "전문",
+     1,
+     "The three-pass method.",
+     "3단계 읽기 방법."
+    ],
+    [
+     "You and Your Research (Richard Hamming)",
+     "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+     "article",
+     "Whole talk",
+     "전체",
+     2,
+     "On choosing important problems.",
+     "중요한 문제를 고르는 법."
+    ],
+    [
+     "Semantic Scholar",
+     "https://www.semanticscholar.org/",
+     "practice",
+     "Build a reading tree for each frontier paper",
+     "최전선 논문마다 읽기 계통도 만들기",
+     4,
+     "Follow references backward and citations forward until the prerequisites are covered.",
+     "참고문헌은 거꾸로, 인용은 앞으로 따라가며 선수 지식을 채웁니다."
+    ],
+    [
      "IEEE International Electron Devices Meeting (IEDM)",
      "https://www.ieee-iedm.org/",
      "practice",
@@ -671,6 +1228,36 @@
      6,
      "The premier venue for transistor and device research.",
      "트랜지스터·소자 연구의 대표 학회."
+    ],
+    [
+     "Symposium on VLSI Technology and Circuits",
+     "https://www.vlsisymposium.org/",
+     "practice",
+     "Read the program each June",
+     "매년 6월 프로그램 읽기",
+     4,
+     "Joint device and circuit venue where many process results first appear.",
+     "많은 공정 결과가 처음 나오는 소자·회로 공동 학회."
+    ],
+    [
+     "IEEE ISSCC",
+     "https://www.isscc.org/",
+     "practice",
+     "Read the program each February",
+     "매년 2월 프로그램 읽기",
+     4,
+     "The main circuits conference, including memory and AI chips.",
+     "메모리와 AI 칩을 포함한 대표 회로 학회."
+    ],
+    [
+     "Hot Chips",
+     "https://hotchips.org/",
+     "practice",
+     "Watch selected talks each August",
+     "매년 8월 주요 발표 시청",
+     6,
+     "Industry talks on real processors and accelerators.",
+     "실제 프로세서·가속기에 대한 업계 발표."
     ],
     [
      "IEEE Spectrum — Semiconductors",
@@ -719,58 +1306,6 @@
    ]
   }
  ],
- "coverage": {
-  "yes": [
-   [
-    "Enough device physics, circuits and architecture to follow most frontier conference papers in one track.",
-    "한 트랙에서 최전선 학회 논문 대부분을 따라갈 만큼의 소자 물리, 회로, 구조 지식."
-   ],
-   [
-    "A map of which community and venue each kind of result belongs to.",
-    "어떤 결과가 어느 공동체·학회에 속하는지에 대한 지도."
-   ]
-  ],
-  "no": [
-   [
-    "Hands-on fab experience; that requires cleanroom access through a university lab or company.",
-    "실제 공정 경험. 대학 연구실이나 기업을 통한 클린룸 접근이 필요합니다."
-   ],
-   [
-    "Full access to papers; many IEEE conference papers are paywalled, so a university library account matters.",
-    "논문 전체 열람. IEEE 학회 논문 상당수가 유료라 대학 도서관 계정이 중요합니다."
-   ],
-   [
-    "Proprietary process know-how, which stays inside foundries.",
-    "파운드리 내부에 머무는 독점 공정 노하우."
-   ]
-  ]
- },
- "sources": [
-  [
-   "IEEE Spectrum — Semiconductors",
-   "https://spectrum.ieee.org/semiconductors",
-   "Accessible news on devices and manufacturing",
-   "소자·제조 분야의 이해하기 쉬운 뉴스"
-  ],
-  [
-   "arXiv cs.AR — recent",
-   "https://arxiv.org/list/cs.AR/recent",
-   "Architecture and accelerator preprints",
-   "구조·가속기 프리프린트"
-  ],
-  [
-   "IEDM",
-   "https://www.ieee-iedm.org/",
-   "The main device conference, every December",
-   "매년 12월 열리는 대표 소자 학회"
-  ],
-  [
-   "IRDS",
-   "https://irds.ieee.org/",
-   "Industry roadmap for devices and systems",
-   "소자·시스템 업계 로드맵"
-  ]
- ],
  "pathways": [
   [
    [
@@ -778,7 +1313,7 @@
     "소자·컴퓨터 구조 연구실의 학부 연구생"
    ],
    "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=65510",
-   1,
+   3,
    "Join a professor's lab; cleanroom and measurement access usually comes only this way.",
    "교수 연구실에 들어가는 것입니다. 클린룸과 측정 장비 접근은 대개 이 경로로만 가능합니다.",
    "Linked example: KAIST URP. Most universities run a similar program.",
@@ -790,15 +1325,39 @@
     "Tiny Tapeout"
    ],
    "https://tinytapeout.com",
-   2,
+   3,
    "Get your own design manufactured on a shared chip — rare hands-on silicon experience for students.",
    "공동 칩에 자기 설계를 실어 제작합니다. 학생에게 드문 실제 실리콘 경험입니다.",
    "Low cost; runs several shuttles a year.",
    "저비용, 연간 여러 차례 진행."
+  ],
+  [
+   [
+    "Google Summer of Code (open-source EDA projects)",
+    "Google Summer of Code (오픈소스 EDA 프로젝트)"
+   ],
+   "https://developers.google.com/open-source/gsoc/timeline",
+   3,
+   "Several open-source hardware and EDA projects take mentored contributors each summer.",
+   "여러 오픈소스 하드웨어·EDA 프로젝트가 매년 여름 멘토와 함께하는 기여자를 받습니다.",
+   "Contributor applications open around March.",
+   "참여자 지원은 3월 전후."
+  ],
+  [
+   [
+    "Industry internships at chipmakers",
+    "반도체 기업 인턴"
+   ],
+   "",
+   4,
+   "Korean memory and foundry companies run summer and winter internships for engineering students; they are the main route to process and product know-how.",
+   "국내 메모리·파운드리 기업은 공대생 대상 하계·동계 인턴을 운영합니다. 공정과 제품 노하우를 얻는 주된 경로입니다.",
+   "Check each company's careers page; schedules change yearly.",
+   "각 회사 채용 페이지를 확인하세요. 일정은 해마다 바뀝니다."
   ]
  ],
  "status": [
-  "First version: this route has fewer resources than the AI route and is being expanded, so the hour totals understate the real workload.",
-  "첫 버전: AI 노선보다 자료가 적고 계속 보강 중이므로, 표시된 시간 합계는 실제 학습량보다 적게 나옵니다."
+  "Expanded route: each track still has fewer resources than the AI route, so add your track's survey papers as you go.",
+  "보강된 노선: 트랙별 자료는 여전히 AI 노선보다 적으므로, 진행하면서 해당 트랙의 서베이 논문을 더해 가세요."
  ]
 }

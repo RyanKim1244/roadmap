@@ -9,7 +9,7 @@
     {
      "type_en": "Conference",
      "type_ko": "학회",
-     "stage": 2,
+     "stage": 4,
      "title": "IEEE IEDM 2026 (December 12–16, San Francisco)",
      "url": "https://www.ieee-iedm.org/",
      "why_en": "The 72nd edition of the main device conference. Its program is the best single snapshot of where transistor, memory and integration research is heading (Tracks A, B, E).",
@@ -18,7 +18,7 @@
     {
      "type_en": "Industry",
      "type_ko": "업계 동향",
-     "stage": 2,
+     "stage": 4,
      "title": "IEDM 2026 Reveals New Paths to Faster, More Efficient AI (SemiWiki preview)",
      "url": "https://semiwiki.com/events/376230-iedm-2026-reveals-new-paths-to-faster-more-efficient-ai/",
      "why_en": "A readable preview of this year's highlights: new transistors, memory architectures, optical links and power delivery. Good for picking which IEDM papers to look for (Tracks A, D, E).",
@@ -27,7 +27,7 @@
     {
      "type_en": "Industry",
      "type_ko": "업계 동향",
-     "stage": 2,
+     "stage": 4,
      "title": "imec at IEDM 2026",
      "url": "https://www.imec-int.com/en/events/iedm",
      "why_en": "Session list from one of the largest semiconductor research institutes, including optical I/O, novel computing paradigms and wide-bandgap transistors for 6G (Tracks A, D).",

@@ -9,7 +9,7 @@
     {
      "type_en": "Industry",
      "type_ko": "업계 동향",
-     "stage": 2,
+     "stage": 4,
      "title": "Scientists Can Now Ask AI to Design Proteins Using Plain Language (Singularity Hub)",
      "url": "https://singularityhub.com/2026/11/02/scientists-can-now-ask-ai-to-design-proteins-using-plain-language/",
      "why_en": "Reports on Pinal, a Westlake University system published in Nature that generates protein sequences from natural-language descriptions of function (Track B).",
@@ -18,7 +18,7 @@
     {
      "type_en": "Industry",
      "type_ko": "업계 동향",
-     "stage": 2,
+     "stage": 4,
      "title": "This AI Model Designs Enzymes With Atomic Precision (Singularity Hub)",
      "url": "https://singularityhub.com/2026/10/22/a-new-ai-model-designs-enzymes-with-atomic-precision/",
      "why_en": "Covers AI-designed proteases and RFdiffusion3 from the Baker lab, and notes that enzymes remain much harder to design than binders (Track B).",
@@ -27,7 +27,7 @@
     {
      "type_en": "Paper",
      "type_ko": "논문",
-     "stage": 2,
+     "stage": 4,
      "title": "Scaling Atomistic Protein Binder Design with Generative Pretraining and Test-Time Compute (Proteina-Complexa, ICLR 2026 oral)",
      "url": "https://research.nvidia.com/labs/genair/proteina-complexa",
      "why_en": "An NVIDIA-led framework that combines generative pretraining with inference-time search for binder design; a clear example of AI-scaling ideas moving into biology (Track B).",

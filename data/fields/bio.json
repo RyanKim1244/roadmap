@@ -1,5 +1,5 @@
 {
- "version": 1,
+ "version": 2,
  "name": [
   "Bio",
   "바이오"
@@ -9,54 +9,450 @@
   "생명과학·바이오 연구 학습 노선도"
  ],
  "lede": [
-  "A path from first-year university level to following frontier research in the life sciences: genomics and computational biology, protein structure and design, gene editing and synthetic biology, and drug discovery. The frontier section collects recent preprints, papers and reports.",
-  "대학 1학년 수준에서 출발해 생명과학 최전선 연구를 따라갈 수 있는 수준까지 가는 길입니다. 유전체·계산생물학, 단백질 구조·설계, 유전자 편집·합성생물학, 신약 개발을 다루며, 최전선 구간에는 최근 프리프린트·논문·리포트를 모읍니다."
+  "A path from first-year university level to following frontier research in the life sciences: genomics and computational biology, protein structure and design, gene editing and synthetic biology, drug discovery, and neuroscience. The frontier section collects recent preprints, papers and reports.",
+  "대학 1학년 수준에서 출발해 생명과학 최전선 연구를 따라갈 수 있는 수준까지 가는 길입니다. 유전체·계산생물학, 단백질 구조·설계, 유전자 편집·합성생물학, 신약 개발, 신경과학을 다루며, 최전선 구간에는 최근 프리프린트·논문·리포트를 모읍니다."
+ ],
+ "coverage": {
+  "yes": [
+   [
+    "Enough biology and statistics to read most frontier papers in one track, especially computational ones.",
+    "한 트랙, 특히 계산 쪽의 최전선 논문 대부분을 읽을 수 있는 생물학과 통계 지식."
+   ],
+   [
+    "The judgement to separate strong evidence from preliminary results.",
+    "강한 증거와 예비 결과를 구분하는 판단력."
+   ]
+  ],
+  "no": [
+   [
+    "Wet-lab skills; pipetting, cell culture and assay design are learned only in a lab.",
+    "실험 기술. 피펫팅, 세포 배양, 분석법 설계는 실험실에서만 배울 수 있습니다."
+   ],
+   [
+    "Full access to journals; a university library account matters.",
+    "저널 전체 열람. 대학 도서관 계정이 중요합니다."
+   ],
+   [
+    "Clinical and regulatory practice, which requires professional training.",
+    "전문 훈련이 필요한 임상·허가 실무."
+   ]
+  ]
+ },
+ "sources": [
+  [
+   "bioRxiv",
+   "https://www.biorxiv.org/",
+   "Biology preprints",
+   "생물학 프리프린트"
+  ],
+  [
+   "PubMed",
+   "https://pubmed.ncbi.nlm.nih.gov/",
+   "Biomedical literature index",
+   "생의학 문헌 색인"
+  ],
+  [
+   "RCSB PDB",
+   "https://www.rcsb.org/",
+   "Protein structures",
+   "단백질 구조"
+  ],
+  [
+   "Neuromatch",
+   "https://neuromatch.io/",
+   "Computational neuroscience community",
+   "계산신경과학 커뮤니티"
+  ]
  ],
  "stages": [
   {
    "n": 0,
    "name": [
-    "Biology, chemistry & statistics",
-    "생물·화학·통계"
+    "Tools",
+    "도구"
    ],
    "short": [
-    "Foundations",
-    "기초"
+    "Tools",
+    "도구"
    ],
    "goal": [
-    "The biology, chemistry and statistics that every life-science paper assumes.",
-    "모든 생명과학 논문이 전제하는 생물학, 화학, 통계."
+    "Programming and data analysis for biological data.",
+    "생물 데이터를 위한 프로그래밍과 데이터 분석."
+   ],
+   "dur": [
+    "3–4 weeks",
+    "3~4주"
+   ],
+   "pre": [
+    "None",
+    "없음"
+   ],
+   "why": [
+    "Almost every modern biology project produces data that must be analysed in code, and computational tracks are code-first.",
+    "현대 생물학 프로젝트 대부분은 코드로 분석해야 하는 데이터를 만들고, 계산 트랙은 코드가 중심입니다."
+   ],
+   "concepts": [
+    [
+     "Python & pandas",
+     "R & tidy data",
+     "Command line & Git",
+     "Plotting",
+     "Reproducible notebooks",
+     "Sequence file formats"
+    ],
+    [
+     "Python·pandas",
+     "R·정돈된 데이터",
+     "명령줄·Git",
+     "그래프 그리기",
+     "재현 가능한 노트북",
+     "서열 파일 형식"
+    ]
+   ],
+   "items": [
+    [
+     "Python Tutorial (official)",
+     "https://docs.python.org/3/tutorial/",
+     "book",
+     "Ch. 1–9",
+     "1~9장",
+     15,
+     "Up to classes, iterators and generators.",
+     "클래스, 이터레이터, 제너레이터까지.",
+     "https://docs.python.org/ko/3/tutorial/"
+    ],
+    [
+     "MIT — The Missing Semester",
+     "https://missing.csail.mit.edu/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     12,
+     "Shell, Git, editors, debugging: the research workbench.",
+     "셸, Git, 에디터, 디버깅 등 연구용 작업 환경."
+    ],
+    [
+     "NumPy quickstart",
+     "https://numpy.org/doc/stable/user/quickstart.html",
+     "article",
+     "Whole page",
+     "전체",
+     4,
+     "Array operations and broadcasting rules.",
+     "배열 연산과 브로드캐스팅 규칙."
+    ],
+    [
+     "pandas — Getting started",
+     "https://pandas.pydata.org/docs/getting_started/index.html",
+     "article",
+     "Intro tutorials",
+     "입문 튜토리얼",
+     6,
+     "Tables of experimental data in Python.",
+     "Python으로 실험 데이터 표 다루기."
+    ],
+    [
+     "R for Data Science (2e)",
+     "https://r4ds.hadley.nz/",
+     "book",
+     "Whole game + Visualize + Transform parts",
+     "Whole game·Visualize·Transform 부분",
+     20,
+     "The standard free introduction to data analysis in R, widely used in biology.",
+     "생물학에서 널리 쓰이는 R 데이터 분석의 표준 무료 입문서."
+    ],
+    [
+     "Biopython Tutorial and Cookbook",
+     "https://biopython.org/DIST/docs/tutorial/Tutorial.html",
+     "book",
+     "Ch. 1–5",
+     "1~5장",
+     8,
+     "Reading sequences, FASTA/GenBank files and running BLAST from Python.",
+     "Python으로 서열과 FASTA·GenBank 파일을 읽고 BLAST 실행하기."
+    ]
+   ],
+   "proj": [
+    "Load a public gene-expression table with pandas or R, clean it and plot the expression of five genes across conditions, with the analysis in a Git repository.",
+    "pandas나 R로 공개 유전자 발현 표를 불러와 정리하고, 다섯 유전자의 조건별 발현을 그립니다. 분석은 Git 저장소로 관리합니다."
+   ],
+   "exit": [
+    "You can turn a raw data table into a clean, reproducible analysis and figure.",
+    "원시 데이터 표를 깔끔하고 재현 가능한 분석과 그림으로 만들 수 있다."
+   ],
+   "pit": [
+    [
+     "Editing data by hand in spreadsheets, which breaks reproducibility.",
+     "스프레드시트에서 데이터를 손으로 고치기. 재현성이 깨집니다."
+    ]
+   ]
+  },
+  {
+   "n": 1,
+   "name": [
+    "Mathematics & statistics",
+    "수학·통계"
+   ],
+   "short": [
+    "Math & stats",
+    "수학·통계"
+   ],
+   "goal": [
+    "Probability, statistics, differential equations and linear algebra for biology.",
+    "생물학을 위한 확률, 통계, 미분방정식, 선형대수."
+   ],
+   "dur": [
+    "8–12 weeks",
+    "8~12주"
+   ],
+   "pre": [
+    "High-school math",
+    "고교 수학"
+   ],
+   "why": [
+    "Biological claims rest on statistical evidence, and dynamics (enzymes, populations, gene circuits) are modelled with differential equations.",
+    "생물학의 주장은 통계적 증거에 기대고, 효소·개체군·유전자 회로 같은 동역학은 미분방정식으로 모델링합니다."
+   ],
+   "concepts": [
+    [
+     "Probability distributions",
+     "Hypothesis testing & p-values",
+     "Multiple comparisons",
+     "Regression",
+     "Bayesian inference",
+     "Linear ODEs",
+     "PCA"
+    ],
+    [
+     "확률분포",
+     "가설 검정·p값",
+     "다중 비교",
+     "회귀",
+     "베이지안 추론",
+     "선형 상미분방정식",
+     "주성분 분석"
+    ]
+   ],
+   "items": [
+    [
+     "Harvard Stat 110 Probability",
+     "https://projects.iq.harvard.edu/stat110",
+     "course",
+     "Lectures + book Ch. 1–9",
+     "강의 + 교재 1~9장",
+     40,
+     "Free book and lecture videos are linked from the page.",
+     "페이지에서 무료 교재와 강의 영상으로 연결됩니다."
+    ],
+    [
+     "MIT 18.05 Introduction to Probability and Statistics",
+     "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/",
+     "course",
+     "All classes",
+     "전체 수업",
+     40,
+     "Frequentist and Bayesian statistics with applications.",
+     "응용 중심의 빈도주의·베이지안 통계."
+    ],
+    [
+     "Modern Statistics for Modern Biology (Holmes & Huber)",
+     "https://www.huber.embl.de/msmb/",
+     "book",
+     "Ch. 1–7",
+     "1~7장",
+     30,
+     "Statistics taught through real biological data in R; free online.",
+     "실제 생물 데이터와 R로 배우는 통계. 무료 온라인."
+    ],
+    [
+     "MIT 18.03SC Differential Equations",
+     "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+     "course",
+     "Units 1–2",
+     "1~2단원",
+     25,
+     "ODEs for kinetics, population and gene-circuit models.",
+     "반응 속도, 개체군, 유전자 회로 모델을 위한 상미분방정식."
+    ],
+    [
+     "MIT 18.06 Linear Algebra (Gilbert Strang)",
+     "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+     "course",
+     "Lectures 1–20",
+     "1~20강",
+     30,
+     "Matrices, PCA and the linear algebra behind genomics and imaging.",
+     "유전체·영상 분석 뒤의 행렬과 PCA."
+    ]
+   ],
+   "proj": [
+    "Re-analyse a published experiment's data: test the main claim, correct for multiple comparisons and report effect sizes with confidence intervals.",
+    "발표된 실험의 데이터를 다시 분석합니다. 주요 주장을 검정하고, 다중 비교를 보정하고, 효과 크기를 신뢰구간과 함께 보고합니다."
+   ],
+   "exit": [
+    "Explain what a p-value does and does not tell you, and why testing 20,000 genes needs a correction.",
+    "p값이 알려 주는 것과 알려 주지 않는 것, 그리고 유전자 2만 개를 검정할 때 보정이 필요한 이유를 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Treating p < 0.05 as proof.",
+     "p < 0.05를 증명으로 여기기."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "name": [
+    "Chemistry",
+    "화학"
+   ],
+   "short": [
+    "Chemistry",
+    "화학"
+   ],
+   "goal": [
+    "General, organic and biological chemistry, thermodynamics and kinetics.",
+    "일반·유기·생화학, 열역학, 반응 속도."
    ],
    "dur": [
     "10–14 weeks",
     "10~14주"
    ],
    "pre": [
-    "High-school biology and chemistry",
-    "고교 생명과학·화학"
+    "High-school chemistry",
+    "고교 화학"
    ],
    "why": [
-    "Modern biology is quantitative. Papers combine molecular mechanisms with statistical evidence, so both are needed to judge a claim.",
-    "현대 생물학은 정량적입니다. 논문은 분자 기전과 통계적 증거를 함께 제시하므로, 주장을 판단하려면 둘 다 필요합니다."
+    "Proteins, drugs and DNA are molecules. Binding, catalysis and stability are chemistry questions, and drug discovery is largely organic chemistry.",
+    "단백질, 약물, DNA는 분자입니다. 결합, 촉매, 안정성은 화학의 문제이고, 신약 개발의 상당 부분은 유기화학입니다."
+   ],
+   "concepts": [
+    [
+     "Bonding & molecular structure",
+     "Thermodynamics & free energy",
+     "Equilibrium & pH",
+     "Reaction kinetics",
+     "Organic functional groups & mechanisms",
+     "Stereochemistry",
+     "Biomolecule chemistry"
+    ],
+    [
+     "결합·분자 구조",
+     "열역학·자유 에너지",
+     "평형·pH",
+     "반응 속도",
+     "유기 작용기·반응 메커니즘",
+     "입체화학",
+     "생체 분자 화학"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 5.111SC Principles of Chemical Science",
+     "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "Bonding, thermodynamics and kinetics for biology.",
+     "생물학에 필요한 결합, 열역학, 반응 속도."
+    ],
+    [
+     "MIT 5.12 Organic Chemistry I",
+     "https://ocw.mit.edu/courses/5-12-organic-chemistry-i-spring-2003/",
+     "course",
+     "Lecture notes + problem sets",
+     "강의노트 + 문제",
+     40,
+     "Structure and reactivity of organic molecules.",
+     "유기 분자의 구조와 반응성."
+    ],
+    [
+     "MIT 5.07SC Biological Chemistry I",
+     "https://ocw.mit.edu/courses/5-07sc-biological-chemistry-i-fall-2013/",
+     "course",
+     "All units",
+     "전체 단원",
+     35,
+     "The chemistry of proteins, nucleic acids and metabolism.",
+     "단백질, 핵산, 대사의 화학."
+    ],
+    [
+     "MIT 5.60 Thermodynamics & Kinetics",
+     "https://ocw.mit.edu/courses/5-60-thermodynamics-kinetics-spring-2008/",
+     "course",
+     "Lectures (optional)",
+     "강의 (선택)",
+     30,
+     "Free energy and rates behind binding and folding.",
+     "결합과 접힘 뒤의 자유 에너지와 반응 속도."
+    ]
+   ],
+   "proj": [
+    "Compute binding free energies from dissociation constants for a set of drug–target pairs and relate them to structural features.",
+    "약물-표적 쌍들의 해리 상수로 결합 자유 에너지를 계산하고, 구조적 특징과 연결합니다."
+   ],
+   "exit": [
+    "Explain how free energy determines binding and folding, and how an enzyme speeds a reaction.",
+    "자유 에너지가 결합과 접힘을 어떻게 결정하는지, 효소가 반응을 어떻게 빠르게 하는지 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Skipping organic chemistry before drug-discovery work.",
+     "신약 개발 전에 유기화학을 건너뛰기."
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "name": [
+    "Molecular & cell biology",
+    "분자·세포생물학"
+   ],
+   "short": [
+    "Biology",
+    "분자·세포"
+   ],
+   "goal": [
+    "Introductory biology, biochemistry, genetics, molecular and cell biology.",
+    "기초 생물학, 생화학, 유전학, 분자·세포생물학."
+   ],
+   "dur": [
+    "14–20 weeks",
+    "14~20주"
+   ],
+   "pre": [
+    "Stages 1–2",
+    "1~2단계"
+   ],
+   "why": [
+    "Frontier tools — genome sequencing, CRISPR, protein design — are applied to biochemical and cellular questions. This stage provides the questions.",
+    "유전체 분석, CRISPR, 단백질 설계 같은 최전선 도구는 생화학·세포 수준의 질문에 적용됩니다. 이 단계가 그 질문을 줍니다."
    ],
    "concepts": [
     [
      "Central dogma",
-     "Cell structure",
-     "Chemical bonding & thermodynamics",
-     "Acids, bases & kinetics",
-     "Probability distributions",
-     "Hypothesis testing",
-     "Multiple comparisons"
+     "Protein structure & folding",
+     "Enzyme kinetics",
+     "Metabolism",
+     "Mendelian & molecular genetics",
+     "Gene regulation",
+     "DNA replication & repair",
+     "Signalling pathways",
+     "Cell cycle",
+     "Bioinformatics basics"
     ],
     [
      "중심 원리",
-     "세포 구조",
-     "화학 결합·열역학",
-     "산·염기·반응 속도",
-     "확률분포",
-     "가설 검정",
-     "다중 비교"
+     "단백질 구조·접힘",
+     "효소 반응 속도",
+     "대사",
+     "멘델·분자 유전학",
+     "유전자 조절",
+     "DNA 복제·수선",
+     "신호 전달 경로",
+     "세포 주기",
+     "생물정보학 기초"
     ]
    ],
    "items": [
@@ -70,91 +466,6 @@
      "Molecular and cell biology from the ground up.",
      "분자·세포생물학을 기초부터."
     ],
-    [
-     "MIT 5.111SC Principles of Chemical Science",
-     "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/",
-     "course",
-     "All lectures",
-     "전체 강의",
-     40,
-     "Bonding, thermodynamics and kinetics for biology.",
-     "생물학에 필요한 결합, 열역학, 반응 속도."
-    ],
-    [
-     "Harvard Stat 110 Probability",
-     "https://projects.iq.harvard.edu/stat110",
-     "course",
-     "Lectures + book Ch. 1–9",
-     "강의 + 교재 1~9장",
-     40,
-     "The probability behind experimental statistics and genomics.",
-     "실험 통계와 유전체학 뒤의 확률."
-    ]
-   ],
-   "proj": [
-    "Analyse a public gene-expression dataset in Python: normalize it, test for differential expression and correct for multiple comparisons.",
-    "공개 유전자 발현 데이터셋을 Python으로 분석합니다. 정규화하고, 발현 차이를 검정하고, 다중 비교를 보정합니다."
-   ],
-   "exit": [
-    "Explain how a gene becomes a protein and how you would test whether a treatment changes its expression.",
-    "유전자가 어떻게 단백질이 되는지, 어떤 처리가 그 발현을 바꾸는지 어떻게 검정할지 설명할 수 있다."
-   ],
-   "pit": [
-    [
-     "Ignoring statistics; many biology results fail to replicate for statistical reasons.",
-     "통계를 무시하기. 많은 생물학 결과가 통계적 이유로 재현되지 않습니다."
-    ]
-   ]
-  },
-  {
-   "n": 1,
-   "name": [
-    "Molecular & cell biology",
-    "분자·세포생물학"
-   ],
-   "short": [
-    "Core biology",
-    "핵심 생물학"
-   ],
-   "goal": [
-    "Biochemistry, genetics and cell biology at the depth research papers use.",
-    "연구 논문이 쓰는 깊이의 생화학, 유전학, 세포생물학."
-   ],
-   "dur": [
-    "12–16 weeks",
-    "12~16주"
-   ],
-   "pre": [
-    "Stage 0",
-    "0단계"
-   ],
-   "why": [
-    "Frontier tools — genome sequencing, CRISPR, protein design — are applied to biochemical and cellular questions. This stage provides the questions.",
-    "유전체 분석, CRISPR, 단백질 설계 같은 최전선 도구는 생화학·세포 수준의 질문에 적용됩니다. 이 단계가 그 질문을 줍니다."
-   ],
-   "concepts": [
-    [
-     "Protein structure & folding",
-     "Enzyme kinetics",
-     "Metabolism",
-     "Mendelian & molecular genetics",
-     "Gene regulation",
-     "Signalling pathways",
-     "Cell cycle",
-     "Bioinformatics basics"
-    ],
-    [
-     "단백질 구조·접힘",
-     "효소 반응 속도",
-     "대사",
-     "멘델·분자 유전학",
-     "유전자 조절",
-     "신호 전달 경로",
-     "세포 주기",
-     "생물정보학 기초"
-    ]
-   ],
-   "items": [
     [
      "MIT 7.05 General Biochemistry",
      "https://ocw.mit.edu/courses/7-05-general-biochemistry-spring-2020/",
@@ -186,6 +497,26 @@
      "막, 수송, 신호 전달, 세포 주기."
     ],
     [
+     "MIT 7.28 Molecular Biology",
+     "https://ocw.mit.edu/courses/7-28-molecular-biology-spring-2005/",
+     "course",
+     "Lecture notes",
+     "강의노트",
+     30,
+     "DNA replication, repair, transcription and translation at research depth.",
+     "연구 수준의 DNA 복제, 수선, 전사, 번역."
+    ],
+    [
+     "HHMI BioInteractive",
+     "https://www.biointeractive.org/",
+     "video",
+     "Short films and data activities on topics you study",
+     "공부하는 주제의 짧은 영상·데이터 활동",
+     6,
+     "Free, well-produced explanations of landmark experiments.",
+     "주요 실험을 잘 설명한 무료 자료."
+    ],
+    [
      "Rosalind",
      "https://rosalind.info/",
      "practice",
@@ -212,7 +543,7 @@
    ]
   },
   {
-   "n": 2,
+   "n": 4,
    "name": [
     "Specialization tracks",
     "전문 트랙"
@@ -230,8 +561,8 @@
     "트랙당 10~16주"
    ],
    "pre": [
-    "Stage 1",
-    "1단계"
+    "Stage 3",
+    "3단계"
    ],
    "why": [
     "Life-science research splits into wet-lab and computational work, and many frontier results now combine both. Choose by what you want to do day to day.",
@@ -278,6 +609,56 @@
        45,
        "Algorithms and ML for genomes, from alignment to regulatory networks.",
        "정렬부터 조절 네트워크까지 유전체를 위한 알고리즘과 머신러닝."
+      ],
+      [
+       "MIT 7.91J Foundations of Computational and Systems Biology",
+       "https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       40,
+       "Sequence analysis, genomics, networks and modelling.",
+       "서열 분석, 유전체학, 네트워크, 모델링."
+      ],
+      [
+       "Galaxy Training Network",
+       "https://training.galaxyproject.org/",
+       "practice",
+       "Introduction + one sequencing-analysis tutorial",
+       "입문 + 시퀀싱 분석 튜토리얼 하나",
+       8,
+       "Free hands-on tutorials for genomics workflows.",
+       "유전체 분석 흐름을 실습하는 무료 튜토리얼."
+      ],
+      [
+       "Orchestrating Single-Cell Analysis with Bioconductor",
+       "https://bioconductor.org/books/release/OSCA/",
+       "book",
+       "Basics + Workflows",
+       "Basics·Workflows 부분",
+       20,
+       "The standard free guide to single-cell RNA-seq analysis in R.",
+       "R로 하는 단일세포 RNA-seq 분석의 표준 무료 안내서."
+      ],
+      [
+       "Scanpy tutorials",
+       "https://scanpy.readthedocs.io/en/stable/tutorials/index.html",
+       "code",
+       "Basic clustering tutorial",
+       "기본 군집화 튜토리얼",
+       6,
+       "Single-cell analysis in Python.",
+       "Python으로 하는 단일세포 분석."
+      ],
+      [
+       "Genome modeling and design across all domains of life with Evo 2 (2025)",
+       "https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1",
+       "paper",
+       "Sections 1–3",
+       "1~3절",
+       4,
+       "A DNA language model trained across the tree of life.",
+       "생명 전체 계통에 걸쳐 학습한 DNA 언어모델."
       ]
      ],
      "proj": [
@@ -345,6 +726,56 @@
        5,
        "The archive of experimentally determined structures that all models are trained and judged on.",
        "모든 모델이 학습하고 평가받는 실험 구조 데이터베이스."
+      ],
+      [
+       "Highly accurate protein structure prediction with AlphaFold (2021, open access)",
+       "https://pmc.ncbi.nlm.nih.gov/articles/PMC8371605/",
+       "paper",
+       "Main text",
+       "본문",
+       4,
+       "The structure-prediction paper that changed structural biology.",
+       "구조생물학을 바꾼 구조 예측 논문."
+      ],
+      [
+       "Evolutionary-scale prediction of atomic-level protein structure with a language model (ESM-2/ESMFold)",
+       "https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1",
+       "paper",
+       "Main text",
+       "본문",
+       3,
+       "Protein language models that predict structure from a single sequence.",
+       "단일 서열로 구조를 예측하는 단백질 언어모델."
+      ],
+      [
+       "Robust deep learning–based protein sequence design using ProteinMPNN",
+       "https://www.biorxiv.org/content/10.1101/2022.06.03.494563v1",
+       "paper",
+       "Main text",
+       "본문",
+       3,
+       "Inverse folding: designing sequences for a given backbone.",
+       "역접힘: 주어진 골격에 맞는 서열 설계."
+      ],
+      [
+       "Broadly applicable and accurate protein design by integrating structure prediction networks and diffusion generative models (RFdiffusion)",
+       "https://www.biorxiv.org/content/10.1101/2022.12.09.519842v1",
+       "paper",
+       "Main text",
+       "본문",
+       3,
+       "Diffusion models that generate new protein backbones.",
+       "새 단백질 골격을 생성하는 확산모델."
+      ],
+      [
+       "ColabFold",
+       "https://github.com/sokrypton/ColabFold",
+       "code",
+       "Run one structure prediction",
+       "구조 예측 한 번 실행",
+       3,
+       "Free notebooks for running structure prediction.",
+       "구조 예측을 실행하는 무료 노트북."
       ]
      ],
      "proj": [
@@ -410,6 +841,26 @@
        8,
        "The international synthetic-biology competition; past projects show what students can build.",
        "국제 합성생물학 대회. 과거 프로젝트에서 학생이 만들 수 있는 것을 볼 수 있습니다."
+      ],
+      [
+       "MIT 7.32 Systems Biology",
+       "https://ocw.mit.edu/courses/7-32-systems-biology-fall-2014/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       35,
+       "Network motifs, noise and design principles of gene circuits.",
+       "유전자 회로의 네트워크 모티프, 잡음, 설계 원리."
+      ],
+      [
+       "Biosafety in Microbiological and Biomedical Laboratories (BMBL, CDC)",
+       "https://www.cdc.gov/labs/bmbl/",
+       "article",
+       "Sections on biosafety levels",
+       "생물안전 등급 부분",
+       4,
+       "The reference for laboratory biosafety practice.",
+       "실험실 생물안전 실무의 기준 문서."
       ]
      ],
      "proj": [
@@ -487,6 +938,56 @@
        10,
        "Curated datasets and benchmarks for machine learning across drug discovery.",
        "신약 개발 전반의 머신러닝용 정제 데이터셋과 벤치마크."
+      ],
+      [
+       "ChEMBL",
+       "https://www.ebi.ac.uk/chembl/",
+       "practice",
+       "Look up one drug and its targets",
+       "약물 하나와 그 표적 찾아보기",
+       3,
+       "Open database of bioactive molecules and their measured activities.",
+       "생리활성 분자와 측정된 활성의 공개 데이터베이스."
+      ],
+      [
+       "MoleculeNet: A Benchmark for Molecular Machine Learning (2017)",
+       "https://arxiv.org/abs/1703.00564",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Standard benchmarks and the pitfalls of molecular data splits.",
+       "표준 벤치마크와 분자 데이터 분할의 함정."
+      ],
+      [
+       "Therapeutics Data Commons (2021)",
+       "https://arxiv.org/abs/2102.09548",
+       "paper",
+       "Sections 1–4",
+       "1~4절",
+       3,
+       "The design of the benchmark suite used in this track.",
+       "이 트랙에서 쓰는 벤치마크 모음의 설계."
+      ],
+      [
+       "DeepChem tutorials",
+       "https://deepchem.io/",
+       "code",
+       "First 5 tutorials",
+       "처음 5개 튜토리얼",
+       8,
+       "Open-source tools for molecular machine learning.",
+       "분자 머신러닝을 위한 오픈소스 도구."
+      ],
+      [
+       "Why 90% of clinical drug development fails and how to improve it (2022, open access)",
+       "https://pmc.ncbi.nlm.nih.gov/articles/PMC9293739/",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "An analysis of where and why drug candidates fail.",
+       "신약 후보가 어디서 왜 실패하는지에 대한 분석."
       ]
      ],
      "proj": [
@@ -503,11 +1004,88 @@
        "새로운 화학 구조에 대한 성능을 부풀리는 무작위 분할."
       ]
      ]
+    },
+    {
+     "id": "E",
+     "name": [
+      "Neuroscience",
+      "신경과학"
+     ],
+     "goal": [
+      "How neurons and circuits compute, and how to analyse neural data.",
+      "뉴런과 회로가 어떻게 계산하는지, 신경 데이터를 어떻게 분석하는지."
+     ],
+     "concepts": [
+      [
+       "Membrane potentials & action potentials",
+       "Synapses & plasticity",
+       "Neural coding",
+       "Circuits & connectomics",
+       "Recording methods",
+       "Dimensionality reduction for neural data",
+       "Models of learning"
+      ],
+      [
+       "막전위·활동전위",
+       "시냅스·가소성",
+       "신경 부호화",
+       "회로·커넥토믹스",
+       "기록 방법",
+       "신경 데이터 차원 축소",
+       "학습 모델"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 9.01 Introduction to Neuroscience",
+       "https://ocw.mit.edu/courses/9-01-introduction-to-neuroscience-fall-2007/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       35,
+       "Cellular, systems and behavioural neuroscience.",
+       "세포·시스템·행동 신경과학."
+      ],
+      [
+       "MIT 9.40 Introduction to Neural Computation",
+       "https://ocw.mit.edu/courses/9-40-introduction-to-neural-computation-spring-2018/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       35,
+       "Quantitative models of neurons and networks.",
+       "뉴런과 네트워크의 정량 모델."
+      ],
+      [
+       "Neuromatch Academy — Computational Neuroscience",
+       "https://compneuro.neuromatch.io/",
+       "course",
+       "Weeks 1–2 tutorials",
+       "1~2주차 튜토리얼",
+       30,
+       "Free interactive course materials in Python.",
+       "Python으로 된 무료 대화형 강의 자료."
+      ]
+     ],
+     "proj": [
+      "Using Neuromatch tutorials and a public dataset, fit a simple model of neural responses (e.g. a generalized linear model) and evaluate it on held-out data.",
+      "Neuromatch 튜토리얼과 공개 데이터로 신경 반응의 간단한 모델(예: 일반화 선형 모델)을 맞추고, 따로 떼어 둔 데이터로 평가합니다."
+     ],
+     "exit": [
+      "Explain how an action potential is generated and how population activity can be summarized with dimensionality reduction.",
+      "활동전위가 어떻게 생기는지, 집단 활동을 차원 축소로 어떻게 요약하는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Interpreting correlations in neural data as causal mechanisms.",
+       "신경 데이터의 상관을 인과 기전으로 해석하기."
+      ]
+     ]
     }
    ]
   },
   {
-   "n": 3,
+   "n": 5,
    "name": [
     "Entering research",
     "연구 진입"
@@ -525,8 +1103,8 @@
     "계속"
    ],
    "pre": [
-    "Stage 2 (one track)",
-    "2단계 (트랙 하나)"
+    "Stage 4 (one track)",
+    "4단계 (트랙 하나)"
    ],
    "why": [
     "Biology moves fast through preprints, and many papers sit behind journal paywalls. Use preprint servers and open repositories, and learn to judge evidence quality.",
@@ -549,6 +1127,36 @@
     ]
    ],
    "items": [
+    [
+     "How to Read a Paper (S. Keshav)",
+     "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf",
+     "article",
+     "Whole paper",
+     "전문",
+     1,
+     "The three-pass method.",
+     "3단계 읽기 방법."
+    ],
+    [
+     "You and Your Research (Richard Hamming)",
+     "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+     "article",
+     "Whole talk",
+     "전체",
+     2,
+     "On choosing important problems.",
+     "중요한 문제를 고르는 법."
+    ],
+    [
+     "Semantic Scholar",
+     "https://www.semanticscholar.org/",
+     "practice",
+     "Build a reading tree for each frontier paper",
+     "최전선 논문마다 읽기 계통도 만들기",
+     4,
+     "Follow references backward and citations forward until the prerequisites are covered.",
+     "참고문헌은 거꾸로, 인용은 앞으로 따라가며 선수 지식을 채웁니다."
+    ],
     [
      "bioRxiv",
      "https://www.biorxiv.org/",
@@ -596,52 +1204,6 @@
    ]
   }
  ],
- "coverage": {
-  "yes": [
-   [
-    "Enough biology and statistics to read most frontier papers in one track, especially computational ones.",
-    "한 트랙, 특히 계산 쪽의 최전선 논문 대부분을 읽을 수 있는 생물학과 통계 지식."
-   ],
-   [
-    "The judgement to separate strong evidence from preliminary results.",
-    "강한 증거와 예비 결과를 구분하는 판단력."
-   ]
-  ],
-  "no": [
-   [
-    "Wet-lab skills; pipetting, cell culture and assay design are learned only in a lab.",
-    "실험 기술. 피펫팅, 세포 배양, 분석법 설계는 실험실에서만 배울 수 있습니다."
-   ],
-   [
-    "Full access to journals; a university library account matters.",
-    "저널 전체 열람. 대학 도서관 계정이 중요합니다."
-   ],
-   [
-    "Clinical and regulatory practice, which requires professional training.",
-    "전문 훈련이 필요한 임상·허가 실무."
-   ]
-  ]
- },
- "sources": [
-  [
-   "bioRxiv",
-   "https://www.biorxiv.org/",
-   "Biology preprints",
-   "생물학 프리프린트"
-  ],
-  [
-   "PubMed",
-   "https://pubmed.ncbi.nlm.nih.gov/",
-   "Biomedical literature index",
-   "생의학 문헌 색인"
-  ],
-  [
-   "RCSB PDB",
-   "https://www.rcsb.org/",
-   "Protein structures",
-   "단백질 구조"
-  ]
- ],
  "pathways": [
   [
    [
@@ -649,7 +1211,7 @@
     "생물학 연구실의 학부 연구생"
    ],
    "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=65510",
-   1,
+   3,
    "The main way to learn wet-lab skills: join a lab early and stay long enough to own a project.",
    "실험 기술을 배우는 주된 방법입니다. 일찍 연구실에 들어가 자기 프로젝트를 맡을 만큼 오래 머무르세요.",
    "Linked example: KAIST URP. Most universities run a similar program.",
@@ -661,15 +1223,51 @@
     "iGEM"
    ],
    "https://igem.org/",
-   2,
+   3,
    "A team competition in synthetic biology that gives students a full project cycle, from design to presentation.",
    "설계부터 발표까지 프로젝트 전 과정을 경험하는 합성생물학 팀 대회입니다.",
    "Teams usually form in winter for the following season.",
    "팀은 보통 겨울에 결성해 다음 시즌에 참가합니다."
+  ],
+  [
+   [
+    "Neuromatch Academy",
+    "Neuromatch Academy"
+   ],
+   "https://neuromatch.io/",
+   3,
+   "Online summer courses in computational neuroscience and related fields, with mentored group projects.",
+   "계산신경과학 등의 온라인 여름 과정으로, 멘토가 있는 그룹 프로젝트를 진행합니다.",
+   "Applications usually open in spring.",
+   "지원은 보통 봄에 시작합니다."
+  ],
+  [
+   [
+    "EMBL-EBI Training",
+    "EMBL-EBI Training"
+   ],
+   "https://www.ebi.ac.uk/training/",
+   3,
+   "Free online courses and webinars on bioinformatics resources and data analysis.",
+   "생물정보학 자원과 데이터 분석에 관한 무료 온라인 강의와 웨비나입니다.",
+   "Self-paced; some live courses need applications.",
+   "자율 학습형. 일부 실시간 과정은 지원이 필요합니다."
+  ],
+  [
+   [
+    "Google Summer of Code (open-source bio projects)",
+    "Google Summer of Code (오픈소스 바이오 프로젝트)"
+   ],
+   "https://developers.google.com/open-source/gsoc/timeline",
+   3,
+   "Open-source bioinformatics organizations take mentored contributors each summer.",
+   "오픈소스 생물정보학 조직들이 매년 여름 멘토와 함께하는 기여자를 받습니다.",
+   "Contributor applications open around March.",
+   "참여자 지원은 3월 전후."
   ]
  ],
  "status": [
-  "First version: this route has fewer resources than the AI route and is being expanded, so the hour totals understate the real workload.",
-  "첫 버전: AI 노선보다 자료가 적고 계속 보강 중이므로, 표시된 시간 합계는 실제 학습량보다 적게 나옵니다."
+  "Expanded route: each track still has fewer resources than the AI route, so add your track's survey papers as you go.",
+  "보강된 노선: 트랙별 자료는 여전히 AI 노선보다 적으므로, 진행하면서 해당 트랙의 서베이 논문을 더해 가세요."
  ]
 }
