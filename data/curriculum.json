@@ -1862,8 +1862,8 @@
        "Understanding Machine Learning: From Theory to Algorithms (Shalev-Shwartz & Ben-David)",
        "https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/",
        "book",
-       "Part I (Ch. 2–7)",
-       "1부 (2~7장)",
+       "Part I (Ch. 2–8)",
+       "1부 (2~8장)",
        40,
        "The standard introduction to statistical learning theory; free PDF on the authors' page.",
        "통계적 학습 이론의 표준 입문서. 저자 페이지에서 무료 PDF."
@@ -2220,8 +2220,8 @@
    ],
    "https://cfe.columbia.edu/content/mlss2",
    3,
-   "Two-week intensive schools with lectures from leading researchers. MLSS (2026 at Columbia, New York) and MLCC (Genoa) are examples; new schools are announced each winter on the ML-news mailing list.",
-   "주요 연구자의 강의를 듣는 2주 안팎의 집중 과정입니다. MLSS(2026년 뉴욕 컬럼비아대)와 MLCC(제노바)가 그 예이며, 매년 겨울 ML-news 메일링 리스트에 새 학교가 공지됩니다.",
+   "One- to two-week intensive schools with lectures from leading researchers. MLSS (two weeks; the 2026 edition was at Columbia, New York) and MLCC (one week, Genoa) are examples; new schools are announced each winter on the ML-news mailing list.",
+   "주요 연구자의 강의를 듣는 1~2주 집중 과정입니다. MLSS(2주, 2026년은 뉴욕 컬럼비아대)와 MLCC(1주, 제노바)가 그 예이며, 매년 겨울 ML-news 메일링 리스트에 새 학교가 공지됩니다.",
    "Usually applications in January–March; some charge fees and offer aid.",
    "보통 1~3월 지원. 참가비가 있는 곳도 있고 지원금이 있는 곳도 있습니다."
   ],

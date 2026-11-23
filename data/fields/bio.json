@@ -159,11 +159,11 @@
      "MIT 7.05 General Biochemistry",
      "https://ocw.mit.edu/courses/7-05-general-biochemistry-spring-2020/",
      "course",
-     "All lectures",
-     "전체 강의",
+     "All OCW lectures (mainly the metabolism half; the protein/enzyme half is on MITx)",
+     "OCW 강의 전체 (주로 대사 부분, 단백질·효소 부분은 MITx)",
      45,
-     "Proteins, enzymes and metabolism.",
-     "단백질, 효소, 대사."
+     "Metabolism on OCW; proteins and enzymes are covered in the companion MITx course.",
+     "OCW는 대사를 다루고, 단백질과 효소는 짝을 이루는 MITx 과정에서 다룹니다."
     ],
     [
      "MIT 7.03 Genetics",
@@ -176,11 +176,11 @@
      "고전·분자 유전학."
     ],
     [
-     "MIT 7.06 Cell Biology",
-     "https://ocw.mit.edu/courses/7-06-cell-biology-spring-2007/",
+     "MIT 7.06x Cell Biology (RES.7-007)",
+     "https://ocw.mit.edu/courses/res-7-007-7-06x-cell-biology/",
      "course",
-     "All lectures",
-     "전체 강의",
+     "Lecture videos + problem sets",
+     "강의 영상 + 문제풀이",
      40,
      "Membranes, trafficking, signalling and the cell cycle.",
      "막, 수송, 신호 전달, 세포 주기."
@@ -327,7 +327,7 @@
      ],
      "items": [
       [
-       "Generative Modeling in Protein Design (survey, 2026)",
+       "Generative Machine Learning for Protein Design (survey, 2026)",
        "https://arxiv.org/abs/2603.26378",
        "paper",
        "Sections 1–4",

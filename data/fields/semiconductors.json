@@ -203,11 +203,11 @@
     ],
     [
      "Fundamentals of Transistors (Mark Lundstrom, nanoHUB)",
-     "https://nanohub.org/courses/FoT",
+     "https://nanohub.org/courses/TFUN",
      "course",
      "All units",
      "전체 단원",
-     25,
+     40,
      "A modern, physics-first view of how nanoscale MOSFETs work.",
      "나노 규모 MOSFET의 동작을 물리 중심으로 설명하는 최신 강의."
     ],
@@ -441,7 +441,7 @@
       ],
       [
        "The OpenROAD Project",
-       "https://theopenroadproject.org/",
+       "https://openroad.org/",
        "code",
        "Run the flow on an example design",
        "예제 설계로 전체 흐름 실행",
