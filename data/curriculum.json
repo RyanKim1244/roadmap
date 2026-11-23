@@ -1,0 +1,1735 @@
+{
+ "version": 1,
+ "stages": [
+  {
+   "n": 0,
+   "name": [
+    "Tools",
+    "도구"
+   ],
+   "short": [
+    "Tools",
+    "도구"
+   ],
+   "goal": [
+    "Write code, manage experiments and work with tensors.",
+    "코드를 쓰고, 실험을 관리하고, 텐서를 다루는 기본기."
+   ],
+   "dur": [
+    "3–4 weeks",
+    "3~4주"
+   ],
+   "pre": [
+    "None",
+    "없음"
+   ],
+   "why": [
+    "Every later stage is learned by implementing things. Weak tooling turns each experiment into a fight with the environment instead of a question about the model.",
+    "이후 모든 단계는 직접 구현하며 배웁니다. 도구가 약하면 실험마다 모델이 아니라 환경과 씨름하게 됩니다."
+   ],
+   "concepts": [
+    [
+     "Virtual environments",
+     "Git branches & commits",
+     "Shell & scripting",
+     "Vectorization",
+     "Broadcasting",
+     "Tensors & autograd",
+     "Notebook vs. script",
+     "GPU basics"
+    ],
+    [
+     "가상환경",
+     "Git 브랜치·커밋",
+     "셸·스크립트",
+     "벡터화",
+     "브로드캐스팅",
+     "텐서·자동미분",
+     "노트북 vs 스크립트",
+     "GPU 기초"
+    ]
+   ],
+   "items": [
+    [
+     "Python Tutorial (official)",
+     "https://docs.python.org/3/tutorial/",
+     "book",
+     "Ch. 1–9",
+     "1~9장",
+     15,
+     "Up to classes, iterators and generators.",
+     "클래스, 이터레이터, 제너레이터까지.",
+     "https://docs.python.org/ko/3/tutorial/"
+    ],
+    [
+     "MIT — The Missing Semester",
+     "https://missing.csail.mit.edu/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     12,
+     "Shell, Git, editors, debugging: the research workbench.",
+     "셸, Git, 에디터, 디버깅 등 연구용 작업 환경."
+    ],
+    [
+     "NumPy quickstart",
+     "https://numpy.org/doc/stable/user/quickstart.html",
+     "article",
+     "Whole page",
+     "전체",
+     4,
+     "Array operations and broadcasting rules.",
+     "배열 연산과 브로드캐스팅 규칙."
+    ],
+    [
+     "PyTorch — Learn the Basics",
+     "https://pytorch.org/tutorials/beginner/basics/intro.html",
+     "course",
+     "All 8 parts",
+     "8개 파트 전체",
+     6,
+     "Tensors, datasets, autograd, the training loop, saving models.",
+     "텐서, 데이터셋, 자동미분, 학습 루프, 모델 저장."
+    ]
+   ],
+   "proj": [
+    "Train an MNIST classifier in PyTorch from a blank file. Keep it in a Git repo with a README, a requirements file, a fixed random seed and logged training curves.",
+    "빈 파일에서 시작해 PyTorch로 MNIST 분류기를 학습시킵니다. README, requirements 파일, 고정된 랜덤 시드, 학습 곡선 기록을 갖춘 Git 저장소로 관리합니다."
+   ],
+   "exit": [
+    "You can set up a fresh environment, write a training script without copying, and explain each line.",
+    "새 환경을 직접 구성하고, 학습 스크립트를 베끼지 않고 작성하며, 모든 줄을 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Living only in notebooks; research code needs scripts and version control.",
+     "노트북에만 머무르기. 연구 코드는 스크립트와 버전 관리가 필요합니다."
+    ],
+    [
+     "Copy-pasting code instead of typing it.",
+     "코드를 따라 치지 않고 복사해 붙이기."
+    ]
+   ]
+  },
+  {
+   "n": 1,
+   "name": [
+    "Mathematics",
+    "수학"
+   ],
+   "short": [
+    "Math",
+    "수학"
+   ],
+   "goal": [
+    "The linear algebra, probability, calculus and optimization needed to read equations in papers.",
+    "논문 수식을 읽을 수 있는 선형대수·확률·미적분·최적화."
+   ],
+   "dur": [
+    "8–12 weeks",
+    "8~12주"
+   ],
+   "pre": [
+    "High-school calculus",
+    "고교 미적분"
+   ],
+   "why": [
+    "Neural networks are stacks of matrix products trained by gradient descent, and most of them output probability distributions. Linear algebra, calculus and probability are the vocabulary of every paper you will read, in any AI subfield.",
+    "신경망은 경사하강법으로 학습한 행렬곱의 층이고, 대부분 확률분포를 출력합니다. 선형대수·미적분·확률은 어느 AI 세부 분야든 앞으로 읽을 모든 논문의 어휘입니다."
+   ],
+   "concepts": [
+    [
+     "Matrix product as composition",
+     "Rank & null space",
+     "Eigendecomposition",
+     "SVD",
+     "Gradients, Jacobians, chain rule",
+     "Bayes' rule",
+     "Expectation & variance",
+     "Gaussian, categorical distributions",
+     "MLE & MAP",
+     "Entropy, cross-entropy, KL",
+     "Gradient descent",
+     "Convexity"
+    ],
+    [
+     "합성으로서의 행렬곱",
+     "랭크·영공간",
+     "고유값 분해",
+     "SVD",
+     "기울기·야코비안·연쇄법칙",
+     "베이즈 정리",
+     "기댓값·분산",
+     "가우시안·범주형 분포",
+     "MLE·MAP",
+     "엔트로피·교차엔트로피·KL",
+     "경사하강법",
+     "볼록성"
+    ]
+   ],
+   "items": [
+    [
+     "3Blue1Brown — Linear algebra series",
+     "https://www.3blue1brown.com/lessons/vectors",
+     "video",
+     "All chapters",
+     "전 챕터",
+     4,
+     "Geometric intuition first: vectors, transformations, eigenvalues.",
+     "직관 먼저. 벡터, 선형변환, 고유값의 기하학적 의미."
+    ],
+    [
+     "MIT 18.06 Linear Algebra (Gilbert Strang)",
+     "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+     "course",
+     "Lectures 1–25 + problem sets",
+     "1~25강 + 문제풀이",
+     40,
+     "The rigorous version, with exercises.",
+     "정식 강의와 연습문제."
+    ],
+    [
+     "3Blue1Brown — Essence of Calculus",
+     "https://www.3blue1brown.com/lessons/essence-of-calculus",
+     "video",
+     "All chapters",
+     "전 챕터",
+     4,
+     "Derivatives, chain rule and integrals, visually.",
+     "미분, 연쇄법칙, 적분을 시각적으로."
+    ],
+    [
+     "Harvard Stat 110 Probability",
+     "https://projects.iq.harvard.edu/stat110",
+     "course",
+     "Lectures + book Ch. 1–9",
+     "강의 + 교재 1~9장",
+     40,
+     "Free book and lecture videos are linked from the page.",
+     "페이지에서 무료 교재와 강의 영상으로 연결됩니다."
+    ],
+    [
+     "Mathematics for Machine Learning",
+     "https://mml-book.github.io/",
+     "book",
+     "Part I (Ch. 2–7)",
+     "1부 (2~7장)",
+     40,
+     "Matrix calculus, optimization and probability tied to ML.",
+     "행렬미분, 최적화, 확률을 ML 관점으로 연결."
+    ],
+    [
+     "Convex Optimization (Boyd & Vandenberghe)",
+     "https://web.stanford.edu/~boyd/cvxbook/",
+     "book",
+     "Ch. 1–5 (optional)",
+     "1~5장 (선택)",
+     20,
+     "Optional depth for optimization theory.",
+     "최적화 이론을 깊게 보고 싶을 때 선택."
+    ]
+   ],
+   "proj": [
+    "Implement PCA with SVD from scratch on a real dataset. Derive gradient descent for linear regression by hand, code it, and compare against the closed-form solution.",
+    "실제 데이터셋에 SVD로 PCA를 직접 구현합니다. 선형회귀의 경사하강법을 손으로 유도해 코딩하고, 닫힌 해와 비교합니다."
+   ],
+   "exit": [
+    "Derive the gradient of the linear-regression loss with matrix calculus, and explain why minimizing cross-entropy equals maximum likelihood.",
+    "선형회귀 손실의 기울기를 행렬미분으로 유도하고, 교차엔트로피 최소화가 최대우도추정과 같은 이유를 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Trying to master all math before touching ML. Learn to working level, then return.",
+     "ML에 들어가기 전에 수학을 완벽히 끝내려 하기. 쓸 수 있는 수준까지 익히고 필요할 때 돌아오세요."
+    ],
+    [
+     "Neglecting probability; most modern models are probability models.",
+     "확률 소홀히 하기. 현대 모델 대부분은 확률 모델입니다."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "name": [
+    "Machine learning",
+    "머신러닝 기초"
+   ],
+   "short": [
+    "ML",
+    "머신러닝"
+   ],
+   "goal": [
+    "Understand learning, generalization and overfitting; implement classic models.",
+    "학습·일반화·과적합을 이해하고 고전 모델을 직접 구현."
+   ],
+   "dur": [
+    "6–8 weeks",
+    "6~8주"
+   ],
+   "pre": [
+    "Stage 1",
+    "1단계"
+   ],
+   "why": [
+    "Deep learning inherits its core ideas from classical ML: loss functions, regularization, validation and the bias-variance trade-off. Researchers who skip this stage misread their own experiments.",
+    "딥러닝의 핵심 개념(손실함수, 정규화, 검증, 편향-분산)은 고전 머신러닝에서 왔습니다. 이 단계를 건너뛰면 자기 실험 결과를 잘못 해석하게 됩니다."
+   ],
+   "concepts": [
+    [
+     "Train / validation / test",
+     "Loss functions",
+     "Bias–variance",
+     "L1 / L2 regularization",
+     "Cross-validation",
+     "Logistic regression",
+     "Softmax & cross-entropy",
+     "SGD & mini-batches",
+     "Evaluation metrics",
+     "Data leakage",
+     "k-means & PCA",
+     "Decision trees & ensembles"
+    ],
+    [
+     "학습/검증/테스트 분할",
+     "손실함수",
+     "편향-분산",
+     "L1·L2 정규화",
+     "교차검증",
+     "로지스틱 회귀",
+     "소프트맥스·교차엔트로피",
+     "SGD·미니배치",
+     "평가 지표",
+     "데이터 누수",
+     "k-평균·PCA",
+     "결정트리·앙상블"
+    ]
+   ],
+   "items": [
+    [
+     "Stanford CS229 Machine Learning",
+     "https://cs229.stanford.edu/",
+     "course",
+     "Lecture notes: supervised learning, generalization, unsupervised",
+     "강의노트: 지도학습, 일반화, 비지도학습",
+     40,
+     "The theory backbone of the stage.",
+     "이 단계의 이론 뼈대."
+    ],
+    [
+     "An Introduction to Statistical Learning (Python ed.)",
+     "https://www.statlearning.com/",
+     "book",
+     "Ch. 2–8, 12 with labs",
+     "2~8장, 12장 + 실습",
+     35,
+     "Gentle and practical; free PDF on the site.",
+     "친절하고 실용적. 사이트에서 무료 PDF 제공."
+    ],
+    [
+     "Dive into Deep Learning",
+     "https://d2l.ai/",
+     "book",
+     "Ch. 1–5",
+     "1~5장",
+     20,
+     "Linear models and MLPs with runnable code.",
+     "실행 가능한 코드로 보는 선형모델·MLP."
+    ]
+   ],
+   "proj": [
+    "Implement logistic regression and a two-layer MLP using only NumPy. Then solve a public tabular task with a proper validation split and an honest baseline (e.g. gradient-boosted trees).",
+    "NumPy만으로 로지스틱 회귀와 2층 MLP를 구현합니다. 그다음 공개 표 형식 데이터 문제를 제대로 된 검증 분할과 정직한 기준선(예: 그래디언트 부스팅)으로 풉니다."
+   ],
+   "exit": [
+    "Your NumPy MLP trains, and you can explain every gradient in it.",
+    "NumPy MLP가 학습되고, 그 안의 모든 기울기를 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Tuning on the test set.",
+     "테스트셋으로 튜닝하기."
+    ],
+    [
+     "Reporting accuracy without a simple baseline.",
+     "단순 기준선 없이 정확도만 보고하기."
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "name": [
+    "Deep learning",
+    "딥러닝"
+   ],
+   "short": [
+    "Deep learning",
+    "딥러닝"
+   ],
+   "goal": [
+    "Implement backpropagation by hand and develop a feel for how neural-network training behaves.",
+    "역전파를 손으로 구현하고, 신경망 학습이 실제로 어떻게 굴러가는지 체득."
+   ],
+   "dur": [
+    "8–10 weeks",
+    "8~10주"
+   ],
+   "pre": [
+    "Stages 0–2",
+    "0~2단계"
+   ],
+   "why": [
+    "Across vision, language, generative models and RL, much of research is making training work: initialization, normalization, optimizers and debugging. This is where that intuition is built.",
+    "비전·언어·생성모델·강화학습 어디서든 연구의 큰 부분은 학습이 잘 되게 만드는 일입니다(초기화, 정규화, 옵티마이저, 디버깅). 그 감각을 이 단계에서 만듭니다."
+   ],
+   "concepts": [
+    [
+     "Backprop & computational graphs",
+     "Initialization",
+     "Activations",
+     "BatchNorm / LayerNorm",
+     "Residual connections",
+     "SGD momentum, Adam, AdamW",
+     "LR schedules & warmup",
+     "Dropout, weight decay",
+     "CNNs",
+     "RNNs",
+     "Embeddings",
+     "Overfit one batch first"
+    ],
+    [
+     "역전파·계산 그래프",
+     "초기화",
+     "활성화 함수",
+     "BatchNorm·LayerNorm",
+     "잔차 연결",
+     "SGD 모멘텀·Adam·AdamW",
+     "학습률 스케줄·워밍업",
+     "드롭아웃·가중치 감쇠",
+     "CNN",
+     "RNN",
+     "임베딩",
+     "한 배치부터 과적합시키기"
+    ]
+   ],
+   "items": [
+    [
+     "Andrej Karpathy — Neural Networks: Zero to Hero",
+     "https://karpathy.ai/zero-to-hero.html",
+     "course",
+     "All 8 lectures, coding along",
+     "8개 강의 전부, 직접 코딩",
+     60,
+     "micrograd → makemore → GPT → tokenizer. The spine of the core path.",
+     "micrograd → makemore → GPT → 토크나이저. 핵심 경로의 척추."
+    ],
+    [
+     "Understanding Deep Learning (Prince)",
+     "https://udlbook.github.io/udlbook/",
+     "book",
+     "Ch. 1–12",
+     "1~12장",
+     40,
+     "Clear modern textbook with notebooks; later chapters cover generative models and RL.",
+     "노트북 실습이 딸린 명료한 최신 교재. 뒷부분은 생성모델과 강화학습을 다룹니다."
+    ],
+    [
+     "Stanford CS231n",
+     "https://cs231n.stanford.edu/",
+     "course",
+     "Lectures + assignments 1–2",
+     "강의 + 과제 1~2",
+     50,
+     "CNNs, optimization and training diagnostics.",
+     "CNN, 최적화, 학습 진단."
+    ],
+    [
+     "Deep Residual Learning (ResNet, 2015)",
+     "https://arxiv.org/abs/1512.03385",
+     "paper",
+     "Full paper",
+     "전문",
+     3,
+     "Residual connections: in nearly every deep model since.",
+     "잔차 연결. 이후 거의 모든 심층 모델에 쓰입니다."
+    ],
+    [
+     "A Recipe for Training Neural Networks",
+     "https://karpathy.github.io/2019/04/25/recipe/",
+     "article",
+     "Whole post",
+     "전체",
+     1,
+     "A practical debugging checklist; reread often.",
+     "실전 디버깅 체크리스트. 자주 다시 읽기."
+    ],
+    [
+     "Deep Learning (Goodfellow, Bengio, Courville)",
+     "https://www.deeplearningbook.org/",
+     "book",
+     "Ch. 6–8 (reference)",
+     "6~8장 (참고)",
+     15,
+     "Reference for optimization and regularization.",
+     "최적화와 정규화 참고서."
+    ]
+   ],
+   "proj": [
+    "Rebuild micrograd and makemore without the videos. Train a small CNN on CIFAR-10 and run three ablations (normalization, optimizer, augmentation), each with a written conclusion.",
+    "영상 없이 micrograd와 makemore를 다시 만듭니다. CIFAR-10에 작은 CNN을 학습시키고 세 가지 비교 실험(정규화, 옵티마이저, 데이터 증강)을 각각 결론과 함께 정리합니다."
+   ],
+   "exit": [
+    "You can reimplement makemore from memory and diagnose a training run that diverges.",
+    "makemore를 기억만으로 다시 구현하고, 발산하는 학습을 진단할 수 있다."
+   ],
+   "pit": [
+    [
+     "Passive watching.",
+     "수동적으로 시청만 하기."
+    ],
+    [
+     "Never plotting activations or gradients.",
+     "활성값·기울기를 한 번도 그려보지 않기."
+    ],
+    [
+     "Changing several hyperparameters at once.",
+     "하이퍼파라미터를 여러 개 동시에 바꾸기."
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "name": [
+    "Transformers & foundation models",
+    "트랜스포머·기반 모델"
+   ],
+   "short": [
+    "Transformers",
+    "트랜스포머"
+   ],
+   "goal": [
+    "Understand Transformers, pretraining and scaling; train a small GPT from scratch.",
+    "Transformer, 사전학습, 스케일링을 이해하고 작은 GPT를 처음부터 학습."
+   ],
+   "dur": [
+    "10–14 weeks",
+    "10~14주"
+   ],
+   "pre": [
+    "Stage 3",
+    "3단계"
+   ],
+   "why": [
+    "The Transformer is now the shared backbone of language, vision, audio, generative and robotics models. Whatever track you choose next, you will be expected to know its architecture, pretraining pipeline and scaling behaviour.",
+    "Transformer는 이제 언어·비전·음성·생성·로보틱스 모델의 공통 뼈대입니다. 다음에 어떤 트랙을 고르든 이 아키텍처와 사전학습 파이프라인, 스케일링 특성을 알고 있어야 합니다."
+   ],
+   "concepts": [
+    [
+     "BPE tokenization",
+     "Self-attention, multi-head",
+     "Causal masking",
+     "RoPE",
+     "Pre-LN",
+     "KV cache",
+     "Sampling: temperature, top-p",
+     "Perplexity",
+     "Encoder vs. decoder",
+     "Scaling laws",
+     "Compute-optimal training",
+     "Data filtering & dedup",
+     "Mixed precision",
+     "Mixture of experts",
+     "Fine-tuning vs. in-context learning"
+    ],
+    [
+     "BPE 토크나이저",
+     "셀프 어텐션·멀티헤드",
+     "인과 마스킹",
+     "RoPE",
+     "Pre-LN",
+     "KV 캐시",
+     "샘플링: temperature·top-p",
+     "퍼플렉서티",
+     "인코더 vs 디코더",
+     "스케일링 법칙",
+     "연산 최적 학습",
+     "데이터 필터링·중복 제거",
+     "혼합 정밀도",
+     "MoE",
+     "미세조정 vs 맥락 내 학습"
+    ]
+   ],
+   "items": [
+    [
+     "Attention Is All You Need (2017)",
+     "https://arxiv.org/abs/1706.03762",
+     "paper",
+     "Full paper",
+     "전문",
+     4,
+     "The original Transformer.",
+     "Transformer 원 논문."
+    ],
+    [
+     "The Illustrated Transformer",
+     "https://jalammar.github.io/illustrated-transformer/",
+     "article",
+     "Whole post",
+     "전체",
+     1,
+     "Read alongside the paper.",
+     "원 논문과 함께 읽기."
+    ],
+    [
+     "Stanford CS224N NLP with Deep Learning",
+     "https://web.stanford.edu/class/cs224n/",
+     "course",
+     "Lectures on word vectors → pretraining",
+     "단어 벡터 ~ 사전학습 강의",
+     40,
+     "Sequence modelling context and assignments.",
+     "시퀀스 모델링의 맥락과 과제."
+    ],
+    [
+     "Language Models are Unsupervised Multitask Learners (GPT-2)",
+     "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf",
+     "paper",
+     "Full paper",
+     "전문",
+     3,
+     "Decoder-only pretraining at scale.",
+     "디코더 전용 대규모 사전학습."
+    ],
+    [
+     "Language Models are Few-Shot Learners (GPT-3)",
+     "https://arxiv.org/abs/2005.14165",
+     "paper",
+     "Sections 1–3",
+     "1~3절",
+     4,
+     "In-context learning emerges with scale.",
+     "규모와 함께 나타나는 맥락 내 학습."
+    ],
+    [
+     "BERT (2018)",
+     "https://arxiv.org/abs/1810.04805",
+     "paper",
+     "Full paper",
+     "전문",
+     3,
+     "The encoder-side counterpart; still a common baseline.",
+     "인코더 쪽의 대표작. 지금도 흔한 기준선."
+    ],
+    [
+     "Scaling Laws for Neural Language Models (2020)",
+     "https://arxiv.org/abs/2001.08361",
+     "paper",
+     "Full paper",
+     "전문",
+     4,
+     "Loss as a power law in parameters, data and compute.",
+     "파라미터·데이터·연산량에 대한 손실의 거듭제곱 법칙."
+    ],
+    [
+     "Training Compute-Optimal LLMs — Chinchilla (2022)",
+     "https://arxiv.org/abs/2203.15556",
+     "paper",
+     "Full paper",
+     "전문",
+     4,
+     "How to split a compute budget between size and data.",
+     "연산 예산을 모델 크기와 데이터에 나누는 법."
+    ],
+    [
+     "RoFormer: Rotary Position Embedding",
+     "https://arxiv.org/abs/2104.09864",
+     "paper",
+     "Sections 1–3",
+     "1~3절",
+     3,
+     "The positional encoding used by most open models.",
+     "대부분의 공개 모델이 쓰는 위치 인코딩."
+    ],
+    [
+     "Switch Transformers (mixture of experts)",
+     "https://arxiv.org/abs/2101.03961",
+     "paper",
+     "Sections 1–3",
+     "1~3절",
+     4,
+     "Sparse expert layers that now power many frontier models.",
+     "현재 많은 최신 모델이 쓰는 희소 전문가 층."
+    ],
+    [
+     "LLaMA (2023)",
+     "https://arxiv.org/abs/2302.13971",
+     "paper",
+     "Full paper",
+     "전문",
+     3,
+     "A clean recipe for an open foundation model.",
+     "공개 기반 모델의 깔끔한 레시피."
+    ],
+    [
+     "karpathy/nanoGPT",
+     "https://github.com/karpathy/nanoGPT",
+     "code",
+     "Train the Shakespeare and small-scale configs",
+     "셰익스피어·소규모 설정 학습",
+     10,
+     "Minimal, readable GPT training code.",
+     "읽기 쉬운 최소 GPT 학습 코드."
+    ],
+    [
+     "Stanford CS336 Language Modeling from Scratch",
+     "https://cs336.stanford.edu/",
+     "course",
+     "All lectures + assignments 1–5",
+     "전 강의 + 과제 1~5",
+     120,
+     "Tokenizer, training, GPU kernels, parallelism, data, alignment — built by hand.",
+     "토크나이저, 학습, GPU 커널, 병렬화, 데이터, 정렬까지 직접 구현."
+    ],
+    [
+     "How to Scale Your Model (Google DeepMind)",
+     "https://jax-ml.github.io/scaling-book/",
+     "book",
+     "Parts 1–5",
+     "1~5부",
+     15,
+     "The arithmetic of training and serving at scale.",
+     "대규모 학습·서빙의 계산."
+    ],
+    [
+     "Hugging Face LLM Course",
+     "https://huggingface.co/learn/llm-course",
+     "course",
+     "Ch. 1–7",
+     "1~7장",
+     12,
+     "The tooling you will actually use for experiments.",
+     "실제 실험에서 쓰게 될 도구 사용법."
+    ]
+   ],
+   "proj": [
+    "Write your own BPE tokenizer and train a 10–50M parameter GPT on a public corpus. Train three model sizes and plot loss against compute to reproduce a mini scaling curve.",
+    "BPE 토크나이저를 직접 작성하고, 공개 말뭉치로 1천만~5천만 파라미터 GPT를 학습시킵니다. 세 가지 크기로 학습해 연산량 대비 손실을 그려 작은 스케일링 곡선을 재현합니다."
+   ],
+   "exit": [
+    "Complete CS336 Assignment 1 and explain where memory and compute go during one training step.",
+    "CS336 과제 1을 완료하고, 학습 한 스텝에서 메모리와 연산이 어디에 쓰이는지 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Only using high-level library APIs without building the internals.",
+     "내부를 직접 만들지 않고 고수준 라이브러리 API만 쓰기."
+    ],
+    [
+     "Ignoring systems math (memory, FLOPs, bandwidth).",
+     "시스템 계산(메모리, FLOPs, 대역폭) 무시하기."
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "name": [
+    "Specialization tracks",
+    "전문 트랙"
+   ],
+   "short": [
+    "Tracks",
+    "전문 트랙"
+   ],
+   "goal": [
+    "Go deep in one or two areas of AI research. Each track has its own concepts, readings, project and exit bar.",
+    "AI 연구의 한두 영역을 깊게 팝니다. 트랙마다 개념, 읽을거리, 프로젝트, 통과 기준이 따로 있습니다."
+   ],
+   "dur": [
+    "10–16 weeks per track",
+    "트랙당 10~16주"
+   ],
+   "pre": [
+    "Stage 4",
+    "4단계"
+   ],
+   "why": [
+    "AI research is broad. Pick a first track by interest, then add a second one that complements it (for example, generative models + systems, or RL + interpretability). The stage counts as done once one track is complete.",
+    "AI 연구는 범위가 넓습니다. 관심사로 첫 트랙을 고르고, 서로 보완되는 두 번째 트랙을 더하세요(예: 생성모델 + 시스템, 강화학습 + 해석가능성). 트랙 하나를 마치면 이 단계를 완료한 것으로 봅니다."
+   ],
+   "tracks": [
+    {
+     "id": "A",
+     "name": [
+      "Post-training & reasoning (LLMs)",
+      "사후학습·추론 (LLM)"
+     ],
+     "goal": [
+      "Alignment, preference learning and reinforcement learning that turn pretrained models into capable reasoners.",
+      "사전학습 모델을 추론 능력을 갖춘 모델로 만드는 정렬, 선호 학습, 강화학습."
+     ],
+     "concepts": [
+      [
+       "Supervised fine-tuning",
+       "Reward models",
+       "RLHF with PPO",
+       "KL penalty",
+       "DPO",
+       "Constitutional AI",
+       "RL with verifiable rewards",
+       "GRPO",
+       "Reward hacking",
+       "Chain-of-thought & test-time compute",
+       "Benchmark contamination",
+       "LoRA"
+      ],
+      [
+       "지도 미세조정",
+       "보상모델",
+       "PPO 기반 RLHF",
+       "KL 패널티",
+       "DPO",
+       "Constitutional AI",
+       "검증 가능한 보상 RL",
+       "GRPO",
+       "보상 해킹",
+       "사고 사슬·추론 시점 연산",
+       "벤치마크 오염",
+       "LoRA"
+      ]
+     ],
+     "items": [
+      [
+       "Spinning Up in Deep RL (OpenAI)",
+       "https://spinningup.openai.com/",
+       "course",
+       "Intro to RL Parts 1–3, VPG, PPO",
+       "RL 입문 1~3부, VPG, PPO",
+       20,
+       "The RL background that post-training papers assume.",
+       "사후학습 논문이 전제하는 RL 기초."
+      ],
+      [
+       "InstructGPT (2022)",
+       "https://arxiv.org/abs/2203.02155",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "The standard RLHF recipe.",
+       "RLHF의 표준 레시피."
+      ],
+      [
+       "Constitutional AI (2022)",
+       "https://arxiv.org/abs/2212.08073",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "Training with AI feedback guided by written principles.",
+       "명문화된 원칙에 따른 AI 피드백 학습."
+      ],
+      [
+       "Direct Preference Optimization (2023)",
+       "https://arxiv.org/abs/2305.18290",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "Preference learning without a separate reward model.",
+       "별도 보상모델 없이 선호 학습."
+      ],
+      [
+       "LoRA: Low-Rank Adaptation (2021)",
+       "https://arxiv.org/abs/2106.09685",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "The cheap fine-tuning method you will use on a student budget.",
+       "학생 예산으로 쓰게 될 저비용 미세조정 기법."
+      ],
+      [
+       "Chain-of-Thought Prompting (2022)",
+       "https://arxiv.org/abs/2201.11903",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "Where reasoning-by-writing started.",
+       "글로 추론하게 하는 방식의 시작."
+      ],
+      [
+       "DeepSeekMath — introduces GRPO (2024)",
+       "https://arxiv.org/abs/2402.03300",
+       "paper",
+       "Sections on GRPO",
+       "GRPO 관련 절",
+       3,
+       "The policy-optimization method behind many reasoning models.",
+       "많은 추론 모델의 기반이 된 정책 최적화 기법."
+      ],
+      [
+       "DeepSeek-R1 (2025)",
+       "https://arxiv.org/abs/2501.12948",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "Reasoning learned from verifiable rewards.",
+       "검증 가능한 보상으로 학습한 추론."
+      ],
+      [
+       "DAPO: Open-Source LLM RL System at Scale (2025)",
+       "https://arxiv.org/abs/2503.14476",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "Reproducible large-scale reasoning RL.",
+       "재현 가능한 대규모 추론 RL."
+      ],
+      [
+       "NeurIPS 2025 Best Paper Awards",
+       "https://blog.neurips.cc/2025/11/26/announcing-the-neurips-2025-best-paper-awards/",
+       "article",
+       "LLM-related winners",
+       "LLM 관련 수상작",
+       6,
+       "Gated attention, limits of reasoning RL, LM diversity.",
+       "어텐션 게이트, 추론 RL의 한계, 언어모델 다양성."
+      ]
+     ],
+     "proj": [
+      "Choose one: (a) SFT then DPO on a 0.5–1B open model with a public preference dataset, comparing before and after; or (b) GRPO with LoRA on math problems with a verifiable reward.",
+      "둘 중 하나를 고릅니다. (a) 0.5~1B 공개 모델에 공개 선호 데이터셋으로 SFT 후 DPO를 적용해 전후 비교, 또는 (b) 검증 가능한 보상으로 수학 문제에 LoRA와 GRPO 적용."
+     ],
+     "exit": [
+      "A short report of your run, including what went wrong and how you checked for reward hacking and contamination.",
+      "실험 보고서를 짧게 작성한다. 잘못된 점, 보상 해킹과 데이터 오염을 어떻게 점검했는지 포함."
+     ],
+     "pit": [
+      [
+       "Trusting a single benchmark number.",
+       "벤치마크 숫자 하나를 그대로 믿기."
+      ],
+      [
+       "Missing reward hacking in your own runs.",
+       "자기 실험의 보상 해킹을 놓치기."
+      ]
+     ]
+    },
+    {
+     "id": "B",
+     "name": [
+      "Vision & multimodal",
+      "비전·멀티모달"
+     ],
+     "goal": [
+      "How models see: from convolutions to vision Transformers, self-supervised learning and vision-language models.",
+      "모델이 보는 방법: 합성곱에서 비전 트랜스포머, 자기지도학습, 시각-언어 모델까지."
+     ],
+     "concepts": [
+      [
+       "Convolutions & receptive fields",
+       "Data augmentation",
+       "Vision Transformer patches",
+       "Self-supervised: contrastive & masked",
+       "CLIP contrastive alignment",
+       "Zero-shot & linear-probe evaluation",
+       "Detection & segmentation",
+       "Vision-language models",
+       "Visual instruction tuning",
+       "Dataset curation & duplicates"
+      ],
+      [
+       "합성곱·수용 영역",
+       "데이터 증강",
+       "비전 트랜스포머 패치",
+       "자기지도학습: 대조·마스킹",
+       "CLIP 대조 정렬",
+       "제로샷·선형 프로브 평가",
+       "검출·분할",
+       "시각-언어 모델",
+       "시각 지시 튜닝",
+       "데이터셋 정제·중복"
+      ]
+     ],
+     "items": [
+      [
+       "Computer Vision: Algorithms and Applications (Szeliski, 2nd ed.)",
+       "https://szeliski.org/Book/",
+       "book",
+       "Ch. 1, 5, 6 (reference)",
+       "1, 5, 6장 (참고)",
+       15,
+       "Free PDF for personal use; the classic CV reference.",
+       "개인용 무료 PDF. 컴퓨터 비전의 대표 참고서."
+      ],
+      [
+       "An Image is Worth 16x16 Words (ViT, 2020)",
+       "https://arxiv.org/abs/2010.11929",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Transformers applied directly to image patches.",
+       "이미지 패치에 Transformer를 그대로 적용."
+      ],
+      [
+       "Masked Autoencoders (MAE, 2021)",
+       "https://arxiv.org/abs/2111.06377",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Simple, scalable self-supervised pretraining for vision.",
+       "단순하고 확장성 있는 비전 자기지도 사전학습."
+      ],
+      [
+       "CLIP: Learning Transferable Visual Models from Natural Language (2021)",
+       "https://arxiv.org/abs/2103.00020",
+       "paper",
+       "Sections 1–3",
+       "1~3절",
+       4,
+       "Contrastive image-text pretraining; the bridge to multimodal models.",
+       "이미지-텍스트 대조 사전학습. 멀티모달 모델로 가는 다리."
+      ],
+      [
+       "Segment Anything (2023)",
+       "https://arxiv.org/abs/2304.02643",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "A promptable foundation model for segmentation, plus its data engine.",
+       "프롬프트로 쓰는 분할 기반 모델과 데이터 엔진."
+      ],
+      [
+       "Visual Instruction Tuning (LLaVA, 2023)",
+       "https://arxiv.org/abs/2304.08485",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Connecting a vision encoder to a language model.",
+       "비전 인코더를 언어모델에 연결하는 방법."
+      ]
+     ],
+     "proj": [
+      "Fine-tune a small ViT on a public dataset, then train a mini-CLIP on an image-caption subset and evaluate zero-shot classification against a pretrained CLIP.",
+      "공개 데이터셋에 작은 ViT를 미세조정하고, 이미지-캡션 일부로 작은 CLIP을 학습시켜 사전학습된 CLIP과 제로샷 분류 성능을 비교합니다."
+     ],
+     "exit": [
+      "Explain the contrastive loss line by line and reproduce zero-shot classification numbers on a standard benchmark.",
+      "대조 손실을 줄 단위로 설명하고, 표준 벤치마크에서 제로샷 분류 수치를 재현할 수 있다."
+     ],
+     "pit": [
+      [
+       "Reporting only one headline accuracy.",
+       "대표 정확도 하나만 보고하기."
+      ],
+      [
+       "Ignoring train–test overlap in web-scale data.",
+       "웹 규모 데이터의 학습-평가 중복 무시하기."
+      ]
+     ]
+    },
+    {
+     "id": "C",
+     "name": [
+      "Generative models",
+      "생성모델"
+     ],
+     "goal": [
+      "Models that create images, audio and video: VAEs, GANs, diffusion and flow matching.",
+      "이미지·음성·영상을 만드는 모델: VAE, GAN, 확산, 플로 매칭."
+     ],
+     "concepts": [
+      [
+       "Likelihood-based vs. implicit models",
+       "ELBO & reparameterization",
+       "Adversarial training",
+       "Forward & reverse diffusion",
+       "Noise-prediction objective",
+       "Score matching",
+       "SDE / ODE samplers",
+       "Classifier-free guidance",
+       "Latent diffusion",
+       "Flow matching",
+       "Diffusion Transformers",
+       "FID & evaluation pitfalls"
+      ],
+      [
+       "우도 기반 vs 암시적 모델",
+       "ELBO·재매개변수화",
+       "적대적 학습",
+       "순방향·역방향 확산",
+       "노이즈 예측 목적함수",
+       "스코어 매칭",
+       "SDE·ODE 샘플러",
+       "분류기 없는 가이던스",
+       "잠재 확산",
+       "플로 매칭",
+       "확산 트랜스포머",
+       "FID와 평가의 함정"
+      ]
+     ],
+     "items": [
+      [
+       "Stanford CS236 Deep Generative Models",
+       "https://deepgenerativemodels.github.io/",
+       "course",
+       "Lecture notes + slides",
+       "강의노트 + 슬라이드",
+       30,
+       "The theory of autoregressive, latent-variable, flow, GAN and score models.",
+       "자기회귀, 잠재변수, 플로, GAN, 스코어 모델의 이론."
+      ],
+      [
+       "Auto-Encoding Variational Bayes (VAE, 2013)",
+       "https://arxiv.org/abs/1312.6114",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "The ELBO and reparameterization trick.",
+       "ELBO와 재매개변수화 기법."
+      ],
+      [
+       "Generative Adversarial Networks (2014)",
+       "https://arxiv.org/abs/1406.2661",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "The adversarial game behind a decade of image synthesis.",
+       "10년간 이미지 생성을 이끈 적대적 게임."
+      ],
+      [
+       "Denoising Diffusion Probabilistic Models (DDPM, 2020)",
+       "https://arxiv.org/abs/2006.11239",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "The paper that made diffusion practical.",
+       "확산 모델을 실용화한 논문."
+      ],
+      [
+       "What are Diffusion Models? (Lilian Weng)",
+       "https://lilianweng.github.io/posts/2021-07-11-diffusion-models/",
+       "article",
+       "Whole post",
+       "전체",
+       3,
+       "A connected walkthrough from DDPM to guidance, latent diffusion and DiT.",
+       "DDPM부터 가이던스, 잠재 확산, DiT까지 이어서 정리한 글."
+      ],
+      [
+       "Score-Based Generative Modeling through SDEs (2020)",
+       "https://arxiv.org/abs/2011.13456",
+       "paper",
+       "Sections 1–4",
+       "1~4절",
+       4,
+       "Unifies diffusion and score matching in continuous time.",
+       "연속 시간에서 확산과 스코어 매칭을 통합."
+      ],
+      [
+       "High-Resolution Image Synthesis with Latent Diffusion (2021)",
+       "https://arxiv.org/abs/2112.10752",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Diffusion in a compressed latent space.",
+       "압축된 잠재 공간에서의 확산."
+      ],
+      [
+       "Flow Matching for Generative Modeling (2022)",
+       "https://arxiv.org/abs/2210.02747",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "A simpler training objective now widely used for images and video.",
+       "이미지·영상에서 널리 쓰이는 더 단순한 학습 목표."
+      ],
+      [
+       "Scalable Diffusion Models with Transformers (DiT, 2022)",
+       "https://arxiv.org/abs/2212.09748",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Replacing the U-Net with a Transformer backbone.",
+       "U-Net을 Transformer 백본으로 교체."
+      ],
+      [
+       "Survey of Video Diffusion Models (TMLR 2025)",
+       "https://arxiv.org/abs/2504.16081",
+       "paper",
+       "Sections 1–3",
+       "1~3절",
+       6,
+       "A field map for video generation.",
+       "영상 생성 분야의 지도."
+      ]
+     ],
+     "proj": [
+      "Implement DDPM from scratch on MNIST or CIFAR-10, then convert it to flow matching. Compare sample quality against the number of sampling steps.",
+      "MNIST나 CIFAR-10에 DDPM을 처음부터 구현한 뒤 플로 매칭으로 바꿉니다. 샘플링 스텝 수에 따른 샘플 품질을 비교합니다."
+     ],
+     "exit": [
+      "Derive the simplified DDPM loss from the ELBO and ship a working sampler with classifier-free guidance.",
+      "ELBO에서 DDPM의 단순화된 손실을 유도하고, 분류기 없는 가이던스가 들어간 샘플러를 동작시킬 수 있다."
+     ],
+     "pit": [
+      [
+       "Judging models by cherry-picked samples.",
+       "골라낸 샘플로 모델을 평가하기."
+      ],
+      [
+       "Comparing FID across different evaluation setups.",
+       "서로 다른 평가 설정의 FID를 비교하기."
+      ]
+     ]
+    },
+    {
+     "id": "D",
+     "name": [
+      "Reinforcement learning, agents & robotics",
+      "강화학습·에이전트·로보틱스"
+     ],
+     "goal": [
+      "Learning from interaction: classic RL, deep RL, LLM agents and embodied foundation models.",
+      "상호작용으로 배우기: 고전 RL, 심층 RL, LLM 에이전트, 체화된 기반 모델."
+     ],
+     "concepts": [
+      [
+       "MDPs & Bellman equations",
+       "Dynamic programming",
+       "TD learning & Q-learning",
+       "Policy gradients",
+       "Actor-critic & PPO",
+       "Exploration",
+       "Model-based RL & planning",
+       "Imitation learning",
+       "Tool-using LLM agents",
+       "Agent benchmarks",
+       "Vision-language-action models"
+      ],
+      [
+       "MDP·벨만 방정식",
+       "동적 계획법",
+       "TD 학습·Q-러닝",
+       "정책 경사",
+       "액터-크리틱·PPO",
+       "탐험",
+       "모델 기반 RL·계획",
+       "모방 학습",
+       "도구를 쓰는 LLM 에이전트",
+       "에이전트 벤치마크",
+       "시각-언어-행동(VLA) 모델"
+      ]
+     ],
+     "items": [
+      [
+       "Reinforcement Learning: An Introduction (Sutton & Barto)",
+       "http://incompleteideas.net/book/the-book-2nd.html",
+       "book",
+       "Ch. 1–6, 13",
+       "1~6장, 13장",
+       40,
+       "The standard RL textbook; free PDF on the site.",
+       "표준 강화학습 교재. 사이트에서 무료 PDF."
+      ],
+      [
+       "UC Berkeley CS 285 Deep Reinforcement Learning",
+       "https://rail.eecs.berkeley.edu/deeprlcourse/",
+       "course",
+       "Lectures + homeworks 1–4",
+       "강의 + 과제 1~4",
+       60,
+       "Deep RL from imitation learning to model-based methods.",
+       "모방 학습부터 모델 기반 방법까지의 심층 RL."
+      ],
+      [
+       "Playing Atari with Deep RL (DQN, 2013)",
+       "https://arxiv.org/abs/1312.5602",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "The start of deep RL.",
+       "심층 강화학습의 시작."
+      ],
+      [
+       "Proximal Policy Optimization (PPO, 2017)",
+       "https://arxiv.org/abs/1707.06347",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "The workhorse policy-gradient algorithm, also used in RLHF.",
+       "RLHF에도 쓰이는 대표 정책 경사 알고리즘."
+      ],
+      [
+       "MuZero (2019)",
+       "https://arxiv.org/abs/1911.08265",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "Planning with a learned model.",
+       "학습된 모델로 계획하기."
+      ],
+      [
+       "ReAct: Reasoning and Acting (2022)",
+       "https://arxiv.org/abs/2210.03629",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "The reasoning-plus-tool-use loop behind most LLM agents.",
+       "대부분의 LLM 에이전트가 쓰는 추론+도구 사용 루프."
+      ],
+      [
+       "SWE-bench (2023)",
+       "https://arxiv.org/abs/2310.06770",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "Real GitHub issues as an agent benchmark.",
+       "실제 GitHub 이슈를 쓰는 에이전트 벤치마크."
+      ],
+      [
+       "Foundation Models in Robotics: A Comprehensive Review (2026)",
+       "https://arxiv.org/abs/2604.15395",
+       "paper",
+       "Sections 1–4",
+       "1~4절",
+       6,
+       "Field map for robot foundation models and VLAs.",
+       "로봇 기반 모델과 VLA 분야의 지도."
+      ]
+     ],
+     "proj": [
+      "Implement DQN on CartPole and PPO on a continuous-control task, each over at least three seeds. Then build a small ReAct agent with two tools and evaluate it on 20 tasks you write down in advance.",
+      "CartPole에 DQN, 연속 제어 과제에 PPO를 각각 시드 3개 이상으로 구현합니다. 그다음 도구 두 개를 쓰는 작은 ReAct 에이전트를 만들어, 미리 정해 둔 20개 과제로 평가합니다."
+     ],
+     "exit": [
+      "Derive the policy-gradient theorem and show a PPO learning curve with confidence bands across seeds.",
+      "정책 경사 정리를 유도하고, 여러 시드에 걸친 신뢰 구간이 표시된 PPO 학습 곡선을 보일 수 있다."
+     ],
+     "pit": [
+      [
+       "Reporting a single seed; RL results are high-variance.",
+       "시드 하나로 보고하기. RL 결과는 분산이 큽니다."
+      ],
+      [
+       "Shaping the reward until the agent exploits it.",
+       "에이전트가 악용할 때까지 보상을 손보기."
+      ]
+     ]
+    },
+    {
+     "id": "E",
+     "name": [
+      "Interpretability & safety",
+      "해석가능성·안전"
+     ],
+     "goal": [
+      "Understanding what models compute internally, and making them reliable and safe.",
+      "모델이 내부에서 무엇을 계산하는지 이해하고, 신뢰할 수 있고 안전하게 만들기."
+     ],
+     "concepts": [
+      [
+       "Residual stream",
+       "Attention & induction heads",
+       "Superposition",
+       "Sparse autoencoders",
+       "Attribution graphs",
+       "Activation patching",
+       "Probing",
+       "Activation steering",
+       "Specification gaming",
+       "Deceptive behaviour & backdoors",
+       "Jailbreaks & robustness",
+       "Scalable oversight"
+      ],
+      [
+       "잔차 스트림",
+       "어텐션·인덕션 헤드",
+       "중첩(superposition)",
+       "희소 오토인코더",
+       "귀속 그래프",
+       "활성 패칭",
+       "프로빙",
+       "활성 조정",
+       "명세 게이밍",
+       "기만적 행동·백도어",
+       "탈옥·강건성",
+       "확장 가능한 감독"
+      ]
+     ],
+     "items": [
+      [
+       "A Mathematical Framework for Transformer Circuits",
+       "https://transformer-circuits.pub/2021/framework/index.html",
+       "article",
+       "Whole article",
+       "전체",
+       6,
+       "How to think about attention heads and the residual stream.",
+       "어텐션 헤드와 잔차 스트림을 보는 관점."
+      ],
+      [
+       "Toy Models of Superposition",
+       "https://transformer-circuits.pub/2022/toy_model/index.html",
+       "article",
+       "Sections 1–4",
+       "1~4절",
+       5,
+       "Why single neurons rarely mean one thing.",
+       "뉴런 하나가 한 가지 뜻만 갖지 않는 이유."
+      ],
+      [
+       "Towards Monosemanticity",
+       "https://transformer-circuits.pub/2023/monosemantic-features/index.html",
+       "article",
+       "Main text",
+       "본문",
+       5,
+       "Dictionary learning extracts interpretable features.",
+       "사전 학습으로 해석 가능한 특징을 추출."
+      ],
+      [
+       "Circuit Tracing (Anthropic, 2025)",
+       "https://transformer-circuits.pub/2025/attribution-graphs/methods.html",
+       "article",
+       "Main text",
+       "본문",
+       6,
+       "Tracing model computation as attribution graphs.",
+       "모델 계산을 귀속 그래프로 추적."
+      ],
+      [
+       "TransformerLens",
+       "https://github.com/TransformerLensOrg/TransformerLens",
+       "code",
+       "README + main demo",
+       "README + 기본 데모",
+       6,
+       "Library for caching and editing activations of GPT-style models.",
+       "GPT류 모델의 활성값을 저장·수정하는 라이브러리."
+      ],
+      [
+       "Concrete Problems in AI Safety (2016)",
+       "https://arxiv.org/abs/1606.06565",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "A foundational taxonomy of safety problems.",
+       "안전 문제의 기초 분류."
+      ],
+      [
+       "Representation Engineering (2023)",
+       "https://arxiv.org/abs/2310.01405",
+       "paper",
+       "Sections 1–4",
+       "1~4절",
+       4,
+       "Reading and steering high-level concepts in activations.",
+       "활성값에서 고수준 개념을 읽고 조정하기."
+      ],
+      [
+       "Sleeper Agents (2024)",
+       "https://arxiv.org/abs/2401.05566",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "Backdoored behaviour that survives safety training.",
+       "안전 학습 후에도 남는 백도어 행동."
+      ]
+     ],
+     "proj": [
+      "With TransformerLens on GPT-2 small, find an induction head and confirm it with activation patching. Then train a small sparse autoencoder on one layer and label ten features.",
+      "GPT-2 small에서 TransformerLens로 인덕션 헤드를 찾고 활성 패칭으로 확인합니다. 그다음 한 층에 작은 희소 오토인코더를 학습시키고 특징 10개에 이름을 붙입니다."
+     ],
+     "exit": [
+      "A write-up of one circuit or feature with causal (not just correlational) evidence.",
+      "회로나 특징 하나를 상관이 아닌 인과적 증거와 함께 정리한 글."
+     ],
+     "pit": [
+      [
+       "Treating probe accuracy as proof that a model uses a feature.",
+       "프로브 정확도를 모델이 그 특징을 쓴다는 증거로 여기기."
+      ],
+      [
+       "Over-reading single feature labels.",
+       "특징 하나의 이름표를 과하게 해석하기."
+      ]
+     ]
+    },
+    {
+     "id": "F",
+     "name": [
+      "ML systems & efficiency",
+      "ML 시스템·효율화"
+     ],
+     "goal": [
+      "Making models train and run fast and cheaply: GPU kernels, parallelism, memory and inference.",
+      "모델을 빠르고 저렴하게 학습·실행하기: GPU 커널, 병렬화, 메모리, 추론."
+     ],
+     "concepts": [
+      [
+       "GPU memory hierarchy",
+       "Arithmetic intensity & roofline",
+       "Kernel fusion",
+       "Triton",
+       "Mixed precision",
+       "Data / tensor / pipeline parallelism",
+       "ZeRO & FSDP",
+       "Activation checkpointing",
+       "KV-cache management",
+       "Continuous batching",
+       "Quantization",
+       "Profiling"
+      ],
+      [
+       "GPU 메모리 계층",
+       "연산 강도·루프라인",
+       "커널 융합",
+       "Triton",
+       "혼합 정밀도",
+       "데이터·텐서·파이프라인 병렬화",
+       "ZeRO·FSDP",
+       "활성 체크포인팅",
+       "KV 캐시 관리",
+       "연속 배칭",
+       "양자화",
+       "프로파일링"
+      ]
+     ],
+     "items": [
+      [
+       "GPU MODE lectures",
+       "https://github.com/gpu-mode/lectures",
+       "course",
+       "Lectures on CUDA, Triton and attention kernels",
+       "CUDA·Triton·어텐션 커널 강의",
+       30,
+       "Community lecture series with code and slides.",
+       "코드와 슬라이드가 있는 커뮤니티 강의 시리즈."
+      ],
+      [
+       "Triton tutorials",
+       "https://triton-lang.org/main/getting-started/tutorials/index.html",
+       "code",
+       "Tutorials 1–6",
+       "튜토리얼 1~6",
+       15,
+       "Vector add → fused softmax → matmul → fused attention.",
+       "벡터 덧셈 → 융합 소프트맥스 → 행렬곱 → 융합 어텐션."
+      ],
+      [
+       "FlashAttention (2022)",
+       "https://arxiv.org/abs/2205.14135",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "IO-aware attention; a model of systems thinking.",
+       "IO를 고려한 어텐션. 시스템적 사고의 본보기."
+      ],
+      [
+       "Megatron-LM (2019)",
+       "https://arxiv.org/abs/1909.08053",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Tensor parallelism for large Transformers.",
+       "대형 Transformer의 텐서 병렬화."
+      ],
+      [
+       "ZeRO: Memory Optimizations (2019)",
+       "https://arxiv.org/abs/1910.02054",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Sharding optimizer state, gradients and parameters.",
+       "옵티마이저 상태·기울기·파라미터 분할."
+      ],
+      [
+       "Efficient Memory Management for LLM Serving with PagedAttention (vLLM, 2023)",
+       "https://arxiv.org/abs/2309.06180",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "How modern inference servers manage the KV cache.",
+       "최신 추론 서버가 KV 캐시를 관리하는 방법."
+      ],
+      [
+       "QLoRA (2023)",
+       "https://arxiv.org/abs/2305.14314",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "4-bit quantization plus low-rank fine-tuning.",
+       "4비트 양자화와 저랭크 미세조정의 결합."
+      ]
+     ],
+     "proj": [
+      "Write fused softmax and matmul kernels in Triton and benchmark them against PyTorch. Then profile one GPT training step and cut peak memory with mixed precision and activation checkpointing.",
+      "Triton으로 융합 소프트맥스와 행렬곱 커널을 작성해 PyTorch와 성능을 비교합니다. 그다음 GPT 학습 한 스텝을 프로파일링하고 혼합 정밀도와 활성 체크포인팅으로 최대 메모리를 줄입니다."
+     ],
+     "exit": [
+      "A roofline analysis of one Transformer layer, and a kernel within 2× of the library implementation.",
+      "Transformer 층 하나의 루프라인 분석, 그리고 라이브러리 구현의 2배 이내 성능을 내는 커널."
+     ],
+     "pit": [
+      [
+       "Optimizing before profiling.",
+       "프로파일링 전에 최적화하기."
+      ],
+      [
+       "Benchmarking without warm-up or GPU synchronization.",
+       "워밍업이나 GPU 동기화 없이 벤치마크하기."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "name": [
+    "Entering research",
+    "연구 진입"
+   ],
+   "short": [
+    "Research",
+    "연구 진입"
+   ],
+   "goal": [
+    "Ask your own questions, reproduce, and write up results.",
+    "스스로 질문을 만들고, 재현하고, 결과를 글로 쓰는 단계."
+   ],
+   "dur": [
+    "Ongoing",
+    "계속"
+   ],
+   "pre": [
+    "Stage 5 (one track)",
+    "5단계 (트랙 하나)"
+   ],
+   "why": [
+    "Research skill is a separate skill from knowledge: picking a tractable question, designing baselines and ablations, and communicating clearly.",
+    "연구 실력은 지식과 별개의 능력입니다. 풀 수 있는 질문을 고르고, 기준선과 비교 실험을 설계하고, 명확하게 전달하는 능력입니다."
+   ],
+   "concepts": [
+    [
+     "Research questions",
+     "Baselines & ablations",
+     "Experiment tracking",
+     "Seeds & variance",
+     "Related-work search",
+     "Writing: abstract, figures",
+     "Open-sourcing code",
+     "Finding collaborators"
+    ],
+    [
+     "연구 질문 설정",
+     "기준선·비교 실험",
+     "실험 기록",
+     "시드·분산",
+     "관련 연구 조사",
+     "글쓰기: 초록·그림",
+     "코드 공개",
+     "협업자 찾기"
+    ]
+   ],
+   "items": [
+    [
+     "How to Read a Paper (S. Keshav)",
+     "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf",
+     "article",
+     "Whole paper",
+     "전문",
+     1,
+     "The three-pass method.",
+     "3단계 읽기 방법."
+    ],
+    [
+     "You and Your Research (Richard Hamming)",
+     "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+     "article",
+     "Whole talk",
+     "전체",
+     2,
+     "On choosing important problems.",
+     "중요한 문제를 고르는 법."
+    ],
+    [
+     "Hugging Face Daily Papers",
+     "https://huggingface.co/papers",
+     "practice",
+     "Skim daily; first-pass 3 papers a week",
+     "매일 훑기, 주 3편 1단계 읽기",
+     3,
+     "Builds a sense of what the field is doing.",
+     "분야의 흐름 감각을 기릅니다."
+    ],
+    [
+     "Reproduce one recent paper",
+     "https://arxiv.org/list/cs.LG/recent",
+     "practice",
+     "Pick one from this week's frontier",
+     "이번 주 최전선에서 하나 선택",
+     40,
+     "Reproduce the key experiment at small scale.",
+     "핵심 실험을 작게 재현."
+    ],
+    [
+     "Target a workshop submission",
+     "https://neurips.cc/",
+     "practice",
+     "Workshops at NeurIPS / ICML / ICLR / CVPR",
+     "NeurIPS·ICML·ICLR·CVPR 워크숍",
+     40,
+     "Lower bar than the main track; good for a first paper.",
+     "본 학회보다 진입 장벽이 낮아 첫 논문에 적합."
+    ]
+   ],
+   "proj": [
+    "Reproduce a recent paper's key result in your track, then try one small extension. Write it up as a 4-page report and publish it (blog, arXiv or workshop).",
+    "자기 트랙에서 최근 논문의 핵심 결과를 재현한 뒤 작은 확장을 하나 시도합니다. 4쪽 보고서로 써서 공개합니다(블로그, arXiv, 워크숍)."
+   ],
+   "exit": [
+    "A public write-up with code that someone else can run.",
+    "다른 사람이 돌려볼 수 있는 코드와 함께 공개된 보고서."
+   ],
+   "pit": [
+    [
+     "Picking a problem too big for your compute.",
+     "가진 연산 자원에 비해 너무 큰 문제 고르기."
+    ],
+    [
+     "No baselines.",
+     "기준선 없음."
+    ],
+    [
+     "Waiting for perfection before sharing.",
+     "완벽해질 때까지 공유를 미루기."
+    ]
+   ]
+  }
+ ]
+}

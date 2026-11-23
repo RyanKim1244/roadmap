@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Research Roadmap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+KR:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: quiet, well-edited study guide; content and whitespace, no ornament
+   IDEA: a typeset course syllabus — numbered parts divided by hairlines
+   PICTURE: a single thin route line; only the current stop carries colour
+   COLOUR and TYPE: white and ink, one blue accent / Inter + Noto Sans KR
+   LAYOUT: narrow reading column, sections split by hairlines, stages collapsible */
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#0f1012);--bg2:light-dark(#fafafa,#141518);
+--ink:light-dark(#141414,#ececec);--mute:light-dark(#6b6b6b,#9b9ea4);
+--line:light-dark(#e7e7e7,#26282c);--acc:light-dark(#2f54eb,#8da2ff)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Inter","Noto Sans KR",system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px;text-decoration-thickness:1px}
+a:hover{text-decoration-color:var(--acc);color:var(--acc)}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.band{padding:clamp(40px,6vw,88px) max(5vw,20px)}
+.wrap{max-width:960px;margin:0 auto}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px}
+.brand{font-size:14px;color:var(--mute)}
+.lang{display:flex;flex:none;white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{min-height:36px;padding:0 14px;border-radius:999px;text-decoration:none;font-size:14px;color:var(--mute)}
+.lang button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+h1{font-weight:600;font-size:clamp(32px,4.6vw,48px);line-height:1.1;letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
+h2{font-weight:600;font-size:clamp(22px,2.6vw,28px);line-height:1.2;letter-spacing:-.01em;margin:0 0 10px}
+h3{font-size:17px;margin:0 0 4px;font-weight:600;line-height:1.4}
+h4{font-size:14px;font-weight:600;margin:22px 0 6px}
+.lede{color:var(--mute);max-width:64ch;margin:0}
+.meta{color:var(--mute);font-size:14px;margin-top:14px}
+.fig{position:relative;min-height:96px;margin-top:36px}
+.fig>svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+nav.scroll{display:flex;gap:28px;overflow-x:auto;padding:0 max(5vw,20px);border-block:1px solid var(--line);background:var(--bg)}
+nav.scroll a{flex:none;padding:14px 0;text-decoration:none;color:var(--mute);font-size:15px}
+nav.scroll a:hover{color:var(--ink)}
+@media(min-width:900px){nav.scroll{position:sticky;top:0;z-index:5;justify-content:center}}
+html{scroll-padding-top:64px}
+.alt{background:var(--bg2)}
+section+section,footer{border-top:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:0 40px;margin-top:28px}
+.card{padding:20px 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.card h3 a{text-decoration:none}.card h3 a:hover{text-decoration:underline}
+.tag{font-size:13px;color:var(--mute);white-space:nowrap}
+.tag+.tag::before{content:"·";margin:0 6px}
+.tag.p{color:var(--acc)}
+.card p{margin:0;font-size:15px;color:var(--mute)}
+.howto{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:20px;margin-top:24px;font-size:15px;color:var(--mute)}
+.howto b{display:block;color:var(--ink);font-weight:600;margin-bottom:2px}
+.ctrl{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;margin-top:24px}
+.bar{height:2px;background:var(--line);width:min(320px,100%)}
+.bar i{display:block;height:100%;background:var(--acc);width:0;transition:width .4s ease}
+@media(prefers-reduced-motion:reduce){.bar i{transition:none}}
+details.stage{border-top:1px solid var(--line)}
+details.stage:last-of-type{border-bottom:1px solid var(--line)}
+details.stage>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:20px;align-items:baseline;padding:26px 0}
+details.stage>summary::-webkit-details-marker{display:none}
+.num{font-size:28px;font-weight:300;line-height:1;color:var(--mute);font-variant-numeric:tabular-nums}
+details.stage.done .num{color:var(--acc)}
+.sumtxt h3{font-size:19px}
+.sumtxt p{margin:0;color:var(--mute);font-size:15px}
+.cnt{font-size:13px;color:var(--mute);white-space:nowrap;font-variant-numeric:tabular-nums}
+.cnt::after{content:"＋";margin-left:10px}
+details[open] .cnt::after{content:"－"}
+.body{padding:0 0 36px 76px}
+.facts{display:flex;flex-wrap:wrap;gap:6px 28px;font-size:14px;color:var(--mute)}
+.facts b{color:var(--ink);font-weight:600;margin-right:6px}
+.why{margin:14px 0 0;max-width:66ch}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.chips li{font-size:13px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;color:var(--mute)}
+ul.items{list-style:none;margin:0;padding:0}
+ul.items li{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line)}
+ul.items li:first-child{border-top:0}
+ul.items input{appearance:none;-webkit-appearance:none;width:18px;height:18px;margin:4px 0 0;border:1.5px solid var(--mute);border-radius:4px;flex:none;cursor:pointer;display:grid;place-items:center;background:transparent}
+ul.items input:checked{background:var(--acc);border-color:var(--acc)}
+ul.items input:checked::after{content:"";width:5px;height:9px;border:solid var(--bg);border-width:0 2px 2px 0;transform:translateY(-1px) rotate(45deg)}
+ul.items .it{flex:1}
+ul.items .sub{display:block;font-size:13px;color:var(--mute);margin-top:1px}
+ul.items .d{display:block;font-size:14px;color:var(--mute);margin-top:2px}
+ul.items .hrs{font-size:13px;color:var(--mute);white-space:nowrap;font-variant-numeric:tabular-nums;padding-top:3px}
+li.chk .it>a{color:var(--mute);text-decoration:line-through}
+.box{margin-top:18px;font-size:15px;color:var(--mute);max-width:70ch}
+.box b{display:block;color:var(--ink);font-weight:600;font-size:14px;margin-bottom:2px}
+.box ul{margin:4px 0 0;padding-left:18px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:0 36px}
+.tracks{border-top:1px solid var(--line);margin-top:6px}
+details.track{border-bottom:1px solid var(--line)}
+details.track>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:28px minmax(0,1fr) auto;gap:14px;align-items:baseline;padding:16px 0}
+details.track>summary::-webkit-details-marker{display:none}
+.tid{font-weight:600;color:var(--mute)}details.track.done .tid{color:var(--acc)}
+details.track .sumtxt h3{font-size:16px}
+.tbody{padding:0 0 22px 42px}
+details.arch{margin-top:28px;border-top:1px solid var(--line)}
+details.arch>summary{cursor:pointer;padding:14px 0;color:var(--mute);min-height:44px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:40px;margin-top:24px}
+ol.steps{margin:8px 0 0;padding-left:20px;color:var(--mute)}ol.steps li{margin:8px 0}
+ul.src{list-style:none;margin:8px 0 0;padding:0}ul.src li{padding:8px 0;border-top:1px solid var(--line)}ul.src li:first-child{border-top:0}
+ul.src .d{display:block;font-size:14px;color:var(--mute)}
+button{font:inherit;font-size:14px;min-height:44px;padding:0;border:0;background:none;color:var(--mute);cursor:pointer;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line)}
+button:hover{color:var(--ink)}
+footer{color:var(--mute);font-size:14px}
+@media(max-width:600px){details.stage>summary{grid-template-columns:36px minmax(0,1fr);gap:12px}.cnt{grid-column:2}.num{font-size:22px}.body{padding-left:0}.tbody{padding-left:0}details.track>summary{grid-template-columns:22px minmax(0,1fr)}details.track .cnt{grid-column:2}.fig{min-height:400px}nav.scroll{gap:20px}ul.items li{flex-wrap:wrap}ul.items .hrs{width:100%;padding:0 0 0 32px;margin-top:-8px}}
+</style>
+</head>
+<body>
+
+<header class="band" style="padding-bottom:clamp(24px,3vw,48px)">
+ <div class="wrap">
+  <div class="top"><span class="brand" data-t="brand"></span>
+   <div class="lang" role="group" aria-label="Language"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ko">한국어</button></div>
+  </div>
+  <h1 data-t="title"></h1>
+  <p class="lede" data-t="lede"></p>
+  <p class="meta" id="upd"></p>
+  <div class="fig"><svg id="map" role="img"></svg></div>
+ </div>
+</header>
+
+<nav class="scroll" aria-label="Sections">
+ <a href="#frontier" data-t="navF"></a>
+ <a href="#curriculum" data-t="navC"></a>
+ <a href="#habits" data-t="navH"></a>
+ <a href="#expand" data-t="navE"></a>
+</nav>
+
+<section class="band alt" id="frontier">
+ <div class="wrap">
+  <h2 data-t="fTitle"></h2>
+  <p class="lede" id="fnote"></p>
+  <div class="grid" id="fgrid"></div>
+  <details class="arch" id="farch"><summary data-t="archive"></summary><div id="fold"></div></details>
+ </div>
+</section>
+
+<section class="band" id="curriculum">
+ <div class="wrap">
+  <h2 data-t="cTitle"></h2>
+  <p class="lede" data-t="cLede"></p>
+  <div class="howto">
+   <div><b data-t="h1t"></b><span data-t="h1d"></span></div>
+   <div><b data-t="h2t"></b><span data-t="h2d"></span></div>
+   <div><b data-t="h3t"></b><span data-t="h3d"></span></div>
+  </div>
+  <div class="ctrl">
+   <div class="bar" aria-hidden="true"><i id="pbar"></i></div>
+   <span class="meta" style="margin:0" id="ptext"></span>
+   <button type="button" id="expand-all" data-t="expandAll"></button>
+   <button type="button" id="reset" data-t="reset"></button>
+  </div>
+  <div id="stages" style="margin-top:20px"></div>
+ </div>
+</section>
+
+<section class="band alt" id="habits">
+ <div class="wrap">
+  <h2 data-t="hTitle"></h2>
+  <div class="cols">
+   <div>
+    <h3 data-t="readT"></h3>
+    <ol class="steps" id="readsteps"></ol>
+    <p class="meta"><span data-t="basis"></span> S. Keshav, <a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf">How to Read a Paper</a></p>
+   </div>
+   <div>
+    <h3 data-t="srcT"></h3>
+    <ul class="src" id="srclist"></ul>
+   </div>
+   <div>
+    <h3 data-t="gpuT"></h3>
+    <p class="lede" style="font-size:15px" data-t="gpuD"></p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="band" id="expand">
+ <div class="wrap">
+  <h2 data-t="eTitle"></h2>
+  <p class="lede" data-t="eLede"></p>
+  <div class="grid" id="layers"></div>
+ </div>
+</section>
+
+<footer class="band alt"><div class="wrap" data-t="foot"></div></footer>
+
+<script>
+{
+const T={
+en:{brand:"Self-study syllabus · updated weekly",title:"AI Research Roadmap",
+lede:"A path from first-year university level to doing AI research yourself. Five core stages build the shared foundation, six specialization tracks cover language, vision, generative models, RL and robotics, interpretability and systems, and the frontier section is refreshed every week with new papers, talks and reports across AI.",
+upd:"Frontier last updated: ",navF:"This week's frontier",navC:"Curriculum",navH:"Research habits",navE:"Other fields",
+fTitle:"This week's frontier",archive:"Previous weeks",cTitle:"Curriculum",
+cLede:"Core stages 0–4 in order, then one or two specialization tracks, then research. Open a stage to see why it matters, the concepts to master, exactly which parts of each resource to cover, a hands-on project, the bar for moving on, and common mistakes.",
+h1t:"Build, don't just watch",h1d:"For every lecture, type the code yourself. Videos alone give a false sense of understanding.",
+h2t:"Exit criteria, not hours",h2d:"Move on once you can meet a stage's exit criterion. Durations are rough estimates for steady part-time study.",
+h3t:"Loop back",h3d:"Return to the math whenever a paper stops you. Most researchers learn foundations in passes, not once.",
+expandAll:"Expand all",collapseAll:"Collapse all",reset:"Clear checkmarks",done:"Completed",of:"of",items:"resources",
+dur:"Typical duration",pre:"Prerequisites",why:"Why it matters",concepts:"Key concepts",res:"Resources",proj:"Project",exit:"Exit criterion",pit:"Common mistakes",
+hTitle:"Research habits and sources",readT:"Reading a paper in three passes",basis:"Based on",srcT:"Where to look every week",
+gpuT:"Getting GPU time",gpuD:"Stages 0–3 run on a laptop CPU or free notebook GPUs (Google Colab, Kaggle). Stage 4 onward benefits from more compute; university clusters and lab access are the first places to ask. Cloud GPUs are paid, so check costs before signing up.",
+eTitle:"Extending to other fields",eLede:"Any field can be laid out in the same four layers. Ask for a new field (semiconductors, biotech, energy…) and a parallel route is built on this frame.",
+foot:"The frontier section updates automatically every Monday morning (KST); older lists move to the archive. Curriculum links point to each university's or author's public page.",
+stage:"Stage",now:"you are here",frontier:"Frontier",stageAny:"Any stage",stageN:n=>"After stage "+n,
+kind:{course:"Course",book:"Book",paper:"Paper",code:"Code",article:"Article",video:"Video",practice:"Practice"},
+read:["Read the title, abstract, figures and conclusion. Write one sentence on what the paper claims.","Read the body but skip proofs and appendices. Tabulate the experimental setup and the baselines.","For important papers, reproduce the key experiment at small scale. Reproduction builds research skill fastest."],
+layers:[["Layer 1","Foundation courses","Core undergraduate courses in that field, filled with open university courses and standard textbooks."],["Layer 2","Overviews","Survey papers, a reference textbook and tutorial talks that map the whole field."],["Layer 3","Classics","The 10–20 papers that shaped the current direction; for industry, the key annual reports."],["Layer 4","Frontier (weekly)","Recent conference, journal and preprint work, company technical talks and earnings materials. Paid reports are replaced by public summaries."]],
+mapLabel:"Route from stage 0 (tools) to stage 6 (research) and the frontier",pick:"Choose a track",tracksDone:"tracks done"},
+ko:{brand:"자기주도 학습 계획서 · 매주 갱신",title:"AI 연구 학습 노선도",
+lede:"대학 1학년 수준에서 출발해 AI 연구를 직접 할 수 있는 수준까지 가는 길입니다. 다섯 개의 핵심 단계로 공통 기초를 쌓고, 언어·비전·생성모델·강화학습과 로보틱스·해석가능성·시스템의 여섯 전문 트랙으로 깊이를 더하며, 최전선 구간은 AI 전반의 새 논문·발표·리포트로 매주 갱신됩니다.",
+upd:"최전선 구간 최종 갱신: ",navF:"이번 주 최전선",navC:"커리큘럼",navH:"연구 습관",navE:"다른 분야",
+fTitle:"이번 주 최전선",archive:"지난 주 목록",cTitle:"커리큘럼",
+cLede:"핵심 단계 0~4를 순서대로 마친 뒤 전문 트랙 한두 개를 고르고, 연구 단계로 넘어갑니다. 단계를 펼치면 왜 중요한지, 익혀야 할 개념, 각 자료에서 어디까지 볼지, 실습 프로젝트, 다음 단계로 넘어가는 기준, 흔한 실수를 볼 수 있습니다.",
+h1t:"보지 말고 만들기",h1d:"강의마다 코드를 직접 따라 치세요. 영상만 보면 이해했다는 착각이 생깁니다.",
+h2t:"시간이 아니라 통과 기준",h2d:"통과 기준을 해낼 수 있으면 다음 단계로 넘어갑니다. 소요 기간은 꾸준한 병행 학습 기준의 대략적인 추정입니다.",
+h3t:"되돌아가기",h3d:"논문이 막히면 그때 수학으로 돌아가세요. 대부분의 연구자는 기초를 한 번이 아니라 여러 번에 걸쳐 익힙니다.",
+expandAll:"모두 펼치기",collapseAll:"모두 접기",reset:"체크 모두 지우기",done:"완료",of:"/",items:"개 자료",
+dur:"예상 기간",pre:"선수 지식",why:"왜 중요한가",concepts:"핵심 개념",res:"자료",proj:"프로젝트",exit:"통과 기준",pit:"흔한 실수",
+hTitle:"연구 습관과 정보원",readT:"논문을 세 번에 나눠 읽기",basis:"근거:",srcT:"매주 확인할 곳",
+gpuT:"GPU 구하기",gpuD:"0~3단계는 노트북 CPU나 무료 노트북 GPU(Google Colab, Kaggle)로 충분합니다. 4단계부터는 연산 자원이 더 필요하며, 학교 클러스터나 연구실 자원을 먼저 문의하는 것이 좋습니다. 클라우드 GPU는 유료이므로 가입 전에 비용을 확인하세요.",
+eTitle:"다른 분야로 확장하는 틀",eLede:"어떤 분야든 같은 네 층으로 짤 수 있습니다. 새 분야(반도체, 바이오, 에너지 등)를 요청하시면 이 틀로 노선이 하나 더 생깁니다.",
+foot:"최전선 구간은 매주 월요일 오전(한국 시간)에 자동으로 갱신되고, 지난 목록은 보관함으로 이동합니다. 커리큘럼 링크는 각 대학·저자의 공개 페이지로 연결됩니다.",
+stage:"단계",now:"현재",frontier:"최전선",stageAny:"전 단계",stageN:n=>n+"단계 이후",
+kind:{course:"강의",book:"교재",paper:"논문",code:"코드",article:"글",video:"영상",practice:"실습"},
+read:["제목·초록·그림·결론만 읽고 논문의 주장을 한 문장으로 적습니다.","본문을 읽되 증명과 부록은 건너뛰고, 실험 설정과 비교 대상을 표로 정리합니다.","중요한 논문이면 핵심 실험을 작게 재현합니다. 재현이 연구 실력을 가장 빨리 늘립니다."],
+layers:[["1층","기초 과목","그 분야 학부 전공의 핵심 과목. 대학 공개강의와 표준 교재로 채웁니다."],["2층","개관","분야 전체를 조망하는 서베이 논문, 대표 교과서, 튜토리얼 발표."],["3층","고전","지금의 흐름을 만든 논문 10~20편, 업계라면 주요 연례 리포트."],["4층","최전선 (매주)","최근 학회·저널·프리프린트, 기업 기술 발표와 실적 자료. 유료 리포트는 공개 요약으로 대체합니다."]],
+mapLabel:"0단계 도구부터 6단계 연구 진입, 최전선까지 이어지는 노선도",pick:"트랙 고르기",tracksDone:"트랙 완료"}
+};
+
+const SRC=[
+["Hugging Face Daily Papers","https://huggingface.co/papers","Community-picked papers of the day, all areas","커뮤니티가 고른 그날의 주요 논문, 전 분야"],
+["arXiv cs.LG — recent","https://arxiv.org/list/cs.LG/recent","Machine learning preprints; also see cs.CL, cs.CV, cs.RO","머신러닝 프리프린트. cs.CL, cs.CV, cs.RO도 함께"],
+["Transformer Circuits Thread","https://transformer-circuits.pub","Interpretability papers and monthly updates","해석가능성 논문과 월간 업데이트"],
+["Lil'Log (Lilian Weng)","https://lilianweng.github.io/","Long-form technical surveys across AI topics","AI 주제별 긴 기술 정리 글"],
+["NeurIPS · ICML · ICLR · CVPR · ACL Anthology","https://aclanthology.org","Major venues, orals and award papers","주요 학회 발표와 수상 논문"]
+];
+
+let STAGES=[];
+
+const LK="ai-roadmap-lang",KEY="ai-roadmap-v3";
+let lang="en";try{lang=localStorage.getItem(LK)||"en"}catch(e){}
+let st={};try{st=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){st={}}
+let openSet=null;
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const L=()=>lang==="ko"?1:0;
+const t=k=>T[lang][k];
+let F={updated:"",weeks:[]};
+const allItems=s=>s.tracks?s.tracks.flatMap(tr=>tr.items.map((_,i)=>`s${s.n}${tr.id}-${i}`)):s.items.map((_,i)=>`s${s.n}-${i}`);
+const trackIds=(s,tr)=>tr.items.map((_,i)=>`s${s.n}${tr.id}-${i}`);
+let total=1;
+const trackDone=(s,tr)=>trackIds(s,tr).every(k=>st[k]);
+const stageDone=s=>s.tracks?s.tracks.some(tr=>trackDone(s,tr)):allItems(s).every(k=>st[k]);
+const curStage=()=>{const c=STAGES.findIndex(s=>!stageDone(s));return c<0?STAGES.length:c};
+function renderStatic(){
+ document.documentElement.lang=lang;
+ document.title=t("title");
+ for(const el of document.querySelectorAll("[data-t]"))el.textContent=t(el.dataset.t);
+ for(const b of document.querySelectorAll(".lang button"))b.setAttribute("aria-pressed",b.dataset.lang===lang);
+ document.getElementById("map").setAttribute("aria-label",t("mapLabel"));
+ document.getElementById("upd").textContent=F.updated?t("upd")+F.updated:"";
+ document.getElementById("readsteps").innerHTML=t("read").map(x=>`<li>${esc(x)}</li>`).join("");
+ document.getElementById("srclist").innerHTML=SRC.map(s=>`<li><a href="${esc(s[1])}">${esc(s[0])}</a><span class="d">${esc(s[2+L()])}</span></li>`).join("");
+ document.getElementById("layers").innerHTML=t("layers").map((x,i)=>`<div class="card"><span><span class="tag${i===3?" p":""}">${esc(x[0])}</span></span><h3>${esc(x[1])}</h3><p>${esc(x[2])}</p></div>`).join("");
+}
+
+function renderFrontier(){
+ const sl=n=>n?t("stageN")(n):t("stageAny");
+ const card=it=>`<div class="card"><span><span class="tag p">${esc(it["type_"+lang]||it.type_en||it.type||"")}</span><span class="tag">${esc(typeof it.stage==="number"?sl(it.stage):(it.stage||""))}</span></span><h3><a href="${esc(it.url)}">${esc(it.title)}</a></h3><p>${esc(it["why_"+lang]||it.why_en||it.why||"")}</p></div>`;
+ const wk=F.weeks[0];
+ document.getElementById("fnote").textContent=wk?(wk["note_"+lang]||wk.note_en||wk.note||""):"";
+ document.getElementById("fgrid").innerHTML=wk?wk.items.map(card).join(""):"";
+ const old=F.weeks.slice(1);
+ document.getElementById("farch").style.display=old.length?"":"none";
+ document.getElementById("fold").innerHTML=old.map(w=>`<h3 style="margin-top:20px">${esc(w.week)}</h3><div class="grid" style="margin-top:10px;margin-bottom:14px">${w.items.map(card).join("")}</div>`).join("");
+}
+
+const box=document.getElementById("stages");
+function itemsHTML(s,ids,list){const l=L();return `<ul class="items">${list.map((it,i)=>{const id=ids[i],u=(l&&it[8])?it[8]:it[1];return `<li data-id="${id}"${st[id]?' class="chk"':""}><input type="checkbox" id="${id}"${st[id]?" checked":""} aria-label="${esc(it[0])}"><span class="it"><a href="${esc(u)}">${esc(it[0])}</a><span class="sub">${esc(t("kind")[it[2]])} · ${esc(it[3+l])}</span><span class="d">${esc(it[6+l])}</span></span><span class="hrs">≈ ${it[5]}h</span></li>`}).join("")}</ul>`}
+function blockHTML(o,s,ids){const l=L();return `<h4>${t("concepts")}</h4><ul class="chips">${o.concepts[l].map(c=>`<li>${esc(c)}</li>`).join("")}</ul>
+<h4>${t("res")}</h4>${itemsHTML(s,ids,o.items)}
+<div class="two"><div class="box"><b>${t("proj")}</b>${esc(o.proj[l])}</div><div class="box"><b>${t("exit")}</b>${esc(o.exit[l])}</div></div>
+<div class="box"><b>${t("pit")}</b><ul>${o.pit.map(p=>`<li>${esc(p[l])}</li>`).join("")}</ul></div>`}
+function renderStages(){
+ const l=L(),cur=curStage();
+ if(!openSet)openSet=new Set([String(Math.min(cur,STAGES.length-1))]);
+ box.innerHTML=STAGES.map(s=>{
+  const ids=allItems(s),n=ids.filter(k=>st[k]).length;
+  const head=`<div class="facts"><span><b>${t("dur")}</b>${esc(s.dur[l])}</span><span><b>${t("pre")}</b>${esc(s.pre[l])}</span></div><p class="why">${esc(s.why[l])}</p>`;
+  const body=s.tracks?`<h4>${t("pick")}</h4><div class="tracks">${s.tracks.map(tr=>{const tids=trackIds(s,tr),tn=tids.filter(k=>st[k]).length,key=s.n+tr.id;return `<details class="track${trackDone(s,tr)?" done":""}" data-k="${key}"${openSet.has(key)?" open":""}><summary><span class="tid">${tr.id}</span><span class="sumtxt"><h3>${esc(tr.name[l])}</h3><p>${esc(tr.goal[l])}</p></span><span class="cnt">${tn}/${tids.length}</span></summary><div class="tbody">${blockHTML(tr,s,tids)}</div></details>`}).join("")}</div>`:blockHTML(s,s,ids);
+  const shown=s.tracks?`${s.tracks.filter(tr=>trackDone(s,tr)).length}/${s.tracks.length} ${t("tracksDone")}`:`${n}/${ids.length}`;
+  return `<details class="stage${stageDone(s)?" done":""}" data-k="${s.n}"${openSet.has(String(s.n))?" open":""}>
+<summary><span class="num">${s.n}</span><span class="sumtxt"><h3>${esc(s.name[l])}</h3><p>${esc(s.goal[l])}</p></span><span class="cnt">${shown}</span></summary>
+<div class="body">${head}${body}</div></details>`}).join("");
+ const done=Object.keys(st).filter(k=>st[k]).length;
+ document.getElementById("pbar").style.width=(Math.min(done,total)/total*100)+"%";
+ document.getElementById("ptext").textContent=lang==="ko"?`${t("done")} ${done} / ${total}${t("items")}`:`${done} ${t("of")} ${total} ${t("items")} ${t("done").toLowerCase()}`;
+ setExpandLabel();
+}
+const allKeys=()=>STAGES.flatMap(s=>[String(s.n)].concat(s.tracks?s.tracks.map(tr=>s.n+tr.id):[]));
+function setExpandLabel(){document.getElementById("expand-all").textContent=STAGES.every(s=>openSet.has(String(s.n)))?t("collapseAll"):t("expandAll")}
+box.addEventListener("toggle",e=>{const d=e.target;if(!d.matches||!d.matches("details[data-k]"))return;d.open?openSet.add(d.dataset.k):openSet.delete(d.dataset.k);setExpandLabel()},true);
+box.addEventListener("change",e=>{const li=e.target.closest("li[data-id]");if(!li)return;if(e.target.checked)st[li.dataset.id]=true;else delete st[li.dataset.id];save();renderStages();drawMap()});
+document.getElementById("reset").addEventListener("click",()=>{st={};save();renderStages();drawMap()});
+document.getElementById("expand-all").addEventListener("click",()=>{const allOpen=STAGES.every(s=>openSet.has(String(s.n)));openSet=new Set(allOpen?[]:STAGES.map(s=>String(s.n)));renderStages()});
+for(const b of document.querySelectorAll(".lang button"))b.addEventListener("click",()=>{lang=b.dataset.lang;try{localStorage.setItem(LK,lang)}catch(e){}renderAll()});
+
+const svg=document.getElementById("map");
+function drawMap(){
+ const W=svg.clientWidth,H=svg.clientHeight;if(!W||!H||!STAGES.length)return;
+ const l=L(),names=STAGES.map(s=>s.short[l]).concat([t("frontier")]);
+ const n=names.length,narrow=W<600,at=curStage();
+ const gap=(W-16)/(n-1);
+ const est=s=>[...s].reduce((a,c)=>a+(c.charCodeAt(0)>0x2fff?14:7.6),0);
+ const full=names.map((x,i)=>i===n-1?x:`${i} ${x}`);
+ const fits=narrow||full.every((x,i)=>{const w=est(x);return (i===0||i===n-1)?w<gap*0.95:w<gap-14});
+ const pts=names.map((_,i)=>narrow?[8,16+i*(H-32)/(n-1)]:[8+i*gap,H*0.42]);
+ const seg=(a,b)=>pts.slice(a,b).map((p,i)=>(i?"L":"M")+p[0].toFixed(1)+" "+p[1].toFixed(1)).join(" ");
+ const ff="Inter, Noto Sans KR, sans-serif";
+ let g=`<path d="${seg(0,n)}" fill="none" style="stroke:var(--line)" stroke-width="1.5"/>`;
+ if(at>0)g+=`<path d="${seg(0,Math.min(at,n-1)+1)}" fill="none" style="stroke:var(--acc)" stroke-width="1.5"/>`;
+ g+=pts.map((p,i)=>{
+  const here=i===at,past=i<at,last=i===n-1;
+  const sty=here||past?"fill:var(--acc);stroke:var(--acc)":"fill:var(--bg);stroke:var(--mute)";
+  const label=fits?full[i]:(last?"★":String(i));
+  const lx=narrow?p[0]+22:p[0],ly=narrow?p[1]+5:p[1]+34;
+  const anchor=narrow?"start":(i===0?"start":last?"end":"middle");
+  return (here?`<circle cx="${p[0]}" cy="${p[1]}" r="12" style="fill:none;stroke:var(--acc);opacity:.35" stroke-width="1"/>`:"")+
+   `<circle cx="${p[0]}" cy="${p[1]}" r="${here?6:4}" style="${sty}" stroke-width="1.5"/>`+
+   `<text x="${lx}" y="${ly}" text-anchor="${anchor}" style="fill:${here?"var(--ink)":"var(--mute)"}" font-size="14" font-weight="${here?600:400}" font-family="${ff}">${esc(label)}${here&&narrow?` <tspan style="fill:var(--acc)" font-size="12" font-weight="400">· ${t("now")}</tspan>`:""}</text>`+
+   (here&&!narrow?`<text x="${lx}" y="${p[1]-22}" text-anchor="${anchor}" style="fill:var(--acc)" font-size="12" font-family="${ff}">${t("now")}${fits?"":" · "+esc(full[i])}</text>`:"");
+ }).join("");
+ svg.innerHTML=g;
+}
+const ro=new ResizeObserver(drawMap);ro.observe(svg);
+function renderAll(){renderStatic();renderFrontier();renderStages();drawMap()}
+renderStatic();
+Promise.all([fetch("data/curriculum.json").then(r=>r.json()),fetch("data/frontier.json").then(r=>r.json()).catch(()=>({updated:"",weeks:[]}))])
+ .then(([c,f])=>{STAGES=c.stages;F=f;total=STAGES.reduce((a,s)=>a+allItems(s).length,0)||1;renderAll()})
+ .catch(()=>{document.getElementById("stages").innerHTML='<p class="lede">Could not load data/curriculum.json.</p>'});
+}
+</script>
+</body>
+</html>

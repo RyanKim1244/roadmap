@@ -1,0 +1,84 @@
+{
+ "updated": "2026-11-23",
+ "weeks": [
+  {
+   "week": "2026-11-23",
+   "note_en": "Focus this week: reinforcement learning for reasoning and agents, interpretability, and robot foundation models. Most items are best read after Stage 4 and the matching track; before that, skim abstracts and figures to learn the vocabulary.",
+   "note_ko": "이번 주 초점: 추론·에이전트를 위한 강화학습, 해석가능성, 로봇 기반 모델. 대부분 4단계와 해당 트랙을 마친 뒤 읽기를 권하고, 그 전이라면 초록과 그림만 보며 용어에 익숙해지는 정도로 충분합니다.",
+   "items": [
+    {
+     "type_en": "Survey",
+     "type_ko": "서베이",
+     "stage": 5,
+     "title": "From Reasoning to Agentic: Credit Assignment in RL for LLMs",
+     "url": "https://arxiv.org/abs/2604.09459",
+     "why_en": "Outcome rewards say little about which token, step or tool call caused success. This survey maps how credit assignment evolves from reasoning RL to agentic RL.",
+     "why_ko": "결과 보상만으로는 어떤 토큰·단계·도구 호출이 성공에 기여했는지 알기 어렵다는 문제를 정리한 서베이. 추론 RL에서 에이전트 RL로 넘어가는 흐름을 한 번에 볼 수 있습니다."
+    },
+    {
+     "type_en": "Survey",
+     "type_ko": "서베이",
+     "stage": 5,
+     "title": "Rethinking Agentic Reinforcement Learning in LLMs",
+     "url": "https://arxiv.org/abs/2604.27859",
+     "why_en": "Contrasts classic RL with LLM-based agentic RL: long-horizon planning, self-reflection and multi-step decision making.",
+     "why_ko": "고전 강화학습과 LLM 기반 에이전트 RL의 차이(장기 계획, 자기 반성, 다단계 의사결정)를 정리합니다."
+    },
+    {
+     "type_en": "Survey",
+     "type_ko": "서베이",
+     "stage": 6,
+     "title": "RL for LLM-based Multi-Agent Systems through Orchestration Traces",
+     "url": "https://arxiv.org/abs/2605.02801",
+     "why_en": "Treats how work is spawned, delegated and aggregated across agents as the object of learning. A useful field map as of May 2026.",
+     "why_ko": "여러 에이전트가 일을 나누고 위임하는 과정 자체를 학습 대상으로 보는 관점의 정리. 2026년 5월 기준 분야 지도로 쓸 만합니다."
+    },
+    {
+     "type_en": "Paper",
+     "type_ko": "논문",
+     "stage": 5,
+     "title": "VLA Foundry: A Unified Framework for Training Vision-Language-Action Models",
+     "url": "https://arxiv.org/abs/2604.19728",
+     "why_en": "Toyota Research Institute's open framework for training robot policies on mixed vision, language and robot data. Shows how data scarcity shapes robotics research compared with language and vision.",
+     "why_ko": "Toyota Research Institute가 공개한, 시각·언어·로봇 데이터를 섞어 로봇 정책을 학습하는 프레임워크. 언어·비전에 비해 데이터가 부족한 로보틱스 연구의 특성을 보여 줍니다."
+    },
+    {
+     "type_en": "Paper",
+     "type_ko": "논문",
+     "stage": 5,
+     "title": "Language Model Circuits Are Sparse in the Neuron Basis (ICML)",
+     "url": "https://arxiv.org/abs/2601.22594",
+     "why_en": "Argues that sparse circuits can be found directly in the neuron basis, without sparse autoencoders. A good second read after an interpretability primer.",
+     "why_ko": "희소 오토인코더 없이 뉴런 단위에서도 희소한 회로를 찾을 수 있다는 주장. 해석가능성 입문 후 두 번째로 읽기 좋습니다."
+    },
+    {
+     "type_en": "Research note",
+     "type_ko": "연구 노트",
+     "stage": 5,
+     "title": "Transformer Circuits — October 2026 Update",
+     "url": "https://transformer-circuits.pub/2026/october-update/",
+     "why_en": "Work-in-progress notes from Anthropic's interpretability team, including an improved Jacobian lens for reading intermediate-layer concepts. Read as lab-meeting notes, not finished papers.",
+     "why_ko": "Anthropic 해석가능성 팀의 진행 중 연구 공유(중간층 개념을 읽어내는 J-lens 개선 등). 완성 논문이 아닌 실험 노트로 읽어야 합니다."
+    },
+    {
+     "type_en": "Conference",
+     "type_ko": "학회",
+     "stage": 0,
+     "title": "NeurIPS 2026 (December)",
+     "url": "https://neurips.cc/",
+     "why_en": "Award papers are announced at the conference in early December and will be added in a later update. Last year's winners are linked in Stage 5.",
+     "why_ko": "12월 초 학회에서 수상 논문이 발표되며, 이후 갱신 때 이 목록에 추가합니다. 직전 해 수상작은 5단계에 연결되어 있습니다."
+    },
+    {
+     "type_en": "Industry",
+     "type_ko": "업계 동향",
+     "stage": 0,
+     "title": "O'Reilly Radar Trends — November 2026",
+     "url": "https://www.oreilly.com/radar/radar-trends-to-watch-november-2026/",
+     "why_en": "Monthly industry snapshot: small on-device MoE models, open-weight models closing the gap, agent harnesses. Useful for sensing what problems industry cares about.",
+     "why_ko": "휴대기기용 소형 MoE 모델, 공개 가중치 모델의 추격, 에이전트 하네스 등 이번 달 업계 흐름 요약. 연구 주제를 고를 때 산업 수요를 파악하는 용도입니다."
+    }
+   ]
+  }
+ ]
+}
