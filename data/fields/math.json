@@ -1,0 +1,1043 @@
+{
+ "version": 1,
+ "name": [
+  "Mathematics",
+  "수학"
+ ],
+ "title": [
+  "Mathematics Roadmap",
+  "수학 학습 노선도"
+ ],
+ "lede": [
+  "A path from first-year university level to following research mathematics: proofs, calculus and linear algebra, the core undergraduate subjects, then depth in analysis, algebra and number theory, geometry and topology, probability, applied and computational mathematics, and formalized mathematics.",
+  "대학 1학년 수준에서 출발해 연구 수학을 따라갈 수 있는 수준까지 가는 길입니다. 증명, 미적분과 선형대수, 학부 핵심 과목을 거쳐 해석학, 대수·정수론, 기하·위상, 확률, 응용·계산 수학, 형식화된 수학에서 깊이를 더합니다."
+ ],
+ "status": [
+  "Every other route on this site leans on this one; AI, CS and physics-heavy routes point back here for depth.",
+  "이 사이트의 다른 모든 노선이 이 노선에 기댑니다. AI, CS, 물리 중심 노선에서 깊이가 필요할 때 이곳으로 돌아오면 됩니다."
+ ],
+ "stages": [
+  {
+   "n": 0,
+   "name": [
+    "Proofs & tools",
+    "증명·도구"
+   ],
+   "short": [
+    "Proofs",
+    "증명"
+   ],
+   "goal": [
+    "Learn to read and write proofs, typeset mathematics and use computers to explore it.",
+    "증명을 읽고 쓰고, 수식을 조판하고, 컴퓨터로 수학을 탐구하는 법."
+   ],
+   "dur": [
+    "4–6 weeks",
+    "4~6주"
+   ],
+   "pre": [
+    "High-school math",
+    "고교 수학"
+   ],
+   "why": [
+    "University mathematics is about proofs, not calculations. Writing clear proofs early makes every later course faster.",
+    "대학 수학은 계산이 아니라 증명입니다. 일찍 명료한 증명을 쓰게 되면 이후 모든 과목이 빨라집니다."
+   ],
+   "concepts": [
+    [
+     "Logic & quantifiers",
+     "Sets & functions",
+     "Direct proof, contradiction, contrapositive",
+     "Induction",
+     "Relations",
+     "LaTeX",
+     "Proof assistants"
+    ],
+    [
+     "논리·한정사",
+     "집합·함수",
+     "직접 증명·귀류법·대우",
+     "귀납법",
+     "관계",
+     "LaTeX",
+     "증명 보조기"
+    ]
+   ],
+   "items": [
+    [
+     "Book of Proof (Richard Hammack)",
+     "https://richardhammack.github.io/BookOfProof/",
+     "book",
+     "Parts I–III",
+     "1~3부",
+     30,
+     "A free, gentle introduction to proof writing.",
+     "증명 쓰기를 친절하게 소개하는 무료 교재."
+    ],
+    [
+     "Overleaf — Learn LaTeX",
+     "https://www.overleaf.com/learn",
+     "article",
+     "Learn LaTeX in 30 minutes + maths guide",
+     "30분 LaTeX 입문 + 수식 안내",
+     3,
+     "Typesetting mathematics the way papers are written.",
+     "논문처럼 수식을 조판하는 법."
+    ],
+    [
+     "Natural Number Game (Lean)",
+     "https://adam.math.hhu.de/#/g/leanprover-community/nng4",
+     "practice",
+     "All worlds",
+     "전체 단계",
+     10,
+     "Prove basic facts about numbers in the Lean proof assistant, step by step.",
+     "Lean 증명 보조기로 수의 기본 성질을 단계별로 증명합니다."
+    ],
+    [
+     "Python Tutorial (official)",
+     "https://docs.python.org/3/tutorial/",
+     "book",
+     "Ch. 1–9",
+     "1~9장",
+     15,
+     "Up to classes, iterators and generators.",
+     "클래스, 이터레이터, 제너레이터까지.",
+     "https://docs.python.org/ko/3/tutorial/"
+    ]
+   ],
+   "proj": [
+    "Write up 20 proofs from Book of Proof in LaTeX, and formalize five of them in Lean.",
+    "Book of Proof의 증명 20개를 LaTeX로 정리하고, 그중 5개를 Lean으로 형식화합니다."
+   ],
+   "exit": [
+    "You can prove a statement by induction and by contradiction, cleanly and without gaps.",
+    "귀납법과 귀류법으로 빈틈없이 깔끔하게 증명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Reading solutions before trying for a long time.",
+     "오래 시도하기 전에 풀이부터 보기."
+    ]
+   ]
+  },
+  {
+   "n": 1,
+   "name": [
+    "Calculus & linear algebra",
+    "미적분·선형대수"
+   ],
+   "short": [
+    "Calculus & LA",
+    "미적분·선형대수"
+   ],
+   "goal": [
+    "Single- and multivariable calculus, differential equations and linear algebra.",
+    "1변수·다변수 미적분, 미분방정식, 선형대수."
+   ],
+   "dur": [
+    "12–16 weeks",
+    "12~16주"
+   ],
+   "pre": [
+    "Stage 0",
+    "0단계"
+   ],
+   "why": [
+    "These are the tools of all applied mathematics and the motivating examples for analysis and algebra.",
+    "모든 응용 수학의 도구이자, 해석학과 대수학의 동기가 되는 예시입니다."
+   ],
+   "concepts": [
+    [
+     "Limits & continuity",
+     "Derivatives & integrals",
+     "Series",
+     "Multivariable calculus",
+     "Linear ODEs",
+     "Vector spaces & linear maps",
+     "Eigenvalues & diagonalization",
+     "Inner products"
+    ],
+    [
+     "극한·연속",
+     "미분·적분",
+     "급수",
+     "다변수 미적분",
+     "선형 상미분방정식",
+     "벡터 공간·선형 사상",
+     "고유값·대각화",
+     "내적"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 18.01SC Single Variable Calculus",
+     "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/",
+     "course",
+     "Units 1–5",
+     "1~5단원",
+     40,
+     "Rigorous-minded single-variable calculus.",
+     "1변수 미적분."
+    ],
+    [
+     "MIT 18.02SC Multivariable Calculus",
+     "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+     "course",
+     "Units 1–4",
+     "1~4단원",
+     35,
+     "Vector calculus and optimization in many variables.",
+     "다변수 벡터 미적분과 최적화."
+    ],
+    [
+     "MIT 18.03SC Differential Equations",
+     "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+     "course",
+     "Units 1–4",
+     "1~4단원",
+     45,
+     "ODEs, linear systems and Fourier series.",
+     "상미분방정식, 선형 시스템, 푸리에 급수."
+    ],
+    [
+     "3Blue1Brown — Linear algebra series",
+     "https://www.3blue1brown.com/lessons/vectors",
+     "video",
+     "All chapters",
+     "전 챕터",
+     4,
+     "Geometric intuition first.",
+     "직관 먼저."
+    ],
+    [
+     "MIT 18.06 Linear Algebra (Gilbert Strang)",
+     "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+     "course",
+     "Lectures 1–25 + problem sets",
+     "1~25강 + 문제풀이",
+     40,
+     "The standard first course in linear algebra.",
+     "선형대수의 표준 첫 과목."
+    ],
+    [
+     "Linear Algebra Done Right (Axler, 4th ed.)",
+     "https://linear.axler.net/",
+     "book",
+     "Ch. 1–7",
+     "1~7장",
+     50,
+     "Proof-based linear algebra; free open-access edition.",
+     "증명 중심 선형대수. 무료 공개판."
+    ]
+   ],
+   "proj": [
+    "Prove the spectral theorem for real symmetric matrices, then use it to analyse a system of coupled linear ODEs.",
+    "실대칭 행렬의 스펙트럼 정리를 증명하고, 이를 이용해 연립 선형 미분방정식을 분석합니다."
+   ],
+   "exit": [
+    "You can move between computational and proof-based linear algebra fluently.",
+    "계산 중심과 증명 중심 선형대수를 자유롭게 오갈 수 있다."
+   ],
+   "pit": [
+    [
+     "Learning linear algebra only as matrix arithmetic.",
+     "선형대수를 행렬 계산으로만 배우기."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "name": [
+    "Core undergraduate mathematics",
+    "학부 핵심 수학"
+   ],
+   "short": [
+    "Core",
+    "핵심"
+   ],
+   "goal": [
+    "Real and complex analysis, abstract algebra, topology and probability.",
+    "실해석, 복소해석, 추상대수, 위상수학, 확률."
+   ],
+   "dur": [
+    "24–32 weeks",
+    "24~32주"
+   ],
+   "pre": [
+    "Stage 1",
+    "1단계"
+   ],
+   "why": [
+    "Research in every area assumes this common core. It is also where the habits of abstraction and rigour are formed.",
+    "모든 분야의 연구가 이 공통 핵심을 전제합니다. 추상화와 엄밀함의 습관도 여기서 만들어집니다."
+   ],
+   "concepts": [
+    [
+     "Completeness & sequences",
+     "Continuity & uniform convergence",
+     "Riemann integration",
+     "Groups, rings, fields",
+     "Homomorphisms & quotients",
+     "Metric & topological spaces",
+     "Compactness & connectedness",
+     "Holomorphic functions & residues",
+     "Random variables & limit theorems"
+    ],
+    [
+     "완비성·수열",
+     "연속·균등 수렴",
+     "리만 적분",
+     "군·환·체",
+     "준동형·몫",
+     "거리·위상 공간",
+     "콤팩트성·연결성",
+     "정칙 함수·유수",
+     "확률변수·극한 정리"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 18.100A Real Analysis",
+     "https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/",
+     "course",
+     "All lectures + problem sets",
+     "전체 강의 + 문제풀이",
+     60,
+     "First course in rigorous analysis, with lecture videos.",
+     "강의 영상이 있는 첫 엄밀 해석학 과목."
+    ],
+    [
+     "MIT 18.703 Modern Algebra",
+     "https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/",
+     "course",
+     "Lecture notes + problem sets",
+     "강의노트 + 문제풀이",
+     50,
+     "Groups, rings and fields.",
+     "군, 환, 체."
+    ],
+    [
+     "MIT 18.901 Introduction to Topology",
+     "https://ocw.mit.edu/courses/18-901-introduction-to-topology-fall-2004/",
+     "course",
+     "Lecture notes + problem sets",
+     "강의노트 + 문제풀이",
+     40,
+     "Point-set topology and the fundamental group.",
+     "점집합 위상과 기본군."
+    ],
+    [
+     "MIT 18.04 Complex Variables with Applications",
+     "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/",
+     "course",
+     "All topics",
+     "전체 주제",
+     40,
+     "Analytic functions, contour integrals and residues.",
+     "해석 함수, 경로 적분, 유수."
+    ],
+    [
+     "MIT 18.600 Probability and Random Variables",
+     "https://ocw.mit.edu/courses/18-600-probability-and-random-variables-fall-2019/",
+     "course",
+     "Lectures + problem sets",
+     "강의 + 문제풀이",
+     45,
+     "Probability at the level needed for later measure-theoretic courses.",
+     "이후 측도론적 과목에 필요한 수준의 확률."
+    ]
+   ],
+   "proj": [
+    "Write a 10-page expository note proving a substantial theorem from one of these courses (e.g. Sylow theorems, Heine–Borel, the residue theorem) with your own examples.",
+    "이 과목들 중 하나의 주요 정리(예: 실로 정리, 하이네-보렐, 유수 정리)를 자신의 예시와 함께 증명하는 10쪽 해설을 씁니다."
+   ],
+   "exit": [
+    "You can do the problem sets of these courses without hints and explain why each hypothesis of a major theorem is needed.",
+    "힌트 없이 이 과목들의 문제를 풀고, 주요 정리의 각 가정이 왜 필요한지 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Rushing to advanced topics before the core is solid.",
+     "핵심이 단단해지기 전에 고급 주제로 서두르기."
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "name": [
+    "Specialization tracks",
+    "전문 트랙"
+   ],
+   "short": [
+    "Tracks",
+    "전문 트랙"
+   ],
+   "goal": [
+    "Go deep in one or two areas of mathematics.",
+    "수학의 한두 분야를 깊게 팝니다."
+   ],
+   "dur": [
+    "10–16 weeks per track",
+    "트랙당 10~16주"
+   ],
+   "pre": [
+    "Stage 2",
+    "2단계"
+   ],
+   "why": [
+    "Mathematics is divided into areas with their own language. Choose by what you enjoy proving; the frontier in any area is reached through graduate-level texts and recent arXiv papers.",
+    "수학은 고유한 언어를 가진 분야들로 나뉩니다. 어떤 증명이 즐거운지를 기준으로 고르세요. 어느 분야든 최전선은 대학원 교재와 최근 arXiv 논문을 거쳐 닿습니다."
+   ],
+   "tracks": [
+    {
+     "id": "A",
+     "name": [
+      "Analysis & PDE",
+      "해석학·편미분방정식"
+     ],
+     "goal": [
+      "Functional analysis, measure theory and partial differential equations.",
+      "함수해석, 측도론, 편미분방정식."
+     ],
+     "concepts": [
+      [
+       "Measure & Lebesgue integration",
+       "Banach & Hilbert spaces",
+       "Spectral theory",
+       "Distributions",
+       "Sobolev spaces",
+       "Elliptic, parabolic, hyperbolic PDE"
+      ],
+      [
+       "측도·르베그 적분",
+       "바나흐·힐베르트 공간",
+       "스펙트럼 이론",
+       "분포",
+       "소볼레프 공간",
+       "타원형·포물형·쌍곡형 편미분방정식"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 18.102 Introduction to Functional Analysis",
+       "https://ocw.mit.edu/courses/18-102-introduction-to-functional-analysis-spring-2021/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       50,
+       "Banach and Hilbert spaces, Lebesgue integration and spectral theory.",
+       "바나흐·힐베르트 공간, 르베그 적분, 스펙트럼 이론."
+      ],
+      [
+       "MIT 18.152 Introduction to Partial Differential Equations",
+       "https://ocw.mit.edu/courses/18-152-introduction-to-partial-differential-equations-fall-2011/",
+       "course",
+       "Lecture notes + problem sets",
+       "강의노트 + 문제풀이",
+       45,
+       "Heat, wave and Laplace equations rigorously.",
+       "열·파동·라플라스 방정식을 엄밀하게."
+      ],
+      [
+       "Terence Tao's blog",
+       "https://terrytao.wordpress.com/",
+       "article",
+       "Lecture-note series on measure theory and analysis",
+       "측도론·해석학 강의노트 시리즈",
+       30,
+       "Free lecture notes and research exposition from a leading analyst.",
+       "저명 해석학자의 무료 강의노트와 연구 해설."
+      ]
+     ],
+     "proj": [
+      "Prove existence and uniqueness of weak solutions to Poisson's equation via the Lax–Milgram theorem and check numerically against a finite-difference solution.",
+      "락스-밀그램 정리로 푸아송 방정식 약해의 존재와 유일성을 증명하고, 유한 차분 수치해와 비교합니다."
+     ],
+     "exit": [
+      "Explain why Sobolev spaces are the natural setting for PDE and state the main embedding theorems.",
+      "소볼레프 공간이 편미분방정식의 자연스러운 무대인 이유와 주요 매장 정리를 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Skipping measure theory.",
+       "측도론 건너뛰기."
+      ]
+     ]
+    },
+    {
+     "id": "B",
+     "name": [
+      "Algebra & number theory",
+      "대수학·정수론"
+     ],
+     "goal": [
+      "Galois theory, commutative algebra and number theory.",
+      "갈루아 이론, 가환대수, 정수론."
+     ],
+     "concepts": [
+      [
+       "Galois theory",
+       "Modules",
+       "Commutative algebra",
+       "Algebraic number theory",
+       "Elliptic curves",
+       "Representation theory"
+      ],
+      [
+       "갈루아 이론",
+       "가군",
+       "가환대수",
+       "대수적 정수론",
+       "타원곡선",
+       "표현론"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 18.702 Algebra II",
+       "https://ocw.mit.edu/courses/18-702-algebra-ii-spring-2011/",
+       "course",
+       "Lecture notes + problem sets",
+       "강의노트 + 문제풀이",
+       45,
+       "Rings, modules, fields and Galois theory.",
+       "환, 가군, 체, 갈루아 이론."
+      ],
+      [
+       "MIT 18.781 Theory of Numbers",
+       "https://ocw.mit.edu/courses/18-781-theory-of-numbers-spring-2012/",
+       "course",
+       "Lecture notes + problem sets",
+       "강의노트 + 문제풀이",
+       40,
+       "Elementary and analytic number theory.",
+       "초등·해석적 정수론."
+      ],
+      [
+       "J.S. Milne — Course Notes",
+       "https://www.jmilne.org/math/CourseNotes/",
+       "book",
+       "Fields and Galois Theory; Algebraic Number Theory",
+       "체와 갈루아 이론, 대수적 정수론",
+       60,
+       "Free graduate-level notes widely used in courses.",
+       "강의에서 널리 쓰이는 무료 대학원 수준 노트."
+      ]
+     ],
+     "proj": [
+      "Compute the Galois groups of several polynomials by hand and verify them in SageMath; write up the solvability of the general quintic.",
+      "여러 다항식의 갈루아 군을 손으로 계산하고 SageMath로 확인한 뒤, 일반 5차 방정식의 가해성 문제를 정리합니다."
+     ],
+     "exit": [
+      "State and prove the fundamental theorem of Galois theory and apply it to a cyclotomic field.",
+      "갈루아 이론의 기본 정리를 증명하고 원분체에 적용할 수 있다."
+     ],
+     "pit": [
+      [
+       "Avoiding computations; examples make the abstractions stick.",
+       "계산 피하기. 예시가 추상화를 붙잡아 줍니다."
+      ]
+     ]
+    },
+    {
+     "id": "C",
+     "name": [
+      "Geometry & topology",
+      "기하·위상"
+     ],
+     "goal": [
+      "Manifolds, differential geometry and algebraic topology.",
+      "다양체, 미분기하, 대수적 위상."
+     ],
+     "concepts": [
+      [
+       "Smooth manifolds",
+       "Curvature",
+       "Differential forms",
+       "Homotopy & fundamental group",
+       "Homology",
+       "Covering spaces"
+      ],
+      [
+       "매끄러운 다양체",
+       "곡률",
+       "미분형식",
+       "호모토피·기본군",
+       "호몰로지",
+       "피복 공간"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 18.950 Differential Geometry",
+       "https://ocw.mit.edu/courses/18-950-differential-geometry-fall-2008/",
+       "course",
+       "Lecture notes + problem sets",
+       "강의노트 + 문제풀이",
+       40,
+       "Curves and surfaces, curvature and geodesics.",
+       "곡선과 곡면, 곡률, 측지선."
+      ],
+      [
+       "Algebraic Topology (Allen Hatcher)",
+       "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html",
+       "book",
+       "Ch. 0–2",
+       "0~2장",
+       70,
+       "The standard graduate text; free from the author.",
+       "표준 대학원 교재. 저자 페이지에서 무료."
+      ]
+     ],
+     "proj": [
+      "Compute the homology of surfaces and projective spaces with cellular homology, and verify one computation with a computational topology library.",
+      "셀룰러 호몰로지로 곡면과 사영 공간의 호몰로지를 계산하고, 계산 위상 라이브러리로 하나를 확인합니다."
+     ],
+     "exit": [
+      "Explain why the fundamental group and homology are topological invariants and use them to distinguish spaces.",
+      "기본군과 호몰로지가 위상 불변량인 이유를 설명하고 이를 이용해 공간을 구별할 수 있다."
+     ],
+     "pit": [
+      [
+       "Learning definitions without drawing pictures.",
+       "그림 없이 정의만 외우기."
+      ]
+     ]
+    },
+    {
+     "id": "D",
+     "name": [
+      "Probability & statistics",
+      "확률·통계"
+     ],
+     "goal": [
+      "Measure-theoretic probability, stochastic processes and mathematical statistics.",
+      "측도론적 확률, 확률과정, 수리통계."
+     ],
+     "concepts": [
+      [
+       "Measure-theoretic probability",
+       "Martingales",
+       "Brownian motion",
+       "Markov chains",
+       "Concentration inequalities",
+       "Estimation & hypothesis testing",
+       "High-dimensional statistics"
+      ],
+      [
+       "측도론적 확률",
+       "마팅게일",
+       "브라운 운동",
+       "마르코프 연쇄",
+       "집중 부등식",
+       "추정·가설 검정",
+       "고차원 통계"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 18.175 Theory of Probability",
+       "https://ocw.mit.edu/courses/18-175-theory-of-probability-spring-2014/",
+       "course",
+       "Lecture slides + problem sets",
+       "강의 슬라이드 + 문제풀이",
+       50,
+       "Graduate probability: laws of large numbers, CLT, martingales, Brownian motion.",
+       "대학원 확률: 대수의 법칙, 중심극한정리, 마팅게일, 브라운 운동."
+      ],
+      [
+       "MIT 18.650 Statistics for Applications",
+       "https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       35,
+       "Mathematical statistics with lecture videos.",
+       "강의 영상이 있는 수리통계."
+      ]
+     ],
+     "proj": [
+      "Simulate random walks and Brownian motion, verify the CLT and the law of the iterated logarithm empirically, and prove one martingale convergence result.",
+      "무작위 보행과 브라운 운동을 시뮬레이션해 중심극한정리와 반복 로그 법칙을 실험적으로 확인하고, 마팅게일 수렴 결과 하나를 증명합니다."
+     ],
+     "exit": [
+      "Prove the strong law of large numbers and explain the role of measure theory in it.",
+      "강한 대수의 법칙을 증명하고 측도론이 그 증명에서 하는 역할을 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Treating probability as only combinatorics.",
+       "확률을 조합론으로만 다루기."
+      ]
+     ]
+    },
+    {
+     "id": "E",
+     "name": [
+      "Applied & computational mathematics",
+      "응용·계산 수학"
+     ],
+     "goal": [
+      "Numerical analysis, optimization and mathematical modelling.",
+      "수치해석, 최적화, 수학적 모델링."
+     ],
+     "concepts": [
+      [
+       "Numerical linear algebra",
+       "Floating point & stability",
+       "Iterative methods",
+       "Finite differences & elements",
+       "Convex optimization",
+       "Dynamical systems"
+      ],
+      [
+       "수치 선형대수",
+       "부동소수점·안정성",
+       "반복법",
+       "유한 차분·유한 요소",
+       "볼록 최적화",
+       "동역학계"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 18.085 Computational Science and Engineering I",
+       "https://ocw.mit.edu/courses/18-085-computational-science-and-engineering-i-fall-2008/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       45,
+       "Applied linear algebra, differential equations and Fourier methods.",
+       "응용 선형대수, 미분방정식, 푸리에 방법."
+      ],
+      [
+       "MIT 18.335J Introduction to Numerical Methods",
+       "https://ocw.mit.edu/courses/18-335j-introduction-to-numerical-methods-spring-2019/",
+       "course",
+       "Lecture notes + problem sets",
+       "강의노트 + 문제풀이",
+       45,
+       "Numerical linear algebra, stability and iterative methods.",
+       "수치 선형대수, 안정성, 반복법."
+      ],
+      [
+       "Convex Optimization (Boyd & Vandenberghe)",
+       "https://web.stanford.edu/~boyd/cvxbook/",
+       "book",
+       "Ch. 1–5, 9–11",
+       "1~5장, 9~11장",
+       50,
+       "The standard text on convex optimization; free PDF.",
+       "볼록 최적화의 표준 교재. 무료 PDF."
+      ]
+     ],
+     "proj": [
+      "Solve the 2D heat equation with finite differences, analyse stability, and compare explicit and implicit schemes.",
+      "2차원 열 방정식을 유한 차분으로 풀고, 안정성을 분석하고, 양해법과 음해법을 비교합니다."
+     ],
+     "exit": [
+      "Explain condition numbers and backward stability, and choose a numerical method for a given problem.",
+      "조건수와 후방 안정성을 설명하고 주어진 문제에 맞는 수치 방법을 고를 수 있다."
+     ],
+     "pit": [
+      [
+       "Trusting numerical output without checking convergence.",
+       "수렴을 확인하지 않고 수치 결과를 믿기."
+      ]
+     ]
+    },
+    {
+     "id": "F",
+     "name": [
+      "Formalized mathematics & AI for math",
+      "형식화된 수학·수학을 위한 AI"
+     ],
+     "goal": [
+      "Proof assistants, mathlib and machine learning for theorem proving.",
+      "증명 보조기, mathlib, 정리 증명을 위한 머신러닝."
+     ],
+     "concepts": [
+      [
+       "Dependent type theory",
+       "Tactics",
+       "mathlib",
+       "Autoformalization",
+       "Neural theorem proving",
+       "Benchmarks"
+      ],
+      [
+       "의존 타입 이론",
+       "전술(tactic)",
+       "mathlib",
+       "자동 형식화",
+       "신경망 정리 증명",
+       "벤치마크"
+      ]
+     ],
+     "items": [
+      [
+       "Mathematics in Lean",
+       "https://leanprover-community.github.io/mathematics_in_lean/",
+       "book",
+       "Ch. 1–8",
+       "1~8장",
+       50,
+       "Formalizing undergraduate mathematics with Lean 4 and mathlib.",
+       "Lean 4와 mathlib으로 학부 수학을 형식화합니다."
+      ],
+      [
+       "Lean community (mathlib)",
+       "https://leanprover-community.github.io/",
+       "practice",
+       "Read the contribution guide and fix one small issue",
+       "기여 안내를 읽고 작은 이슈 하나 해결",
+       15,
+       "The community building a unified library of formal mathematics.",
+       "형식 수학의 통합 라이브러리를 만드는 커뮤니티."
+      ],
+      [
+       "miniF2F: a cross-system benchmark for formal Olympiad-level mathematics (2021)",
+       "https://arxiv.org/abs/2109.00110",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "A standard benchmark for neural theorem provers.",
+       "신경망 정리 증명기의 표준 벤치마크."
+      ],
+      [
+       "Formal Mathematics Statement Curriculum Learning (2022)",
+       "https://arxiv.org/abs/2202.01344",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Language models proving competition problems in Lean via expert iteration.",
+       "언어모델이 전문가 반복으로 Lean에서 대회 문제를 증명합니다."
+      ]
+     ],
+     "proj": [
+      "Formalize a theorem from your core courses in Lean, then evaluate an open-source neural prover on a handful of miniF2F problems.",
+      "핵심 과목의 정리 하나를 Lean으로 형식화하고, 공개 신경망 증명기를 miniF2F 문제 몇 개로 평가합니다."
+     ],
+     "exit": [
+      "You can read and write mathlib-style Lean proofs and explain how neural provers are evaluated.",
+      "mathlib 방식의 Lean 증명을 읽고 쓰며, 신경망 증명기가 어떻게 평가되는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Measuring prover progress on benchmarks that leaked into training data.",
+       "학습 데이터에 섞인 벤치마크로 증명기 성능 재기."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "name": [
+    "Entering research",
+    "연구 진입"
+   ],
+   "short": [
+    "Research",
+    "연구 진입"
+   ],
+   "goal": [
+    "Read current papers, ask questions and write mathematics for others.",
+    "최신 논문을 읽고, 질문을 만들고, 다른 사람을 위한 수학을 쓰기."
+   ],
+   "dur": [
+    "Ongoing",
+    "계속"
+   ],
+   "pre": [
+    "Stage 3 (one track)",
+    "3단계 (트랙 하나)"
+   ],
+   "why": [
+    "Research mathematics is learned by reading recent papers slowly, working examples and talking to people. Expository writing is the best first output.",
+    "연구 수학은 최근 논문을 천천히 읽고, 예시를 손으로 풀고, 사람들과 이야기하며 배웁니다. 해설 글쓰기가 가장 좋은 첫 결과물입니다."
+   ],
+   "concepts": [
+    [
+     "Reading papers line by line",
+     "Working examples",
+     "Asking good questions",
+     "Expository writing",
+     "Collaboration"
+    ],
+    [
+     "한 줄씩 논문 읽기",
+     "예시 손으로 풀기",
+     "좋은 질문하기",
+     "해설 글쓰기",
+     "협업"
+    ]
+   ],
+   "items": [
+    [
+     "Terence Tao — Career advice",
+     "https://terrytao.wordpress.com/career-advice/",
+     "article",
+     "Whole series",
+     "전체",
+     4,
+     "Practical advice on learning and doing mathematics.",
+     "수학을 배우고 연구하는 실용적인 조언."
+    ],
+    [
+     "You and Your Research (Richard Hamming)",
+     "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+     "article",
+     "Whole talk",
+     "전체",
+     2,
+     "On choosing important problems.",
+     "중요한 문제를 고르는 법."
+    ],
+    [
+     "arXiv Mathematics — recent",
+     "https://arxiv.org/list/math/recent",
+     "practice",
+     "Skim your area's listing weekly",
+     "매주 자기 분야 목록 훑기",
+     3,
+     "Where nearly all new mathematics first appears.",
+     "새 수학 결과가 거의 모두 처음 나오는 곳."
+    ],
+    [
+     "MathOverflow",
+     "https://mathoverflow.net/",
+     "practice",
+     "Read top questions in your area",
+     "자기 분야 인기 질문 읽기",
+     3,
+     "Research-level Q&A; reading it shows how experts think.",
+     "연구 수준 질의응답. 전문가의 사고방식을 볼 수 있습니다."
+    ],
+    [
+     "Quanta Magazine — Mathematics",
+     "https://www.quantamagazine.org/mathematics/",
+     "practice",
+     "Read weekly",
+     "매주 읽기",
+     2,
+     "Accessible reporting on major new results.",
+     "주요 새 결과를 쉽게 전하는 기사."
+    ],
+    [
+     "Write an expository note on a recent paper",
+     "https://arxiv.org/list/math/recent",
+     "practice",
+     "Pick one recent paper in your track",
+     "자기 트랙의 최근 논문 하나 선택",
+     40,
+     "Rework its key proof with your own examples and post it.",
+     "핵심 증명을 자신의 예시로 다시 풀어 공개합니다."
+    ]
+   ],
+   "proj": [
+    "Write a 10–15 page expository paper on a recent result in your track, with all proofs filled in, and share it with a professor for feedback.",
+    "자기 트랙의 최근 결과에 대해 모든 증명을 채운 10~15쪽 해설 논문을 쓰고, 교수에게 보여 피드백을 받습니다."
+   ],
+   "exit": [
+    "A public expository paper that an expert would find correct and clear.",
+    "전문가가 보기에 정확하고 명료한 공개 해설 논문."
+   ],
+   "pit": [
+    [
+     "Trying to solve famous open problems before learning the tools.",
+     "도구를 익히기 전에 유명 난제부터 풀려 하기."
+    ]
+   ]
+  }
+ ],
+ "coverage": {
+  "yes": [
+   [
+    "The full undergraduate core and graduate-level entry to one or two areas.",
+    "학부 핵심 전체와 한두 분야의 대학원 입문 수준."
+   ],
+   [
+    "The ability to read recent arXiv papers in your area slowly but correctly.",
+    "자기 분야의 최근 arXiv 논문을 느리지만 정확하게 읽는 능력."
+   ]
+  ],
+  "no": [
+   [
+    "Original research ability, which grows through years of problem solving with an advisor.",
+    "독창적 연구 능력. 지도교수와 여러 해 문제를 풀며 자랍니다."
+   ],
+   [
+    "Breadth across all areas; even professional mathematicians specialize.",
+    "모든 분야의 폭. 전문 수학자도 세분화합니다."
+   ]
+  ]
+ },
+ "sources": [
+  [
+   "arXiv Mathematics",
+   "https://arxiv.org/list/math/recent",
+   "New papers in every area",
+   "전 분야 새 논문"
+  ],
+  [
+   "Quanta Magazine",
+   "https://www.quantamagazine.org/mathematics/",
+   "Accessible math news",
+   "이해하기 쉬운 수학 뉴스"
+  ],
+  [
+   "MathOverflow",
+   "https://mathoverflow.net/",
+   "Research-level Q&A",
+   "연구 수준 질의응답"
+  ],
+  [
+   "Terence Tao's blog",
+   "https://terrytao.wordpress.com/",
+   "Research exposition",
+   "연구 해설"
+  ]
+ ],
+ "pathways": [
+  [
+   [
+    "Undergraduate research or reading course",
+    "학부 연구 또는 독서 과목"
+   ],
+   "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=65510",
+   2,
+   "Join a professor's group as an undergraduate researcher; most research skills are passed on this way.",
+   "학부 연구생으로 교수 연구실에 들어가는 것입니다. 연구 실력의 대부분이 이 경로로 전해집니다.",
+   "Linked example: KAIST URP. Most universities run a similar program.",
+   "연결된 예시: KAIST URP. 대부분의 대학에 비슷한 제도가 있습니다."
+  ],
+  [
+   [
+    "Lean community (Zulip)",
+    "Lean 커뮤니티 (Zulip)"
+   ],
+   "https://leanprover.zulipchat.com/",
+   1,
+   "An active online community formalizing mathematics; newcomers get help and can contribute to mathlib.",
+   "수학을 형식화하는 활발한 온라인 커뮤니티로, 초보자도 도움을 받고 mathlib에 기여할 수 있습니다.",
+   "Free; open to anyone.",
+   "무료, 누구나 참여 가능."
+  ],
+  [
+   [
+    "Park City Mathematics Institute (PCMI)",
+    "파크시티 수학 연구소 (PCMI)"
+   ],
+   "https://www.ias.edu/pcmi",
+   2,
+   "A summer programme run by the Institute for Advanced Study with tracks for undergraduates and graduate students.",
+   "고등연구소(IAS)가 운영하는 여름 프로그램으로, 학부생과 대학원생 과정이 있습니다.",
+   "Applications usually in winter; check eligibility each year.",
+   "보통 겨울에 지원. 매년 자격 요건을 확인하세요."
+  ]
+ ]
+}

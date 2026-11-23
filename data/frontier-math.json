@@ -1,0 +1,39 @@
+{
+ "updated": "2026-11-23",
+ "weeks": [
+  {
+   "week": "2026-11-23",
+   "note_en": "Focus this week: AI-assisted and formally verified mathematics, and the 2026 Fields Medals.",
+   "note_ko": "이번 주 초점: AI의 도움을 받거나 형식 검증된 수학, 그리고 2026년 필즈상.",
+   "items": [
+    {
+     "type_en": "Industry",
+     "type_ko": "업계 동향",
+     "stage": 3,
+     "title": "The AI Revolution in Math Has Arrived (Quanta Magazine)",
+     "url": "https://quantamagazine.org/the-ai-revolution-in-math-has-arrived-20260413/",
+     "why_en": "A long report on how AI systems now formulate, prove and verify results, and how mathematicians are reacting (Track F).",
+     "why_ko": "AI 시스템이 결과를 제시·증명·검증하게 된 상황과 수학자들의 반응을 다룬 긴 기사입니다(트랙 F)."
+    },
+    {
+     "type_en": "Research note",
+     "type_ko": "연구 노트",
+     "stage": 3,
+     "title": "Quanta update: Helfgott's ternary Goldbach proof formally verified",
+     "url": "https://www.quantamagazine.org/update/169054/",
+     "why_en": "Reports that the proof of the ternary Goldbach conjecture has now been formally verified, a milestone for formalized number theory (Tracks B, F).",
+     "why_ko": "약한 골드바흐 추측의 증명이 형식 검증되었다는 소식으로, 형식화된 정수론의 이정표입니다(트랙 B, F)."
+    },
+    {
+     "type_en": "Talk",
+     "type_ko": "발표",
+     "stage": 3,
+     "title": "Jacob Tsimerman wins 2026 Fields Medal (Quanta Magazine)",
+     "url": "https://quantamagazine.org/jacob-tsimerman-wins-2026-fields-medal-for-andre-oort-conjecture-proof-20260723",
+     "why_en": "Profile of a 2026 Fields medallist and his proof of the André–Oort conjecture, a good entry into modern number theory (Track B).",
+     "why_ko": "2026년 필즈상 수상자와 그의 앙드레-오르트 추측 증명을 소개합니다. 현대 정수론 입문에 좋습니다(트랙 B)."
+    }
+   ]
+  }
+ ]
+}

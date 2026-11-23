@@ -1,0 +1,1081 @@
+{
+ "version": 1,
+ "name": [
+  "Economics & Finance",
+  "경제·금융"
+ ],
+ "title": [
+  "Economics & Finance Research Roadmap",
+  "경제·금융 연구 학습 노선도"
+ ],
+ "lede": [
+  "A path from first-year university level to following frontier research in economics and finance: data and statistics, micro- and macroeconomics, econometrics and causal inference, financial economics, then depth in macro and monetary economics, game theory, causal inference, asset pricing, development and public economics.",
+  "대학 1학년 수준에서 출발해 경제·금융 최전선 연구를 따라갈 수 있는 수준까지 가는 길입니다. 데이터와 통계, 미시·거시경제학, 계량경제학과 인과추론, 금융경제학을 거쳐 거시·통화, 게임이론, 인과추론, 자산가격, 개발·공공경제에서 깊이를 더합니다."
+ ],
+ "status": [
+  "This route teaches how economists and finance researchers think and test claims. It is educational material, not investment advice.",
+  "이 노선은 경제학자와 금융 연구자가 생각하고 주장을 검증하는 방식을 가르칩니다. 투자 조언이 아니라 학습 자료입니다."
+ ],
+ "stages": [
+  {
+   "n": 0,
+   "name": [
+    "Data & programming",
+    "데이터·프로그래밍"
+   ],
+   "short": [
+    "Data",
+    "데이터"
+   ],
+   "goal": [
+    "Programming and data handling for economic data.",
+    "경제 데이터를 위한 프로그래밍과 데이터 다루기."
+   ],
+   "dur": [
+    "4–6 weeks",
+    "4~6주"
+   ],
+   "pre": [
+    "None",
+    "없음"
+   ],
+   "why": [
+    "Modern economics is empirical. Nearly every paper involves cleaning data and running estimations in code.",
+    "현대 경제학은 실증 중심입니다. 거의 모든 논문이 데이터를 정리하고 코드로 추정을 돌립니다."
+   ],
+   "concepts": [
+    [
+     "Python or R",
+     "Data cleaning",
+     "Panel & time-series data",
+     "Plotting",
+     "Reproducible scripts"
+    ],
+    [
+     "Python 또는 R",
+     "데이터 정리",
+     "패널·시계열 데이터",
+     "그래프 그리기",
+     "재현 가능한 스크립트"
+    ]
+   ],
+   "items": [
+    [
+     "Python Tutorial (official)",
+     "https://docs.python.org/3/tutorial/",
+     "book",
+     "Ch. 1–9",
+     "1~9장",
+     15,
+     "Up to classes, iterators and generators.",
+     "클래스, 이터레이터, 제너레이터까지.",
+     "https://docs.python.org/ko/3/tutorial/"
+    ],
+    [
+     "pandas — Getting started",
+     "https://pandas.pydata.org/docs/getting_started/index.html",
+     "article",
+     "Intro tutorials",
+     "입문 튜토리얼",
+     6,
+     "Working with tables of data in Python.",
+     "Python으로 데이터 표 다루기."
+    ],
+    [
+     "R for Data Science (2e)",
+     "https://r4ds.hadley.nz/",
+     "book",
+     "Whole game + Visualize + Transform parts",
+     "Whole game·Visualize·Transform 부분",
+     20,
+     "The standard free introduction to data analysis in R.",
+     "R 데이터 분석의 표준 무료 입문서."
+    ],
+    [
+     "QuantEcon — Python Programming for Economics and Finance",
+     "https://python-programming.quantecon.org/",
+     "course",
+     "Introduction + core lectures",
+     "입문 + 핵심 강의",
+     20,
+     "Python taught through economic examples.",
+     "경제 예시로 배우는 Python."
+    ],
+    [
+     "FRED (Federal Reserve Economic Data)",
+     "https://fred.stlouisfed.org/",
+     "practice",
+     "Download and plot five macro series",
+     "거시 시계열 5개 내려받아 그리기",
+     3,
+     "Free macroeconomic data used in countless papers.",
+     "수많은 논문에 쓰이는 무료 거시경제 데이터."
+    ],
+    [
+     "ECOS 경제통계시스템 (Bank of Korea)",
+     "https://ecos.bok.or.kr/",
+     "practice",
+     "Download Korean GDP, CPI and interest-rate series",
+     "한국 GDP·CPI·금리 시계열 내려받기",
+     3,
+     "Official Korean economic statistics.",
+     "한국의 공식 경제 통계."
+    ]
+   ],
+   "proj": [
+    "Build a reproducible notebook that downloads US and Korean inflation and policy-rate data, plots them and computes simple correlations.",
+    "미국과 한국의 물가·기준금리 데이터를 내려받아 그리고 단순 상관을 계산하는 재현 가능한 노트북을 만듭니다."
+   ],
+   "exit": [
+    "You can turn raw public data into a clean dataset and figure with a script.",
+    "공개 원자료를 스크립트로 정리된 데이터와 그림으로 만들 수 있다."
+   ],
+   "pit": [
+    [
+     "Editing data by hand in spreadsheets.",
+     "스프레드시트에서 데이터를 손으로 고치기."
+    ]
+   ]
+  },
+  {
+   "n": 1,
+   "name": [
+    "Mathematics & statistics",
+    "수학·통계"
+   ],
+   "short": [
+    "Math & stats",
+    "수학·통계"
+   ],
+   "goal": [
+    "Calculus, linear algebra, optimization, probability and statistics.",
+    "미적분, 선형대수, 최적화, 확률, 통계."
+   ],
+   "dur": [
+    "10–14 weeks",
+    "10~14주"
+   ],
+   "pre": [
+    "High-school math",
+    "고교 수학"
+   ],
+   "why": [
+    "Economic theory is constrained optimization and equilibrium; empirical work is statistics. Both need this layer.",
+    "경제 이론은 제약 최적화와 균형이고, 실증 연구는 통계입니다. 둘 다 이 층이 필요합니다."
+   ],
+   "concepts": [
+    [
+     "Multivariable optimization",
+     "Lagrange multipliers",
+     "Matrices",
+     "Probability distributions",
+     "Estimation",
+     "Regression",
+     "Hypothesis testing"
+    ],
+    [
+     "다변수 최적화",
+     "라그랑주 승수",
+     "행렬",
+     "확률분포",
+     "추정",
+     "회귀",
+     "가설 검정"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 18.02SC Multivariable Calculus",
+     "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+     "course",
+     "Units 1–4",
+     "1~4단원",
+     35,
+     "Vector calculus and optimization in many variables.",
+     "다변수 벡터 미적분과 최적화."
+    ],
+    [
+     "MIT 18.06 Linear Algebra (Gilbert Strang)",
+     "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+     "course",
+     "Lectures 1–25 + problem sets",
+     "1~25강 + 문제풀이",
+     40,
+     "The standard first course in linear algebra.",
+     "선형대수의 표준 첫 과목."
+    ],
+    [
+     "Harvard Stat 110 Probability",
+     "https://projects.iq.harvard.edu/stat110",
+     "course",
+     "Lectures + book Ch. 1–9",
+     "강의 + 교재 1~9장",
+     40,
+     "Free book and lecture videos are linked from the page.",
+     "페이지에서 무료 교재와 강의 영상으로 연결됩니다."
+    ],
+    [
+     "MIT 18.05 Introduction to Probability and Statistics",
+     "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/",
+     "course",
+     "All classes",
+     "전체 수업",
+     40,
+     "Frequentist and Bayesian statistics with applications.",
+     "응용 중심의 빈도주의·베이지안 통계."
+    ]
+   ],
+   "proj": [
+    "Derive a consumer's demand from utility maximization with Lagrange multipliers, then estimate a demand curve from public data with regression.",
+    "라그랑주 승수로 효용 극대화에서 수요를 유도하고, 공개 데이터로 회귀를 돌려 수요 곡선을 추정합니다."
+   ],
+   "exit": [
+    "You can solve a constrained optimization problem and interpret a regression table correctly.",
+    "제약 최적화 문제를 풀고 회귀 결과표를 올바르게 해석할 수 있다."
+   ],
+   "pit": [
+    [
+     "Reading significance stars as importance.",
+     "유의성 별표를 중요도로 읽기."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "name": [
+    "Core economics",
+    "핵심 경제학"
+   ],
+   "short": [
+    "Economics",
+    "경제학"
+   ],
+   "goal": [
+    "Micro, macro and introductory econometrics.",
+    "미시, 거시, 기초 계량경제학."
+   ],
+   "dur": [
+    "16–22 weeks",
+    "16~22주"
+   ],
+   "pre": [
+    "Stage 1",
+    "1단계"
+   ],
+   "why": [
+    "Every research field in economics builds on consumer and firm theory, markets, macro aggregates and the core empirical toolkit.",
+    "경제학의 모든 연구 분야는 소비자·기업 이론, 시장, 거시 총량, 핵심 실증 도구 위에 세워집니다."
+   ],
+   "concepts": [
+    [
+     "Supply, demand & elasticity",
+     "Consumer & producer theory",
+     "Market structure",
+     "General equilibrium",
+     "Externalities & public goods",
+     "GDP, inflation, unemployment",
+     "Growth models",
+     "Monetary & fiscal policy",
+     "OLS & its assumptions"
+    ],
+    [
+     "수요·공급·탄력성",
+     "소비자·생산자 이론",
+     "시장 구조",
+     "일반균형",
+     "외부효과·공공재",
+     "GDP·물가·실업",
+     "성장 모형",
+     "통화·재정 정책",
+     "OLS와 가정"
+    ]
+   ],
+   "items": [
+    [
+     "CORE Econ — The Economy 2.0",
+     "https://www.core-econ.org/",
+     "book",
+     "Microeconomics and Macroeconomics volumes",
+     "미시·거시 권",
+     50,
+     "A free, data-driven introductory economics text.",
+     "데이터 중심의 무료 경제학 입문서."
+    ],
+    [
+     "MIT 14.01 Principles of Microeconomics",
+     "https://ocw.mit.edu/courses/14-01-principles-of-microeconomics-fall-2018/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "Introductory microeconomics with lecture videos.",
+     "강의 영상이 있는 미시경제학 입문."
+    ],
+    [
+     "MIT 14.04 Intermediate Microeconomic Theory",
+     "https://ocw.mit.edu/courses/14-04-intermediate-microeconomic-theory-fall-2020/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     45,
+     "Consumer, producer and equilibrium theory with calculus.",
+     "미적분을 쓰는 소비자·생산자·균형 이론."
+    ],
+    [
+     "MIT 14.02 Principles of Macroeconomics",
+     "https://ocw.mit.edu/courses/14-02-principles-of-macroeconomics-spring-2023/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "GDP, inflation, monetary policy and growth.",
+     "GDP, 물가, 통화정책, 성장."
+    ],
+    [
+     "Introduction to Econometrics with R",
+     "https://www.econometrics-with-r.org/",
+     "book",
+     "Ch. 1–13",
+     "1~13장",
+     40,
+     "Free interactive econometrics companion in R.",
+     "R로 하는 무료 대화형 계량경제학 교재."
+    ]
+   ],
+   "proj": [
+    "Write a short policy brief on a real policy (e.g. a minimum-wage change) using supply-and-demand reasoning and one simple regression on public data.",
+    "실제 정책(예: 최저임금 변화)에 대해 수요·공급 논리와 공개 데이터로 한 단순 회귀를 이용한 짧은 정책 보고서를 씁니다."
+   ],
+   "exit": [
+    "You can explain a market outcome with a model and test one of its predictions with data.",
+    "모형으로 시장 결과를 설명하고, 그 예측 하나를 데이터로 검정할 수 있다."
+   ],
+   "pit": [
+    [
+     "Confusing correlation with causation in policy claims.",
+     "정책 주장에서 상관과 인과를 혼동하기."
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "name": [
+    "Financial economics",
+    "금융경제학"
+   ],
+   "short": [
+    "Finance",
+    "금융"
+   ],
+   "goal": [
+    "Time value, risk, portfolios, asset pricing basics and financial markets.",
+    "화폐의 시간 가치, 위험, 포트폴리오, 자산가격 기초, 금융시장."
+   ],
+   "dur": [
+    "10–14 weeks",
+    "10~14주"
+   ],
+   "pre": [
+    "Stage 2",
+    "2단계"
+   ],
+   "why": [
+    "Finance research asks how risk is priced and how markets allocate capital. It uses the same tools as economics with its own models and data.",
+    "금융 연구는 위험이 어떻게 가격에 반영되고 시장이 자본을 어떻게 배분하는지를 묻습니다. 경제학과 같은 도구에 고유한 모형과 데이터를 씁니다."
+   ],
+   "concepts": [
+    [
+     "Present value",
+     "Risk & return",
+     "Portfolio theory",
+     "CAPM & factor models",
+     "Efficient markets",
+     "Options & derivatives",
+     "Corporate finance"
+    ],
+    [
+     "현재 가치",
+     "위험·수익",
+     "포트폴리오 이론",
+     "CAPM·요인 모형",
+     "효율적 시장",
+     "옵션·파생상품",
+     "기업 재무"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 15.401 Finance Theory I",
+     "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "Valuation, risk and the foundations of modern finance.",
+     "가치 평가, 위험, 현대 금융의 기초."
+    ],
+    [
+     "Yale ECON 252 Financial Markets (Robert Shiller)",
+     "https://oyc.yale.edu/economics/econ-252",
+     "course",
+     "All lectures",
+     "전체 강의",
+     35,
+     "Markets, institutions and behavioural finance from a Nobel laureate.",
+     "노벨상 수상자의 시장·제도·행동재무 강의."
+    ],
+    [
+     "MIT 18.S096 Topics in Mathematics with Applications in Finance",
+     "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/",
+     "course",
+     "Selected lectures",
+     "주요 강의",
+     30,
+     "Stochastic processes, Itô calculus and time-series models used in finance.",
+     "금융에 쓰이는 확률과정, 이토 미적분, 시계열 모형."
+    ]
+   ],
+   "proj": [
+    "Using free factor data, estimate CAPM and a three-factor model for several portfolios and discuss what the intercepts imply.",
+    "무료 요인 데이터로 여러 포트폴리오에 CAPM과 3요인 모형을 추정하고, 절편이 의미하는 바를 논의합니다."
+   ],
+   "exit": [
+    "You can price a bond and an option and explain what the CAPM does and does not predict.",
+    "채권과 옵션의 가격을 계산하고, CAPM이 예측하는 것과 예측하지 못하는 것을 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Treating backtested returns as future returns.",
+     "백테스트 수익률을 미래 수익률로 여기기."
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "name": [
+    "Specialization tracks",
+    "전문 트랙"
+   ],
+   "short": [
+    "Tracks",
+    "전문 트랙"
+   ],
+   "goal": [
+    "Go deep in one or two areas of economics or finance.",
+    "경제·금융의 한두 분야를 깊게 팝니다."
+   ],
+   "dur": [
+    "10–16 weeks per track",
+    "트랙당 10~16주"
+   ],
+   "pre": [
+    "Stage 3",
+    "3단계"
+   ],
+   "why": [
+    "Economics research divides into fields with their own methods and journals. Most frontier work circulates first as NBER or SSRN working papers.",
+    "경제학 연구는 고유한 방법과 학술지를 가진 분야들로 나뉩니다. 최전선 연구 대부분은 먼저 NBER나 SSRN 워킹페이퍼로 유통됩니다."
+   ],
+   "tracks": [
+    {
+     "id": "A",
+     "name": [
+      "Macroeconomics & monetary policy",
+      "거시경제·통화정책"
+     ],
+     "goal": [
+      "Dynamic models of growth, cycles, inflation and central banking.",
+      "성장, 경기 변동, 물가, 중앙은행을 다루는 동태 모형."
+     ],
+     "concepts": [
+      [
+       "Dynamic programming",
+       "Real business cycles",
+       "New Keynesian models",
+       "Monetary transmission",
+       "Heterogeneous-agent models",
+       "Fiscal policy"
+      ],
+      [
+       "동적 계획법",
+       "실물 경기변동",
+       "뉴케인지언 모형",
+       "통화정책 전달",
+       "이질적 경제주체 모형",
+       "재정정책"
+      ]
+     ],
+     "items": [
+      [
+       "QuantEcon — Intermediate Quantitative Economics with Python",
+       "https://python.quantecon.org/",
+       "course",
+       "Dynamic programming and macro lectures",
+       "동적 계획법·거시 강의",
+       40,
+       "Solve and simulate modern macro models in code.",
+       "현대 거시 모형을 코드로 풀고 시뮬레이션합니다."
+      ],
+      [
+       "QuantEcon — Advanced Quantitative Economics with Python",
+       "https://python-advanced.quantecon.org/",
+       "course",
+       "Selected lectures",
+       "주요 강의",
+       30,
+       "Recursive methods and models used in current research.",
+       "최신 연구에 쓰이는 재귀적 방법과 모형."
+      ],
+      [
+       "NBER Working Papers — Monetary Economics",
+       "https://www.nber.org/papers",
+       "practice",
+       "Skim new papers weekly",
+       "매주 새 논문 훑기",
+       3,
+       "Where most new macro research first appears.",
+       "새 거시 연구 대부분이 처음 나오는 곳."
+      ]
+     ],
+     "proj": [
+      "Solve and simulate a simple New Keynesian model in Python and show how an interest-rate shock moves output and inflation.",
+      "Python으로 간단한 뉴케인지언 모형을 풀고 시뮬레이션해, 금리 충격이 산출과 물가를 어떻게 움직이는지 보입니다."
+     ],
+     "exit": [
+      "Explain how monetary policy affects the economy in a New Keynesian model and what heterogeneous-agent models add.",
+      "뉴케인지언 모형에서 통화정책이 경제에 영향을 주는 경로와, 이질적 경제주체 모형이 더하는 점을 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Calibrating models to match targets without testing other predictions.",
+       "목표치에만 맞추고 다른 예측은 검증하지 않기."
+      ]
+     ]
+    },
+    {
+     "id": "B",
+     "name": [
+      "Microeconomic theory & game theory",
+      "미시이론·게임이론"
+     ],
+     "goal": [
+      "Strategic behaviour, information and mechanism design.",
+      "전략적 행동, 정보, 메커니즘 설계."
+     ],
+     "concepts": [
+      [
+       "Nash equilibrium",
+       "Extensive-form games",
+       "Bayesian games",
+       "Signalling",
+       "Auctions",
+       "Mechanism design",
+       "Matching markets"
+      ],
+      [
+       "내쉬 균형",
+       "전개형 게임",
+       "베이지안 게임",
+       "신호 보내기",
+       "경매",
+       "메커니즘 설계",
+       "매칭 시장"
+      ]
+     ],
+     "items": [
+      [
+       "Yale ECON 159 Game Theory (Ben Polak)",
+       "https://oyc.yale.edu/economics/econ-159",
+       "course",
+       "All lectures",
+       "전체 강의",
+       35,
+       "A clear, complete introduction to game theory.",
+       "명료하고 완결된 게임이론 입문."
+      ],
+      [
+       "MIT 14.12 Economic Applications of Game Theory",
+       "https://ocw.mit.edu/courses/14-12-economic-applications-of-game-theory-fall-2012/",
+       "course",
+       "Lecture notes + problem sets",
+       "강의노트 + 문제풀이",
+       35,
+       "Game theory with economic applications at the intermediate level.",
+       "중급 수준의 경제 응용 게임이론."
+      ],
+      [
+       "Tim Roughgarden — lecture videos",
+       "https://timroughgarden.org/videos.html",
+       "video",
+       "Algorithmic game theory lectures",
+       "알고리즘 게임이론 강의",
+       25,
+       "Auctions and mechanism design from the computer-science side.",
+       "컴퓨터 과학 쪽에서 본 경매와 메커니즘 설계."
+      ]
+     ],
+     "proj": [
+      "Analyse a real auction or matching market (e.g. spectrum auctions or school choice) and show which mechanism properties hold.",
+      "실제 경매나 매칭 시장(예: 주파수 경매, 학교 배정)을 분석해 어떤 메커니즘 성질이 성립하는지 보입니다."
+     ],
+     "exit": [
+      "Solve for perfect Bayesian equilibria in a signalling game and explain the revelation principle.",
+      "신호 게임의 완전 베이지안 균형을 구하고 현시 원리를 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Ignoring the information structure of a game.",
+       "게임의 정보 구조를 무시하기."
+      ]
+     ]
+    },
+    {
+     "id": "C",
+     "name": [
+      "Econometrics & causal inference",
+      "계량경제·인과추론"
+     ],
+     "goal": [
+      "Identifying causal effects from observational and experimental data.",
+      "관찰·실험 데이터에서 인과 효과를 식별하기."
+     ],
+     "concepts": [
+      [
+       "Potential outcomes",
+       "Randomized experiments",
+       "Instrumental variables",
+       "Difference-in-differences",
+       "Regression discontinuity",
+       "Synthetic control",
+       "Machine learning for causal inference"
+      ],
+      [
+       "잠재적 결과",
+       "무작위 실험",
+       "도구변수",
+       "이중차분",
+       "회귀불연속",
+       "합성통제",
+       "인과추론을 위한 머신러닝"
+      ]
+     ],
+     "items": [
+      [
+       "Causal Inference: The Mixtape (Scott Cunningham)",
+       "https://mixtape.scunning.com/",
+       "book",
+       "Ch. 1–10",
+       "1~10장",
+       40,
+       "The modern causal-inference toolkit with code in R, Stata and Python; free online.",
+       "R·Stata·Python 코드가 있는 현대 인과추론 도구. 무료 온라인."
+      ],
+      [
+       "Causal Inference: What If (Hernán & Robins)",
+       "https://miguelhernan.org/whatifbook",
+       "book",
+       "Parts I–II",
+       "1~2부",
+       40,
+       "A rigorous treatment of causal inference from epidemiology; free.",
+       "역학에서 나온 엄밀한 인과추론. 무료."
+      ],
+      [
+       "Machine Learning Methods Economists Should Know About (Athey & Imbens, 2019)",
+       "https://arxiv.org/abs/1903.10075",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "Where machine learning helps and hurts in economic inference.",
+       "경제학 추론에서 머신러닝이 도움이 되는 곳과 해가 되는 곳."
+      ],
+      [
+       "AEA Data and Code Repository",
+       "https://www.aeaweb.org/journals/data",
+       "practice",
+       "Download one replication package",
+       "재현 패키지 하나 내려받기",
+       10,
+       "Replication packages for papers in American Economic Association journals.",
+       "미국경제학회 학술지 논문의 재현 패키지."
+      ]
+     ],
+     "proj": [
+      "Reproduce the main table of a published difference-in-differences or regression-discontinuity paper from its replication package, then test one robustness check.",
+      "발표된 이중차분 또는 회귀불연속 논문의 재현 패키지로 주요 표를 재현하고, 강건성 검정 하나를 해 봅니다."
+     ],
+     "exit": [
+      "State the identifying assumptions of IV, DiD and RD, and how each can fail.",
+      "도구변수, 이중차분, 회귀불연속의 식별 가정과 각각이 깨지는 방식을 말할 수 있다."
+     ],
+     "pit": [
+      [
+       "Running two-way fixed effects with staggered treatment without checking newer estimators.",
+       "처치 시점이 다를 때 새 추정량을 확인하지 않고 이원 고정효과만 쓰기."
+      ]
+     ]
+    },
+    {
+     "id": "D",
+     "name": [
+      "Asset pricing & quantitative finance",
+      "자산가격·계량금융"
+     ],
+     "goal": [
+      "Empirical asset pricing, factor models and machine learning in finance.",
+      "실증 자산가격, 요인 모형, 금융 머신러닝."
+     ],
+     "concepts": [
+      [
+       "Stochastic discount factor",
+       "Factor models",
+       "Return predictability",
+       "Volatility",
+       "Market microstructure",
+       "Machine learning for returns"
+      ],
+      [
+       "확률적 할인 인자",
+       "요인 모형",
+       "수익률 예측 가능성",
+       "변동성",
+       "시장 미시구조",
+       "수익률 머신러닝"
+      ]
+     ],
+     "items": [
+      [
+       "Kenneth R. French — Data Library",
+       "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+       "practice",
+       "Download factor and portfolio data",
+       "요인·포트폴리오 데이터 내려받기",
+       3,
+       "The standard free source of factor returns.",
+       "요인 수익률의 표준 무료 출처."
+      ],
+      [
+       "Empirical Asset Pricing via Machine Learning (Gu, Kelly, Xiu)",
+       "https://www.nber.org/papers/w25398",
+       "paper",
+       "Full paper",
+       "전문",
+       5,
+       "A benchmark study of machine learning for predicting stock returns.",
+       "주식 수익률 예측에 머신러닝을 적용한 기준 연구."
+      ]
+     ],
+     "proj": [
+      "Replicate a classic factor (e.g. momentum) from public data and test whether a simple machine-learning model adds out-of-sample predictive power.",
+      "공개 데이터로 고전적 요인(예: 모멘텀)을 재현하고, 단순 머신러닝 모형이 표본 외 예측력을 더하는지 검정합니다."
+     ],
+     "exit": [
+      "Explain why most return predictors fail out of sample and how researchers guard against data mining.",
+      "대부분의 수익률 예측 변수가 표본 외에서 실패하는 이유와, 연구자들이 데이터 마이닝을 어떻게 막는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Testing many signals and reporting only the winners.",
+       "많은 신호를 시험하고 잘된 것만 보고하기."
+      ]
+     ]
+    },
+    {
+     "id": "E",
+     "name": [
+      "Development & public economics",
+      "개발·공공경제"
+     ],
+     "goal": [
+      "Poverty, inequality, policy evaluation and the role of government.",
+      "빈곤, 불평등, 정책 평가, 정부의 역할."
+     ],
+     "concepts": [
+      [
+       "Poverty traps",
+       "Field experiments",
+       "Education & health economics",
+       "Taxation",
+       "Inequality measurement",
+       "Policy evaluation"
+      ],
+      [
+       "빈곤의 덫",
+       "현장 실험",
+       "교육·보건 경제",
+       "조세",
+       "불평등 측정",
+       "정책 평가"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 14.73 The Challenges of Global Poverty",
+       "https://ocw.mit.edu/courses/14-73-the-challenges-of-global-poverty-spring-2011/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       30,
+       "Development economics through evidence, by Banerjee and Duflo.",
+       "Banerjee와 Duflo가 증거로 가르치는 개발경제학."
+      ],
+      [
+       "J-PAL (Abdul Latif Jameel Poverty Action Lab)",
+       "https://www.povertyactionlab.org/",
+       "practice",
+       "Read three policy insights and their evaluations",
+       "정책 통찰 3개와 평가 읽기",
+       5,
+       "Summaries of randomized evaluations of social programmes.",
+       "사회 프로그램 무작위 평가의 요약."
+      ],
+      [
+       "Our World in Data",
+       "https://ourworldindata.org/",
+       "practice",
+       "Explore data on one development topic",
+       "개발 주제 하나의 데이터 탐색",
+       3,
+       "Free, documented data on global development.",
+       "세계 개발에 대한 출처가 명시된 무료 데이터."
+      ]
+     ],
+     "proj": [
+      "Design a randomized evaluation for a real policy question, including power calculations and a pre-analysis plan.",
+      "실제 정책 질문에 대한 무작위 평가를 설계합니다. 검정력 계산과 사전 분석 계획을 포함합니다."
+     ],
+     "exit": [
+      "Explain how a randomized evaluation identifies a causal effect and what limits its external validity.",
+      "무작위 평가가 인과 효과를 식별하는 방식과 외적 타당도를 제한하는 요인을 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Generalizing one experiment's result to every context.",
+       "실험 하나의 결과를 모든 상황에 일반화하기."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "name": [
+    "Entering research",
+    "연구 진입"
+   ],
+   "short": [
+    "Research",
+    "연구 진입"
+   ],
+   "goal": [
+    "Read working papers, replicate results and write a paper.",
+    "워킹페이퍼를 읽고, 결과를 재현하고, 논문을 쓰기."
+   ],
+   "dur": [
+    "Ongoing",
+    "계속"
+   ],
+   "pre": [
+    "Stage 4 (one track)",
+    "4단계 (트랙 하나)"
+   ],
+   "why": [
+    "Economics papers are long and data-heavy, and most frontier work appears as working papers years before publication. Replication is the standard way in.",
+    "경제학 논문은 길고 데이터가 많으며, 최전선 연구 대부분은 출판 몇 년 전에 워킹페이퍼로 나옵니다. 재현이 표준적인 입문 방법입니다."
+   ],
+   "concepts": [
+    [
+     "Working papers",
+     "Replication",
+     "Identification strategy",
+     "Writing an empirical paper",
+     "Presenting"
+    ],
+    [
+     "워킹페이퍼",
+     "재현",
+     "식별 전략",
+     "실증 논문 쓰기",
+     "발표"
+    ]
+   ],
+   "items": [
+    [
+     "How to Read a Paper (S. Keshav)",
+     "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf",
+     "article",
+     "Whole paper",
+     "전문",
+     1,
+     "The three-pass method.",
+     "3단계 읽기 방법."
+    ],
+    [
+     "You and Your Research (Richard Hamming)",
+     "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+     "article",
+     "Whole talk",
+     "전체",
+     2,
+     "On choosing important problems.",
+     "중요한 문제를 고르는 법."
+    ],
+    [
+     "Semantic Scholar",
+     "https://www.semanticscholar.org/",
+     "practice",
+     "Build a reading tree for each frontier paper",
+     "최전선 논문마다 읽기 계통도 만들기",
+     4,
+     "Follow references backward and citations forward.",
+     "참고문헌은 거꾸로, 인용은 앞으로 따라갑니다."
+    ],
+    [
+     "NBER Working Papers",
+     "https://www.nber.org/papers",
+     "practice",
+     "Skim new papers in your field weekly",
+     "매주 자기 분야 새 논문 훑기",
+     3,
+     "The main circulation channel for new economics research.",
+     "새 경제학 연구의 주요 유통 경로."
+    ],
+    [
+     "SSRN",
+     "https://www.ssrn.com/",
+     "practice",
+     "Follow your field's e-journals",
+     "자기 분야 e-저널 구독",
+     2,
+     "Working papers, especially in finance and law and economics.",
+     "특히 금융·법경제학 분야의 워킹페이퍼."
+    ],
+    [
+     "IDEAS / RePEc",
+     "https://ideas.repec.org/",
+     "practice",
+     "Use it to trace citations",
+     "인용 추적에 활용",
+     2,
+     "A bibliographic database of economics research.",
+     "경제학 연구 서지 데이터베이스."
+    ],
+    [
+     "Reproduce one recent result",
+     "https://www.aeaweb.org/journals/data",
+     "practice",
+     "Pick a recent paper with a replication package",
+     "재현 패키지가 있는 최근 논문 하나 선택",
+     40,
+     "Reproduce its main table and try one extension.",
+     "주요 표를 재현하고 확장을 하나 시도합니다."
+    ]
+   ],
+   "proj": [
+    "Replicate a recent paper's main result, extend it to Korean data or a new period, and write a 15-page paper.",
+    "최근 논문의 주요 결과를 재현하고, 한국 데이터나 새 기간으로 확장해 15쪽 논문을 씁니다."
+   ],
+   "exit": [
+    "A public paper with replication code someone else can run.",
+    "다른 사람이 돌려볼 수 있는 재현 코드와 함께 공개된 논문."
+   ],
+   "pit": [
+    [
+     "Starting from a dataset instead of a question.",
+     "질문이 아니라 데이터셋에서 출발하기."
+    ]
+   ]
+  }
+ ],
+ "coverage": {
+  "yes": [
+   [
+    "Graduate-entry knowledge of micro, macro, econometrics and finance, plus depth in one or two fields.",
+    "미시, 거시, 계량, 금융의 대학원 입문 수준 지식과 한두 분야의 깊이."
+   ],
+   [
+    "The ability to read and replicate NBER-style working papers.",
+    "NBER 수준 워킹페이퍼를 읽고 재현하는 능력."
+   ]
+  ],
+  "no": [
+   [
+    "Graduate-level theory courses (first-year PhD micro and macro) at full depth.",
+    "대학원 박사 1년차 수준 미시·거시 이론의 완전한 깊이."
+   ],
+   [
+    "Investment skill; nothing here is financial advice.",
+    "투자 실력. 이 노선의 어떤 내용도 투자 조언이 아닙니다."
+   ],
+   [
+    "Access to proprietary data (e.g. some financial databases), usually provided through universities.",
+    "독점 데이터 접근(일부 금융 데이터베이스 등). 보통 대학을 통해 제공됩니다."
+   ]
+  ]
+ },
+ "sources": [
+  [
+   "NBER Working Papers",
+   "https://www.nber.org/papers",
+   "New economics research",
+   "새 경제학 연구"
+  ],
+  [
+   "SSRN",
+   "https://www.ssrn.com/",
+   "Finance and economics working papers",
+   "금융·경제 워킹페이퍼"
+  ],
+  [
+   "FRED",
+   "https://fred.stlouisfed.org/",
+   "Macroeconomic data",
+   "거시경제 데이터"
+  ],
+  [
+   "ECOS (Bank of Korea)",
+   "https://ecos.bok.or.kr/",
+   "Korean economic statistics",
+   "한국 경제 통계"
+  ]
+ ],
+ "pathways": [
+  [
+   [
+    "Research assistant to a professor",
+    "교수 연구 조교(RA)"
+   ],
+   "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=65510",
+   2,
+   "Join a professor's group as an undergraduate researcher; most research skills are passed on this way.",
+   "학부 연구생으로 교수 연구실에 들어가는 것입니다. 연구 실력의 대부분이 이 경로로 전해집니다.",
+   "Linked example: KAIST URP. Most universities run a similar program.",
+   "연결된 예시: KAIST URP. 대부분의 대학에 비슷한 제도가 있습니다."
+  ],
+  [
+   [
+    "J-PAL (field research)",
+    "J-PAL (현장 연구)"
+   ],
+   "https://www.povertyactionlab.org/",
+   4,
+   "J-PAL and similar organizations hire research assistants and associates for randomized evaluations worldwide.",
+   "J-PAL 같은 기관은 전 세계 무작위 평가 연구를 위한 연구 조교와 연구원을 채용합니다.",
+   "A common route into development economics PhDs.",
+   "개발경제학 박사과정으로 가는 흔한 경로입니다."
+  ],
+  [
+   [
+    "Kaggle competitions",
+    "Kaggle 대회"
+   ],
+   "https://www.kaggle.com/competitions",
+   1,
+   "Forecasting and tabular competitions build data skills used in empirical economics and finance.",
+   "예측·표 형식 데이터 대회로 실증 경제·금융에 쓰이는 데이터 실력을 기릅니다.",
+   "Free; run continuously.",
+   "무료, 상시 진행."
+  ]
+ ]
+}

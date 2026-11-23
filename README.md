@@ -1,8 +1,8 @@
 # Frontier Research Roadmaps
 
-Self-study syllabi that take a university student from zero to following frontier research — currently **AI**, **computer science**, **semiconductors** and **bio** — each with a frontier section refreshed every week. English by default, with a Korean toggle.
+Self-study syllabi that take a university student from zero to following frontier research — currently **AI**, **computer science**, **semiconductors**, **bio**, **mathematics**, **economics & finance** and **energy & climate** — each with a frontier section refreshed every week. English by default, with a Korean toggle.
 
-대학생이 처음부터 최전선 연구를 따라갈 수 있는 수준까지 가는 자기주도 학습 노선도입니다. 현재 AI, 컴퓨터 과학, 반도체, 바이오 네 분야가 있고, 분야마다 최전선 구간이 매주 갱신됩니다. 영어(기본)와 한국어를 전환할 수 있습니다.
+대학생이 처음부터 최전선 연구를 따라갈 수 있는 수준까지 가는 자기주도 학습 노선도입니다. 현재 AI, 컴퓨터 과학, 반도체, 바이오, 수학, 경제·금융, 에너지·기후 일곱 분야가 있고, 분야마다 최전선 구간이 매주 갱신됩니다. 영어(기본)와 한국어를 전환할 수 있습니다.
 
 ## Structure (AI route)
 
@@ -24,12 +24,12 @@ The semiconductor route runs tools → math → physics & materials → devices,
 - `index.html` — the page (no build step); switch fields with the tabs or `#f-ai`, `#f-cs`, `#f-semiconductors`, `#f-bio`
 - `data/fields.json` — list of fields and their data files
 - `data/curriculum.json` — AI route: stages, tracks, resources, coverage, sources and experience pathways
-- `data/fields/cs.json`, `data/fields/semiconductors.json`, `data/fields/bio.json` — other routes, same format
-- `data/frontier.json`, `data/frontier-cs.json`, `data/frontier-semiconductors.json`, `data/frontier-bio.json` — weekly frontier items (`weeks[0]` is the current week; the last 8 weeks are kept)
+- `data/fields/*.json` — the other routes (cs, semiconductors, bio, math, econ, energy), same format
+- `data/frontier.json` and `data/frontier-<field>.json` — weekly frontier items (`weeks[0]` is the current week; the last 8 weeks are kept)
 
 Each route also includes a reality check: listed study hours, and what the roadmap does and does not give you.
 
-Checkmarks are stored in your browser only (`localStorage`).
+Checkmarks are saved automatically in your browser (`localStorage`). Use **Copy progress link** to carry them to another device.
 
 ## Run locally
 

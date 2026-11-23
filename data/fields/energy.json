@@ -1,0 +1,946 @@
+{
+ "version": 1,
+ "name": [
+  "Energy & Climate",
+  "에너지·기후"
+ ],
+ "title": [
+  "Energy & Climate Research Roadmap",
+  "에너지·기후 연구 학습 노선도"
+ ],
+ "lede": [
+  "A path from first-year university level to following frontier research in energy and climate: the physics and chemistry of energy, energy systems and climate science, then depth in batteries, solar and materials, nuclear fission and fusion, power grids, and climate modelling and machine learning.",
+  "대학 1학년 수준에서 출발해 에너지·기후 최전선 연구를 따라갈 수 있는 수준까지 가는 길입니다. 에너지의 물리·화학, 에너지 시스템과 기후과학을 거쳐 배터리, 태양광·소재, 핵분열·핵융합, 전력망, 기후 모델링·머신러닝에서 깊이를 더합니다."
+ ],
+ "stages": [
+  {
+   "n": 0,
+   "name": [
+    "Tools",
+    "도구"
+   ],
+   "short": [
+    "Tools",
+    "도구"
+   ],
+   "goal": [
+    "Programming and data analysis for energy and climate data.",
+    "에너지·기후 데이터를 위한 프로그래밍과 데이터 분석."
+   ],
+   "dur": [
+    "3–4 weeks",
+    "3~4주"
+   ],
+   "pre": [
+    "None",
+    "없음"
+   ],
+   "why": [
+    "Energy-system models, battery data and climate datasets are all analysed in code.",
+    "에너지 시스템 모형, 배터리 데이터, 기후 데이터셋은 모두 코드로 분석합니다."
+   ],
+   "concepts": [
+    [
+     "Python & NumPy",
+     "pandas",
+     "Plotting",
+     "Gridded climate data",
+     "Reproducible notebooks"
+    ],
+    [
+     "Python·NumPy",
+     "pandas",
+     "그래프 그리기",
+     "격자형 기후 데이터",
+     "재현 가능한 노트북"
+    ]
+   ],
+   "items": [
+    [
+     "Python Tutorial (official)",
+     "https://docs.python.org/3/tutorial/",
+     "book",
+     "Ch. 1–9",
+     "1~9장",
+     15,
+     "Up to classes, iterators and generators.",
+     "클래스, 이터레이터, 제너레이터까지.",
+     "https://docs.python.org/ko/3/tutorial/"
+    ],
+    [
+     "MIT — The Missing Semester",
+     "https://missing.csail.mit.edu/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     12,
+     "Shell, Git, editors, debugging.",
+     "셸, Git, 에디터, 디버깅."
+    ],
+    [
+     "NumPy quickstart",
+     "https://numpy.org/doc/stable/user/quickstart.html",
+     "article",
+     "Whole page",
+     "전체",
+     4,
+     "Array operations and broadcasting rules.",
+     "배열 연산과 브로드캐스팅 규칙."
+    ],
+    [
+     "pandas — Getting started",
+     "https://pandas.pydata.org/docs/getting_started/index.html",
+     "article",
+     "Intro tutorials",
+     "입문 튜토리얼",
+     6,
+     "Working with tables of data in Python.",
+     "Python으로 데이터 표 다루기."
+    ],
+    [
+     "Scientific Python Lectures",
+     "https://lectures.scientific-python.org/",
+     "course",
+     "Getting started + NumPy, SciPy, Matplotlib chapters",
+     "시작하기 + NumPy·SciPy·Matplotlib 장",
+     15,
+     "Numerical computing and plotting for scientists.",
+     "과학자를 위한 수치 계산과 그래프."
+    ]
+   ],
+   "proj": [
+    "Download national electricity-generation data, plot the mix over time and estimate the carbon intensity of the grid.",
+    "국가 전력 생산 데이터를 내려받아 발전원 구성을 시간에 따라 그리고, 전력망의 탄소 집약도를 추정합니다."
+   ],
+   "exit": [
+    "You can turn a public energy dataset into a clean figure with a script.",
+    "공개 에너지 데이터셋을 스크립트로 깔끔한 그림으로 만들 수 있다."
+   ],
+   "pit": [
+    [
+     "Mixing up energy and power units.",
+     "에너지와 전력 단위를 혼동하기."
+    ]
+   ]
+  },
+  {
+   "n": 1,
+   "name": [
+    "Math, physics & chemistry",
+    "수학·물리·화학"
+   ],
+   "short": [
+    "Foundations",
+    "기초"
+   ],
+   "goal": [
+    "Calculus, differential equations, mechanics, electromagnetism, thermodynamics and chemistry.",
+    "미적분, 미분방정식, 역학, 전자기학, 열역학, 화학."
+   ],
+   "dur": [
+    "16–22 weeks",
+    "16~22주"
+   ],
+   "pre": [
+    "High-school math and science",
+    "고교 수학·과학"
+   ],
+   "why": [
+    "Every energy technology is constrained by thermodynamics and electromagnetism, and every climate model is a set of differential equations.",
+    "모든 에너지 기술은 열역학과 전자기학의 제약을 받고, 모든 기후 모형은 미분방정식의 집합입니다."
+   ],
+   "concepts": [
+    [
+     "Multivariable calculus",
+     "ODEs",
+     "Mechanics & energy",
+     "Electromagnetism",
+     "Laws of thermodynamics",
+     "Heat transfer",
+     "Chemical bonding & reactions",
+     "Electrochemistry basics"
+    ],
+    [
+     "다변수 미적분",
+     "상미분방정식",
+     "역학·에너지",
+     "전자기학",
+     "열역학 법칙",
+     "열전달",
+     "화학 결합·반응",
+     "전기화학 기초"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 18.02SC Multivariable Calculus",
+     "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+     "course",
+     "Units 1–4",
+     "1~4단원",
+     35,
+     "Vector calculus and optimization in many variables.",
+     "다변수 벡터 미적분과 최적화."
+    ],
+    [
+     "MIT 18.03SC Differential Equations",
+     "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+     "course",
+     "Units 1–4",
+     "1~4단원",
+     45,
+     "ODEs, linear systems and Fourier series.",
+     "상미분방정식, 선형 시스템, 푸리에 급수."
+    ],
+    [
+     "MIT 8.01SC Classical Mechanics",
+     "https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/",
+     "course",
+     "Weeks 1–8",
+     "1~8주차",
+     30,
+     "Mechanics and energy conservation.",
+     "역학과 에너지 보존."
+    ],
+    [
+     "MIT 8.02 Physics II: Electricity and Magnetism",
+     "https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     45,
+     "Fields, circuits and induction.",
+     "장, 회로, 유도."
+    ],
+    [
+     "MIT 5.111SC Principles of Chemical Science",
+     "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "Bonding, thermodynamics, kinetics and electrochemistry.",
+     "결합, 열역학, 반응 속도, 전기화학."
+    ],
+    [
+     "MIT 5.60 Thermodynamics & Kinetics",
+     "https://ocw.mit.edu/courses/5-60-thermodynamics-kinetics-spring-2008/",
+     "course",
+     "Lectures",
+     "강의",
+     30,
+     "Free energy, equilibrium and rates.",
+     "자유 에너지, 평형, 반응 속도."
+    ]
+   ],
+   "proj": [
+    "Compute the Carnot efficiency limit of a power plant and the theoretical energy density of a lithium-ion cell from thermodynamic data.",
+    "열역학 데이터로 발전소의 카르노 효율 한계와 리튬이온 전지의 이론 에너지 밀도를 계산합니다."
+   ],
+   "exit": [
+    "You can apply the first and second laws to any energy-conversion device and explain where its losses come from.",
+    "열역학 제1·2법칙을 어떤 에너지 변환 장치에든 적용하고 손실이 어디서 오는지 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Ignoring the second law when judging new technologies.",
+     "새 기술을 판단할 때 열역학 제2법칙을 무시하기."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "name": [
+    "Energy systems & climate science",
+    "에너지 시스템·기후과학"
+   ],
+   "short": [
+    "Energy & climate",
+    "에너지·기후"
+   ],
+   "goal": [
+    "How energy is produced, stored and used, and how the climate system responds.",
+    "에너지가 어떻게 생산·저장·사용되고, 기후 시스템이 어떻게 반응하는지."
+   ],
+   "dur": [
+    "12–16 weeks",
+    "12~16주"
+   ],
+   "pre": [
+    "Stage 1",
+    "1단계"
+   ],
+   "why": [
+    "Frontier work in any energy technology is judged by its place in the whole system — cost, scale, emissions — and climate science sets the target.",
+    "어떤 에너지 기술의 최전선 연구든 비용, 규모, 배출 같은 전체 시스템 속 위치로 평가되고, 기후과학이 그 목표를 정합니다."
+   ],
+   "concepts": [
+    [
+     "Primary energy & conversion",
+     "Levelized cost",
+     "Renewables & intermittency",
+     "Storage",
+     "Greenhouse effect & radiative forcing",
+     "Carbon cycle",
+     "Climate sensitivity",
+     "Emissions scenarios"
+    ],
+    [
+     "1차 에너지·변환",
+     "균등화 비용",
+     "재생에너지·간헐성",
+     "저장",
+     "온실효과·복사강제력",
+     "탄소 순환",
+     "기후 민감도",
+     "배출 시나리오"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 22.081J Introduction to Sustainable Energy",
+     "https://ocw.mit.edu/courses/22-081j-introduction-to-sustainable-energy-fall-2010/",
+     "course",
+     "Lecture notes",
+     "강의노트",
+     40,
+     "Energy resources, conversion technologies and their trade-offs.",
+     "에너지 자원, 변환 기술, 그 상충 관계."
+    ],
+    [
+     "Sustainable Energy — Without the Hot Air (David MacKay)",
+     "https://www.withouthotair.com/",
+     "book",
+     "Part I",
+     "1부",
+     15,
+     "A free, numbers-first look at energy supply and demand.",
+     "숫자로 보는 에너지 수요와 공급. 무료."
+    ],
+    [
+     "IPCC AR6 Synthesis Report",
+     "https://www.ipcc.ch/report/ar6/syr/",
+     "article",
+     "Summary for Policymakers + longer report sections 2–3",
+     "정책결정자 요약 + 본문 2~3절",
+     8,
+     "The scientific consensus on climate change and pathways.",
+     "기후변화와 감축 경로에 대한 과학적 합의."
+    ],
+    [
+     "IPCC AR6 Working Group I — The Physical Science Basis",
+     "https://www.ipcc.ch/report/ar6/wg1/",
+     "article",
+     "Technical Summary",
+     "기술 요약",
+     10,
+     "The physical science of climate change in detail.",
+     "기후변화의 물리과학을 자세히."
+    ]
+   ],
+   "proj": [
+    "Build a simple energy-balance climate model and a toy national energy model; use them to compare two decarbonization scenarios.",
+    "간단한 에너지 균형 기후 모형과 장난감 국가 에너지 모형을 만들어 두 가지 탈탄소 시나리오를 비교합니다."
+   ],
+   "exit": [
+    "Explain radiative forcing and climate sensitivity, and estimate the land, cost or materials a technology needs at national scale.",
+    "복사강제력과 기후 민감도를 설명하고, 어떤 기술이 국가 규모에서 필요로 하는 땅·비용·자원을 추정할 수 있다."
+   ],
+   "pit": [
+    [
+     "Comparing technologies without a common unit (e.g. cost per kWh or per tonne CO₂).",
+     "공통 단위(kWh당 비용, CO₂ 톤당 비용 등) 없이 기술 비교하기."
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "name": [
+    "Specialization tracks",
+    "전문 트랙"
+   ],
+   "short": [
+    "Tracks",
+    "전문 트랙"
+   ],
+   "goal": [
+    "Go deep in one or two areas of energy and climate research.",
+    "에너지·기후 연구의 한두 분야를 깊게 팝니다."
+   ],
+   "dur": [
+    "10–16 weeks per track",
+    "트랙당 10~16주"
+   ],
+   "pre": [
+    "Stage 2",
+    "2단계"
+   ],
+   "why": [
+    "The field spans chemistry and materials, nuclear physics, electrical engineering and earth science. Pick a track by the science you enjoy.",
+    "이 분야는 화학·소재, 원자핵 물리, 전기공학, 지구과학에 걸쳐 있습니다. 즐기는 과학을 기준으로 트랙을 고르세요."
+   ],
+   "tracks": [
+    {
+     "id": "A",
+     "name": [
+      "Batteries & electrochemistry",
+      "배터리·전기화학"
+     ],
+     "goal": [
+      "Electrochemical energy storage, from cells to materials discovery.",
+      "셀부터 소재 발굴까지 전기화학 에너지 저장."
+     ],
+     "concepts": [
+      [
+       "Electrode kinetics",
+       "Lithium-ion chemistry",
+       "Solid-state electrolytes",
+       "Degradation",
+       "Beyond-lithium chemistries",
+       "Computational materials screening"
+      ],
+      [
+       "전극 반응 속도",
+       "리튬이온 화학",
+       "고체 전해질",
+       "열화",
+       "리튬 이후 화학",
+       "계산 소재 탐색"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 10.626 Electrochemical Energy Systems",
+       "https://ocw.mit.edu/courses/10-626-electrochemical-energy-systems-spring-2014/",
+       "course",
+       "Lecture notes + videos",
+       "강의노트 + 영상",
+       45,
+       "Thermodynamics and kinetics of batteries and fuel cells.",
+       "배터리와 연료전지의 열역학과 반응 속도."
+      ],
+      [
+       "The Materials Project",
+       "https://next-gen.materialsproject.org/",
+       "practice",
+       "Look up three battery cathode materials",
+       "배터리 양극 소재 3개 찾아보기",
+       4,
+       "Open database of computed materials properties used in battery research.",
+       "배터리 연구에 쓰이는 계산 소재 물성 공개 데이터베이스."
+      ]
+     ],
+     "proj": [
+      "Analyse a public battery-cycling dataset to model capacity fade, and screen candidate electrode materials in the Materials Project.",
+      "공개 배터리 충방전 데이터로 용량 감소를 모델링하고, Materials Project에서 전극 후보 소재를 탐색합니다."
+     ],
+     "exit": [
+      "Explain what limits a lithium-ion cell's energy density, power and lifetime.",
+      "리튬이온 전지의 에너지 밀도, 출력, 수명을 제한하는 요인을 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Quoting material-level energy density as cell- or pack-level.",
+       "소재 수준 에너지 밀도를 셀·팩 수준으로 인용하기."
+      ]
+     ]
+    },
+    {
+     "id": "B",
+     "name": [
+      "Solar & energy materials",
+      "태양광·에너지 소재"
+     ],
+     "goal": [
+      "Photovoltaics and the materials behind them.",
+      "태양전지와 그 뒤의 소재."
+     ],
+     "concepts": [
+      [
+       "Semiconductor band gaps",
+       "Shockley–Queisser limit",
+       "Silicon cells",
+       "Perovskites",
+       "Tandem cells",
+       "Degradation & stability"
+      ],
+      [
+       "반도체 띠 간격",
+       "쇼클리-퀘이서 한계",
+       "실리콘 전지",
+       "페로브스카이트",
+       "탠덤 전지",
+       "열화·안정성"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 2.627 Fundamentals of Photovoltaics",
+       "https://ocw.mit.edu/courses/2-627-fundamentals-of-photovoltaics-fall-2013/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       40,
+       "Solar-cell physics, materials and manufacturing.",
+       "태양전지 물리, 소재, 제조."
+      ],
+      [
+       "NREL Best Research-Cell Efficiency Chart",
+       "https://www.nrel.gov/pv/cell-efficiency.html",
+       "practice",
+       "Read the chart and its notes",
+       "차트와 설명 읽기",
+       2,
+       "The reference record of solar-cell efficiencies by technology.",
+       "기술별 태양전지 효율의 기준 기록."
+      ]
+     ],
+     "proj": [
+      "Compute the Shockley–Queisser limit for several band gaps and compare against record efficiencies on the NREL chart.",
+      "여러 띠 간격에 대해 쇼클리-퀘이서 한계를 계산하고 NREL 차트의 기록 효율과 비교합니다."
+     ],
+     "exit": [
+      "Explain why single-junction cells cannot exceed about one-third efficiency and how tandems get around it.",
+      "단일 접합 전지가 약 3분의 1 효율을 넘지 못하는 이유와 탠덤이 이를 어떻게 넘는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Comparing lab-cell records with commercial module efficiency.",
+       "실험실 셀 기록과 상용 모듈 효율을 비교하기."
+      ]
+     ]
+    },
+    {
+     "id": "C",
+     "name": [
+      "Nuclear fission & fusion",
+      "핵분열·핵융합"
+     ],
+     "goal": [
+      "Reactor physics, plasma physics and the path to fusion power.",
+      "원자로 물리, 플라스마 물리, 핵융합 발전으로 가는 길."
+     ],
+     "concepts": [
+      [
+       "Nuclear reactions & cross sections",
+       "Neutron transport",
+       "Reactor safety",
+       "Plasma physics basics",
+       "Magnetic confinement",
+       "Inertial confinement",
+       "Lawson criterion"
+      ],
+      [
+       "핵반응·단면적",
+       "중성자 수송",
+       "원자로 안전",
+       "플라스마 물리 기초",
+       "자기 가둠",
+       "관성 가둠",
+       "로슨 조건"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 22.01 Introduction to Nuclear Engineering and Ionizing Radiation",
+       "https://ocw.mit.edu/courses/22-01-introduction-to-nuclear-engineering-and-ionizing-radiation-fall-2016/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       40,
+       "Nuclear physics and radiation for engineers.",
+       "공학자를 위한 원자핵 물리와 방사선."
+      ],
+      [
+       "MIT 22.611J Introduction to Plasma Physics I",
+       "https://ocw.mit.edu/courses/22-611j-introduction-to-plasma-physics-i-fall-2006/",
+       "course",
+       "Lecture notes",
+       "강의노트",
+       40,
+       "The plasma physics behind magnetic-confinement fusion.",
+       "자기 가둠 핵융합 뒤의 플라스마 물리."
+      ],
+      [
+       "ITER",
+       "https://www.iter.org/",
+       "article",
+       "Science and machine pages",
+       "과학·장치 페이지",
+       3,
+       "The international tokamak project and its goals.",
+       "국제 토카막 프로젝트와 그 목표."
+      ]
+     ],
+     "proj": [
+      "Compute the Lawson triple product for several fusion experiments from published parameters and compare with the ignition requirement.",
+      "발표된 변수로 여러 핵융합 실험의 로슨 삼중곱을 계산하고 점화 조건과 비교합니다."
+     ],
+     "exit": [
+      "Explain the Lawson criterion and the difference between scientific breakeven and net electricity.",
+      "로슨 조건, 그리고 과학적 손익분기와 순전력 생산의 차이를 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Confusing target gain with whole-facility energy gain.",
+       "표적 이득과 시설 전체 에너지 이득을 혼동하기."
+      ]
+     ]
+    },
+    {
+     "id": "D",
+     "name": [
+      "Power grids & energy systems",
+      "전력망·에너지 시스템"
+     ],
+     "goal": [
+      "Electric power systems, grid integration of renewables and energy-system modelling.",
+      "전력 시스템, 재생에너지 계통 연계, 에너지 시스템 모델링."
+     ],
+     "concepts": [
+      [
+       "AC power & power flow",
+       "Frequency & stability",
+       "Unit commitment & dispatch",
+       "Storage & flexibility",
+       "Electricity markets",
+       "Capacity-expansion models"
+      ],
+      [
+       "교류 전력·조류 계산",
+       "주파수·안정도",
+       "기동 정지·급전",
+       "저장·유연성",
+       "전력 시장",
+       "설비 확장 모형"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 6.061 Introduction to Electric Power Systems",
+       "https://ocw.mit.edu/courses/6-061-introduction-to-electric-power-systems-spring-2011/",
+       "course",
+       "Lecture notes + problem sets",
+       "강의노트 + 문제풀이",
+       40,
+       "Power-system fundamentals from generators to transmission.",
+       "발전기부터 송전까지 전력 시스템 기초."
+      ],
+      [
+       "PyPSA (Python for Power System Analysis)",
+       "https://pypsa.org/",
+       "code",
+       "Run an example network",
+       "예제 네트워크 실행",
+       10,
+       "Open-source tool for modelling power and energy systems.",
+       "전력·에너지 시스템을 모델링하는 오픈소스 도구."
+      ],
+      [
+       "Ember — electricity data",
+       "https://ember-energy.org/",
+       "practice",
+       "Explore national generation data",
+       "국가별 발전 데이터 탐색",
+       3,
+       "Free, frequently updated data on electricity generation and emissions.",
+       "자주 갱신되는 발전·배출 무료 데이터."
+      ]
+     ],
+     "proj": [
+      "Build a small PyPSA model of a grid with wind, solar and storage, and find the least-cost mix under a carbon cap.",
+      "풍력·태양광·저장이 있는 전력망을 PyPSA로 작게 모델링하고, 탄소 상한 아래 최소 비용 구성을 찾습니다."
+     ],
+     "exit": [
+      "Explain why high shares of variable renewables need storage, transmission and flexible demand.",
+      "변동성 재생에너지 비중이 높아질수록 저장, 송전, 유연한 수요가 필요한 이유를 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Using annual averages where hourly balance matters.",
+       "시간별 균형이 중요한데 연평균을 쓰기."
+      ]
+     ]
+    },
+    {
+     "id": "E",
+     "name": [
+      "Climate modelling & machine learning",
+      "기후 모델링·머신러닝"
+     ],
+     "goal": [
+      "Earth-system models, climate data and AI for weather and climate.",
+      "지구 시스템 모형, 기후 데이터, 날씨·기후를 위한 AI."
+     ],
+     "concepts": [
+      [
+       "Atmospheric dynamics basics",
+       "General circulation models",
+       "Reanalysis data",
+       "Downscaling",
+       "ML weather prediction",
+       "Detection & attribution"
+      ],
+      [
+       "대기 역학 기초",
+       "대순환 모형",
+       "재분석 자료",
+       "상세화(downscaling)",
+       "머신러닝 기상 예측",
+       "탐지·원인 규명"
+      ]
+     ],
+     "items": [
+      [
+       "Tackling Climate Change with Machine Learning (2019)",
+       "https://arxiv.org/abs/1906.05433",
+       "paper",
+       "Sections relevant to your interests",
+       "관심 분야 절",
+       8,
+       "A map of where machine learning can help on climate.",
+       "머신러닝이 기후 문제에서 도울 수 있는 영역의 지도."
+      ],
+      [
+       "Climate Change AI",
+       "https://www.climatechange.ai/",
+       "practice",
+       "Browse the wiki and past tutorials",
+       "위키와 과거 튜토리얼 살펴보기",
+       6,
+       "A community connecting ML researchers with climate problems.",
+       "머신러닝 연구자와 기후 문제를 잇는 커뮤니티."
+      ],
+      [
+       "GraphCast: Learning Skillful Medium-Range Global Weather Forecasting (2022)",
+       "https://arxiv.org/abs/2212.12794",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "A graph neural network that rivals numerical weather prediction.",
+       "수치 예보에 견주는 그래프 신경망 기상 예측."
+      ]
+     ],
+     "proj": [
+      "Train a small model on public reanalysis data to forecast one variable a few days ahead, and compare it with a persistence baseline.",
+      "공개 재분석 자료로 변수 하나를 며칠 앞까지 예측하는 작은 모델을 학습시키고, 지속성 기준선과 비교합니다."
+     ],
+     "exit": [
+      "Explain how ML weather models are trained and evaluated, and why climate projection is harder than weather forecasting.",
+      "머신러닝 기상 모형의 학습·평가 방식과, 기후 전망이 날씨 예보보다 어려운 이유를 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Evaluating against weak baselines or leaked test years.",
+       "약한 기준선이나 새어 나간 시험 연도로 평가하기."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "name": [
+    "Entering research",
+    "연구 진입"
+   ],
+   "short": [
+    "Research",
+    "연구 진입"
+   ],
+   "goal": [
+    "Read current papers and reports, reproduce analyses and write them up.",
+    "최신 논문과 보고서를 읽고, 분석을 재현하고, 글로 정리하기."
+   ],
+   "dur": [
+    "Ongoing",
+    "계속"
+   ],
+   "pre": [
+    "Stage 3 (one track)",
+    "3단계 (트랙 하나)"
+   ],
+   "why": [
+    "Energy and climate research spans journals, preprint servers and agency reports. Much useful data and modelling code is public.",
+    "에너지·기후 연구는 학술지, 프리프린트 서버, 기관 보고서에 걸쳐 있습니다. 유용한 데이터와 모델링 코드의 상당수가 공개되어 있습니다."
+   ],
+   "concepts": [
+    [
+     "Preprints & reports",
+     "Techno-economic analysis",
+     "Life-cycle assessment",
+     "Reproducing models",
+     "Communicating uncertainty"
+    ],
+    [
+     "프리프린트·보고서",
+     "기술경제성 분석",
+     "전과정 평가",
+     "모형 재현",
+     "불확실성 전달"
+    ]
+   ],
+   "items": [
+    [
+     "How to Read a Paper (S. Keshav)",
+     "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf",
+     "article",
+     "Whole paper",
+     "전문",
+     1,
+     "The three-pass method.",
+     "3단계 읽기 방법."
+    ],
+    [
+     "You and Your Research (Richard Hamming)",
+     "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+     "article",
+     "Whole talk",
+     "전체",
+     2,
+     "On choosing important problems.",
+     "중요한 문제를 고르는 법."
+    ],
+    [
+     "Semantic Scholar",
+     "https://www.semanticscholar.org/",
+     "practice",
+     "Build a reading tree for each frontier paper",
+     "최전선 논문마다 읽기 계통도 만들기",
+     4,
+     "Follow references backward and citations forward.",
+     "참고문헌은 거꾸로, 인용은 앞으로 따라갑니다."
+    ],
+    [
+     "arXiv cond-mat.mtrl-sci — recent",
+     "https://arxiv.org/list/cond-mat.mtrl-sci/recent",
+     "practice",
+     "Skim weekly",
+     "매주 훑기",
+     2,
+     "Preprints on energy and other materials.",
+     "에너지 소재 등 소재 분야 프리프린트."
+    ],
+    [
+     "ChemRxiv",
+     "https://chemrxiv.org/",
+     "practice",
+     "Follow energy-chemistry categories",
+     "에너지 화학 분류 구독",
+     2,
+     "The chemistry preprint server, including batteries and catalysis.",
+     "배터리와 촉매를 포함한 화학 프리프린트 서버."
+    ],
+    [
+     "Carbon Brief",
+     "https://www.carbonbrief.org/",
+     "practice",
+     "Read weekly",
+     "매주 읽기",
+     2,
+     "Careful reporting on climate science and energy policy.",
+     "기후과학과 에너지 정책을 신중하게 전하는 매체."
+    ],
+    [
+     "Reproduce one recent analysis",
+     "https://arxiv.org/list/physics.ao-ph/recent",
+     "practice",
+     "Pick a paper with open data or code",
+     "데이터·코드가 공개된 논문 하나 선택",
+     40,
+     "Reproduce one key figure and test one assumption.",
+     "핵심 그림 하나를 재현하고 가정 하나를 검증합니다."
+    ]
+   ],
+   "proj": [
+    "Reproduce one figure from a recent paper or report in your track and test how sensitive it is to one key assumption; write a 4-page report.",
+    "자기 트랙의 최근 논문이나 보고서에서 그림 하나를 재현하고, 핵심 가정 하나에 얼마나 민감한지 검증해 4쪽 보고서를 씁니다."
+   ],
+   "exit": [
+    "A public write-up with code someone else can run.",
+    "다른 사람이 돌려볼 수 있는 코드와 함께 공개된 보고서."
+   ],
+   "pit": [
+    [
+     "Ignoring costs and scale when evaluating a new technology.",
+     "새 기술을 평가할 때 비용과 규모를 무시하기."
+    ]
+   ]
+  }
+ ],
+ "coverage": {
+  "yes": [
+   [
+    "Enough physics, chemistry and systems knowledge to read frontier papers in one track and place them in the whole energy system.",
+    "한 트랙의 최전선 논문을 읽고 전체 에너지 시스템 속에 위치시킬 수 있는 물리·화학·시스템 지식."
+   ],
+   [
+    "The habit of checking claims with numbers: efficiency limits, costs and scale.",
+    "효율 한계, 비용, 규모 같은 숫자로 주장을 확인하는 습관."
+   ]
+  ],
+  "no": [
+   [
+    "Laboratory skills (cell fabrication, characterization, plasma experiments), learned only in labs.",
+    "실험 기술(셀 제작, 분석, 플라스마 실험). 실험실에서만 배울 수 있습니다."
+   ],
+   [
+    "Policy and engineering practice, which need professional experience.",
+    "정책·공학 실무. 현장 경험이 필요합니다."
+   ]
+  ]
+ },
+ "sources": [
+  [
+   "Carbon Brief",
+   "https://www.carbonbrief.org/",
+   "Climate and energy news",
+   "기후·에너지 뉴스"
+  ],
+  [
+   "Ember",
+   "https://ember-energy.org/",
+   "Electricity data",
+   "전력 데이터"
+  ],
+  [
+   "IPCC",
+   "https://www.ipcc.ch/",
+   "Climate assessments",
+   "기후 평가 보고서"
+  ],
+  [
+   "ChemRxiv",
+   "https://chemrxiv.org/",
+   "Chemistry preprints",
+   "화학 프리프린트"
+  ]
+ ],
+ "pathways": [
+  [
+   [
+    "Undergraduate research in an energy or climate lab",
+    "에너지·기후 연구실의 학부 연구생"
+   ],
+   "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=65510",
+   2,
+   "Join a professor's group as an undergraduate researcher; most research skills are passed on this way.",
+   "학부 연구생으로 교수 연구실에 들어가는 것입니다. 연구 실력의 대부분이 이 경로로 전해집니다.",
+   "Linked example: KAIST URP. Most universities run a similar program.",
+   "연결된 예시: KAIST URP. 대부분의 대학에 비슷한 제도가 있습니다."
+  ],
+  [
+   [
+    "Climate Change AI community",
+    "Climate Change AI 커뮤니티"
+   ],
+   "https://www.climatechange.ai/",
+   3,
+   "Events, tutorials and a community for applying machine learning to climate problems.",
+   "머신러닝을 기후 문제에 적용하기 위한 행사, 튜토리얼, 커뮤니티입니다.",
+   "Free resources; check the site for current programmes.",
+   "무료 자료. 현재 프로그램은 누리집에서 확인하세요."
+  ]
+ ]
+}

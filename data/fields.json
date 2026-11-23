@@ -35,6 +35,33 @@
     "Bio",
     "바이오"
    ]
+  },
+  {
+   "id": "math",
+   "curriculum": "data/fields/math.json",
+   "frontier": "data/frontier-math.json",
+   "name": [
+    "Mathematics",
+    "수학"
+   ]
+  },
+  {
+   "id": "econ",
+   "curriculum": "data/fields/econ.json",
+   "frontier": "data/frontier-econ.json",
+   "name": [
+    "Economics & Finance",
+    "경제·금융"
+   ]
+  },
+  {
+   "id": "energy",
+   "curriculum": "data/fields/energy.json",
+   "frontier": "data/frontier-energy.json",
+   "name": [
+    "Energy & Climate",
+    "에너지·기후"
+   ]
   }
  ]
 }

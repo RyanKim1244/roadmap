@@ -136,7 +136,8 @@ body.switching .wrap{opacity:.25;transition:opacity .12s ease}
 .hgrid span{color:var(--mute);font-size:14px}
 ul.plain{margin:8px 0 0;padding-left:18px;color:var(--mute);font-size:15px}ul.plain li{margin:8px 0}
 @media(prefers-reduced-motion:reduce){.reveal,.grid.reveal .card{opacity:1;transform:none;transition:none}details::details-content{transition:none}#map .route,#map .stop{animation:none;stroke-dasharray:none;stroke-dashoffset:0;opacity:1}.wrap,body.switching .wrap{transition:none;opacity:1}}
-.fields{display:flex;gap:4px;flex-wrap:wrap}
+.fields{display:flex;gap:4px;flex:1;min-width:0;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent)}.fields::-webkit-scrollbar{display:none}.fields button{flex:none}
+@media(max-width:600px){.top{flex-direction:column-reverse;align-items:stretch;gap:10px}.lang{align-self:flex-end}}
 .fields button{min-height:36px;padding:0 12px;border-radius:999px;text-decoration:none;font-size:14px;color:var(--mute);border:1px solid transparent;transition:color .2s,border-color .2s,background-color .2s}
 .fields button:hover{color:var(--ink)}
 .fields button[aria-selected=true]{color:var(--ink);border-color:var(--line);background:var(--bg2)}
@@ -196,7 +197,9 @@ ol.paths .note{font-size:13px}
    <div class="bar" aria-hidden="true"><i id="pbar"></i></div>
    <span class="meta" style="margin:0" id="ptext"></span>
    <button type="button" id="expand-all" data-t="expandAll"></button>
+   <button type="button" id="share" data-t="share"></button>
    <button type="button" id="reset" data-t="reset"></button>
+   <span class="meta" style="margin:0" id="sharemsg" aria-live="polite"></span>
   </div>
   <div id="stages" class="reveal" style="margin-top:20px"></div>
  </div>
@@ -256,7 +259,7 @@ ol.paths .note{font-size:13px}
 <script>
 {
 const T={
-en:{pathTitle:"Getting experience",pathLede:"Knowledge gets you to reading level; these routes give you mentors, real projects and the unpublished know-how that only comes from working with others. Ordered by the stage at which each becomes realistic.",navP:"Experience",fromStage:n=>"From stage "+n,hoursNoteF:(a,b)=>`Reading and lecture time only. With exercises and projects, expect roughly 1.5–2×: about ${a}–${b} years at 15 hours a week to reach frontier reading level in one track.`,covTitle:"Reality check: can this alone get you to the frontier?",
+en:{share:"Copy progress link",shared:"Link copied. Open it on another device to continue there.",shareFail:"Copy failed. Select and copy this link:",imported:"Progress from the link was added.",pathTitle:"Getting experience",pathLede:"Knowledge gets you to reading level; these routes give you mentors, real projects and the unpublished know-how that only comes from working with others. Ordered by the stage at which each becomes realistic.",navP:"Experience",fromStage:n=>"From stage "+n,hoursNoteF:(a,b)=>`Reading and lecture time only. With exercises and projects, expect roughly 1.5–2×: about ${a}–${b} years at 15 hours a week to reach frontier reading level in one track.`,covTitle:"Reality check: can this alone get you to the frontier?",
 covLede:"Judged on knowledge rather than experience, for a student starting from first-year level.",
 covYesT:"What it does give you",covNoT:"What it does not give you",
 covYes:["Enough to read most current papers in your chosen track end to end: the math, the architecture, the training setup and the evaluation.","Enough breadth to follow frontier news across all of AI and know which track a result belongs to.","A method to close gaps on your own: the reading-tree habit in Stage 6 turns any new paper into a list of prerequisites."],
@@ -280,7 +283,7 @@ kind:{course:"Course",book:"Book",paper:"Paper",code:"Code",article:"Article",vi
 read:["Read the title, abstract, figures and conclusion. Write one sentence on what the paper claims.","Read the body but skip proofs and appendices. Tabulate the experimental setup and the baselines.","For important papers, reproduce the key experiment at small scale. Reproduction builds research skill fastest."],
 layers:[["Layer 1","Foundation courses","Core undergraduate courses in that field, filled with open university courses and standard textbooks."],["Layer 2","Overviews","Survey papers, a reference textbook and tutorial talks that map the whole field."],["Layer 3","Classics","The 10–20 papers that shaped the current direction; for industry, the key annual reports."],["Layer 4","Frontier (weekly)","Recent conference, journal and preprint work, company technical talks and earnings materials. Paid reports are replaced by public summaries."]],
 mapLabel:"Route from the first stage to research and the frontier",pick:"Choose a track",tracksDone:"tracks done"},
-ko:{pathTitle:"경험 쌓기",pathLede:"지식만으로는 논문을 읽는 수준까지 갈 수 있습니다. 아래 경로는 멘토, 실제 프로젝트, 함께 일해야만 얻을 수 있는 공개되지 않은 노하우를 줍니다. 각 경로가 현실적으로 가능해지는 단계 순으로 정리했습니다.",navP:"경험",fromStage:n=>n+"단계부터",hoursNoteF:(a,b)=>`읽기와 강의 시간만 합한 값입니다. 연습문제와 프로젝트를 포함하면 대략 1.5~2배로, 주 15시간 기준 트랙 하나의 최전선 논문을 읽는 수준까지 약 ${a}~${b}년이 걸립니다.`,covTitle:"점검: 이것만으로 최전선에 도달할 수 있는가",
+ko:{share:"진도 링크 복사",shared:"링크를 복사했습니다. 다른 기기에서 열면 그대로 이어집니다.",shareFail:"복사하지 못했습니다. 아래 링크를 직접 복사하세요:",imported:"링크의 진도를 반영했습니다.",pathTitle:"경험 쌓기",pathLede:"지식만으로는 논문을 읽는 수준까지 갈 수 있습니다. 아래 경로는 멘토, 실제 프로젝트, 함께 일해야만 얻을 수 있는 공개되지 않은 노하우를 줍니다. 각 경로가 현실적으로 가능해지는 단계 순으로 정리했습니다.",navP:"경험",fromStage:n=>n+"단계부터",hoursNoteF:(a,b)=>`읽기와 강의 시간만 합한 값입니다. 연습문제와 프로젝트를 포함하면 대략 1.5~2배로, 주 15시간 기준 트랙 하나의 최전선 논문을 읽는 수준까지 약 ${a}~${b}년이 걸립니다.`,covTitle:"점검: 이것만으로 최전선에 도달할 수 있는가",
 covLede:"대학 1학년 수준에서 출발하는 학생을 기준으로, 경험이 아니라 지식 측면에서 판단했습니다.",
 covYesT:"갖출 수 있는 것",covNoT:"갖출 수 없는 것",
 covYes:["고른 트랙의 최신 논문 대부분을 처음부터 끝까지 읽을 수 있는 수준: 수식, 아키텍처, 학습 설정, 평가 방식.","AI 전반의 최전선 소식을 따라가며 어떤 결과가 어느 트랙에 속하는지 판단할 수 있는 폭.","부족한 부분을 스스로 채우는 방법: 6단계의 읽기 계통도 습관으로 새 논문을 선수 지식 목록으로 바꿀 수 있습니다."],
@@ -343,6 +346,7 @@ function renderPaths(){
 }
 function renderTabs(){
  document.getElementById("fieldtabs").innerHTML=FIELDS.map(f=>`<button type="button" role="tab" data-f="${esc(f.id)}" aria-selected="${f.id===field}">${esc(f.name[L()])}</button>`).join("");
+ {const ft=document.getElementById("fieldtabs"),sel=ft.querySelector("[aria-selected=true]");if(sel)ft.scrollLeft=sel.offsetLeft-ft.clientWidth/2+sel.offsetWidth/2;}
 }
 function renderStatic(){
  document.documentElement.lang=lang;
@@ -401,6 +405,9 @@ const allKeys=()=>STAGES.flatMap(s=>[String(s.n)].concat(s.tracks?s.tracks.map(t
 function setExpandLabel(){document.getElementById("expand-all").textContent=STAGES.every(s=>openSet.has(String(s.n)))?t("collapseAll"):t("expandAll")}
 box.addEventListener("toggle",e=>{const d=e.target;if(!d.matches||!d.matches("details[data-k]"))return;d.open?openSet.add(d.dataset.k):openSet.delete(d.dataset.k);setExpandLabel()},true);
 box.addEventListener("change",e=>{const li=e.target.closest("li[data-id]");if(!li)return;if(e.target.checked)st[li.dataset.id]=true;else delete st[li.dataset.id];save();renderStages();drawMap()});
+document.getElementById("share").addEventListener("click",()=>{const url=location.origin+location.pathname+"#f-"+field+"~"+encodeProgress();const msg=document.getElementById("sharemsg");
+ const done=()=>{msg.textContent=t("shared")};const fail=()=>{msg.textContent=t("shareFail")+" "+url};
+ try{navigator.clipboard.writeText(url).then(done,fail)}catch(e){fail()}});
 document.getElementById("reset").addEventListener("click",()=>{st={};save();renderStages();drawMap()});
 document.getElementById("expand-all").addEventListener("click",()=>{const allOpen=STAGES.every(s=>openSet.has(String(s.n)));openSet=new Set(allOpen?[]:STAGES.map(s=>String(s.n)));renderStages()});
 for(const b of document.querySelectorAll(".lang button"))b.addEventListener("click",()=>{if(lang===b.dataset.lang)return;lang=b.dataset.lang;try{localStorage.setItem(LK,lang)}catch(e){}document.body.classList.add("switching");setTimeout(()=>{renderAll();requestAnimationFrame(()=>document.body.classList.remove("switching"))},120)});
@@ -436,11 +443,15 @@ const ro=new ResizeObserver(drawMap);ro.observe(svg);
 const io=("IntersectionObserver" in window)?new IntersectionObserver(es=>{for(const e of es)if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}},{rootMargin:"0px 0px -8% 0px"}):null;
 for(const el of document.querySelectorAll(".reveal"))io?io.observe(el):el.classList.add("in");
 function renderAll(){renderStatic();renderFrontier();renderStages();drawMap()}
-function fieldFromHash(){const m=location.hash.match(/^#f-([a-z0-9-]+)$/);return m?m[1]:null}
+function fieldFromHash(){const m=location.hash.match(/^#f-([a-z0-9-]+)(?:~[A-Za-z0-9_-]*)?$/);return m?m[1]:null}
+function codeFromHash(){const m=location.hash.match(/^#f-[a-z0-9-]+~([A-Za-z0-9_-]+)$/);return m?m[1]:null}
+function encodeProgress(){const keys=Object.keys(st).filter(k=>st[k]);return btoa(unescape(encodeURIComponent(keys.join(",")))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")}
+function decodeProgress(c){try{const s=decodeURIComponent(escape(atob(c.replace(/-/g,"+").replace(/_/g,"/"))));return s?s.split(","):[]}catch(e){return []}}
+let pendingCode=null;
 function loadField(id,push){
  const f=FIELDS.find(x=>x.id===id)||FIELDS[0];field=f.id;try{localStorage.setItem(FK,field)}catch(e){}
  if(push&&location.hash!=="#f-"+field)history.replaceState(null,"","#f-"+field);
- loadProgress();openSet=null;mapDrawn=false;
+ loadProgress();if(pendingCode){for(const k of decodeProgress(pendingCode))st[k]=true;save();pendingCode=null;setTimeout(()=>{document.getElementById("sharemsg").textContent=t("imported")},400);history.replaceState(null,"","#f-"+field)}openSet=null;mapDrawn=false;
  document.body.classList.add("switching");
  return Promise.all([fetch(f.curriculum).then(r=>r.json()),fetch(f.frontier).then(r=>r.json()).catch(()=>({updated:"",weeks:[]}))])
   .then(([c,fr])=>{C=c;STAGES=c.stages;F=fr;total=STAGES.reduce((a,s)=>a+allItems(s).length,0)||1;renderAll();requestAnimationFrame(()=>document.body.classList.remove("switching"))})
@@ -449,7 +460,7 @@ function loadField(id,push){
 document.getElementById("fieldtabs").addEventListener("click",e=>{const b=e.target.closest("button[data-f]");if(!b||b.dataset.f===field)return;loadField(b.dataset.f,true)});
 window.addEventListener("hashchange",()=>{const h=fieldFromHash();if(h&&h!==field)loadField(h,false)});
 renderStatic();
-fetch("data/fields.json").then(r=>r.json()).then(j=>{FIELDS=j.fields;let start=fieldFromHash();if(!start){try{start=localStorage.getItem(FK)}catch(e){}}loadField(start||"ai",false)})
+fetch("data/fields.json").then(r=>r.json()).then(j=>{FIELDS=j.fields;pendingCode=codeFromHash();let start=fieldFromHash();if(!start){try{start=localStorage.getItem(FK)}catch(e){}}loadField(start||"ai",false)})
  .catch(()=>{document.getElementById("stages").innerHTML='<p class="lede">Could not load data/fields.json.</p>'});
 }
 </script>
