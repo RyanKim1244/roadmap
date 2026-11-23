@@ -1,0 +1,39 @@
+{
+ "updated": "2026-11-23",
+ "weeks": [
+  {
+   "week": "2026-11-23",
+   "note_en": "Focus this week: previews of IEDM 2026, the main device conference (December 12–16, San Francisco).",
+   "note_ko": "이번 주 초점: 대표 소자 학회인 IEDM 2026(12월 12~16일, 샌프란시스코) 미리보기.",
+   "items": [
+    {
+     "type_en": "Conference",
+     "type_ko": "학회",
+     "stage": 2,
+     "title": "IEEE IEDM 2026 (December 12–16, San Francisco)",
+     "url": "https://www.ieee-iedm.org/",
+     "why_en": "The 72nd edition of the main device conference. Its program is the best single snapshot of where transistor, memory and integration research is heading (Tracks A, B, E).",
+     "why_ko": "대표 소자 학회의 72번째 행사입니다. 트랜지스터, 메모리, 집적 연구가 어디로 가는지 한 번에 볼 수 있습니다(트랙 A, B, E)."
+    },
+    {
+     "type_en": "Industry",
+     "type_ko": "업계 동향",
+     "stage": 2,
+     "title": "IEDM 2026 Reveals New Paths to Faster, More Efficient AI (SemiWiki preview)",
+     "url": "https://semiwiki.com/events/376230-iedm-2026-reveals-new-paths-to-faster-more-efficient-ai/",
+     "why_en": "A readable preview of this year's highlights: new transistors, memory architectures, optical links and power delivery. Good for picking which IEDM papers to look for (Tracks A, D, E).",
+     "why_ko": "올해 주요 발표(새 트랜지스터, 메모리 구조, 광 연결, 전력 공급)를 쉽게 정리한 미리보기입니다. IEDM에서 어떤 논문을 찾아볼지 고르는 데 좋습니다(트랙 A, D, E)."
+    },
+    {
+     "type_en": "Industry",
+     "type_ko": "업계 동향",
+     "stage": 2,
+     "title": "imec at IEDM 2026",
+     "url": "https://www.imec-int.com/en/events/iedm",
+     "why_en": "Session list from one of the largest semiconductor research institutes, including optical I/O, novel computing paradigms and wide-bandgap transistors for 6G (Tracks A, D).",
+     "why_ko": "대형 반도체 연구소 imec의 발표 목록입니다. 광 입출력, 새로운 컴퓨팅 방식, 6G용 광대역 갭 트랜지스터 등을 포함합니다(트랙 A, D)."
+    }
+   ]
+  }
+ ]
+}

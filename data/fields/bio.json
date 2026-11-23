@@ -1,0 +1,675 @@
+{
+ "version": 1,
+ "name": [
+  "Bio",
+  "바이오"
+ ],
+ "title": [
+  "Life Science & Biotech Research Roadmap",
+  "생명과학·바이오 연구 학습 노선도"
+ ],
+ "lede": [
+  "A path from first-year university level to following frontier research in the life sciences: genomics and computational biology, protein structure and design, gene editing and synthetic biology, and drug discovery. The frontier section collects recent preprints, papers and reports.",
+  "대학 1학년 수준에서 출발해 생명과학 최전선 연구를 따라갈 수 있는 수준까지 가는 길입니다. 유전체·계산생물학, 단백질 구조·설계, 유전자 편집·합성생물학, 신약 개발을 다루며, 최전선 구간에는 최근 프리프린트·논문·리포트를 모읍니다."
+ ],
+ "stages": [
+  {
+   "n": 0,
+   "name": [
+    "Biology, chemistry & statistics",
+    "생물·화학·통계"
+   ],
+   "short": [
+    "Foundations",
+    "기초"
+   ],
+   "goal": [
+    "The biology, chemistry and statistics that every life-science paper assumes.",
+    "모든 생명과학 논문이 전제하는 생물학, 화학, 통계."
+   ],
+   "dur": [
+    "10–14 weeks",
+    "10~14주"
+   ],
+   "pre": [
+    "High-school biology and chemistry",
+    "고교 생명과학·화학"
+   ],
+   "why": [
+    "Modern biology is quantitative. Papers combine molecular mechanisms with statistical evidence, so both are needed to judge a claim.",
+    "현대 생물학은 정량적입니다. 논문은 분자 기전과 통계적 증거를 함께 제시하므로, 주장을 판단하려면 둘 다 필요합니다."
+   ],
+   "concepts": [
+    [
+     "Central dogma",
+     "Cell structure",
+     "Chemical bonding & thermodynamics",
+     "Acids, bases & kinetics",
+     "Probability distributions",
+     "Hypothesis testing",
+     "Multiple comparisons"
+    ],
+    [
+     "중심 원리",
+     "세포 구조",
+     "화학 결합·열역학",
+     "산·염기·반응 속도",
+     "확률분포",
+     "가설 검정",
+     "다중 비교"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 7.016 Introductory Biology",
+     "https://ocw.mit.edu/courses/7-016-introductory-biology-fall-2018/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     45,
+     "Molecular and cell biology from the ground up.",
+     "분자·세포생물학을 기초부터."
+    ],
+    [
+     "MIT 5.111SC Principles of Chemical Science",
+     "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "Bonding, thermodynamics and kinetics for biology.",
+     "생물학에 필요한 결합, 열역학, 반응 속도."
+    ],
+    [
+     "Harvard Stat 110 Probability",
+     "https://projects.iq.harvard.edu/stat110",
+     "course",
+     "Lectures + book Ch. 1–9",
+     "강의 + 교재 1~9장",
+     40,
+     "The probability behind experimental statistics and genomics.",
+     "실험 통계와 유전체학 뒤의 확률."
+    ]
+   ],
+   "proj": [
+    "Analyse a public gene-expression dataset in Python: normalize it, test for differential expression and correct for multiple comparisons.",
+    "공개 유전자 발현 데이터셋을 Python으로 분석합니다. 정규화하고, 발현 차이를 검정하고, 다중 비교를 보정합니다."
+   ],
+   "exit": [
+    "Explain how a gene becomes a protein and how you would test whether a treatment changes its expression.",
+    "유전자가 어떻게 단백질이 되는지, 어떤 처리가 그 발현을 바꾸는지 어떻게 검정할지 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Ignoring statistics; many biology results fail to replicate for statistical reasons.",
+     "통계를 무시하기. 많은 생물학 결과가 통계적 이유로 재현되지 않습니다."
+    ]
+   ]
+  },
+  {
+   "n": 1,
+   "name": [
+    "Molecular & cell biology",
+    "분자·세포생물학"
+   ],
+   "short": [
+    "Core biology",
+    "핵심 생물학"
+   ],
+   "goal": [
+    "Biochemistry, genetics and cell biology at the depth research papers use.",
+    "연구 논문이 쓰는 깊이의 생화학, 유전학, 세포생물학."
+   ],
+   "dur": [
+    "12–16 weeks",
+    "12~16주"
+   ],
+   "pre": [
+    "Stage 0",
+    "0단계"
+   ],
+   "why": [
+    "Frontier tools — genome sequencing, CRISPR, protein design — are applied to biochemical and cellular questions. This stage provides the questions.",
+    "유전체 분석, CRISPR, 단백질 설계 같은 최전선 도구는 생화학·세포 수준의 질문에 적용됩니다. 이 단계가 그 질문을 줍니다."
+   ],
+   "concepts": [
+    [
+     "Protein structure & folding",
+     "Enzyme kinetics",
+     "Metabolism",
+     "Mendelian & molecular genetics",
+     "Gene regulation",
+     "Signalling pathways",
+     "Cell cycle",
+     "Bioinformatics basics"
+    ],
+    [
+     "단백질 구조·접힘",
+     "효소 반응 속도",
+     "대사",
+     "멘델·분자 유전학",
+     "유전자 조절",
+     "신호 전달 경로",
+     "세포 주기",
+     "생물정보학 기초"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 7.05 General Biochemistry",
+     "https://ocw.mit.edu/courses/7-05-general-biochemistry-spring-2020/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     45,
+     "Proteins, enzymes and metabolism.",
+     "단백질, 효소, 대사."
+    ],
+    [
+     "MIT 7.03 Genetics",
+     "https://ocw.mit.edu/courses/7-03-genetics-fall-2004/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "Classical and molecular genetics.",
+     "고전·분자 유전학."
+    ],
+    [
+     "MIT 7.06 Cell Biology",
+     "https://ocw.mit.edu/courses/7-06-cell-biology-spring-2007/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "Membranes, trafficking, signalling and the cell cycle.",
+     "막, 수송, 신호 전달, 세포 주기."
+    ],
+    [
+     "Rosalind",
+     "https://rosalind.info/",
+     "practice",
+     "First 30 problems",
+     "처음 30문제",
+     25,
+     "Bioinformatics programming problems from string algorithms to phylogenetics.",
+     "문자열 알고리즘부터 계통학까지의 생물정보학 프로그래밍 문제."
+    ]
+   ],
+   "proj": [
+    "Solve 30 Rosalind problems, then build a small pipeline that aligns reads to a reference and calls variants on a public dataset.",
+    "Rosalind 30문제를 풀고, 공개 데이터에서 리드를 기준 서열에 정렬하고 변이를 찾는 작은 파이프라인을 만듭니다."
+   ],
+   "exit": [
+    "Explain a signalling pathway relevant to a disease and which experiments established it.",
+    "질병과 관련된 신호 전달 경로 하나를 설명하고, 그것을 밝힌 실험이 무엇인지 말할 수 있다."
+   ],
+   "pit": [
+    [
+     "Learning facts without the experiments that support them.",
+     "근거가 된 실험 없이 사실만 외우기."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "name": [
+    "Specialization tracks",
+    "전문 트랙"
+   ],
+   "short": [
+    "Tracks",
+    "전문 트랙"
+   ],
+   "goal": [
+    "Go deep in one or two areas of life-science research.",
+    "생명과학 연구의 한두 영역을 깊게 팝니다."
+   ],
+   "dur": [
+    "10–16 weeks per track",
+    "트랙당 10~16주"
+   ],
+   "pre": [
+    "Stage 1",
+    "1단계"
+   ],
+   "why": [
+    "Life-science research splits into wet-lab and computational work, and many frontier results now combine both. Choose by what you want to do day to day.",
+    "생명과학 연구는 실험과 계산으로 나뉘며, 최근 최전선 결과는 둘을 결합한 경우가 많습니다. 매일 하고 싶은 일을 기준으로 고르세요."
+   ],
+   "tracks": [
+    {
+     "id": "A",
+     "name": [
+      "Genomics & computational biology",
+      "유전체·계산생물학"
+     ],
+     "goal": [
+      "Sequencing data, statistical genetics and machine learning on biological data.",
+      "시퀀싱 데이터, 통계유전학, 생물 데이터에 대한 머신러닝."
+     ],
+     "concepts": [
+      [
+       "Sequence alignment",
+       "Genome assembly",
+       "Variant calling",
+       "RNA-seq & single-cell analysis",
+       "Population genetics",
+       "Hidden Markov models",
+       "DNA language models"
+      ],
+      [
+       "서열 정렬",
+       "유전체 조립",
+       "변이 탐지",
+       "RNA-seq·단일세포 분석",
+       "집단유전학",
+       "은닉 마르코프 모델",
+       "DNA 언어모델"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 6.047 Computational Biology",
+       "https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       45,
+       "Algorithms and ML for genomes, from alignment to regulatory networks.",
+       "정렬부터 조절 네트워크까지 유전체를 위한 알고리즘과 머신러닝."
+      ]
+     ],
+     "proj": [
+      "Run a single-cell RNA-seq analysis end to end on a public dataset: quality control, clustering and marker genes.",
+      "공개 데이터로 단일세포 RNA-seq 분석을 처음부터 끝까지 수행합니다. 품질 관리, 군집화, 마커 유전자."
+     ],
+     "exit": [
+      "Explain the statistical model behind differential expression and its main failure modes.",
+      "발현 차이 분석의 통계 모델과 주요 실패 원인을 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Over-interpreting clusters without biological validation.",
+       "생물학적 검증 없이 군집을 과하게 해석하기."
+      ]
+     ]
+    },
+    {
+     "id": "B",
+     "name": [
+      "Protein structure & design",
+      "단백질 구조·설계"
+     ],
+     "goal": [
+      "Predicting and designing protein structures with physics and deep learning.",
+      "물리와 딥러닝으로 단백질 구조를 예측하고 설계하기."
+     ],
+     "concepts": [
+      [
+       "Structure determination (X-ray, cryo-EM)",
+       "Protein language models",
+       "Structure prediction",
+       "Inverse folding",
+       "Diffusion for backbones",
+       "Binder design",
+       "Experimental validation"
+      ],
+      [
+       "구조 결정(X선, 크라이오전자현미경)",
+       "단백질 언어모델",
+       "구조 예측",
+       "역접힘",
+       "골격 생성 확산모델",
+       "결합체 설계",
+       "실험적 검증"
+      ]
+     ],
+     "items": [
+      [
+       "Generative Modeling in Protein Design (survey, 2026)",
+       "https://arxiv.org/abs/2603.26378",
+       "paper",
+       "Sections 1–4",
+       "1~4절",
+       8,
+       "A map of representations, generative architectures and evaluation standards in protein design.",
+       "단백질 설계의 표현, 생성 구조, 평가 기준을 정리한 지도."
+      ],
+      [
+       "Protein Data Bank (RCSB PDB)",
+       "https://www.rcsb.org/",
+       "practice",
+       "Explore 10 structures related to your interests",
+       "관심 분야 구조 10개 살펴보기",
+       5,
+       "The archive of experimentally determined structures that all models are trained and judged on.",
+       "모든 모델이 학습하고 평가받는 실험 구조 데이터베이스."
+      ]
+     ],
+     "proj": [
+      "Use public structure-prediction and inverse-folding tools to redesign a small protein, then compare predicted structures for the native and designed sequences.",
+      "공개된 구조 예측·역접힘 도구로 작은 단백질을 재설계하고, 원래 서열과 설계 서열의 예측 구조를 비교합니다."
+     ],
+     "exit": [
+      "Explain what structure-prediction confidence scores measure and why computational success does not guarantee experimental success.",
+      "구조 예측 신뢰도 점수가 무엇을 측정하는지, 계산상 성공이 실험상 성공을 보장하지 않는 이유를 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Treating predicted structures as experimental truth.",
+       "예측 구조를 실험으로 확인된 사실처럼 다루기."
+      ]
+     ]
+    },
+    {
+     "id": "C",
+     "name": [
+      "Gene editing & synthetic biology",
+      "유전자 편집·합성생물학"
+     ],
+     "goal": [
+      "Engineering DNA, cells and genetic circuits.",
+      "DNA, 세포, 유전자 회로를 설계하기."
+     ],
+     "concepts": [
+      [
+       "CRISPR-Cas systems",
+       "Base & prime editing",
+       "Delivery methods",
+       "Genetic circuits",
+       "Standard biological parts",
+       "Biosafety & biosecurity"
+      ],
+      [
+       "CRISPR-Cas 시스템",
+       "염기·프라임 편집",
+       "전달 방법",
+       "유전자 회로",
+       "표준 생물 부품",
+       "생물안전·생물보안"
+      ]
+     ],
+     "items": [
+      [
+       "Addgene CRISPR Guide",
+       "https://www.addgene.org/guides/crispr/",
+       "article",
+       "Whole guide",
+       "전체 가이드",
+       6,
+       "A clear overview of CRISPR systems and their uses, from a nonprofit plasmid repository.",
+       "비영리 플라스미드 저장소가 정리한 CRISPR 시스템과 활용 개요."
+      ],
+      [
+       "iGEM",
+       "https://igem.org/",
+       "practice",
+       "Browse past team projects",
+       "과거 팀 프로젝트 살펴보기",
+       8,
+       "The international synthetic-biology competition; past projects show what students can build.",
+       "국제 합성생물학 대회. 과거 프로젝트에서 학생이 만들 수 있는 것을 볼 수 있습니다."
+      ]
+     ],
+     "proj": [
+      "Design (on paper and in silico) a simple genetic circuit such as a toggle switch, model its dynamics with ODEs, and discuss biosafety considerations.",
+      "토글 스위치 같은 간단한 유전자 회로를 종이와 컴퓨터로 설계하고, 미분방정식으로 동역학을 모델링하고, 생물안전 고려 사항을 논의합니다."
+     ],
+     "exit": [
+      "Explain how base editing differs from nuclease-based CRISPR editing and the trade-offs of each.",
+      "염기 편집이 뉴클레이스 기반 CRISPR 편집과 어떻게 다른지, 각각의 장단점을 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Ignoring off-target effects and delivery, which decide real-world use.",
+       "실제 활용을 좌우하는 표적 이탈 효과와 전달 문제를 무시하기."
+      ]
+     ]
+    },
+    {
+     "id": "D",
+     "name": [
+      "Drug discovery & clinical translation",
+      "신약 개발·임상 전환"
+     ],
+     "goal": [
+      "How a molecule becomes a medicine, and where AI fits.",
+      "분자가 어떻게 약이 되는지, 그리고 AI가 어디에 쓰이는지."
+     ],
+     "concepts": [
+      [
+       "Target identification",
+       "Hit-to-lead optimization",
+       "ADMET",
+       "Clinical trial phases",
+       "Trial design & endpoints",
+       "Regulatory review",
+       "Molecular machine learning"
+      ],
+      [
+       "표적 발굴",
+       "히트-리드 최적화",
+       "ADMET",
+       "임상시험 단계",
+       "시험 설계·평가 변수",
+       "허가 심사",
+       "분자 머신러닝"
+      ]
+     ],
+     "items": [
+      [
+       "FDA — The Drug Development Process",
+       "https://www.fda.gov/patients/learn-about-drug-and-device-approvals/drug-development-process",
+       "article",
+       "All five steps",
+       "5단계 전체",
+       3,
+       "The official overview from discovery to post-market monitoring.",
+       "발굴부터 시판 후 감시까지의 공식 개요."
+      ],
+      [
+       "ClinicalTrials.gov",
+       "https://clinicaltrials.gov/",
+       "practice",
+       "Read 5 trial records in one disease area",
+       "한 질환 분야의 임상시험 기록 5건 읽기",
+       4,
+       "The public registry of clinical studies: designs, endpoints and results.",
+       "임상연구 공개 등록부. 설계, 평가 변수, 결과."
+      ],
+      [
+       "Therapeutics Data Commons",
+       "https://tdcommons.ai/",
+       "code",
+       "Run one benchmark task",
+       "벤치마크 과제 하나 실행",
+       10,
+       "Curated datasets and benchmarks for machine learning across drug discovery.",
+       "신약 개발 전반의 머신러닝용 정제 데이터셋과 벤치마크."
+      ]
+     ],
+     "proj": [
+      "Train a property-prediction model on a Therapeutics Data Commons task with a scaffold split and compare it with a simple baseline.",
+      "Therapeutics Data Commons 과제에서 스캐폴드 분할로 물성 예측 모델을 학습시키고, 단순 기준선과 비교합니다."
+     ],
+     "exit": [
+      "Explain why most drug candidates fail in clinical trials and which stage each AI method aims to improve.",
+      "대부분의 신약 후보가 임상에서 실패하는 이유와, 각 AI 방법이 어느 단계를 개선하려는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Random data splits that overstate performance on new chemistry.",
+       "새로운 화학 구조에 대한 성능을 부풀리는 무작위 분할."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "name": [
+    "Entering research",
+    "연구 진입"
+   ],
+   "short": [
+    "Research",
+    "연구 진입"
+   ],
+   "goal": [
+    "Read preprints critically, reproduce analyses and write them up.",
+    "프리프린트를 비판적으로 읽고, 분석을 재현하고, 글로 정리하기."
+   ],
+   "dur": [
+    "Ongoing",
+    "계속"
+   ],
+   "pre": [
+    "Stage 2 (one track)",
+    "2단계 (트랙 하나)"
+   ],
+   "why": [
+    "Biology moves fast through preprints, and many papers sit behind journal paywalls. Use preprint servers and open repositories, and learn to judge evidence quality.",
+    "생물학은 프리프린트로 빠르게 움직이고, 많은 논문이 저널 유료 구독 뒤에 있습니다. 프리프린트 서버와 공개 저장소를 활용하고, 증거의 질을 판단하는 법을 익히세요."
+   ],
+   "concepts": [
+    [
+     "Preprints vs. peer review",
+     "Reading figures and methods",
+     "Reproducibility",
+     "Data and code availability",
+     "Ethics and biosafety review"
+    ],
+    [
+     "프리프린트 vs 동료 심사",
+     "그림·방법 읽기",
+     "재현성",
+     "데이터·코드 공개 여부",
+     "윤리·생물안전 심의"
+    ]
+   ],
+   "items": [
+    [
+     "bioRxiv",
+     "https://www.biorxiv.org/",
+     "practice",
+     "First-pass 3 preprints a week",
+     "주 3편 1단계 읽기",
+     3,
+     "The main preprint server for biology.",
+     "생물학의 대표 프리프린트 서버."
+    ],
+    [
+     "PubMed",
+     "https://pubmed.ncbi.nlm.nih.gov/",
+     "practice",
+     "Build a reading tree for one topic",
+     "한 주제의 읽기 계통도 만들기",
+     4,
+     "The index of biomedical literature, with free full text via PubMed Central where available.",
+     "생의학 문헌 색인. PubMed Central에서 무료 전문을 볼 수 있는 경우도 많습니다."
+    ],
+    [
+     "Reproduce one recent result",
+     "https://www.biorxiv.org/",
+     "practice",
+     "Pick one recent preprint with public data and code",
+     "데이터·코드가 공개된 최근 프리프린트 하나 선택",
+     40,
+     "Reproduce the key result at small scale with open data or tools.",
+     "공개 데이터나 도구로 핵심 결과를 작게 재현합니다."
+    ]
+   ],
+   "proj": [
+    "Reproduce the main computational analysis of a recent paper from its public data and code, and write a 4-page report.",
+    "최근 논문의 공개 데이터와 코드로 주요 계산 분석을 재현하고 4쪽 보고서를 씁니다."
+   ],
+   "exit": [
+    "A public write-up with code that someone else can run.",
+    "다른 사람이 돌려볼 수 있는 코드와 함께 공개된 보고서."
+   ],
+   "pit": [
+    [
+     "Trusting a single preprint before replication.",
+     "재현되기 전의 프리프린트 한 편을 그대로 믿기."
+    ]
+   ]
+  }
+ ],
+ "coverage": {
+  "yes": [
+   [
+    "Enough biology and statistics to read most frontier papers in one track, especially computational ones.",
+    "한 트랙, 특히 계산 쪽의 최전선 논문 대부분을 읽을 수 있는 생물학과 통계 지식."
+   ],
+   [
+    "The judgement to separate strong evidence from preliminary results.",
+    "강한 증거와 예비 결과를 구분하는 판단력."
+   ]
+  ],
+  "no": [
+   [
+    "Wet-lab skills; pipetting, cell culture and assay design are learned only in a lab.",
+    "실험 기술. 피펫팅, 세포 배양, 분석법 설계는 실험실에서만 배울 수 있습니다."
+   ],
+   [
+    "Full access to journals; a university library account matters.",
+    "저널 전체 열람. 대학 도서관 계정이 중요합니다."
+   ],
+   [
+    "Clinical and regulatory practice, which requires professional training.",
+    "전문 훈련이 필요한 임상·허가 실무."
+   ]
+  ]
+ },
+ "sources": [
+  [
+   "bioRxiv",
+   "https://www.biorxiv.org/",
+   "Biology preprints",
+   "생물학 프리프린트"
+  ],
+  [
+   "PubMed",
+   "https://pubmed.ncbi.nlm.nih.gov/",
+   "Biomedical literature index",
+   "생의학 문헌 색인"
+  ],
+  [
+   "RCSB PDB",
+   "https://www.rcsb.org/",
+   "Protein structures",
+   "단백질 구조"
+  ]
+ ],
+ "pathways": [
+  [
+   [
+    "Undergraduate research in a biology lab",
+    "생물학 연구실의 학부 연구생"
+   ],
+   "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=65510",
+   1,
+   "The main way to learn wet-lab skills: join a lab early and stay long enough to own a project.",
+   "실험 기술을 배우는 주된 방법입니다. 일찍 연구실에 들어가 자기 프로젝트를 맡을 만큼 오래 머무르세요.",
+   "Linked example: KAIST URP. Most universities run a similar program.",
+   "연결된 예시: KAIST URP. 대부분의 대학에 비슷한 제도가 있습니다."
+  ],
+  [
+   [
+    "iGEM",
+    "iGEM"
+   ],
+   "https://igem.org/",
+   2,
+   "A team competition in synthetic biology that gives students a full project cycle, from design to presentation.",
+   "설계부터 발표까지 프로젝트 전 과정을 경험하는 합성생물학 팀 대회입니다.",
+   "Teams usually form in winter for the following season.",
+   "팀은 보통 겨울에 결성해 다음 시즌에 참가합니다."
+  ]
+ ],
+ "status": [
+  "First version: this route has fewer resources than the AI route and is being expanded, so the hour totals understate the real workload.",
+  "첫 버전: AI 노선보다 자료가 적고 계속 보강 중이므로, 표시된 시간 합계는 실제 학습량보다 적게 나옵니다."
+ ]
+}

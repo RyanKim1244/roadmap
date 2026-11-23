@@ -1,0 +1,804 @@
+{
+ "version": 1,
+ "name": [
+  "Semiconductors",
+  "반도체"
+ ],
+ "title": [
+  "Semiconductor Research Roadmap",
+  "반도체 연구 학습 노선도"
+ ],
+ "lede": [
+  "A path from first-year university level to following frontier semiconductor research: devices and materials, fabrication, chip design, computer architecture and AI hardware, and packaging. The frontier section collects recent conference results and industry reports.",
+  "대학 1학년 수준에서 출발해 반도체 최전선 연구를 따라갈 수 있는 수준까지 가는 길입니다. 소자와 소재, 공정, 칩 설계, 컴퓨터 구조와 AI 하드웨어, 패키징을 다루며, 최전선 구간에는 최근 학회 결과와 업계 리포트를 모읍니다."
+ ],
+ "stages": [
+  {
+   "n": 0,
+   "name": [
+    "Math & physics",
+    "수학·물리"
+   ],
+   "short": [
+    "Math & physics",
+    "수학·물리"
+   ],
+   "goal": [
+    "The mathematics and physics that device papers assume.",
+    "소자 논문이 전제하는 수학과 물리."
+   ],
+   "dur": [
+    "10–14 weeks",
+    "10~14주"
+   ],
+   "pre": [
+    "High-school physics and calculus",
+    "고교 물리·미적분"
+   ],
+   "why": [
+    "Transistors are quantum-mechanical devices governed by electromagnetism and statistical physics. Without this layer, device papers read as a list of numbers rather than an argument.",
+    "트랜지스터는 전자기학과 통계물리가 지배하는 양자역학적 소자입니다. 이 층이 없으면 소자 논문은 논증이 아니라 숫자의 나열로 읽힙니다."
+   ],
+   "concepts": [
+    [
+     "Linear algebra",
+     "Vector calculus",
+     "Maxwell's equations",
+     "Wave functions & Schrödinger equation",
+     "Band structure basics",
+     "Fermi–Dirac statistics",
+     "Crystal structure",
+     "Chemical bonding"
+    ],
+    [
+     "선형대수",
+     "벡터 미적분",
+     "맥스웰 방정식",
+     "파동함수·슈뢰딩거 방정식",
+     "띠 구조 기초",
+     "페르미-디랙 통계",
+     "결정 구조",
+     "화학 결합"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 18.06 Linear Algebra (Gilbert Strang)",
+     "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+     "course",
+     "Lectures 1–25 + problem sets",
+     "1~25강 + 문제풀이",
+     40,
+     "Matrices and eigenvalues for quantum mechanics and circuit analysis.",
+     "양자역학과 회로 해석에 쓰는 행렬과 고유값."
+    ],
+    [
+     "MIT 18.02SC Multivariable Calculus",
+     "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+     "course",
+     "Units 1–4",
+     "1~4단원",
+     35,
+     "Vector calculus for electromagnetism and transport equations.",
+     "전자기학과 수송 방정식에 쓰는 벡터 미적분."
+    ],
+    [
+     "MIT 8.02 Physics II: Electricity and Magnetism",
+     "https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     45,
+     "Fields, potentials, capacitance and Maxwell's equations.",
+     "전기장, 전위, 정전용량, 맥스웰 방정식."
+    ],
+    [
+     "MIT 8.04 Quantum Physics I",
+     "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/",
+     "course",
+     "Lectures + problem sets",
+     "강의 + 문제풀이",
+     50,
+     "Wave functions, tunnelling and bound states — the basis of band theory.",
+     "파동함수, 터널링, 속박 상태. 띠 이론의 기초."
+    ],
+    [
+     "MIT 3.091 Introduction to Solid-State Chemistry",
+     "https://ocw.mit.edu/courses/3-091-introduction-to-solid-state-chemistry-fall-2018/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     40,
+     "Bonding, crystals, defects and doping from the materials side.",
+     "소재 관점의 결합, 결정, 결함, 도핑."
+    ]
+   ],
+   "proj": [
+    "Compute the energy levels of a finite quantum well numerically in Python and compare to the analytic infinite-well result; extend to a 1D periodic potential to see bands appear.",
+    "유한 양자우물의 에너지 준위를 Python으로 수치 계산해 무한 우물 해와 비교하고, 1차원 주기 퍼텐셜로 확장해 띠가 생기는 모습을 확인합니다."
+   ],
+   "exit": [
+    "Explain, from quantum mechanics, why a crystal has energy bands and why doping changes conductivity.",
+    "결정에 왜 에너지 띠가 생기는지, 도핑이 왜 전도도를 바꾸는지 양자역학으로 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Memorizing device formulas without the physics behind them.",
+     "물리적 배경 없이 소자 공식을 외우기."
+    ]
+   ]
+  },
+  {
+   "n": 1,
+   "name": [
+    "Devices & circuits",
+    "소자·회로"
+   ],
+   "short": [
+    "Devices",
+    "소자·회로"
+   ],
+   "goal": [
+    "How transistors work and how they combine into circuits and digital systems.",
+    "트랜지스터가 어떻게 동작하고, 회로와 디지털 시스템으로 어떻게 결합되는지."
+   ],
+   "dur": [
+    "10–14 weeks",
+    "10~14주"
+   ],
+   "pre": [
+    "Stage 0",
+    "0단계"
+   ],
+   "why": [
+    "Every frontier topic — new transistor architectures, memory, AI accelerators — is judged by its effect on device characteristics and circuit-level performance, power and area.",
+    "새 트랜지스터 구조, 메모리, AI 가속기 같은 최전선 주제는 모두 소자 특성과 회로 수준의 성능·전력·면적에 미치는 영향으로 평가됩니다."
+   ],
+   "concepts": [
+    [
+     "pn junctions",
+     "MOSFET operation",
+     "Threshold voltage & subthreshold swing",
+     "Short-channel effects",
+     "CMOS logic",
+     "Small-signal models",
+     "Digital abstraction",
+     "Pipelining",
+     "Memory hierarchy",
+     "Power–performance–area (PPA)"
+    ],
+    [
+     "pn 접합",
+     "MOSFET 동작",
+     "문턱전압·문턱 이하 기울기",
+     "단채널 효과",
+     "CMOS 논리",
+     "소신호 모델",
+     "디지털 추상화",
+     "파이프라이닝",
+     "메모리 계층",
+     "전력-성능-면적(PPA)"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 6.002 Circuits and Electronics",
+     "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     45,
+     "Circuit analysis from lumped elements to amplifiers.",
+     "집중 소자부터 증폭기까지의 회로 해석."
+    ],
+    [
+     "MIT 6.012 Microelectronic Devices and Circuits",
+     "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2005/",
+     "course",
+     "Lectures + problem sets",
+     "강의 + 문제풀이",
+     45,
+     "Semiconductor physics, pn junctions, MOSFETs and basic analog circuits.",
+     "반도체 물리, pn 접합, MOSFET, 기초 아날로그 회로."
+    ],
+    [
+     "Fundamentals of Transistors (Mark Lundstrom, nanoHUB)",
+     "https://nanohub.org/courses/FoT",
+     "course",
+     "All units",
+     "전체 단원",
+     25,
+     "A modern, physics-first view of how nanoscale MOSFETs work.",
+     "나노 규모 MOSFET의 동작을 물리 중심으로 설명하는 최신 강의."
+    ],
+    [
+     "MIT 6.004 Computation Structures",
+     "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     45,
+     "From gates to a working processor: the digital abstraction.",
+     "게이트에서 동작하는 프로세서까지. 디지털 추상화."
+    ]
+   ],
+   "proj": [
+    "Simulate a CMOS inverter and a ring oscillator in an open-source SPICE (ngspice) and measure delay and power as you change supply voltage and device sizing.",
+    "오픈소스 SPICE(ngspice)로 CMOS 인버터와 링 발진기를 시뮬레이션하고, 전원 전압과 소자 크기를 바꾸며 지연과 전력을 측정합니다."
+   ],
+   "exit": [
+    "Derive the MOSFET drain current in saturation and explain why subthreshold swing cannot beat 60 mV/decade at room temperature in a conventional transistor.",
+    "포화 영역 MOSFET 드레인 전류를 유도하고, 일반 트랜지스터의 문턱 이하 기울기가 상온에서 60 mV/decade보다 작아질 수 없는 이유를 설명할 수 있다."
+   ],
+   "pit": [
+    [
+     "Skipping the digital side; much frontier work is about systems, not single devices.",
+     "디지털 쪽을 건너뛰기. 최전선 연구의 상당수는 단일 소자가 아니라 시스템을 다룹니다."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "name": [
+    "Specialization tracks",
+    "전문 트랙"
+   ],
+   "short": [
+    "Tracks",
+    "전문 트랙"
+   ],
+   "goal": [
+    "Go deep in one or two areas of semiconductor research.",
+    "반도체 연구의 한두 영역을 깊게 팝니다."
+   ],
+   "dur": [
+    "10–16 weeks per track",
+    "트랙당 10~16주"
+   ],
+   "pre": [
+    "Stage 1",
+    "1단계"
+   ],
+   "why": [
+    "The field splits into communities with different conferences: devices (IEDM, VLSI), circuits (ISSCC), architecture (ISCA, MICRO) and manufacturing. Pick one, and learn enough of its neighbours to follow co-design work.",
+    "이 분야는 학회가 다른 여러 공동체로 나뉩니다. 소자(IEDM, VLSI), 회로(ISSCC), 구조(ISCA, MICRO), 제조. 하나를 고르고, 함께 설계하는 연구를 따라갈 만큼 이웃 분야도 익히세요."
+   ],
+   "tracks": [
+    {
+     "id": "A",
+     "name": [
+      "Devices & materials",
+      "소자·소재"
+     ],
+     "goal": [
+      "Beyond-FinFET transistors, 2D materials and new memory devices.",
+      "FinFET 이후의 트랜지스터, 2차원 소재, 새로운 메모리 소자."
+     ],
+     "concepts": [
+      [
+       "Gate-all-around & CFET",
+       "2D channel materials",
+       "Contact resistance",
+       "Ferroelectric devices",
+       "Emerging memory (MRAM, RRAM, FeRAM)",
+       "Device variability & reliability",
+       "Quantum transport (NEGF)"
+      ],
+      [
+       "GAA·CFET",
+       "2차원 채널 소재",
+       "접촉 저항",
+       "강유전체 소자",
+       "차세대 메모리(MRAM, RRAM, FeRAM)",
+       "소자 편차·신뢰성",
+       "양자 수송(NEGF)"
+      ]
+     ],
+     "items": [
+      [
+       "Fundamentals of Nanoelectronics, Part A (Supriyo Datta, nanoHUB)",
+       "https://nanohub.org/courses/FoN1",
+       "course",
+       "All units",
+       "전체 단원",
+       25,
+       "The 'bottom-up' view of electron transport used in nanoscale device modelling.",
+       "나노 소자 모델링에 쓰는 '상향식' 전자 수송 관점."
+      ],
+      [
+       "International Roadmap for Devices and Systems (IRDS)",
+       "https://irds.ieee.org/",
+       "article",
+       "More Moore and Beyond CMOS chapters",
+       "More Moore·Beyond CMOS 장",
+       15,
+       "The industry consensus roadmap for device scaling and emerging devices.",
+       "소자 미세화와 차세대 소자에 대한 업계 합의 로드맵."
+      ]
+     ],
+     "proj": [
+      "Model a ballistic nanowire transistor with a simple NEGF code and compare its I–V curve against a planar MOSFET model.",
+      "간단한 NEGF 코드로 탄도 나노와이어 트랜지스터를 모델링하고, I–V 곡선을 평면 MOSFET 모델과 비교합니다."
+     ],
+     "exit": [
+      "Read a recent IEDM-style device paper and explain which figure of merit it improves and at what cost.",
+      "최근 IEDM 수준의 소자 논문을 읽고, 어떤 성능 지표를 어떤 대가로 개선했는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Comparing devices measured under different conditions.",
+       "서로 다른 조건에서 측정한 소자를 비교하기."
+      ]
+     ]
+    },
+    {
+     "id": "B",
+     "name": [
+      "Fabrication & lithography",
+      "공정·리소그래피"
+     ],
+     "goal": [
+      "How chips are made: deposition, etching, lithography and yield.",
+      "칩을 만드는 방법: 증착, 식각, 리소그래피, 수율."
+     ],
+     "concepts": [
+      [
+       "Photolithography & EUV",
+       "Resolution & overlay",
+       "Etch & deposition (ALD, CVD)",
+       "Process integration",
+       "Metrology",
+       "Yield & defectivity",
+       "Design–technology co-optimization"
+      ],
+      [
+       "포토리소그래피·EUV",
+       "해상도·오버레이",
+       "식각·증착(ALD, CVD)",
+       "공정 통합",
+       "계측",
+       "수율·결함",
+       "설계-기술 공동 최적화(DTCO)"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 6.152J Micro/Nano Processing Technology",
+       "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/",
+       "course",
+       "All lectures",
+       "전체 강의",
+       35,
+       "The core unit processes of semiconductor fabrication.",
+       "반도체 제조의 핵심 단위 공정."
+      ],
+      [
+       "ASML — EUV lithography systems",
+       "https://www.asml.com/en/products/euv-lithography-systems",
+       "article",
+       "Product and technology pages",
+       "제품·기술 페이지",
+       3,
+       "How the light source and optics of EUV scanners work, from the sole supplier.",
+       "유일한 공급사가 설명하는 EUV 노광기의 광원과 광학."
+      ]
+     ],
+     "proj": [
+      "Write a simple lithography simulator (aerial image from a mask via Fourier optics) and show how resolution changes with wavelength and numerical aperture.",
+      "푸리에 광학으로 마스크의 공간상(aerial image)을 계산하는 간단한 리소그래피 시뮬레이터를 작성하고, 파장과 개구수에 따른 해상도 변화를 보입니다."
+     ],
+     "exit": [
+      "Explain the Rayleigh resolution criterion and why High-NA EUV is needed for the next nodes.",
+      "레일리 해상도 기준과 다음 공정 세대에 High-NA EUV가 필요한 이유를 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Treating node names (\"3 nm\") as physical dimensions.",
+       "공정 이름(\"3 nm\")을 실제 물리적 치수로 여기기."
+      ]
+     ]
+    },
+    {
+     "id": "C",
+     "name": [
+      "Chip design & EDA",
+      "칩 설계·EDA"
+     ],
+     "goal": [
+      "Designing digital chips with open-source tools, from RTL to layout.",
+      "오픈소스 도구로 RTL부터 레이아웃까지 디지털 칩 설계하기."
+     ],
+     "concepts": [
+      [
+       "Hardware description languages",
+       "Synthesis",
+       "Static timing analysis",
+       "Place & route",
+       "Design verification",
+       "Open-source PDKs",
+       "Machine learning for EDA"
+      ],
+      [
+       "하드웨어 기술 언어",
+       "합성",
+       "정적 타이밍 분석",
+       "배치·배선",
+       "설계 검증",
+       "오픈소스 PDK",
+       "EDA를 위한 머신러닝"
+      ]
+     ],
+     "items": [
+      [
+       "Tiny Tapeout",
+       "https://tinytapeout.com",
+       "practice",
+       "Complete one design and submit it",
+       "설계 하나를 완성해 제출",
+       30,
+       "Low-cost shared tapeouts that let students get a real chip manufactured.",
+       "학생도 실제 칩을 제작할 수 있는 저비용 공동 테이프아웃."
+      ],
+      [
+       "The OpenROAD Project",
+       "https://theopenroadproject.org/",
+       "code",
+       "Run the flow on an example design",
+       "예제 설계로 전체 흐름 실행",
+       15,
+       "An open-source RTL-to-GDS flow used in research and education.",
+       "연구와 교육에 쓰이는 오픈소스 RTL-to-GDS 흐름."
+      ]
+     ],
+     "proj": [
+      "Design a small RISC-V or accelerator block in Verilog, verify it, and take it through OpenROAD to a layout; submit a version to Tiny Tapeout.",
+      "Verilog로 작은 RISC-V 또는 가속기 블록을 설계·검증하고, OpenROAD로 레이아웃까지 진행한 뒤 Tiny Tapeout에 제출합니다."
+     ],
+     "exit": [
+      "Read a timing report and explain where the critical path is and how to fix it.",
+      "타이밍 보고서를 읽고 임계 경로가 어디인지, 어떻게 고칠지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Skipping verification; most real design time goes there.",
+       "검증 건너뛰기. 실제 설계 시간의 대부분이 검증에 쓰입니다."
+      ]
+     ]
+    },
+    {
+     "id": "D",
+     "name": [
+      "Computer architecture & AI hardware",
+      "컴퓨터 구조·AI 하드웨어"
+     ],
+     "goal": [
+      "Processors, memory systems and accelerators for machine learning.",
+      "프로세서, 메모리 시스템, 머신러닝 가속기."
+     ],
+     "concepts": [
+      [
+       "Out-of-order execution",
+       "Caches & memory bandwidth",
+       "Roofline model",
+       "Dataflow & systolic arrays",
+       "Near-memory computing",
+       "Sparsity & low precision",
+       "Hardware–software co-design"
+      ],
+      [
+       "비순차 실행",
+       "캐시·메모리 대역폭",
+       "루프라인 모델",
+       "데이터플로·시스톨릭 배열",
+       "메모리 근접 연산",
+       "희소성·저정밀도",
+       "하드웨어-소프트웨어 공동 설계"
+      ]
+     ],
+     "items": [
+      [
+       "Computer Architecture lectures (Onur Mutlu, ETH Zürich)",
+       "https://safari.ethz.ch/architecture/",
+       "course",
+       "Lectures on memory systems and accelerators",
+       "메모리 시스템·가속기 강의",
+       50,
+       "A full graduate architecture course with recorded lectures.",
+       "강의 영상이 공개된 대학원 컴퓨터 구조 과목."
+      ],
+      [
+       "In-Datacenter Performance Analysis of a Tensor Processing Unit (2017)",
+       "https://arxiv.org/abs/1704.04760",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "The first TPU paper: why a systolic-array accelerator beat CPUs and GPUs for inference.",
+       "첫 TPU 논문. 시스톨릭 배열 가속기가 추론에서 CPU·GPU를 이긴 이유."
+      ],
+      [
+       "Efficient Processing of Deep Neural Networks: A Tutorial and Survey (2017)",
+       "https://arxiv.org/abs/1703.09039",
+       "paper",
+       "Full paper",
+       "전문",
+       6,
+       "The standard map of DNN accelerator design choices.",
+       "DNN 가속기 설계 선택지의 표준 지도."
+      ],
+      [
+       "Eyeriss v2 (2018)",
+       "https://arxiv.org/abs/1807.07928",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "A flexible dataflow accelerator for compact and sparse networks.",
+       "작고 희소한 신경망을 위한 유연한 데이터플로 가속기."
+      ]
+     ],
+     "proj": [
+      "Model a systolic-array accelerator analytically (or with an open simulator) and compare its utilization on a Transformer layer and a convolution.",
+      "시스톨릭 배열 가속기를 해석적으로(또는 공개 시뮬레이터로) 모델링하고, Transformer 층과 합성곱에서의 활용률을 비교합니다."
+     ],
+     "exit": [
+      "Produce a roofline analysis of one workload on one accelerator and explain whether it is compute- or memory-bound.",
+      "하나의 가속기에서 하나의 작업에 대한 루프라인 분석을 하고, 연산 한계인지 메모리 한계인지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Quoting peak TOPS instead of achieved throughput.",
+       "실제 처리량 대신 최대 TOPS를 인용하기."
+      ]
+     ]
+    },
+    {
+     "id": "E",
+     "name": [
+      "Packaging, memory & industry",
+      "패키징·메모리·산업"
+     ],
+     "goal": [
+      "Chiplets, high-bandwidth memory and how the industry is organized.",
+      "칩렛, 고대역폭 메모리, 산업 구조."
+     ],
+     "concepts": [
+      [
+       "Chiplets & die-to-die interfaces",
+       "2.5D/3D integration",
+       "High-bandwidth memory",
+       "Thermal limits",
+       "Foundry vs. IDM vs. fabless",
+       "Supply chain & policy"
+      ],
+      [
+       "칩렛·다이 간 인터페이스",
+       "2.5D/3D 집적",
+       "고대역폭 메모리",
+       "열 한계",
+       "파운드리 vs IDM vs 팹리스",
+       "공급망·정책"
+      ]
+     ],
+     "items": [
+      [
+       "UCIe (Universal Chiplet Interconnect Express)",
+       "https://www.uciexpress.org/",
+       "article",
+       "Specification overview pages",
+       "사양 개요 페이지",
+       3,
+       "The open standard for connecting chiplets in one package.",
+       "한 패키지 안에서 칩렛을 잇는 공개 표준."
+      ],
+      [
+       "Semiconductor Industry Association — research and reports",
+       "https://www.semiconductors.org/",
+       "article",
+       "State of the Industry report",
+       "산업 현황 보고서",
+       4,
+       "Free annual data on market size, R&D spending and supply chains.",
+       "시장 규모, 연구개발 투자, 공급망에 대한 무료 연례 데이터."
+      ]
+     ],
+     "proj": [
+      "Write a short brief comparing two packaging approaches (e.g. 2.5D interposer vs. 3D stacking) on bandwidth, power, thermal limits and cost, using public sources.",
+      "공개 자료로 두 가지 패키징 방식(예: 2.5D 인터포저 vs 3D 적층)을 대역폭, 전력, 열 한계, 비용 측면에서 비교하는 짧은 보고서를 씁니다."
+     ],
+     "exit": [
+      "Explain why memory bandwidth, not compute, limits many AI workloads and how HBM and chiplets address it.",
+      "많은 AI 작업에서 연산이 아니라 메모리 대역폭이 한계인 이유와, HBM과 칩렛이 이를 어떻게 해결하는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Relying on vendor press releases without independent data.",
+       "독립 데이터 없이 업체 보도자료에만 의존하기."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "name": [
+    "Entering research",
+    "연구 진입"
+   ],
+   "short": [
+    "Research",
+    "연구 진입"
+   ],
+   "goal": [
+    "Read the main venues, reproduce results and write them up.",
+    "주요 학회를 읽고, 결과를 재현하고, 글로 정리하기."
+   ],
+   "dur": [
+    "Ongoing",
+    "계속"
+   ],
+   "pre": [
+    "Stage 2 (one track)",
+    "2단계 (트랙 하나)"
+   ],
+   "why": [
+    "Semiconductor research is published mainly at conferences, many behind paywalls. Learn which venue covers what, and use preprints, digests and open course material to keep up.",
+    "반도체 연구는 주로 학회에서 발표되고, 상당수가 유료입니다. 어느 학회가 무엇을 다루는지 익히고, 프리프린트·요약 기사·공개 강의로 따라가세요."
+   ],
+   "concepts": [
+    [
+     "Venue landscape (IEDM, VLSI, ISSCC, ISCA)",
+     "Reading device papers",
+     "Benchmarking fairly",
+     "Simulation vs. measurement",
+     "Writing short papers"
+    ],
+    [
+     "학회 지형(IEDM, VLSI, ISSCC, ISCA)",
+     "소자 논문 읽기",
+     "공정한 비교",
+     "시뮬레이션 vs 측정",
+     "짧은 논문 쓰기"
+    ]
+   ],
+   "items": [
+    [
+     "IEEE International Electron Devices Meeting (IEDM)",
+     "https://www.ieee-iedm.org/",
+     "practice",
+     "Read the program and press highlights each December",
+     "매년 12월 프로그램·주요 발표 읽기",
+     6,
+     "The premier venue for transistor and device research.",
+     "트랜지스터·소자 연구의 대표 학회."
+    ],
+    [
+     "IEEE Spectrum — Semiconductors",
+     "https://spectrum.ieee.org/semiconductors",
+     "practice",
+     "Skim weekly",
+     "매주 훑기",
+     2,
+     "Accessible reporting on new device and manufacturing results.",
+     "새 소자·제조 결과를 쉽게 전하는 기사."
+    ],
+    [
+     "arXiv cs.AR (Hardware Architecture) — recent",
+     "https://arxiv.org/list/cs.AR/recent",
+     "practice",
+     "First-pass 2 papers a week",
+     "주 2편 1단계 읽기",
+     3,
+     "Open preprints in architecture and accelerators.",
+     "컴퓨터 구조·가속기 분야의 공개 프리프린트."
+    ],
+    [
+     "Reproduce one recent result",
+     "https://arxiv.org/list/cs.AR/recent",
+     "practice",
+     "Pick one recent paper in your track",
+     "자기 트랙의 최근 논문 하나 선택",
+     40,
+     "Reproduce the key result at small scale with open data or tools.",
+     "공개 데이터나 도구로 핵심 결과를 작게 재현합니다."
+    ]
+   ],
+   "proj": [
+    "Reproduce a published result in your track with open tools (a device simulation, an architecture model or a small tapeout) and write a 4-page report.",
+    "자기 트랙에서 공개 도구로 발표된 결과 하나를 재현하고(소자 시뮬레이션, 구조 모델, 작은 테이프아웃 등) 4쪽 보고서를 씁니다."
+   ],
+   "exit": [
+    "A public write-up with code or design files someone else can run.",
+    "다른 사람이 돌려볼 수 있는 코드나 설계 파일과 함께 공개된 보고서."
+   ],
+   "pit": [
+    [
+     "Ignoring measurement conditions when comparing results.",
+     "결과를 비교할 때 측정 조건을 무시하기."
+    ]
+   ]
+  }
+ ],
+ "coverage": {
+  "yes": [
+   [
+    "Enough device physics, circuits and architecture to follow most frontier conference papers in one track.",
+    "한 트랙에서 최전선 학회 논문 대부분을 따라갈 만큼의 소자 물리, 회로, 구조 지식."
+   ],
+   [
+    "A map of which community and venue each kind of result belongs to.",
+    "어떤 결과가 어느 공동체·학회에 속하는지에 대한 지도."
+   ]
+  ],
+  "no": [
+   [
+    "Hands-on fab experience; that requires cleanroom access through a university lab or company.",
+    "실제 공정 경험. 대학 연구실이나 기업을 통한 클린룸 접근이 필요합니다."
+   ],
+   [
+    "Full access to papers; many IEEE conference papers are paywalled, so a university library account matters.",
+    "논문 전체 열람. IEEE 학회 논문 상당수가 유료라 대학 도서관 계정이 중요합니다."
+   ],
+   [
+    "Proprietary process know-how, which stays inside foundries.",
+    "파운드리 내부에 머무는 독점 공정 노하우."
+   ]
+  ]
+ },
+ "sources": [
+  [
+   "IEEE Spectrum — Semiconductors",
+   "https://spectrum.ieee.org/semiconductors",
+   "Accessible news on devices and manufacturing",
+   "소자·제조 분야의 이해하기 쉬운 뉴스"
+  ],
+  [
+   "arXiv cs.AR — recent",
+   "https://arxiv.org/list/cs.AR/recent",
+   "Architecture and accelerator preprints",
+   "구조·가속기 프리프린트"
+  ],
+  [
+   "IEDM",
+   "https://www.ieee-iedm.org/",
+   "The main device conference, every December",
+   "매년 12월 열리는 대표 소자 학회"
+  ],
+  [
+   "IRDS",
+   "https://irds.ieee.org/",
+   "Industry roadmap for devices and systems",
+   "소자·시스템 업계 로드맵"
+  ]
+ ],
+ "pathways": [
+  [
+   [
+    "Undergraduate research in a device or architecture lab",
+    "소자·컴퓨터 구조 연구실의 학부 연구생"
+   ],
+   "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=65510",
+   1,
+   "Join a professor's lab; cleanroom and measurement access usually comes only this way.",
+   "교수 연구실에 들어가는 것입니다. 클린룸과 측정 장비 접근은 대개 이 경로로만 가능합니다.",
+   "Linked example: KAIST URP. Most universities run a similar program.",
+   "연결된 예시: KAIST URP. 대부분의 대학에 비슷한 제도가 있습니다."
+  ],
+  [
+   [
+    "Tiny Tapeout",
+    "Tiny Tapeout"
+   ],
+   "https://tinytapeout.com",
+   2,
+   "Get your own design manufactured on a shared chip — rare hands-on silicon experience for students.",
+   "공동 칩에 자기 설계를 실어 제작합니다. 학생에게 드문 실제 실리콘 경험입니다.",
+   "Low cost; runs several shuttles a year.",
+   "저비용, 연간 여러 차례 진행."
+  ]
+ ],
+ "status": [
+  "First version: this route has fewer resources than the AI route and is being expanded, so the hour totals understate the real workload.",
+  "첫 버전: AI 노선보다 자료가 적고 계속 보강 중이므로, 표시된 시간 합계는 실제 학습량보다 적게 나옵니다."
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "updated": "2026-11-23",
+ "weeks": [
+  {
+   "week": "2026-11-23",
+   "note_en": "Focus this week: AI-driven protein design, from natural-language specification to enzyme design.",
+   "note_ko": "이번 주 초점: 자연어 기반 설계부터 효소 설계까지, AI를 활용한 단백질 설계.",
+   "items": [
+    {
+     "type_en": "Industry",
+     "type_ko": "업계 동향",
+     "stage": 2,
+     "title": "Scientists Can Now Ask AI to Design Proteins Using Plain Language (Singularity Hub)",
+     "url": "https://singularityhub.com/2026/11/02/scientists-can-now-ask-ai-to-design-proteins-using-plain-language/",
+     "why_en": "Reports on Pinal, a Westlake University system published in Nature that generates protein sequences from natural-language descriptions of function (Track B).",
+     "why_ko": "기능을 자연어로 설명하면 단백질 서열을 생성하는 Westlake University의 시스템 Pinal(Nature 게재)을 소개합니다(트랙 B)."
+    },
+    {
+     "type_en": "Industry",
+     "type_ko": "업계 동향",
+     "stage": 2,
+     "title": "This AI Model Designs Enzymes With Atomic Precision (Singularity Hub)",
+     "url": "https://singularityhub.com/2026/10/22/a-new-ai-model-designs-enzymes-with-atomic-precision/",
+     "why_en": "Covers AI-designed proteases and RFdiffusion3 from the Baker lab, and notes that enzymes remain much harder to design than binders (Track B).",
+     "why_ko": "Baker 연구실의 AI 설계 단백질 분해효소와 RFdiffusion3를 다루며, 효소는 결합체보다 설계가 훨씬 어렵다는 점을 짚습니다(트랙 B)."
+    },
+    {
+     "type_en": "Paper",
+     "type_ko": "논문",
+     "stage": 2,
+     "title": "Scaling Atomistic Protein Binder Design with Generative Pretraining and Test-Time Compute (Proteina-Complexa, ICLR 2026 oral)",
+     "url": "https://research.nvidia.com/labs/genair/proteina-complexa",
+     "why_en": "An NVIDIA-led framework that combines generative pretraining with inference-time search for binder design; a clear example of AI-scaling ideas moving into biology (Track B).",
+     "why_ko": "생성 사전학습과 추론 시점 탐색을 결합한 NVIDIA 주도의 결합체 설계 프레임워크입니다. AI 스케일링 아이디어가 생물학으로 옮겨 가는 사례입니다(트랙 B)."
+    }
+   ]
+  }
+ ]
+}

@@ -1,27 +1,31 @@
-# AI Research Roadmap
+# Frontier Research Roadmaps
 
-A self-study syllabus that takes a university student from zero to doing AI research — with a frontier section refreshed every week. English by default, with a Korean toggle.
+Self-study syllabi that take a university student from zero to following frontier research — currently **AI**, **semiconductors** and **bio** — each with a frontier section refreshed every week. English by default, with a Korean toggle.
 
-대학생이 처음부터 AI 연구를 할 수 있는 수준까지 가는 자기주도 학습 노선도입니다. 최전선 구간은 매주 갱신되며, 영어(기본)와 한국어를 전환할 수 있습니다.
+대학생이 처음부터 최전선 연구를 따라갈 수 있는 수준까지 가는 자기주도 학습 노선도입니다. 현재 AI, 반도체, 바이오 세 분야가 있고, 분야마다 최전선 구간이 매주 갱신됩니다. 영어(기본)와 한국어를 전환할 수 있습니다.
 
-## Structure
+## Structure (AI route)
 
 | Stage | Content |
 |---|---|
 | 0–4 (core) | Tools → Math → Machine learning → Deep learning → Transformers & foundation models |
-| 5 (tracks) | A Post-training & reasoning · B Vision, audio & multimodal · C Generative models · D RL, agents & robotics · E Interpretability & safety · F ML systems & efficiency · G AI for science & graph learning |
+| 5 (tracks) | A Post-training & reasoning · B Vision, audio & multimodal · C Generative models · D RL, agents & robotics · E Interpretability & safety · F ML systems & efficiency · G AI for science & graph learning · H Theory of learning |
 | 6 | Entering research |
 | Frontier | 6–8 new papers, talks and reports across AI, updated every Monday (KST) |
 
 Each stage and track lists key concepts, the exact scope of each resource with estimated hours, a hands-on project, an exit criterion and common mistakes.
 
+The semiconductor route (math & physics → devices & circuits → 5 tracks → research) and the bio route (foundations → molecular & cell biology → 4 tracks → research) are first versions and are being expanded.
+
 ## Files
 
-- `index.html` — the page (no build step)
-- `data/curriculum.json` — stages, tracks and resources
-- `data/frontier.json` — weekly frontier items (`weeks[0]` is the current week; the last 8 weeks are kept)
+- `index.html` — the page (no build step); switch fields with the tabs or `#f-ai`, `#f-semiconductors`, `#f-bio`
+- `data/fields.json` — list of fields and their data files
+- `data/curriculum.json` — AI route: stages, tracks, resources, coverage, sources and experience pathways
+- `data/fields/semiconductors.json`, `data/fields/bio.json` — other routes, same format
+- `data/frontier.json`, `data/frontier-semiconductors.json`, `data/frontier-bio.json` — weekly frontier items (`weeks[0]` is the current week; the last 8 weeks are kept)
 
-The page also includes a reality check: listed study hours, and what the roadmap does and does not give you.
+Each route also includes a reality check: listed study hours, and what the roadmap does and does not give you.
 
 Checkmarks are stored in your browser only (`localStorage`).
 

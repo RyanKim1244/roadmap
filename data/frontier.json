@@ -64,10 +64,10 @@
      "type_en": "Conference",
      "type_ko": "학회",
      "stage": 0,
-     "title": "NeurIPS 2026 (December)",
+     "title": "NeurIPS 2026 (December 6–12, Sydney)",
      "url": "https://neurips.cc/",
-     "why_en": "Award papers are announced at the conference in early December and will be added in a later update. Last year's winners are linked in Stage 5.",
-     "why_ko": "12월 초 학회에서 수상 논문이 발표되며, 이후 갱신 때 이 목록에 추가합니다. 직전 해 수상작은 5단계에 연결되어 있습니다."
+     "why_en": "Award papers are usually announced on the NeurIPS blog shortly before or at the conference and will be added in a later update. Last year's winners are linked in Track A.",
+     "why_ko": "수상 논문은 보통 학회 직전이나 학회 기간에 NeurIPS 블로그에 발표되며, 이후 갱신 때 이 목록에 추가합니다. 직전 해 수상작은 트랙 A에 연결되어 있습니다."
     },
     {
      "type_en": "Industry",

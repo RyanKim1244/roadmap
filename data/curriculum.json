@@ -83,7 +83,7 @@
     ],
     [
      "PyTorch — Learn the Basics",
-     "https://pytorch.org/tutorials/beginner/basics/intro.html",
+     "https://docs.pytorch.org/tutorials/beginner/basics/intro.html",
      "course",
      "All 8 parts",
      "8개 파트 전체",
@@ -752,8 +752,8 @@
      "Train the Shakespeare and small-scale configs",
      "셰익스피어·소규모 설정 학습",
      10,
-     "Minimal, readable GPT training code.",
-     "읽기 쉬운 최소 GPT 학습 코드."
+     "Minimal, readable GPT training code; the README now marks it as deprecated in favour of karpathy/nanochat, but the Shakespeare quick start still works.",
+     "읽기 쉬운 최소 GPT 학습 코드. README에서 후속작 karpathy/nanochat을 권하며 지원 종료를 알리고 있지만, 셰익스피어 예제는 여전히 동작합니다."
     ],
     [
      "Stanford CS336 Language Modeling from Scratch",
@@ -1075,7 +1075,7 @@
        "단순하고 확장성 있는 비전 자기지도 사전학습."
       ],
       [
-       "CLIP: Learning Transferable Visual Models from Natural Language (2021)",
+       "CLIP: Learning Transferable Visual Models From Natural Language Supervision (2021)",
        "https://arxiv.org/abs/2103.00020",
        "paper",
        "Sections 1–3",
@@ -1189,8 +1189,8 @@
        "Stanford CS236 Deep Generative Models",
        "https://deepgenerativemodels.github.io/",
        "course",
-       "Lecture notes + slides",
-       "강의노트 + 슬라이드",
+       "Course notes (all sections)",
+       "강의노트 전체",
        30,
        "The theory of autoregressive, latent-variable, flow, GAN and score models.",
        "자기회귀, 잠재변수, 플로, GAN, 스코어 모델의 이론."
@@ -1790,7 +1790,7 @@
        "CNN·GNN·Transformer를 대칭으로 묶어 보는 관점."
       ],
       [
-       "GraphCast: Medium-Range Global Weather Forecasting (2022)",
+       "GraphCast: Learning Skillful Medium-Range Global Weather Forecasting (2022)",
        "https://arxiv.org/abs/2212.12794",
        "paper",
        "Full paper",
@@ -1816,6 +1816,135 @@
       [
        "Random splits that leak near-duplicate molecules.",
        "유사 분자가 새어 나가는 무작위 분할."
+      ]
+     ]
+    },
+    {
+     "id": "H",
+     "name": [
+      "Theory of learning",
+      "학습 이론"
+     ],
+     "goal": [
+      "Why models generalize, how training dynamics behave, and the mathematics behind scaling.",
+      "모델이 왜 일반화되는지, 학습 동역학이 어떻게 움직이는지, 스케일링 뒤의 수학."
+     ],
+     "concepts": [
+      [
+       "PAC learning",
+       "VC dimension & Rademacher complexity",
+       "Uniform convergence",
+       "Concentration inequalities",
+       "Kernel methods",
+       "Implicit regularization",
+       "Double descent",
+       "Neural tangent kernel",
+       "Feature learning vs. lazy training",
+       "Hyperparameter transfer (μP)",
+       "Optimization landscapes"
+      ],
+      [
+       "PAC 학습",
+       "VC 차원·라데마허 복잡도",
+       "균등 수렴",
+       "집중 부등식",
+       "커널 방법",
+       "암묵적 정규화",
+       "이중 하강",
+       "뉴럴 탄젠트 커널",
+       "특징 학습 vs 게으른 학습",
+       "하이퍼파라미터 전이(μP)",
+       "최적화 지형"
+      ]
+     ],
+     "items": [
+      [
+       "Understanding Machine Learning: From Theory to Algorithms (Shalev-Shwartz & Ben-David)",
+       "https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/",
+       "book",
+       "Part I (Ch. 2–7)",
+       "1부 (2~7장)",
+       40,
+       "The standard introduction to statistical learning theory; free PDF on the authors' page.",
+       "통계적 학습 이론의 표준 입문서. 저자 페이지에서 무료 PDF."
+      ],
+      [
+       "Learning Theory from First Principles (Francis Bach)",
+       "https://www.di.ens.fr/~fbach/ltfp_book.pdf",
+       "book",
+       "Ch. 1–4, 7, 9",
+       "1~4장, 7장, 9장",
+       40,
+       "Modern treatment linking classical theory to kernels and neural networks; free PDF.",
+       "고전 이론을 커널과 신경망으로 잇는 최신 교재. 무료 PDF."
+      ],
+      [
+       "Deep Learning Theory Lecture Notes (Matus Telgarsky)",
+       "https://mjt.cs.illinois.edu/dlt/",
+       "article",
+       "Approximation, optimization, generalization parts",
+       "근사·최적화·일반화 부분",
+       25,
+       "Concise notes on what can currently be proven about deep networks.",
+       "현재 심층망에 대해 증명할 수 있는 것을 간결하게 정리한 노트."
+      ],
+      [
+       "Understanding Deep Learning Requires Rethinking Generalization (2016)",
+       "https://arxiv.org/abs/1611.03530",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "Networks can fit random labels; classical bounds do not explain why they generalize.",
+       "신경망은 무작위 레이블도 외울 수 있어서, 고전적 경계로는 일반화를 설명하지 못합니다."
+      ],
+      [
+       "Neural Tangent Kernel (2018)",
+       "https://arxiv.org/abs/1806.07572",
+       "paper",
+       "Sections 1–4",
+       "1~4절",
+       4,
+       "Infinite-width networks trained by gradient descent behave like kernel methods.",
+       "무한 폭 신경망의 경사하강 학습은 커널 방법처럼 동작합니다."
+      ],
+      [
+       "Deep Double Descent (2019)",
+       "https://arxiv.org/abs/1912.02292",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "Test error can fall, rise and fall again as models or training grow.",
+       "모델이나 학습이 커질수록 테스트 오차가 줄었다가 늘고 다시 줄 수 있습니다."
+      ],
+      [
+       "Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer (μP, 2022)",
+       "https://arxiv.org/abs/2203.03466",
+       "paper",
+       "Sections 1–4",
+       "1~4절",
+       4,
+       "A parameterization that lets hyperparameters tuned on small models transfer to large ones.",
+       "작은 모델에서 맞춘 하이퍼파라미터를 큰 모델로 옮길 수 있게 하는 매개변수화."
+      ]
+     ],
+     "proj": [
+      "Reproduce the random-label experiment on CIFAR-10 at small scale, then measure how test error changes with model width to see double descent. Write up which theoretical tools explain (or fail to explain) each result.",
+      "CIFAR-10에서 무작위 레이블 실험을 작게 재현하고, 모델 폭에 따른 테스트 오차를 측정해 이중 하강을 확인합니다. 각 결과를 어떤 이론 도구가 설명하는지(또는 못 하는지) 정리합니다."
+     ],
+     "exit": [
+      "Prove a VC-dimension generalization bound from scratch and explain why it is vacuous for modern networks.",
+      "VC 차원 일반화 경계를 처음부터 증명하고, 현대 신경망에서 그 경계가 왜 의미가 없어지는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Treating asymptotic results as statements about finite, practical models.",
+       "점근적 결과를 유한한 실제 모델에 대한 진술로 받아들이기."
+      ],
+      [
+       "Skipping the probability prerequisites (concentration inequalities).",
+       "확률 선수 지식(집중 부등식)을 건너뛰기."
       ]
      ]
     }
@@ -1968,5 +2097,193 @@
     ]
    ]
   }
+ ],
+ "name": [
+  "AI",
+  "AI"
+ ],
+ "title": [
+  "AI Research Roadmap",
+  "AI 연구 학습 노선도"
+ ],
+ "lede": [
+  "A path from first-year university level to doing AI research yourself. Five core stages build the shared foundation, eight specialization tracks cover language, vision and audio, generative models, RL and robotics, interpretability, systems, AI for science and theory, and the frontier section is refreshed every week with new papers, talks and reports across AI.",
+  "대학 1학년 수준에서 출발해 AI 연구를 직접 할 수 있는 수준까지 가는 길입니다. 다섯 개의 핵심 단계로 공통 기초를 쌓고, 언어·비전과 음성·생성모델·강화학습과 로보틱스·해석가능성·시스템·과학을 위한 AI·이론의 여덟 전문 트랙으로 깊이를 더하며, 최전선 구간은 AI 전반의 새 논문·발표·리포트로 매주 갱신됩니다."
+ ],
+ "coverage": {
+  "yes": [
+   [
+    "Enough to read most current papers in your chosen track end to end: the math, the architecture, the training setup and the evaluation.",
+    "고른 트랙의 최신 논문 대부분을 처음부터 끝까지 읽을 수 있는 수준: 수식, 아키텍처, 학습 설정, 평가 방식."
+   ],
+   [
+    "Enough breadth to follow frontier news across all of AI and know which track a result belongs to.",
+    "AI 전반의 최전선 소식을 따라가며 어떤 결과가 어느 트랙에 속하는지 판단할 수 있는 폭."
+   ],
+   [
+    "A method to close gaps on your own: the reading-tree habit in Stage 6 turns any new paper into a list of prerequisites.",
+    "부족한 부분을 스스로 채우는 방법: 6단계의 읽기 계통도 습관으로 새 논문을 선수 지식 목록으로 바꿀 수 있습니다."
+   ]
+  ],
+  "no": [
+   [
+    "Frontier depth in every track at once. Frontier knowledge is specific to a subfield; expect real depth in one or two tracks.",
+    "모든 트랙의 최전선 깊이를 동시에 갖추기. 최전선 지식은 세부 분야마다 다르므로, 실제 깊이는 한두 트랙에서 생깁니다."
+   ],
+   [
+    "Full coverage of new work. The weekly list is 6–8 picks; the daily sources below are what keep you current.",
+    "새 연구의 전부. 주간 목록은 6~8편만 고른 것이므로, 아래의 매일 확인할 곳을 함께 봐야 최신 상태를 유지할 수 있습니다."
+   ],
+   [
+    "Unpublished know-how inside labs. The 'Getting experience' section lists the realistic routes to it.",
+    "연구소 내부의 공개되지 않은 노하우. '경험 쌓기' 섹션에 현실적인 경로를 정리했습니다."
+   ],
+   [
+    "Deep theory by default. Track H covers learning and deep-learning theory for those who want it; the other tracks only touch it.",
+    "기본 경로의 깊은 이론. 원하는 경우 트랙 H에서 학습 이론과 딥러닝 이론을 다루며, 다른 트랙은 가볍게만 다룹니다."
+   ]
+  ]
+ },
+ "sources": [
+  [
+   "Hugging Face Daily Papers",
+   "https://huggingface.co/papers",
+   "Community-picked papers of the day, all areas",
+   "커뮤니티가 고른 그날의 주요 논문, 전 분야"
+  ],
+  [
+   "arXiv cs.LG — recent",
+   "https://arxiv.org/list/cs.LG/recent",
+   "Machine learning preprints; also see cs.CL, cs.CV, cs.RO",
+   "머신러닝 프리프린트. cs.CL, cs.CV, cs.RO도 함께"
+  ],
+  [
+   "Transformer Circuits Thread",
+   "https://transformer-circuits.pub",
+   "Interpretability papers and monthly updates",
+   "해석가능성 논문과 월간 업데이트"
+  ],
+  [
+   "Lil'Log (Lilian Weng)",
+   "https://lilianweng.github.io/",
+   "Long-form technical surveys across AI topics",
+   "AI 주제별 긴 기술 정리 글"
+  ],
+  [
+   "NeurIPS · ICML · ICLR · CVPR · ACL Anthology",
+   "https://aclanthology.org",
+   "Major venues, orals and award papers",
+   "주요 학회 발표와 수상 논문"
+  ]
+ ],
+ "pathways": [
+  [
+   [
+    "Undergraduate research in your own university",
+    "소속 대학의 학부 연구생 제도"
+   ],
+   "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=65510",
+   2,
+   "The most direct route: join a professor's lab as an undergraduate researcher. KAIST's URP, for example, has students run a project from idea to paper under a faculty advisor; most Korean universities run a similar program.",
+   "가장 직접적인 경로입니다. 학부 연구생으로 교수 연구실에 들어가는 것입니다. 예를 들어 KAIST URP는 학부생이 지도교수 아래에서 아이디어부터 논문까지 연구 전 과정을 수행하며, 대부분의 국내 대학에 비슷한 제도가 있습니다.",
+   "Linked example: KAIST URP (applications each November and May). Ask your department office for your school's equivalent.",
+   "연결된 예시: KAIST URP(매년 11월·5월 신청). 소속 학과 사무실에 해당 제도를 문의하세요."
+  ],
+  [
+   [
+    "EleutherAI and its SOAR program",
+    "EleutherAI와 SOAR 프로그램"
+   ],
+   "https://www.eleuther.ai/soar",
+   4,
+   "An open research community run on a public Discord. SOAR is a five-week, fully online mentored research program aimed at people with little research experience.",
+   "공개 Discord에서 운영되는 오픈 연구 커뮤니티입니다. SOAR는 연구 경험이 적은 사람을 대상으로 한 5주짜리 온라인 멘토링 연구 프로그램입니다.",
+   "Online; open to anyone. The community asks newcomers to observe first.",
+   "온라인, 누구나 지원 가능. 처음에는 관찰부터 하라고 권합니다."
+  ],
+  [
+   [
+    "Cohere Labs Open Science Community",
+    "Cohere Labs Open Science Community"
+   ],
+   "https://cohere.com/research/open-science",
+   4,
+   "A global open research community with reading groups, community-led programs and collaborative papers; members can publish under the community affiliation.",
+   "읽기 모임, 커뮤니티 주도 프로그램, 공동 논문이 있는 전 세계 오픈 연구 커뮤니티입니다. 회원은 커뮤니티 소속으로 논문을 낼 수 있습니다.",
+   "Online; applications reviewed weekly.",
+   "온라인, 지원서는 매주 검토."
+  ],
+  [
+   [
+    "Machine learning summer schools",
+    "머신러닝 여름학교"
+   ],
+   "https://cfe.columbia.edu/content/mlss2",
+   3,
+   "Two-week intensive schools with lectures from leading researchers. MLSS (2026 at Columbia, New York) and MLCC (Genoa) are examples; new schools are announced each winter on the ML-news mailing list.",
+   "주요 연구자의 강의를 듣는 2주 안팎의 집중 과정입니다. MLSS(2026년 뉴욕 컬럼비아대)와 MLCC(제노바)가 그 예이며, 매년 겨울 ML-news 메일링 리스트에 새 학교가 공지됩니다.",
+   "Usually applications in January–March; some charge fees and offer aid.",
+   "보통 1~3월 지원. 참가비가 있는 곳도 있고 지원금이 있는 곳도 있습니다."
+  ],
+  [
+   [
+    "Google Summer of Code",
+    "Google Summer of Code"
+   ],
+   "https://developers.google.com/open-source/gsoc/timeline",
+   2,
+   "A paid, mentored summer contributing to open-source projects, including many ML libraries. Good for building engineering credibility before research roles.",
+   "ML 라이브러리를 포함한 오픈소스 프로젝트에 멘토와 함께 기여하는 유급 여름 프로그램입니다. 연구직 전에 엔지니어링 실력을 증명하기 좋습니다.",
+   "Contributor applications open around March each year.",
+   "참여자 지원은 매년 3월 전후."
+  ],
+  [
+   [
+    "Kaggle competitions",
+    "Kaggle 대회"
+   ],
+   "https://www.kaggle.com/competitions",
+   2,
+   "Public leaderboards with real datasets. Useful for practising validation discipline; several Korean industry internship postings list strong Kaggle results as a plus.",
+   "실제 데이터와 공개 순위표가 있는 대회입니다. 검증 습관을 기르기 좋고, 국내 기업 연구 인턴 공고 중에도 Kaggle 성적을 우대 사항으로 적는 곳이 있습니다.",
+   "Free; run continuously.",
+   "무료, 상시 진행."
+  ],
+  [
+   [
+    "Industry research internships in Korea",
+    "국내 기업 연구 인턴"
+   ],
+   "",
+   4,
+   "Korean companies such as NAVER Cloud post short research internships (for example foundation-model pre-training or audio foundation models) that ask for the ability to read and implement recent papers.",
+   "NAVER Cloud 같은 국내 기업은 최신 논문을 읽고 구현할 수 있는 역량을 요구하는 단기 연구 인턴(예: 파운데이션 모델 사전학습, 오디오 파운데이션 모델)을 수시로 모집합니다.",
+   "Check each company's careers page; postings change often.",
+   "각 회사 채용 페이지를 확인하세요. 공고가 자주 바뀝니다."
+  ],
+  [
+   [
+    "MATS (ML Alignment & Theory Scholars)",
+    "MATS (ML Alignment & Theory Scholars)"
+   ],
+   "https://matsprogram.org/",
+   5,
+   "A 12-week mentored research program in AI alignment, interpretability and security, run in Berkeley and London.",
+   "버클리와 런던에서 운영하는 12주 멘토링 연구 프로그램으로, AI 정렬·해석가능성·보안을 다룹니다.",
+   "In-person; competitive.",
+   "대면, 경쟁이 치열합니다."
+  ],
+  [
+   [
+    "Anthropic Fellows Program",
+    "Anthropic Fellows Program"
+   ],
+   "https://alignment.anthropic.com/2025/anthropic-fellows-program-2026",
+   5,
+   "A paid, four-month full-time research fellowship with mentorship and compute, across AI safety, security, ML systems and reinforcement learning workstreams. Prior publications are not required.",
+   "멘토링과 연산 자원을 제공하는 4개월 전일제 유급 연구 펠로십으로, AI 안전·보안·ML 시스템·강화학습 분야가 있습니다. 논문 실적은 필수가 아닙니다.",
+   "Requires work authorization in the US, UK or Canada.",
+   "미국·영국·캐나다 근로 자격이 필요합니다."
+  ]
  ]
 }

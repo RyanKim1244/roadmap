@@ -1,0 +1,31 @@
+{
+ "fields": [
+  {
+   "id": "ai",
+   "curriculum": "data/curriculum.json",
+   "frontier": "data/frontier.json",
+   "name": [
+    "AI",
+    "AI"
+   ]
+  },
+  {
+   "id": "semiconductors",
+   "curriculum": "data/fields/semiconductors.json",
+   "frontier": "data/frontier-semiconductors.json",
+   "name": [
+    "Semiconductors",
+    "반도체"
+   ]
+  },
+  {
+   "id": "bio",
+   "curriculum": "data/fields/bio.json",
+   "frontier": "data/frontier-bio.json",
+   "name": [
+    "Bio",
+    "바이오"
+   ]
+  }
+ ]
+}
