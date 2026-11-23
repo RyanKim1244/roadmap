@@ -1,0 +1,1583 @@
+{
+ "version": 1,
+ "name": [
+  "Computer Science",
+  "컴퓨터 과학"
+ ],
+ "title": [
+  "Computer Science Roadmap",
+  "컴퓨터 과학 학습 노선도"
+ ],
+ "lede": [
+  "A path from first-year university level to mastering computer science as a whole: programming, discrete math, algorithms and the full systems stack — architecture, operating systems, networks, compilers and databases — then depth in distributed systems, security, programming languages, data systems, theory, networking, graphics, quantum computing and software engineering. AI has its own route under the AI tab.",
+  "대학 1학년 수준에서 출발해 컴퓨터 과학 전체를 익히는 길입니다. 프로그래밍, 이산수학, 알고리즘, 그리고 컴퓨터 구조·운영체제·네트워크·컴파일러·데이터베이스로 이어지는 시스템 전 계층을 다진 뒤, 분산 시스템·보안·프로그래밍 언어·데이터 시스템·이론·네트워킹·그래픽스·양자 컴퓨팅·소프트웨어 공학에서 깊이를 더합니다. AI는 AI 탭에 별도 노선이 있습니다."
+ ],
+ "status": [
+  "Pairs with the AI route: AI stages 1–4 cover the math and machine-learning side that this route leaves out.",
+  "AI 노선과 짝을 이룹니다. 이 노선에서 다루지 않는 수학·머신러닝 쪽은 AI 노선 1~4단계에 있습니다."
+ ],
+ "stages": [
+  {
+   "n": 0,
+   "name": [
+    "Programming",
+    "프로그래밍"
+   ],
+   "short": [
+    "Programming",
+    "프로그래밍"
+   ],
+   "goal": [
+    "Learn to program well: abstraction, recursion, testing and tooling.",
+    "제대로 프로그래밍하기: 추상화, 재귀, 테스트, 도구."
+   ],
+   "dur": [
+    "8–10 weeks",
+    "8~10주"
+   ],
+   "pre": [
+    "None",
+    "없음"
+   ],
+   "why": [
+    "Every other part of computer science is learned by building things. The habits formed here — decomposition, testing, version control — decide how fast everything later goes.",
+    "컴퓨터 과학의 나머지는 모두 직접 만들며 배웁니다. 여기서 생기는 습관(문제 분해, 테스트, 버전 관리)이 이후 모든 학습 속도를 좌우합니다."
+   ],
+   "concepts": [
+    [
+     "Variables, control flow, functions",
+     "Recursion",
+     "Higher-order functions",
+     "Abstraction & data types",
+     "Object-oriented programming",
+     "Testing & debugging",
+     "Git & shell",
+     "C and memory"
+    ],
+    [
+     "변수·제어 흐름·함수",
+     "재귀",
+     "고차 함수",
+     "추상화·자료형",
+     "객체지향 프로그래밍",
+     "테스트·디버깅",
+     "Git·셸",
+     "C와 메모리"
+    ]
+   ],
+   "items": [
+    [
+     "Harvard CS50x",
+     "https://cs50.harvard.edu/x/",
+     "course",
+     "All weeks + problem sets",
+     "전 주차 + 과제",
+     80,
+     "A broad first course from C to Python, SQL and the web.",
+     "C부터 Python, SQL, 웹까지 폭넓은 첫 과목."
+    ],
+    [
+     "Python Tutorial (official)",
+     "https://docs.python.org/3/tutorial/",
+     "book",
+     "Ch. 1–9",
+     "1~9장",
+     15,
+     "Up to classes, iterators and generators.",
+     "클래스, 이터레이터, 제너레이터까지.",
+     "https://docs.python.org/ko/3/tutorial/"
+    ],
+    [
+     "MIT — The Missing Semester",
+     "https://missing.csail.mit.edu/",
+     "course",
+     "All lectures",
+     "전체 강의",
+     12,
+     "Shell, Git, editors, debugging.",
+     "셸, Git, 에디터, 디버깅."
+    ],
+    [
+     "UC Berkeley CS 61A: Structure and Interpretation of Computer Programs",
+     "https://cs61a.org/",
+     "course",
+     "Lectures, labs and projects",
+     "강의·실습·프로젝트",
+     90,
+     "Abstraction, recursion, interpreters and the ideas behind SICP.",
+     "추상화, 재귀, 인터프리터 등 SICP의 핵심 개념."
+    ],
+    [
+     "Structure and Interpretation of Computer Programs (2nd ed.)",
+     "https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html",
+     "book",
+     "Ch. 1–3 (reference)",
+     "1~3장 (참고)",
+     40,
+     "The classic text on programs as abstractions; free online from MIT Press.",
+     "프로그램을 추상화로 보는 고전. MIT Press 무료 공개."
+    ]
+   ],
+   "proj": [
+    "Write a small command-line tool in Python with tests and a Git history, then reimplement its core in C and compare memory use and speed.",
+    "테스트와 Git 이력이 있는 작은 명령줄 도구를 Python으로 만들고, 핵심 부분을 C로 다시 구현해 메모리와 속도를 비교합니다."
+   ],
+   "exit": [
+    "You can write a recursive interpreter for arithmetic expressions and test it thoroughly.",
+    "산술식을 위한 재귀 인터프리터를 작성하고 충분히 테스트할 수 있다."
+   ],
+   "pit": [
+    [
+     "Copying solutions instead of struggling with problem sets.",
+     "과제와 씨름하지 않고 정답을 베끼기."
+    ]
+   ]
+  },
+  {
+   "n": 1,
+   "name": [
+    "Discrete mathematics & probability",
+    "이산수학·확률"
+   ],
+   "short": [
+    "Discrete math",
+    "이산수학"
+   ],
+   "goal": [
+    "Proofs, logic, combinatorics, graphs and probability — the language of computer science.",
+    "증명, 논리, 조합론, 그래프, 확률. 컴퓨터 과학의 언어."
+   ],
+   "dur": [
+    "8–12 weeks",
+    "8~12주"
+   ],
+   "pre": [
+    "High-school math",
+    "고교 수학"
+   ],
+   "why": [
+    "Algorithms, cryptography, distributed protocols and theory are all argued with proofs. Without them, correctness and complexity claims cannot be checked.",
+    "알고리즘, 암호, 분산 프로토콜, 이론은 모두 증명으로 논증합니다. 증명 없이는 정확성과 복잡도 주장을 확인할 수 없습니다."
+   ],
+   "concepts": [
+    [
+     "Proof techniques & induction",
+     "Logic & sets",
+     "Number theory & modular arithmetic",
+     "Combinatorics",
+     "Graphs & trees",
+     "Recurrences",
+     "Discrete probability",
+     "Asymptotic notation"
+    ],
+    [
+     "증명 기법·귀납법",
+     "논리·집합",
+     "정수론·모듈러 연산",
+     "조합론",
+     "그래프·트리",
+     "점화식",
+     "이산 확률",
+     "점근 표기법"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 6.042J Mathematics for Computer Science",
+     "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/",
+     "course",
+     "Lectures + problem sets",
+     "강의 + 문제풀이",
+     60,
+     "The standard discrete-math course for CS, with a free textbook.",
+     "CS를 위한 표준 이산수학 과목. 무료 교재 포함."
+    ],
+    [
+     "Harvard Stat 110 Probability",
+     "https://projects.iq.harvard.edu/stat110",
+     "course",
+     "Lectures + book Ch. 1–6",
+     "강의 + 교재 1~6장",
+     30,
+     "Probability for randomized algorithms and systems analysis.",
+     "무작위 알고리즘과 시스템 분석을 위한 확률."
+    ],
+    [
+     "MIT 18.06 Linear Algebra (Gilbert Strang)",
+     "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+     "course",
+     "Lectures 1–20",
+     "1~20강",
+     30,
+     "Needed for graphics, quantum computing and machine learning.",
+     "그래픽스, 양자 컴퓨팅, 머신러닝에 필요합니다."
+    ]
+   ],
+   "proj": [
+    "Prove the correctness and running time of three algorithms you have written (e.g. binary search, merge sort, Euclid's algorithm), and implement RSA from number theory.",
+    "직접 작성한 알고리즘 세 개(예: 이진 탐색, 병합 정렬, 유클리드 호제법)의 정확성과 수행 시간을 증명하고, 정수론으로 RSA를 구현합니다."
+   ],
+   "exit": [
+    "You can write a rigorous induction proof and solve a divide-and-conquer recurrence.",
+    "엄밀한 귀납 증명을 쓰고 분할 정복 점화식을 풀 수 있다."
+   ],
+   "pit": [
+    [
+     "Reading proofs without writing your own.",
+     "직접 쓰지 않고 증명을 읽기만 하기."
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "name": [
+    "Algorithms & data structures",
+    "알고리즘·자료구조"
+   ],
+   "short": [
+    "Algorithms",
+    "알고리즘"
+   ],
+   "goal": [
+    "Design and analyse algorithms; know the core data structures cold.",
+    "알고리즘을 설계·분석하고 핵심 자료구조를 완전히 익히기."
+   ],
+   "dur": [
+    "10–14 weeks",
+    "10~14주"
+   ],
+   "pre": [
+    "Stages 0–1",
+    "0~1단계"
+   ],
+   "why": [
+    "Every system and research area depends on choosing the right algorithm and data structure, and on reasoning about their costs.",
+    "모든 시스템과 연구 분야는 적절한 알고리즘과 자료구조를 고르고 그 비용을 따지는 데 달려 있습니다."
+   ],
+   "concepts": [
+    [
+     "Arrays, lists, stacks, queues",
+     "Hashing",
+     "Trees & balanced BSTs",
+     "Heaps",
+     "Graph search (BFS, DFS)",
+     "Shortest paths & MST",
+     "Dynamic programming",
+     "Greedy algorithms",
+     "Amortized analysis",
+     "Randomized algorithms",
+     "NP-completeness & reductions"
+    ],
+    [
+     "배열·리스트·스택·큐",
+     "해싱",
+     "트리·균형 이진 탐색 트리",
+     "힙",
+     "그래프 탐색(BFS, DFS)",
+     "최단 경로·최소 신장 트리",
+     "동적 계획법",
+     "탐욕 알고리즘",
+     "분할 상환 분석",
+     "무작위 알고리즘",
+     "NP-완전·환원"
+    ]
+   ],
+   "items": [
+    [
+     "MIT 6.006 Introduction to Algorithms",
+     "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+     "course",
+     "All lectures + problem sets",
+     "전체 강의 + 문제풀이",
+     60,
+     "Core data structures and algorithms with proofs.",
+     "증명과 함께 배우는 핵심 자료구조와 알고리즘."
+    ],
+    [
+     "MIT 6.046J Design and Analysis of Algorithms",
+     "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/",
+     "course",
+     "All lectures + problem sets",
+     "전체 강의 + 문제풀이",
+     60,
+     "Advanced techniques: divide and conquer, flows, randomization, approximation.",
+     "고급 기법: 분할 정복, 네트워크 흐름, 무작위화, 근사."
+    ],
+    [
+     "Algorithms (Jeff Erickson)",
+     "https://jeffe.cs.illinois.edu/teaching/algorithms/",
+     "book",
+     "Ch. 1–12 (reference)",
+     "1~12장 (참고)",
+     30,
+     "A clear free textbook with excellent exercises.",
+     "연습문제가 좋은 무료 교재."
+    ],
+    [
+     "Codeforces",
+     "https://codeforces.com/",
+     "practice",
+     "Solve 100 problems across difficulty levels",
+     "난이도별 100문제 풀기",
+     60,
+     "Timed problem solving that builds fluency with algorithms.",
+     "시간 제한 문제 풀이로 알고리즘 활용을 몸에 익힙니다."
+    ]
+   ],
+   "proj": [
+    "Implement a balanced BST, a hash table, Dijkstra's algorithm and an LRU cache from scratch, with tests and benchmarks against standard libraries.",
+    "균형 이진 탐색 트리, 해시 테이블, 다익스트라 알고리즘, LRU 캐시를 처음부터 구현하고 테스트와 표준 라이브러리 대비 벤치마크를 만듭니다."
+   ],
+   "exit": [
+    "Given a new problem, you can propose an algorithm, prove it correct and bound its running time.",
+    "새 문제에 대해 알고리즘을 제안하고, 정확성을 증명하고, 수행 시간을 분석할 수 있다."
+   ],
+   "pit": [
+    [
+     "Memorizing solutions instead of learning design techniques.",
+     "설계 기법 대신 풀이를 외우기."
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "name": [
+    "Computer systems",
+    "컴퓨터 시스템"
+   ],
+   "short": [
+    "Systems",
+    "시스템"
+   ],
+   "goal": [
+    "The full stack from logic gates to processors, operating systems, networks, compilers and databases.",
+    "논리 게이트부터 프로세서, 운영체제, 네트워크, 컴파일러, 데이터베이스까지 전체 계층."
+   ],
+   "dur": [
+    "20–28 weeks",
+    "20~28주"
+   ],
+   "pre": [
+    "Stages 0–2",
+    "0~2단계"
+   ],
+   "why": [
+    "Understanding what the machine actually does — memory, processes, packets, compiled code, storage — is what separates a programmer from a computer scientist, and every specialization builds on it.",
+    "기계가 실제로 하는 일(메모리, 프로세스, 패킷, 컴파일된 코드, 저장 장치)을 이해하는 것이 프로그래머와 컴퓨터 과학자를 가르며, 모든 전문 분야가 그 위에 세워집니다."
+   ],
+   "concepts": [
+    [
+     "Logic gates to CPU",
+     "Machine code & assembly",
+     "Memory hierarchy & caches",
+     "Virtual memory",
+     "Processes, threads, concurrency",
+     "File systems",
+     "Network layers & TCP/IP",
+     "Parsing & code generation",
+     "Relational model & SQL",
+     "Transactions & indexing"
+    ],
+    [
+     "논리 게이트에서 CPU까지",
+     "기계어·어셈블리",
+     "메모리 계층·캐시",
+     "가상 메모리",
+     "프로세스·스레드·동시성",
+     "파일 시스템",
+     "네트워크 계층·TCP/IP",
+     "구문 분석·코드 생성",
+     "관계형 모델·SQL",
+     "트랜잭션·인덱싱"
+    ]
+   ],
+   "items": [
+    [
+     "Nand2Tetris (From Nand to Tetris)",
+     "https://www.nand2tetris.org/",
+     "course",
+     "Projects 1–12",
+     "프로젝트 1~12",
+     80,
+     "Build a computer from logic gates up to an OS and compiler.",
+     "논리 게이트부터 운영체제와 컴파일러까지 컴퓨터를 직접 만듭니다."
+    ],
+    [
+     "CMU 15-213 Introduction to Computer Systems (CS:APP)",
+     "https://www.cs.cmu.edu/~213/",
+     "course",
+     "Lectures + labs (data, bomb, attack, cache, malloc, shell, proxy)",
+     "강의 + 실습 (data, bomb, attack, cache, malloc, shell, proxy)",
+     120,
+     "The programmer's view of the machine: representation, assembly, memory and concurrency.",
+     "프로그래머 관점의 기계: 표현, 어셈블리, 메모리, 동시성."
+    ],
+    [
+     "Operating Systems: Three Easy Pieces (OSTEP)",
+     "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+     "book",
+     "Virtualization, concurrency, persistence parts",
+     "가상화·동시성·영속성 부분",
+     50,
+     "A free, readable operating-systems textbook.",
+     "읽기 쉬운 무료 운영체제 교재."
+    ],
+    [
+     "MIT 6.1810 Operating System Engineering (xv6)",
+     "https://pdos.csail.mit.edu/6.1810/",
+     "course",
+     "Labs 1–6",
+     "실습 1~6",
+     80,
+     "Hands-on kernel labs on the xv6 teaching OS.",
+     "교육용 운영체제 xv6로 하는 커널 실습."
+    ],
+    [
+     "Computer Networks: A Systems Approach",
+     "https://book.systemsapproach.org/",
+     "book",
+     "Ch. 1–6",
+     "1~6장",
+     40,
+     "A free networking textbook from the designers' perspective.",
+     "설계자 관점의 무료 네트워크 교재."
+    ],
+    [
+     "Stanford CS144 Introduction to Computer Networking",
+     "https://cs144.github.io/",
+     "course",
+     "Lectures + labs (build a TCP implementation)",
+     "강의 + 실습 (TCP 직접 구현)",
+     70,
+     "Build a working TCP stack and router piece by piece.",
+     "동작하는 TCP 스택과 라우터를 단계별로 만듭니다."
+    ],
+    [
+     "Crafting Interpreters",
+     "https://craftinginterpreters.com/",
+     "book",
+     "Parts I–III",
+     "1~3부",
+     60,
+     "Build a tree-walking interpreter and a bytecode virtual machine; free online.",
+     "트리 순회 인터프리터와 바이트코드 가상 머신을 직접 만듭니다. 무료 온라인."
+    ],
+    [
+     "CMU 15-445/645 Database Systems",
+     "https://15445.courses.cs.cmu.edu/",
+     "course",
+     "Lectures + projects (BusTub)",
+     "강의 + 프로젝트 (BusTub)",
+     80,
+     "How database engines store, index, query and recover data.",
+     "데이터베이스 엔진의 저장, 인덱싱, 질의, 복구 방식."
+    ],
+    [
+     "A New Golden Age for Computer Architecture (Hennessy & Patterson)",
+     "https://cacm.acm.org/research/a-new-golden-age-for-computer-architecture/",
+     "article",
+     "Whole article",
+     "전체",
+     2,
+     "Why hardware is becoming specialized.",
+     "하드웨어가 특화되는 이유."
+    ]
+   ],
+   "proj": [
+    "Complete the Nand2Tetris computer, the CS:APP malloc and proxy labs, three xv6 labs and a working TCP implementation. Write a short note for each on what surprised you.",
+    "Nand2Tetris 컴퓨터, CS:APP의 malloc·proxy 실습, xv6 실습 세 개, 동작하는 TCP 구현을 완성하고, 각각에서 놀랐던 점을 짧게 정리합니다."
+   ],
+   "exit": [
+    "Trace what happens, layer by layer, from typing a URL to a page appearing — through compiler output, system calls, the kernel, TCP/IP and the database behind the server.",
+    "URL을 입력해 페이지가 뜨기까지를 계층별로 추적할 수 있다. 컴파일된 코드, 시스템 콜, 커널, TCP/IP, 서버 뒤 데이터베이스까지."
+   ],
+   "pit": [
+    [
+     "Skipping the labs; systems knowledge comes from debugging real code.",
+     "실습 건너뛰기. 시스템 지식은 실제 코드를 디버깅하며 생깁니다."
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "name": [
+    "Specialization tracks",
+    "전문 트랙"
+   ],
+   "short": [
+    "Tracks",
+    "전문 트랙"
+   ],
+   "goal": [
+    "Go deep in one or two areas of computer science research.",
+    "컴퓨터 과학 연구의 한두 영역을 깊게 팝니다."
+   ],
+   "dur": [
+    "10–16 weeks per track",
+    "트랙당 10~16주"
+   ],
+   "pre": [
+    "Stage 3",
+    "3단계"
+   ],
+   "why": [
+    "Computer science research is organized around venues: SOSP/OSDI for systems, USENIX Security and IEEE S&P for security, PLDI/POPL for languages, SIGMOD/VLDB for data, STOC/FOCS for theory, SIGCOMM/NSDI for networking, SIGGRAPH/CHI for graphics and HCI, QIP for quantum. Pick one community and learn to read its papers.",
+    "컴퓨터 과학 연구는 학회를 중심으로 나뉩니다. 시스템은 SOSP/OSDI, 보안은 USENIX Security·IEEE S&P, 언어는 PLDI/POPL, 데이터는 SIGMOD/VLDB, 이론은 STOC/FOCS, 네트워크는 SIGCOMM/NSDI, 그래픽스·HCI는 SIGGRAPH/CHI, 양자는 QIP입니다. 공동체 하나를 골라 그 논문 읽는 법을 익히세요."
+   ],
+   "tracks": [
+    {
+     "id": "A",
+     "name": [
+      "Distributed systems",
+      "분산 시스템"
+     ],
+     "goal": [
+      "Building reliable systems from unreliable machines and networks.",
+      "믿을 수 없는 기계와 네트워크로 믿을 수 있는 시스템 만들기."
+     ],
+     "concepts": [
+      [
+       "Clocks & ordering",
+       "Replication",
+       "Consensus (Paxos, Raft)",
+       "Consistency models",
+       "Fault tolerance",
+       "Sharding",
+       "MapReduce & dataflow",
+       "Cloud storage"
+      ],
+      [
+       "시계·순서",
+       "복제",
+       "합의(Paxos, Raft)",
+       "일관성 모델",
+       "결함 허용",
+       "샤딩",
+       "MapReduce·데이터플로",
+       "클라우드 스토리지"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 6.5840 Distributed Systems",
+       "https://pdos.csail.mit.edu/6.824/",
+       "course",
+       "Lectures + labs (MapReduce, Raft, KV store)",
+       "강의 + 실습 (MapReduce, Raft, KV 저장소)",
+       100,
+       "The standard graduate course, built around implementing Raft.",
+       "Raft 구현을 중심으로 한 표준 대학원 과목."
+      ],
+      [
+       "Time, Clocks, and the Ordering of Events in a Distributed System (Lamport, 1978)",
+       "https://lamport.azurewebsites.net/pubs/time-clocks.pdf",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Logical clocks: the foundation of reasoning about distributed time.",
+       "논리 시계. 분산 환경의 시간을 다루는 기초."
+      ],
+      [
+       "MapReduce: Simplified Data Processing on Large Clusters (2004)",
+       "https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "The programming model that started large-scale data processing.",
+       "대규모 데이터 처리를 연 프로그래밍 모델."
+      ],
+      [
+       "The Google File System (2003)",
+       "https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Designing storage around commodity failures.",
+       "흔한 고장을 전제로 한 저장 시스템 설계."
+      ],
+      [
+       "In Search of an Understandable Consensus Algorithm (Raft)",
+       "https://raft.github.io/raft.pdf",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "A consensus algorithm designed to be understood and implemented.",
+       "이해하고 구현하기 쉽게 설계한 합의 알고리즘."
+      ],
+      [
+       "Spanner: Google's Globally-Distributed Database (2012)",
+       "https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "Externally consistent transactions using synchronized clocks.",
+       "동기화된 시계를 이용한 외부 일관성 트랜잭션."
+      ]
+     ],
+     "proj": [
+      "Implement Raft and a fault-tolerant key-value store on top of it (the 6.5840 labs), and test them under network partitions.",
+      "Raft와 그 위의 결함 허용 키-값 저장소를 구현하고(6.5840 실습), 네트워크 분할 상황에서 테스트합니다."
+     ],
+     "exit": [
+      "Explain why consensus is impossible in a fully asynchronous system with failures (FLP) and how Raft works around it in practice.",
+      "고장이 있는 완전 비동기 시스템에서 합의가 불가능한 이유(FLP)와 Raft가 실제로 이를 어떻게 피하는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Testing only the happy path; distributed bugs live in failures and reorderings.",
+       "정상 경로만 테스트하기. 분산 버그는 고장과 순서 뒤바뀜에 있습니다."
+      ]
+     ]
+    },
+    {
+     "id": "B",
+     "name": [
+      "Security & cryptography",
+      "보안·암호"
+     ],
+     "goal": [
+      "Attacks, defences and the cryptography that underpins secure systems.",
+      "공격과 방어, 그리고 안전한 시스템을 받치는 암호."
+     ],
+     "concepts": [
+      [
+       "Threat models",
+       "Memory-safety bugs & exploitation",
+       "Web security",
+       "Isolation & sandboxing",
+       "Side channels",
+       "Symmetric & public-key crypto",
+       "Authentication & TLS",
+       "Formal security proofs"
+      ],
+      [
+       "위협 모델",
+       "메모리 안전성 버그·익스플로잇",
+       "웹 보안",
+       "격리·샌드박스",
+       "부채널",
+       "대칭키·공개키 암호",
+       "인증·TLS",
+       "형식적 보안 증명"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 6.858 Computer Systems Security",
+       "https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/",
+       "course",
+       "Lectures + labs",
+       "강의 + 실습",
+       70,
+       "Systems security from buffer overflows to web and mobile.",
+       "버퍼 오버플로부터 웹·모바일까지의 시스템 보안."
+      ],
+      [
+       "A Graduate Course in Applied Cryptography (Boneh & Shoup)",
+       "https://toc.cryptobook.us/",
+       "book",
+       "Part I (Ch. 2–9)",
+       "1부 (2~9장)",
+       60,
+       "Rigorous modern cryptography; free online.",
+       "엄밀한 현대 암호학. 무료 온라인."
+      ],
+      [
+       "pwn.college",
+       "https://pwn.college/",
+       "practice",
+       "Fundamentals dojos",
+       "기초 도장(dojo)",
+       40,
+       "Free, hands-on exploitation and systems-security exercises.",
+       "무료 실습형 익스플로잇·시스템 보안 연습."
+      ],
+      [
+       "Reflections on Trusting Trust (Ken Thompson, 1984)",
+       "https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf",
+       "paper",
+       "Full paper",
+       "전문",
+       1,
+       "Why you cannot fully trust code you did not build yourself.",
+       "직접 만들지 않은 코드를 완전히 믿을 수 없는 이유."
+      ],
+      [
+       "Spectre Attacks: Exploiting Speculative Execution (2018)",
+       "https://arxiv.org/abs/1801.01203",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "How hardware optimizations leak secrets across security boundaries.",
+       "하드웨어 최적화가 보안 경계를 넘어 비밀을 새게 하는 방식."
+      ]
+     ],
+     "proj": [
+      "Complete the 6.858 labs and a pwn.college fundamentals module, then write up one exploit and the mitigation that stops it.",
+      "6.858 실습과 pwn.college 기초 과정을 마치고, 익스플로잇 하나와 그것을 막는 완화 기법을 정리합니다."
+     ],
+     "exit": [
+      "Define a security game for a cipher, and explain how a real-world vulnerability broke an assumption in its threat model.",
+      "암호의 보안 게임을 정의하고, 실제 취약점이 위협 모델의 가정을 어떻게 깨뜨렸는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Rolling your own cryptography in production code.",
+       "실서비스 코드에서 암호를 직접 만들어 쓰기."
+      ],
+      [
+       "Testing attacks on systems you are not authorized to test.",
+       "허가받지 않은 시스템에 공격을 시험하기."
+      ]
+     ]
+    },
+    {
+     "id": "C",
+     "name": [
+      "Programming languages & compilers",
+      "프로그래밍 언어·컴파일러"
+     ],
+     "goal": [
+      "Type systems, semantics, verification and optimizing compilers.",
+      "타입 시스템, 의미론, 검증, 최적화 컴파일러."
+     ],
+     "concepts": [
+      [
+       "Lambda calculus",
+       "Type systems & inference",
+       "Operational semantics",
+       "Functional programming",
+       "Program verification",
+       "Intermediate representations & SSA",
+       "Optimization passes",
+       "Garbage collection"
+      ],
+      [
+       "람다 계산",
+       "타입 시스템·추론",
+       "연산적 의미론",
+       "함수형 프로그래밍",
+       "프로그램 검증",
+       "중간 표현·SSA",
+       "최적화 패스",
+       "가비지 컬렉션"
+      ]
+     ],
+     "items": [
+      [
+       "Software Foundations",
+       "https://softwarefoundations.cis.upenn.edu/",
+       "book",
+       "Volumes 1–2",
+       "1~2권",
+       60,
+       "Logic, semantics and type systems mechanized in the Coq/Rocq proof assistant.",
+       "Coq/Rocq 증명 보조기로 다루는 논리, 의미론, 타입 시스템."
+      ],
+      [
+       "LLVM Tutorial: My First Language Frontend",
+       "https://llvm.org/docs/tutorial/",
+       "code",
+       "Kaleidoscope chapters 1–7",
+       "Kaleidoscope 1~7장",
+       20,
+       "Build a small language on the LLVM compiler infrastructure.",
+       "LLVM 컴파일러 인프라 위에 작은 언어를 만듭니다."
+      ],
+      [
+       "MLIR: A Compiler Infrastructure for the End of Moore's Law (2020)",
+       "https://arxiv.org/abs/2002.11054",
+       "paper",
+       "Full paper",
+       "전문",
+       4,
+       "Multi-level IRs for domain-specific compilers, including ML compilers.",
+       "ML 컴파일러를 포함한 특정 영역 컴파일러를 위한 다층 중간 표현."
+      ]
+     ],
+     "proj": [
+      "Extend your Crafting Interpreters language with static types and compile it to LLVM IR; add one optimization pass and measure its effect.",
+      "Crafting Interpreters에서 만든 언어에 정적 타입을 넣고 LLVM IR로 컴파일한 뒤, 최적화 패스 하나를 추가해 효과를 측정합니다."
+     ],
+     "exit": [
+      "Prove type safety (progress and preservation) for a small language in Coq.",
+      "작은 언어의 타입 안전성(진행·보존)을 Coq로 증명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Learning only syntax, not semantics.",
+       "의미론 없이 문법만 배우기."
+      ]
+     ]
+    },
+    {
+     "id": "D",
+     "name": [
+      "Databases & data systems",
+      "데이터베이스·데이터 시스템"
+     ],
+     "goal": [
+      "Query processing, storage engines, transactions and analytics at scale.",
+      "질의 처리, 저장 엔진, 트랜잭션, 대규모 분석."
+     ],
+     "concepts": [
+      [
+       "Storage layouts (row vs. column)",
+       "Query optimization",
+       "Concurrency control",
+       "Recovery & logging",
+       "Distributed transactions",
+       "Stream processing",
+       "Vectorized execution"
+      ],
+      [
+       "저장 구조(행 vs 열)",
+       "질의 최적화",
+       "동시성 제어",
+       "복구·로깅",
+       "분산 트랜잭션",
+       "스트림 처리",
+       "벡터화 실행"
+      ]
+     ],
+     "items": [
+      [
+       "CMU 15-721 Advanced Database Systems",
+       "https://15721.courses.cs.cmu.edu/",
+       "course",
+       "Lectures + readings",
+       "강의 + 읽기 자료",
+       60,
+       "Modern analytical database internals, paper by paper.",
+       "최신 분석용 데이터베이스 내부 구조를 논문 단위로."
+      ],
+      [
+       "Architecture of a Database System (Hellerstein, Stonebraker, Hamilton)",
+       "https://dsf.berkeley.edu/papers/fntdb07-architecture.pdf",
+       "paper",
+       "Full paper",
+       "전문",
+       8,
+       "How a full relational database is put together.",
+       "관계형 데이터베이스 전체가 어떻게 구성되는지."
+      ],
+      [
+       "Readings in Database Systems (the Red Book, 5th ed.)",
+       "http://www.redbook.io/",
+       "book",
+       "All chapters",
+       "전체 장",
+       10,
+       "Short expert commentary on the papers that matter.",
+       "중요한 논문들에 대한 전문가의 짧은 해설."
+      ]
+     ],
+     "proj": [
+      "Add a new operator or index type to the BusTub database from 15-445 and benchmark it against the existing implementation.",
+      "15-445의 BusTub 데이터베이스에 새 연산자나 인덱스 유형을 추가하고, 기존 구현과 성능을 비교합니다."
+     ],
+     "exit": [
+      "Explain how a query optimizer chooses a plan and why its cardinality estimates go wrong.",
+      "질의 최적화기가 실행 계획을 고르는 방식과, 카디널리티 추정이 틀리는 이유를 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Benchmarking with toy data sizes.",
+       "장난감 크기 데이터로 벤치마크하기."
+      ]
+     ]
+    },
+    {
+     "id": "E",
+     "name": [
+      "Theory of computation & complexity",
+      "계산 이론·복잡도"
+     ],
+     "goal": [
+      "What can be computed, how efficiently, and how to prove it.",
+      "무엇을 계산할 수 있고, 얼마나 효율적으로, 어떻게 증명하는지."
+     ],
+     "concepts": [
+      [
+       "Automata & formal languages",
+       "Turing machines & decidability",
+       "P, NP & reductions",
+       "Space complexity",
+       "Randomized complexity",
+       "Approximation & hardness",
+       "Interactive proofs",
+       "Communication complexity"
+      ],
+      [
+       "오토마타·형식 언어",
+       "튜링 기계·결정 가능성",
+       "P, NP·환원",
+       "공간 복잡도",
+       "무작위 복잡도",
+       "근사·근사 불가능성",
+       "대화형 증명",
+       "통신 복잡도"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 18.404J Theory of Computation (Michael Sipser)",
+       "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/",
+       "course",
+       "All lectures + problem sets",
+       "전체 강의 + 문제풀이",
+       60,
+       "Automata, computability and complexity, with lecture videos.",
+       "강의 영상이 있는 오토마타, 계산 가능성, 복잡도."
+      ],
+      [
+       "Computational Complexity: A Modern Approach (Arora & Barak, draft)",
+       "https://theory.cs.princeton.edu/complexity/book.pdf",
+       "book",
+       "Part I (Ch. 1–11)",
+       "1부 (1~11장)",
+       60,
+       "The standard graduate complexity text; free draft.",
+       "대학원 복잡도 이론 표준 교재. 무료 초안."
+      ],
+      [
+       "Tim Roughgarden — lecture videos",
+       "https://timroughgarden.org/videos.html",
+       "video",
+       "Algorithmic game theory or beyond-worst-case lectures",
+       "알고리즘 게임 이론 또는 최악 경우 너머 분석 강의",
+       30,
+       "Clear lectures on modern algorithms research topics.",
+       "최신 알고리즘 연구 주제를 명료하게 다룬 강의."
+      ]
+     ],
+     "proj": [
+      "Write up complete proofs that SAT is NP-complete (Cook–Levin) and that the halting problem is undecidable, then present one recent complexity result to a study group.",
+      "SAT의 NP-완전성(쿡-레빈)과 정지 문제의 결정 불가능성을 완전한 증명으로 정리하고, 최근 복잡도 결과 하나를 스터디에서 발표합니다."
+     ],
+     "exit": [
+      "Construct a polynomial-time reduction between two NP-complete problems without looking it up.",
+      "찾아보지 않고 두 NP-완전 문제 사이의 다항 시간 환원을 구성할 수 있다."
+     ],
+     "pit": [
+      [
+       "Skipping exercises; theory is learned by proving.",
+       "연습문제 건너뛰기. 이론은 증명하며 배웁니다."
+      ]
+     ]
+    },
+    {
+     "id": "F",
+     "name": [
+      "Networking",
+      "네트워킹"
+     ],
+     "goal": [
+      "Internet architecture, congestion control and modern data-centre networks.",
+      "인터넷 구조, 혼잡 제어, 현대 데이터센터 네트워크."
+     ],
+     "concepts": [
+      [
+       "End-to-end principle",
+       "Routing (BGP)",
+       "Congestion control",
+       "Software-defined networking",
+       "Data-centre networks",
+       "Wireless & mobile",
+       "Measurement"
+      ],
+      [
+       "종단 간 원칙",
+       "라우팅(BGP)",
+       "혼잡 제어",
+       "소프트웨어 정의 네트워킹",
+       "데이터센터 네트워크",
+       "무선·모바일",
+       "측정"
+      ]
+     ],
+     "items": [
+      [
+       "End-to-End Arguments in System Design (Saltzer, Reed, Clark)",
+       "https://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf",
+       "paper",
+       "Full paper",
+       "전문",
+       2,
+       "The design principle behind the Internet.",
+       "인터넷 뒤의 설계 원칙."
+      ],
+      [
+       "Congestion Avoidance and Control (Van Jacobson, 1988)",
+       "https://ee.lbl.gov/papers/congavoid.pdf",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "The paper that saved the Internet from congestion collapse.",
+       "인터넷을 혼잡 붕괴에서 구한 논문."
+      ],
+      [
+       "BBR: Congestion-Based Congestion Control (ACM Queue)",
+       "https://queue.acm.org/detail.cfm?id=3022184",
+       "article",
+       "Whole article",
+       "전체",
+       2,
+       "A modern model-based alternative to loss-based congestion control.",
+       "손실 기반 혼잡 제어를 대신하는 최신 모델 기반 방식."
+      ],
+      [
+       "Mininet",
+       "https://mininet.org/",
+       "code",
+       "Walkthrough + build a custom topology",
+       "워크스루 + 직접 토폴로지 구성",
+       8,
+       "Emulate a realistic network on one machine, running real kernel and switch code.",
+       "실제 커널·스위치 코드를 돌리며 한 대의 컴퓨터에서 현실적인 네트워크를 에뮬레이션합니다."
+      ],
+      [
+       "P4 tutorials",
+       "https://github.com/p4lang/tutorials",
+       "code",
+       "Basic forwarding through load balancing exercises",
+       "기본 포워딩부터 부하 분산 연습까지",
+       15,
+       "Programming the data plane of network devices.",
+       "네트워크 장비의 데이터 평면 프로그래밍."
+      ],
+      [
+       "Reproducing Network Research",
+       "https://reproducingnetworkresearch.wordpress.com/",
+       "practice",
+       "Reproduce one post's experiment",
+       "글 하나의 실험 재현",
+       15,
+       "Runnable replications of networking papers, mostly from Stanford CS244.",
+       "주로 Stanford CS244에서 나온, 실행 가능한 네트워크 논문 재현 모음."
+      ]
+     ],
+     "proj": [
+      "Implement and compare two congestion-control algorithms in a network emulator (e.g. Mininet), measuring throughput and latency under loss.",
+      "네트워크 에뮬레이터(예: Mininet)에서 혼잡 제어 알고리즘 두 개를 구현해 손실 상황의 처리량과 지연을 비교합니다."
+     ],
+     "exit": [
+      "Explain how TCP congestion control interacts with router queues and why bufferbloat happens.",
+      "TCP 혼잡 제어가 라우터 큐와 어떻게 상호작용하는지, 버퍼블로트가 왜 생기는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Measuring only on localhost.",
+       "로컬호스트에서만 측정하기."
+      ]
+     ]
+    },
+    {
+     "id": "G",
+     "name": [
+      "Graphics, vision & HCI",
+      "그래픽스·비전·HCI"
+     ],
+     "goal": [
+      "Rendering, geometry, neural scene representations and human–computer interaction.",
+      "렌더링, 기하, 신경망 기반 장면 표현, 인간-컴퓨터 상호작용."
+     ],
+     "concepts": [
+      [
+       "Rasterization & shading",
+       "Ray tracing",
+       "Geometry & meshes",
+       "Animation & simulation",
+       "Neural rendering",
+       "User studies",
+       "Interaction design"
+      ],
+      [
+       "래스터화·셰이딩",
+       "광선 추적",
+       "기하·메시",
+       "애니메이션·시뮬레이션",
+       "신경 렌더링",
+       "사용자 연구",
+       "인터랙션 디자인"
+      ]
+     ],
+     "items": [
+      [
+       "MIT 6.837 Computer Graphics",
+       "https://ocw.mit.edu/courses/6-837-computer-graphics-fall-2012/",
+       "course",
+       "Lectures + assignments",
+       "강의 + 과제",
+       50,
+       "Transformations, curves, animation, rendering and ray tracing.",
+       "변환, 곡선, 애니메이션, 렌더링, 광선 추적."
+      ],
+      [
+       "Ray Tracing in One Weekend (series)",
+       "https://raytracing.github.io/",
+       "book",
+       "Books 1–2",
+       "1~2권",
+       15,
+       "Build a physically based ray tracer step by step; free.",
+       "물리 기반 광선 추적기를 단계별로 만듭니다. 무료."
+      ],
+      [
+       "Scratchapixel",
+       "https://www.scratchapixel.com/",
+       "article",
+       "Rendering foundations lessons",
+       "렌더링 기초 강의",
+       20,
+       "Free, detailed lessons on the mathematics of rendering.",
+       "렌더링의 수학을 자세히 다룬 무료 강의."
+      ],
+      [
+       "NeRF: Representing Scenes as Neural Radiance Fields (2020)",
+       "https://arxiv.org/abs/2003.08934",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Neural networks as 3D scene representations.",
+       "신경망으로 3차원 장면을 표현하기."
+      ],
+      [
+       "3D Gaussian Splatting for Real-Time Radiance Field Rendering (2023)",
+       "https://arxiv.org/abs/2308.04079",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "Fast explicit scene representations that displaced many NeRF uses.",
+       "많은 NeRF 용도를 대체한 빠르고 명시적인 장면 표현."
+      ]
+     ],
+     "proj": [
+      "Write a ray tracer with materials and acceleration structures, then train a small Gaussian-splatting or NeRF model on your own photos and compare.",
+      "재질과 가속 구조를 갖춘 광선 추적기를 만들고, 직접 찍은 사진으로 작은 Gaussian splatting 또는 NeRF 모델을 학습시켜 비교합니다."
+     ],
+     "exit": [
+      "Derive the rendering equation and explain how path tracing estimates it.",
+      "렌더링 방정식을 유도하고, 경로 추적이 이를 어떻게 추정하는지 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Judging graphics results by eye without quantitative metrics or user studies.",
+       "정량 지표나 사용자 연구 없이 눈으로만 그래픽 결과를 판단하기."
+      ]
+     ]
+    },
+    {
+     "id": "H",
+     "name": [
+      "Quantum computing",
+      "양자 컴퓨팅"
+     ],
+     "goal": [
+      "Qubits, quantum algorithms and error correction.",
+      "큐비트, 양자 알고리즘, 오류 정정."
+     ],
+     "concepts": [
+      [
+       "Qubits & quantum gates",
+       "Entanglement",
+       "Quantum circuits",
+       "Shor's and Grover's algorithms",
+       "Noise & decoherence",
+       "Quantum error correction",
+       "Surface codes & logical qubits"
+      ],
+      [
+       "큐비트·양자 게이트",
+       "얽힘",
+       "양자 회로",
+       "쇼어·그로버 알고리즘",
+       "잡음·결어긋남",
+       "양자 오류 정정",
+       "표면 부호·논리 큐비트"
+      ]
+     ],
+     "items": [
+      [
+       "IBM Quantum Learning",
+       "https://learning.quantum.ibm.com/",
+       "course",
+       "Basics of Quantum Information + Fundamentals of Quantum Algorithms",
+       "Basics of Quantum Information·Fundamentals of Quantum Algorithms",
+       30,
+       "Free courses with runnable Qiskit examples.",
+       "실행 가능한 Qiskit 예제가 있는 무료 강의."
+      ],
+      [
+       "John Preskill — Quantum Computation lecture notes (Ph219)",
+       "http://theory.caltech.edu/~preskill/ph229/",
+       "article",
+       "Ch. 1–4, 7",
+       "1~4장, 7장",
+       40,
+       "Classic notes covering quantum information, algorithms and error correction.",
+       "양자 정보, 알고리즘, 오류 정정을 다룬 고전 강의노트."
+      ],
+      [
+       "Quantum error correction below the surface code threshold (Google Quantum AI, 2024)",
+       "https://arxiv.org/abs/2408.13687",
+       "paper",
+       "Main text",
+       "본문",
+       4,
+       "Logical error falling as the code grows on superconducting hardware.",
+       "초전도 하드웨어에서 부호가 커질수록 논리 오류가 줄어든 결과."
+      ]
+     ],
+     "proj": [
+      "Implement Grover's search and a three-qubit repetition code in Qiskit, run them on a simulator with noise, and measure how error correction changes the outcome.",
+      "Qiskit으로 그로버 탐색과 3큐비트 반복 부호를 구현하고, 잡음이 있는 시뮬레이터에서 실행해 오류 정정이 결과를 어떻게 바꾸는지 측정합니다."
+     ],
+     "exit": [
+      "Explain why quantum error correction needs many physical qubits per logical qubit and what the threshold theorem says.",
+      "양자 오류 정정에 논리 큐비트 하나당 많은 물리 큐비트가 필요한 이유와 문턱 정리가 말하는 바를 설명할 수 있다."
+     ],
+     "pit": [
+      [
+       "Believing vendor qubit counts without error rates.",
+       "오류율 없이 업체의 큐비트 수만 믿기."
+      ]
+     ]
+    },
+    {
+     "id": "I",
+     "name": [
+      "Software engineering",
+      "소프트웨어 공학"
+     ],
+     "goal": [
+      "Building and running large software systems with many people.",
+      "많은 사람이 함께 큰 소프트웨어 시스템을 만들고 운영하기."
+     ],
+     "concepts": [
+      [
+       "Code review & testing at scale",
+       "Managing complexity",
+       "Build systems & CI",
+       "Reliability & on-call",
+       "Observability",
+       "Incident postmortems",
+       "Program analysis tools"
+      ],
+      [
+       "대규모 코드 리뷰·테스트",
+       "복잡도 관리",
+       "빌드 시스템·CI",
+       "안정성·온콜",
+       "관측 가능성",
+       "장애 사후 분석",
+       "프로그램 분석 도구"
+      ]
+     ],
+     "items": [
+      [
+       "Software Engineering at Google",
+       "https://abseil.io/resources/swe-book",
+       "book",
+       "Parts II–III",
+       "2~3부",
+       30,
+       "How a large organization handles code review, testing and dependencies; free online.",
+       "대규모 조직의 코드 리뷰, 테스트, 의존성 관리 방식. 무료 온라인."
+      ],
+      [
+       "Site Reliability Engineering (Google)",
+       "https://sre.google/sre-book/table-of-contents/",
+       "book",
+       "Parts II–III",
+       "2~3부",
+       25,
+       "Running production systems: SLOs, monitoring, incidents.",
+       "운영 시스템 다루기: SLO, 모니터링, 장애 대응."
+      ],
+      [
+       "Out of the Tar Pit (Moseley & Marks, 2006)",
+       "https://curtclifton.net/papers/MoseleyMarks06a.pdf",
+       "paper",
+       "Full paper",
+       "전문",
+       3,
+       "An influential essay on where software complexity comes from.",
+       "소프트웨어 복잡도가 어디서 오는지에 대한 영향력 있는 글."
+      ]
+     ],
+     "proj": [
+      "Contribute three merged pull requests to a real open-source project, including tests and review iterations.",
+      "실제 오픈소스 프로젝트에 테스트와 리뷰 반영을 거친 PR 세 개를 병합시킵니다."
+     ],
+     "exit": [
+      "Write a blameless postmortem for a real or simulated outage, with root causes and follow-up actions.",
+      "실제 또는 가상의 장애에 대해 근본 원인과 후속 조치를 담은 비난 없는 사후 분석을 쓸 수 있다."
+     ],
+     "pit": [
+      [
+       "Optimizing for code that only you will read.",
+       "혼자만 읽을 코드처럼 작성하기."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "name": [
+    "Entering research",
+    "연구 진입"
+   ],
+   "short": [
+    "Research",
+    "연구 진입"
+   ],
+   "goal": [
+    "Read the main venues, reproduce systems and results, and write them up.",
+    "주요 학회를 읽고, 시스템과 결과를 재현하고, 글로 정리하기."
+   ],
+   "dur": [
+    "Ongoing",
+    "계속"
+   ],
+   "pre": [
+    "Stage 4 (one track)",
+    "4단계 (트랙 하나)"
+   ],
+   "why": [
+    "CS research is published mainly at peer-reviewed conferences, and most systems papers come with artifacts you can run. Reproducing an artifact is the fastest way in.",
+    "CS 연구는 주로 동료 심사 학회에서 발표되고, 시스템 논문 대부분은 실행 가능한 산출물을 함께 공개합니다. 산출물을 재현하는 것이 가장 빠른 입문 경로입니다."
+   ],
+   "concepts": [
+    [
+     "Venue landscape",
+     "Artifact evaluation",
+     "Benchmarks & baselines",
+     "Reading tree",
+     "Writing systems papers"
+    ],
+    [
+     "학회 지형",
+     "산출물 평가",
+     "벤치마크·기준선",
+     "읽기 계통도",
+     "시스템 논문 쓰기"
+    ]
+   ],
+   "items": [
+    [
+     "How to Read a Paper (S. Keshav)",
+     "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf",
+     "article",
+     "Whole paper",
+     "전문",
+     1,
+     "The three-pass method.",
+     "3단계 읽기 방법."
+    ],
+    [
+     "You and Your Research (Richard Hamming)",
+     "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+     "article",
+     "Whole talk",
+     "전체",
+     2,
+     "On choosing important problems.",
+     "중요한 문제를 고르는 법."
+    ],
+    [
+     "Semantic Scholar",
+     "https://www.semanticscholar.org/",
+     "practice",
+     "Build a reading tree for each frontier paper",
+     "최전선 논문마다 읽기 계통도 만들기",
+     4,
+     "Follow references backward and citations forward.",
+     "참고문헌은 거꾸로, 인용은 앞으로 따라갑니다."
+    ],
+    [
+     "CSRankings (venue list by area)",
+     "https://csrankings.org/",
+     "practice",
+     "Use it to find the top venues in your track",
+     "자기 트랙의 주요 학회 찾기",
+     1,
+     "Lists the main conferences in each CS area.",
+     "CS 분야별 주요 학회 목록."
+    ],
+    [
+     "ACM Queue",
+     "https://queue.acm.org/",
+     "practice",
+     "Read one article a week",
+     "주 1편 읽기",
+     2,
+     "Practitioner-oriented articles by leading researchers and engineers.",
+     "주요 연구자·엔지니어가 쓴 실무 중심 글."
+    ],
+    [
+     "Papers We Love",
+     "https://paperswelove.org/",
+     "practice",
+     "Pick classic papers from the repository",
+     "저장소에서 고전 논문 고르기",
+     4,
+     "A community-curated collection of classic CS papers.",
+     "커뮤니티가 모은 CS 고전 논문 모음."
+    ],
+    [
+     "Reproduce one recent result",
+     "https://arxiv.org/list/cs.DC/recent",
+     "practice",
+     "Pick a paper with a public artifact in your track",
+     "자기 트랙에서 산출물이 공개된 논문 하나 선택",
+     40,
+     "Rebuild the artifact and reproduce one key figure.",
+     "산출물을 다시 빌드해 핵심 그림 하나를 재현합니다."
+    ]
+   ],
+   "proj": [
+    "Reproduce one figure from a recent paper's artifact in your track, try one extension, and write a 4-page report.",
+    "자기 트랙 최근 논문의 산출물로 그림 하나를 재현하고, 확장을 하나 시도해 4쪽 보고서를 씁니다."
+   ],
+   "exit": [
+    "A public write-up with code someone else can run.",
+    "다른 사람이 돌려볼 수 있는 코드와 함께 공개된 보고서."
+   ],
+   "pit": [
+    [
+     "Comparing against weak or outdated baselines.",
+     "약하거나 낡은 기준선과 비교하기."
+    ]
+   ]
+  }
+ ],
+ "coverage": {
+  "yes": [
+   [
+    "The complete undergraduate CS core at the depth of top programmes: programming, discrete math, algorithms, architecture, operating systems, networks, compilers and databases.",
+    "최상위 대학 수준의 학부 CS 핵심 전체: 프로그래밍, 이산수학, 알고리즘, 컴퓨터 구조, 운영체제, 네트워크, 컴파일러, 데이터베이스."
+   ],
+   [
+    "Enough depth in one or two tracks to read and reproduce current conference papers.",
+    "한두 트랙에서 최신 학회 논문을 읽고 재현할 수 있는 깊이."
+   ],
+   [
+    "The ability to trace any computing question through every layer of the stack.",
+    "어떤 컴퓨팅 질문이든 계층 전체를 따라 추적하는 능력."
+   ]
+  ],
+  "no": [
+   [
+    "Mastery of every track at once; 'all of computer science' is mastered layer by layer and area by area over years.",
+    "모든 트랙을 동시에 마스터하기. '컴퓨터 과학 전체'는 여러 해에 걸쳐 계층별·분야별로 익혀집니다."
+   ],
+   [
+    "Large-scale production experience, which needs internships or open-source work on real systems.",
+    "대규모 운영 경험. 인턴십이나 실제 시스템의 오픈소스 작업이 필요합니다."
+   ],
+   [
+    "Machine learning and AI depth, which is in the AI route.",
+    "머신러닝·AI의 깊이. AI 노선에 있습니다."
+   ]
+  ]
+ },
+ "sources": [
+  [
+   "arXiv Computer Science — recent",
+   "https://arxiv.org/list/cs/recent",
+   "Preprints across all CS areas (cs.DC, cs.CR, cs.PL, cs.DB, cs.CC, quant-ph…)",
+   "CS 전 분야 프리프린트 (cs.DC, cs.CR, cs.PL, cs.DB, cs.CC, quant-ph 등)"
+  ],
+  [
+   "USENIX conferences",
+   "https://www.usenix.org/conferences",
+   "OSDI, NSDI, USENIX Security — papers free to read",
+   "OSDI, NSDI, USENIX Security. 논문 무료 공개"
+  ],
+  [
+   "ACM Queue",
+   "https://queue.acm.org/",
+   "Practitioner articles",
+   "실무 중심 글"
+  ],
+  [
+   "CSRankings",
+   "https://csrankings.org/",
+   "Top venues by area",
+   "분야별 주요 학회"
+  ]
+ ],
+ "pathways": [
+  [
+   [
+    "Undergraduate research in a CS lab",
+    "CS 연구실의 학부 연구생"
+   ],
+   "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=65510",
+   2,
+   "Join a professor's lab early; systems and theory groups often take students who have finished the core courses.",
+   "일찍 교수 연구실에 들어가세요. 시스템·이론 연구실은 핵심 과목을 마친 학생을 자주 받습니다.",
+   "Linked example: KAIST URP. Most universities run a similar program.",
+   "연결된 예시: KAIST URP. 대부분의 대학에 비슷한 제도가 있습니다."
+  ],
+  [
+   [
+    "Competitive programming (ICPC)",
+    "프로그래밍 대회 (ICPC)"
+   ],
+   "https://icpc.global/",
+   2,
+   "Team algorithm contests from regional to world finals.",
+   "지역 예선부터 세계 결선까지 이어지는 팀 알고리즘 대회입니다.",
+   "Regionals run in autumn; teams register through universities.",
+   "지역 대회는 가을, 팀은 대학을 통해 등록합니다."
+  ],
+  [
+   [
+    "Capture-the-flag security contests",
+    "CTF 보안 대회"
+   ],
+   "https://ctftime.org/",
+   3,
+   "Practise attack and defence legally in timed contests; CTFtime lists upcoming events.",
+   "시간 제한 대회에서 공격과 방어를 합법적으로 연습합니다. CTFtime에 예정된 대회가 정리되어 있습니다.",
+   "Free; many run online every weekend.",
+   "무료, 매주 온라인 대회가 많습니다."
+  ],
+  [
+   [
+    "Google Summer of Code",
+    "Google Summer of Code"
+   ],
+   "https://developers.google.com/open-source/gsoc/timeline",
+   2,
+   "A paid, mentored summer of open-source contribution across compilers, databases, OSes and more.",
+   "컴파일러, 데이터베이스, 운영체제 등 오픈소스에 멘토와 함께 기여하는 유급 여름 프로그램입니다.",
+   "Contributor applications open around March.",
+   "참여자 지원은 3월 전후."
+  ],
+  [
+   [
+    "AI·SW Maestro (Korea)",
+    "AI·SW 마에스트로"
+   ],
+   "https://www.swmaestro.ai/",
+   3,
+   "A government-funded programme in which selected trainees build projects for six months under expert mentors, with a monthly stipend.",
+   "선발된 연수생이 6개월간 전문가 멘토링을 받으며 프로젝트를 수행하는 정부 지원 과정으로, 매달 장학금이 지급됩니다.",
+   "Recruitment usually opens in early spring; check the official site each year.",
+   "모집은 보통 이른 봄에 시작합니다. 매년 공식 누리집을 확인하세요."
+  ]
+ ]
+}

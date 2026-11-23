@@ -10,6 +10,15 @@
    ]
   },
   {
+   "id": "cs",
+   "curriculum": "data/fields/cs.json",
+   "frontier": "data/frontier-cs.json",
+   "name": [
+    "Computer Science",
+    "컴퓨터 과학"
+   ]
+  },
+  {
    "id": "semiconductors",
    "curriculum": "data/fields/semiconductors.json",
    "frontier": "data/frontier-semiconductors.json",

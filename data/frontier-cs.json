@@ -1,0 +1,39 @@
+{
+ "updated": "2026-11-23",
+ "weeks": [
+  {
+   "week": "2026-11-23",
+   "note_en": "Focus this week: systems research reshaped by LLM serving, and a step forward in quantum error correction.",
+   "note_ko": "이번 주 초점: LLM 서빙이 바꾸고 있는 시스템 연구, 그리고 양자 오류 정정의 진전.",
+   "items": [
+    {
+     "type_en": "Conference",
+     "type_ko": "학회",
+     "stage": 4,
+     "title": "OSDI '26 proceedings (July 13–15, 2026)",
+     "url": "https://www.usenix.org/sites/default/files/osdi26-contents.pdf",
+     "why_en": "The table of contents of the top systems conference opens with sessions on KV caches and long-context LLM serving, a good snapshot of where systems research is heading (Tracks A, D). Papers are free on USENIX.",
+     "why_ko": "대표 시스템 학회의 목차로, KV 캐시와 긴 문맥 LLM 서빙 세션으로 시작합니다. 시스템 연구의 방향을 보여 주며(트랙 A, D), 논문은 USENIX에서 무료로 볼 수 있습니다."
+    },
+    {
+     "type_en": "Conference",
+     "type_ko": "학회",
+     "stage": 4,
+     "title": "Microsoft Research at SOSP 2026",
+     "url": "https://www.microsoft.com/en-us/research/event/sosp-2026/publications/",
+     "why_en": "Papers from the other flagship systems venue, including deterministic LLM inference with verified speculation (Track A).",
+     "why_ko": "또 다른 대표 시스템 학회의 발표 목록으로, 검증된 추측 실행을 이용한 결정적 LLM 추론 등을 포함합니다(트랙 A)."
+    },
+    {
+     "type_en": "Industry",
+     "type_ko": "업계 동향",
+     "stage": 4,
+     "title": "A quantum computing feat brings the 'megaquops' era a step closer (Science News)",
+     "url": "https://sciencenews.org/article/quantum-computer-megaquops-error-correction",
+     "why_en": "Reports Quantinuum's error-corrected logical qubits with about five errors per million operations, and explains the scaling factor that measures progress (Track H).",
+     "why_ko": "100만 번 연산에 오류가 약 5번인 Quantinuum의 오류 정정 논리 큐비트 결과를 전하고, 진척을 재는 척도를 설명합니다(트랙 H)."
+    }
+   ]
+  }
+ ]
+}
